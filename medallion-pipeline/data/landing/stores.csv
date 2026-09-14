@@ -1,0 +1,11 @@
+store_id,store_name,region,city,state
+S01,Downtown Flagship,Northeast,New York,NY
+S02,Boston Commons,Northeast,Boston,MA
+S03,Market Street,Northeast,Philadelphia,PA
+S04,Midtown Atlanta,Southeast,Atlanta,GA
+S05,Ocean Drive,Southeast,Miami,FL
+S06,Queen City,Southeast,Charlotte,NC
+S07,Windy City Outlet,Midwest,Chicago,IL
+S08,Motor City Store,Midwest,Detroit,MI
+S09,Pacific Grove,West,Los Angeles,CA
+S10,Golden Gate Outlet,West,San Francisco,CA

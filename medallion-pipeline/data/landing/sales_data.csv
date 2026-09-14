@@ -1,0 +1,55 @@
+transaction_id,transaction_date,store_id,product_id,product_name,category,quantity,unit_price,total_amount,customer_segment,payment_method
+T1001,2024-01-15,S01,P001,Wireless Headphones,Electronics,2,79.99,159.98,Loyal,Credit Card
+T1002,01/15/2024,S02,P002,USB-C Cable, electronics,3,12.50,37.50,Std,Debit Card
+T1003,01-16-2024,S01,P003,Smart Watch,ELECTRONICS,1,129.99,129.99,Premium,Mobile Wallet
+T1004,2024-01-17,,P004,Cotton T-Shirt,Clothing,2,24.99,49.98,Bgt,Cash
+T1005,01/18/2024,S03,P005,Running Shoes,Clothing,1,89.95,89.95,Standard,Credit Card
+T1006,01-19-2024,S02,P006,Coffee Maker,Home & Kitchen,1,64.50,64.50,Loyal,Debit Card
+T1007,2024-01-20,S04,P007,LED Desk Lamp,Home & Kitchen,2,28.75,57.50,Premium,Mobile Wallet
+T1008,01/21/2024,S01,P008,Office Chair,Home & Kitchen,1,149.00,149.00,Std,Credit Card
+T1009,01-22-2024,S03,P009,Bluetooth Speaker,Elec.,2,45.00,90.00,Budget,Cash
+T1010,2024-01-23,S02,P010,Notebook Set,Stationery,4,8.25,33.00,Loyal,Debit Card
+T1011,01/24/2024,S04,P011,Mechanical Keyboard,Electronics,1,99.99,99.99,Prem,Credit Card
+T1012,01-25-2024,,P012,Water Bottle,Sports & Outdoors,3,15.00,45.00,Std,Mobile Wallet
+T1013,2024-01-26,S01,P013,Backpack,Sports & Outdoors,1,54.95,54.95,Standard,Credit Card
+T1014,01/27/2024,S03,P014,Air Fryer,Home & Kitchen,1,119.99,119.99,Premium,Debit Card
+T1015,01-28-2024,S02,P015,Jeans,Clothing,2,49.50,99.00,Bgt,Cash
+T1016,2024-01-29,S04,P016,Phone Case,Electronics,3,18.99,56.97,Loyal,Mobile Wallet
+T1017,01/30/2024,S01,P017,Desk Organizer,Stationery,2,11.49,22.98,Standard,Credit Card
+T1018,01-31-2024,S03,P018,Yoga Mat,Sports & Outdoors,1,32.00,32.00,Prem,Debit Card
+T1019,2024-02-01,S02,P019,Tablet Stand,Elec.,1,39.99,39.99,Std,Mobile Wallet
+T1020,02/02/2024,S04,P020,Winter Jacket,Clothing,1,135.00,135.00,Premium,Credit Card
+T1021,02-03-2024,S01,P001,Wireless Headphones,Electronics,1,79.99,79.99,Loyal,Debit Card
+T1022,2024-02-04,,P002,USB-C Cable,electronics,2,12.50,25.00,Budget,Cash
+T1023,02/05/2024,S03,P003,Smart Watch,ELECTRONICS,1,129.99,129.99,Prem,Mobile Wallet
+T1024,02-06-2024,S02,P004,Cotton T-Shirt,Clothing,3,24.99,74.97,Std,Credit Card
+T1025,2024-02-07,S04,P005,Running Shoes,Clothing,2,89.95,179.90,Standard,Debit Card
+T1026,02/08/2024,S01,P006,Coffee Maker,Home & Kitchen,1,64.50,64.50,Loyal,Mobile Wallet
+T1027,02-09-2024,S03,P007,LED Desk Lamp,Home & Kitchen,1,28.75,28.75,Bgt,Cash
+T1028,2024-02-10,S02,P008,Office Chair,Home & Kitchen,1,149.00,149.00,Premium,Credit Card
+T1029,02/11/2024,S04,P009,Bluetooth Speaker,Elec.,1,45.00,45.00,Std,Debit Card
+T1030,02-12-2024,S01,P010,Notebook Set,Stationery,5,8.25,41.25,Budget,Cash
+T1031,2024-02-13,S03,P011,Mechanical Keyboard,Electronics,2,99.99,199.98,Prem,Credit Card
+T1032,02/14/2024,,P012,Water Bottle,Sports & Outdoors,1,15.00,15.00,Loyal,Mobile Wallet
+T1033,02-15-2024,S02,P013,Backpack,Sports & Outdoors,2,54.95,109.90,Standard,Debit Card
+T1034,2024-02-16,S04,P014,Air Fryer,Home & Kitchen,1,119.99,119.99,Premium,Credit Card
+T1035,02/17/2024,S01,P015,Jeans,Clothing,1,49.50,49.50,Bgt,Cash
+T1036,02-18-2024,S03,P016,Phone Case,Electronics,-1,18.99,-18.99,Std,Mobile Wallet
+T1037,2024-02-19,S02,P017,Desk Organizer,Stationery,3,11.49,34.47,Loyal,Credit Card
+T1038,02/20/2024,S04,P018,Yoga Mat,Sports & Outdoors,-1,32.00,-32.00,Prem,Debit Card
+T1039,02-21-2024,S01,P019,Tablet Stand,Elec.,2,39.99,79.98,Standard,Mobile Wallet
+T1040,2024-02-22,,P020,Winter Jacket,Clothing,-1,135.00,-135.00,Budget,Credit Card
+T1041,02/23/2024,S03,P001,Wireless Headphones,Electronics,1,79.99,79.99,Loyal,Debit Card
+T1042,02-24-2024,S02,P002,USB-C Cable,electronics,4,12.50,50.00,Std,Cash
+T1043,2024-02-25,S04,P003,Smart Watch,ELECTRONICS,1,129.99,129.99,Premium,Mobile Wallet
+T1044,02/26/2024,S01,P004,Cotton T-Shirt,Clothing,2,24.99,49.98,Bgt,Credit Card
+T1045,02-27-2024,S03,P005,Running Shoes,Clothing,1,89.95,89.95,Standard,Debit Card
+T1001,2024-01-15,S01,P001,Wireless Headphones,Electronics,2,79.99,159.98,Loyal,Credit Card
+T1008,01/21/2024,S01,P008,Office Chair,Home & Kitchen,1,149.00,149.00,Std,Credit Card
+T1020,02-02-2024,S04,P020,Winter Jacket,Clothing,1,135.00,135.00,Premium,Credit Card
+T1036,2024-02-18,S03,P016,Phone Case,Electronics,-1,18.99,-18.99,Std,Mobile Wallet
+T1046,02/28/2024,,P006,Coffee Maker,Home & Kitchen,1,64.50,64.50,Budget,Cash
+T1047,02-29-2024,S02,P007,LED Desk Lamp,Home & Kitchen,2,28.75,57.50,Loyal,Debit Card
+T1048,2024-03-01,S04,P011,Mechanical Keyboard,Elec.,1,99.99,99.99,Prem,Credit Card
+T1049,03/02/2024,S01,P013,Backpack,Sports & Outdoors,1,54.95,54.95,Std,Mobile Wallet
+T1050,03-03-2024,S03,P018,Yoga Mat,Sports & Outdoors,2,32.00,64.00,Standard,Cash

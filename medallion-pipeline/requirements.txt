@@ -1,0 +1,30 @@
+# AI agent frameworks
+langchain>=0.3.27
+langgraph>=0.6.6
+
+# AI provider integrations
+langchain-groq>=0.3.8
+langchain-google-genai>=2.1.10
+langchain-openai>=0.3.30
+
+# Direct AI provider APIs
+google-generativeai>=0.8.5
+groq>=0.31.0
+
+# Web application
+streamlit>=1.48.0
+
+# Data processing and storage
+pandas>=2.3.2
+pyarrow>=21.0.0
+chromadb>=1.0.20
+duckdb>=1.3.2
+
+# Configuration and validation
+python-dotenv>=1.1.1
+pydantic>=2.11.7
+
+# Testing and visualization
+pytest>=8.4.1
+matplotlib>=3.10.5
+plotly>=6.2.0

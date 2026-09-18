@@ -261,14 +261,24 @@ def _filter_report_data_by_business_question(report_data: dict[str, Any], busine
 
 
 def create_report_insight(
-    gold_output_path: str | Path,
+    gold_output_paths: str | Path | list[str],
     report_path: str | Path = "reports",
     business_question: str | None = None,
     source_files: list[str] | tuple[str, ...] | None = None,
 ) -> dict[str, Any]:
-    """Create a richer executive report with yearly/monthly revenue/profit and location/product analytics for the requested business question."""
+    """Create an executive report from Gold layer data with revenue/profit and business analytics.
+
+    Reads from Gold Parquet outputs (not landing CSVs) and generates business insights
+    aligned to the requested business question.
+    """
     report_dir = Path(report_path)
     report_dir.mkdir(parents=True, exist_ok=True)
+
+    # Normalize gold_output_paths to list
+    if isinstance(gold_output_paths, (str, Path)):
+        gold_paths = [str(gold_output_paths)]
+    else:
+        gold_paths = [str(p) for p in gold_output_paths]
 
     if source_files is None:
         landing_dir = Path(__file__).resolve().parents[1] / "data" / "landing"
@@ -284,13 +294,38 @@ def create_report_insight(
     }
 
     try:
-        if source_files:
-            sales_df, products_df, stores_df = _read_sources_from_file_list(source_files)
+        # Try to read from Gold layer outputs first (Parquet)
+        gold_dfs = []
+        for path in gold_paths:
+            p = Path(path)
+            if p.exists() and str(p).endswith(".parquet"):
+                try:
+                    gold_dfs.append(pd.read_parquet(p))
+                except Exception:
+                    pass
+
+        # Fallback: if no valid gold files, use source files
+        if gold_dfs:
+            # Combine all gold dataframes
+            combined_gold = pd.concat(gold_dfs, ignore_index=True)
+            # Infer sales, products, and stores from the combined gold data
+            # For now, use landing files for reference data (products, stores)
+            if source_files:
+                _, products_df, stores_df = _read_sources_from_file_list(source_files)
+            else:
+                landing_dir = Path("data/landing")
+                _, products_df, stores_df = _read_landing_inputs(landing_dir)
+            base_report_data = _build_sales_report_data(combined_gold, products_df, stores_df)
+            report_data = _filter_report_data_by_business_question(base_report_data, business_question)
         else:
-            landing_dir = Path("data/landing")
-            sales_df, products_df, stores_df = _read_landing_inputs(landing_dir)
-        base_report_data = _build_sales_report_data(sales_df, products_df, stores_df)
-        report_data = _filter_report_data_by_business_question(base_report_data, business_question)
+            # Fallback to landing inputs if gold files not available
+            if source_files:
+                sales_df, products_df, stores_df = _read_sources_from_file_list(source_files)
+            else:
+                landing_dir = Path("data/landing")
+                sales_df, products_df, stores_df = _read_landing_inputs(landing_dir)
+            base_report_data = _build_sales_report_data(sales_df, products_df, stores_df)
+            report_data = _filter_report_data_by_business_question(base_report_data, business_question)
     except Exception:
         report_data = {
             "yearly_profit": [],

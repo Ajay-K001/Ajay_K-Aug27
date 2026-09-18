@@ -19,6 +19,7 @@ from agents.profiler import profile_multiple_datasets
 from agents.reporter import create_report_insight
 from agents.silver import silver_clean
 from agents.sttm import generate_bronze_sttm, generate_silver_sttm, generate_gold_sttm
+from core.state import PipelineState
 
 LANDING_DIR = PROJECT_ROOT / "data" / "landing"
 DEFAULT_FILES = [
@@ -53,8 +54,31 @@ def render_workflow_status_html(workflow_status: list[dict[str, str]]) -> str:
     return "<div class='workflow-status'><span class='subtle'>Workflow Status</span>" + "".join(rows) + "</div>"
 
 
+def render_sttm_approval_ui(sttm_dict: dict, layer_name: str, key_prefix: str) -> bool:
+    """Render STTM mapping for user review and return whether approved."""
+    st.markdown(f"### {layer_name} STTM Approval")
+
+    # Display STTM details
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.json(sttm_dict)
+
+    # Approval buttons
+    with col2:
+        st.write("**Decision**")
+        if st.button("✅ Approve", key=f"{key_prefix}_approve", use_container_width=True):
+            st.session_state[f"{key_prefix}_approved"] = True
+            st.success(f"{layer_name} approved!")
+            return True
+        if st.button("❌ Revise", key=f"{key_prefix}_revise", use_container_width=True):
+            st.info(f"Please modify {layer_name} configuration and re-run.")
+            st.stop()
+
+    return st.session_state.get(f"{key_prefix}_approved", False)
+
+
 def refresh_landing_files() -> list[str]:
-    """Return all CSV names currently available in the landing folder, including uploaded files."""
+    """Return all CSV names currently available in the landing folder."""
     return sorted([path.name for path in LANDING_DIR.glob("*.csv")])
 
 
@@ -105,7 +129,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown("<div class='title-panel'><h1>Medallion Pipeline</h1><p>Transform retail data into actionable business insights, everything connected.</p></div>", unsafe_allow_html=True)
+st.markdown("<div class='title-panel'><h1>Medallion Pipeline</h1><p>Transform retail data into actionable business insights. Human-approved STTM transformations at each layer.</p></div>", unsafe_allow_html=True)
 
 if "workflow_status" not in st.session_state:
     st.session_state["workflow_status"] = [
@@ -159,16 +183,12 @@ with center_col:
         )
 
     if st.button("Run Full Workflow", use_container_width=True):
-        if not uploaded_files:
+        if not uploaded_files and not any(p.exists() for p in DEFAULT_FILES):
             st.warning("Select at least one CSV file to upload.")
         else:
-            file_paths = [str(LANDING_DIR / p.name) for p in uploaded_files]
-            if not file_paths:
-                file_paths = [str(p) for p in DEFAULT_FILES]
-            status = run_stepwise_pipeline(file_paths, run_id)
-            st.session_state["workflow_files"] = file_paths
-            st.session_state["workflow_plan"] = status
+            file_paths = [str(LANDING_DIR / p.name) for p in uploaded_files] if uploaded_files else [str(p) for p in DEFAULT_FILES]
 
+            st.session_state["workflow_files"] = file_paths
             st.session_state["workflow_status"] = [
                 {"layer": "Bronze layer", "state": "in_progress"},
                 {"layer": "Silver layer", "state": "in_progress"},
@@ -177,38 +197,111 @@ with center_col:
             workflow_status_placeholder.markdown(render_workflow_status_html(st.session_state["workflow_status"]), unsafe_allow_html=True)
 
             notification_placeholder = st.empty()
-            notification_placeholder.info("Running profiler and full pipeline workflow...")
+            notification_placeholder.info("Running profiler and pipeline workflow...")
 
             try:
+                # ===== PHASE 1: Profile =====
                 profile_path = profile_multiple_datasets(file_paths, run_id, "Profile retail CSV inputs")
+                notification_placeholder.info("✅ Profiling complete. Starting Bronze layer...")
+
+                # ===== PHASE 2: Bronze STTM + Approval =====
                 bronze_sttm = generate_bronze_sttm(file_paths)
-                notification_placeholder.info("Bronze layer in progress")
+                st.subheader("🔍 Bronze Layer STTM Review")
+                st.write("Please review the Bronze layer transformation rules before proceeding:")
+
+                bronze_approved_col1, bronze_approved_col2 = st.columns([3, 1])
+                with bronze_approved_col1:
+                    st.json(bronze_sttm)
+                with bronze_approved_col2:
+                    st.write("**Decision:**")
+                    bronze_approve = st.button("✅ Approve Bronze", key="bronze_approve_main")
+                    bronze_revise = st.button("❌ Revise Bronze", key="bronze_revise_main")
+
+                if bronze_revise:
+                    st.error("Bronze STTM requires revision. Please adjust and re-run.")
+                    st.stop()
+
+                if not bronze_approve:
+                    st.warning("Waiting for Bronze approval...")
+                    st.stop()
+
+                st.success("✅ Bronze layer approved!")
+
+                # ===== PHASE 3: Bronze Ingest =====
+                notification_placeholder.info("Processing Bronze layer...")
                 bronze_outputs = bronze_ingest(file_paths, output_dir=PROJECT_ROOT / "data" / "bronze_layer")
                 st.session_state["workflow_status"][0] = {"layer": "Bronze layer", "state": "completed"}
                 workflow_status_placeholder.markdown(render_workflow_status_html(st.session_state["workflow_status"]), unsafe_allow_html=True)
-                notification_placeholder.success("Bronze layer completed")
+                st.success(f"✅ Bronze layer completed: {len(bronze_outputs)} files written")
 
+                # ===== PHASE 4: Silver STTM + Approval =====
                 silver_sttm = generate_silver_sttm(file_paths)
-                notification_placeholder.info("Silver layer in progress")
-                silver_outputs = silver_clean(file_paths, output_dir=PROJECT_ROOT / "data" / "silver_layer")
+                st.subheader("🔍 Silver Layer STTM Review")
+                st.write("Please review the Silver layer transformation rules before proceeding:")
+
+                silver_approved_col1, silver_approved_col2 = st.columns([3, 1])
+                with silver_approved_col1:
+                    st.json(silver_sttm)
+                with silver_approved_col2:
+                    st.write("**Decision:**")
+                    silver_approve = st.button("✅ Approve Silver", key="silver_approve_main")
+                    silver_revise = st.button("❌ Revise Silver", key="silver_revise_main")
+
+                if silver_revise:
+                    st.error("Silver STTM requires revision. Please adjust and re-run.")
+                    st.stop()
+
+                if not silver_approve:
+                    st.warning("Waiting for Silver approval...")
+                    st.stop()
+
+                st.success("✅ Silver layer approved!")
+
+                # ===== PHASE 5: Silver Clean =====
+                notification_placeholder.info("Processing Silver layer...")
+                silver_outputs = silver_clean(bronze_outputs, output_dir=PROJECT_ROOT / "data" / "silver_layer", business_intent=business_question)
                 st.session_state["workflow_status"][1] = {"layer": "Silver layer", "state": "completed"}
                 workflow_status_placeholder.markdown(render_workflow_status_html(st.session_state["workflow_status"]), unsafe_allow_html=True)
-                notification_placeholder.success("Silver layer completed")
+                st.success(f"✅ Silver layer completed: {len(silver_outputs)} files written")
 
+                # ===== PHASE 6: Gold STTM + Approval =====
                 gold_sttm = generate_gold_sttm(file_paths)
-                notification_placeholder.info("Gold layer in progress")
-                gold_outputs = gold_aggregate(file_paths, output_dir=PROJECT_ROOT / "data" / "gold_layer")
+                st.subheader("🔍 Gold Layer STTM Review")
+                st.write("Please review the Gold layer transformation rules before proceeding:")
+
+                gold_approved_col1, gold_approved_col2 = st.columns([3, 1])
+                with gold_approved_col1:
+                    st.json(gold_sttm)
+                with gold_approved_col2:
+                    st.write("**Decision:**")
+                    gold_approve = st.button("✅ Approve Gold", key="gold_approve_main")
+                    gold_revise = st.button("❌ Revise Gold", key="gold_revise_main")
+
+                if gold_revise:
+                    st.error("Gold STTM requires revision. Please adjust and re-run.")
+                    st.stop()
+
+                if not gold_approve:
+                    st.warning("Waiting for Gold approval...")
+                    st.stop()
+
+                st.success("✅ Gold layer approved!")
+
+                # ===== PHASE 7: Gold Aggregate =====
+                notification_placeholder.info("Processing Gold layer...")
+                gold_outputs = gold_aggregate(silver_outputs, output_dir=PROJECT_ROOT / "data" / "gold_layer", business_intent=business_question)
                 st.session_state["workflow_status"][2] = {"layer": "Gold layer", "state": "completed"}
                 workflow_status_placeholder.markdown(render_workflow_status_html(st.session_state["workflow_status"]), unsafe_allow_html=True)
-                notification_placeholder.success("Gold layer completed")
+                st.success(f"✅ Gold layer completed: {len(gold_outputs)} files written")
 
+                # ===== PHASE 8: Report =====
+                notification_placeholder.info("Generating report...")
                 report = create_report_insight(
-                    gold_outputs[0],
+                    gold_outputs,
                     report_path=PROJECT_ROOT / "reports",
                     business_question=business_question,
                     source_files=file_paths,
                 )
-                state = run_pipeline_phase("completed", file_paths, run_id)
 
                 st.session_state["profile_path"] = profile_path
                 st.session_state["bronze_sttm"] = bronze_sttm
@@ -218,26 +311,28 @@ with center_col:
                 st.session_state["silver_outputs"] = silver_outputs
                 st.session_state["gold_outputs"] = gold_outputs
                 st.session_state["report"] = report
-                st.session_state["state"] = state
-                notification_placeholder.success("Pipeline run complete")
+                notification_placeholder.success("✅ Pipeline run complete!")
+
             except Exception as exc:
                 notification_placeholder.error(f"Pipeline execution failed: {exc}")
+                st.error(f"**Error details:** {str(exc)}")
                 st.stop()
 
     st.markdown("</div>", unsafe_allow_html=True)
 
-# Only report display remains visible after the run.
+# Report display remains visible after the run
 if "report" in st.session_state:
+    st.divider()
     report = st.session_state["report"]
     analysis = report.get("analysis", {})
-    st.subheader("Business Question")
+    st.subheader("📊 Business Question")
     st.write(report.get("business_question"))
-    st.subheader("Report Insights")
+    st.subheader("💡 Report Insights")
     for item in report.get("insights", []):
         st.write("•", item)
 
     if analysis.get("yearly_sales_by_product"):
-        st.subheader("Yearly Sales by Product")
+        st.subheader("📈 Yearly Sales by Product")
         product_df = pd.DataFrame(analysis["yearly_sales_by_product"])
         if {"year", "product_name", "total_amount"}.issubset(set(product_df.columns)):
             product_df = product_df.rename(columns={"total_amount": "sales"})
@@ -245,7 +340,7 @@ if "report" in st.session_state:
             st.dataframe(product_table_df, use_container_width=True)
 
     if analysis.get("yearly_sales_by_location"):
-        st.subheader("Yearly Sales by Location")
+        st.subheader("📍 Yearly Sales by Location")
         location_df = pd.DataFrame(analysis["yearly_sales_by_location"])
         if {"year", "region", "city", "state", "total_amount"}.issubset(set(location_df.columns)):
             location_df = location_df.rename(columns={"total_amount": "sales"})
@@ -256,7 +351,7 @@ if "report" in st.session_state:
     if pdf_path.exists():
         with open(pdf_path, "rb") as f:
             st.download_button(
-                label="Download PDF Report",
+                label="📥 Download PDF Report",
                 data=f.read(),
                 file_name="report_insights.pdf",
                 mime="application/pdf",

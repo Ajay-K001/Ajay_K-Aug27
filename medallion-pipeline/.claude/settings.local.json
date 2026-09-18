@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit -m 'P2: Implement actual orchestrator that executes the pipeline *)"
+    ]
+  }
+}

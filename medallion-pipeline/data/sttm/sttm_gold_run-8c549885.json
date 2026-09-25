@@ -1,0 +1,161 @@
+{
+  "phase": "gold",
+  "business_intent": "what is the top 5 profitable prduct",
+  "objectives": [
+    "Join sales_data_silver with products_silver on product_id to attach product_name and category.",
+    "Aggregate total revenue per product by summing sales_data_silver.total_amount.",
+    "Compute average unit price per product for additional insight.",
+    "Rank products by revenue and retain top 5.",
+    "Add product-level metrics such as total quantity sold and number of transactions.",
+    "Create a KPI table with columns: product_id, product_name, category, total_revenue, total_quantity, avg_unit_price, rank."
+  ],
+  "rules": [
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "standard_price",
+      "target_column": "standard_price",
+      "data_type": "float",
+      "transformation_logic": "SUM(standard_price)"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "transaction_id",
+      "target_column": "transaction_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "transaction_date",
+      "target_column": "transaction_date",
+      "data_type": "datetime",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "quantity",
+      "target_column": "quantity",
+      "data_type": "integer",
+      "transformation_logic": "SUM(quantity) AS total_quantity"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "unit_price",
+      "target_column": "unit_price",
+      "data_type": "float",
+      "transformation_logic": "AVG(unit_price) AS avg_unit_price"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "total_amount",
+      "target_column": "total_amount",
+      "data_type": "float",
+      "transformation_logic": "SUM(total_amount) AS total_revenue"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "customer_segment",
+      "target_column": "customer_segment",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "payment_method",
+      "target_column": "payment_method",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "store_name",
+      "target_column": "store_name",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "region",
+      "target_column": "region",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "city",
+      "target_column": "city",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "state",
+      "target_column": "state",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    }
+  ],
+  "notes": [
+    "Use a left join from sales to products to preserve all sales records even if product metadata is missing.",
+    "Revenue should be calculated as sum(total_amount) to capture exact cash flow; avoid using quantity * unit_price to mitigate rounding errors.",
+    "Include a distinct count of transaction_id to provide a transaction volume metric.",
+    "Apply window function ROW_NUMBER() OVER (ORDER BY total_revenue DESC) to generate the top\u20115 ranking.",
+    "Materialize the KPI table in a partitioned format (e.g., by category) for efficient downstream analytics."
+  ]
+}

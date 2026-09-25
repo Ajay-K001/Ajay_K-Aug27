@@ -1,0 +1,161 @@
+{
+  "phase": "gold",
+  "business_intent": "what is the most revenue generating product and location",
+  "objectives": [
+    "Compute total revenue per product by joining sales and product tables.",
+    "Compute total revenue per location (city, state, region) by joining sales, product, and store tables.",
+    "Identify the product with the highest total revenue across all locations.",
+    "Identify the location with the highest total revenue across all products.",
+    "Generate a KPI table that aggregates revenue, quantity sold, and average unit price for each product-location pair.",
+    "Provide a monthly revenue trend per product and location for time\u2011series analysis."
+  ],
+  "rules": [
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "standard_price",
+      "target_column": "standard_price",
+      "data_type": "float",
+      "transformation_logic": "SUM(standard_price)"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "transaction_id",
+      "target_column": "transaction_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "transaction_date",
+      "target_column": "transaction_date",
+      "data_type": "datetime",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "quantity",
+      "target_column": "quantity",
+      "data_type": "integer",
+      "transformation_logic": "CAST(quantity AS BIGINT) AS quantity_sold"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "unit_price",
+      "target_column": "unit_price",
+      "data_type": "float",
+      "transformation_logic": "CAST(unit_price AS DECIMAL(12,2)) AS unit_price_usd"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "total_amount",
+      "target_column": "total_amount",
+      "data_type": "float",
+      "transformation_logic": "REPLACE WITH (quantity * unit_price) AS total_amount"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "customer_segment",
+      "target_column": "customer_segment",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "payment_method",
+      "target_column": "payment_method",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "store_name",
+      "target_column": "store_name",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "region",
+      "target_column": "region",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "city",
+      "target_column": "city",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "state",
+      "target_column": "state",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    }
+  ],
+  "notes": [
+    "Use a two\u2011stage join: first join sales_data_silver to products_silver on product_id, then join the result to stores_silver on store_id.",
+    "Revenue is calculated as `quantity * unit_price` to avoid potential discrepancies in the pre\u2011calculated total_amount column.",
+    "Partition the final Gold table by year-month to accelerate time\u2011based queries and enable efficient pruning during analytics.",
+    "Apply `COALESCE` on nullable numeric fields to avoid null propagation in aggregate calculations.",
+    "Store the aggregated KPI table in a columnar format (Parquet) with a schema that includes surrogate keys for product and store to simplify joins in downstream BI tools."
+  ]
+}

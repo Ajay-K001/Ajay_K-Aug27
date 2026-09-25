@@ -1,0 +1,161 @@
+{
+  "phase": "silver",
+  "business_intent": "Which product generating more income ?",
+  "objectives": [
+    "Deduplicate sales transactions by transaction_id to ensure one record per sale.",
+    "Parse transaction_date strings into proper timestamp type and normalize to UTC.",
+    "Cast quantity to integer and unit_price, total_amount to decimal(10,2) for accurate calculations.",
+    "Handle missing store_id in sales_data by flagging or imputing with a placeholder value.",
+    "Normalize product_name and category strings (trim, lower case, remove special characters).",
+    "Enrich sales records with product standard_price from products_bronze and store details from stores_bronze for downstream aggregation."
+  ],
+  "rules": [
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "lower(trim(regexp_replace(product_name, '\\\\W+', '')))"
+    },
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "lower(trim(category))"
+    },
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "standard_price",
+      "target_column": "standard_price",
+      "data_type": "float",
+      "transformation_logic": "cast_float"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "transaction_id",
+      "target_column": "transaction_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "transaction_date",
+      "target_column": "transaction_date",
+      "data_type": "string",
+      "transformation_logic": "to_timestamp(transaction_date, 'yyyy-MM-dd HH:mm:ss')"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "lower(trim(regexp_replace(product_name, '\\\\W+', '')))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "lower(trim(category))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "quantity",
+      "target_column": "quantity",
+      "data_type": "integer",
+      "transformation_logic": "cast(quantity as int)"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "unit_price",
+      "target_column": "unit_price",
+      "data_type": "float",
+      "transformation_logic": "cast(unit_price as decimal(10,2))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "total_amount",
+      "target_column": "total_amount",
+      "data_type": "float",
+      "transformation_logic": "cast(total_amount as decimal(10,2))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "customer_segment",
+      "target_column": "customer_segment",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "payment_method",
+      "target_column": "payment_method",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "store_name",
+      "target_column": "store_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "region",
+      "target_column": "region",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "city",
+      "target_column": "city",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "state",
+      "target_column": "state",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    }
+  ],
+  "notes": [
+    "Sales data contains 46 null store_id values out of 2000 rows, requiring special handling.",
+    "All parquet files report zero duplicate rows, so deduplication is only needed on sales transactions.",
+    "Transaction dates are stored as strings; proper parsing is essential for time\u2011based analytics.",
+    "No nulls in product or store tables, but string normalization is still necessary to avoid mismatches during joins.",
+    "Standard_price is float in products; converting to decimal will improve precision for revenue calculations."
+  ]
+}

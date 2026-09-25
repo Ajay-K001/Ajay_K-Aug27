@@ -1,0 +1,161 @@
+{
+  "phase": "silver",
+  "business_intent": "what is the most revenue generating product and location",
+  "objectives": [
+    "Deduplicate the sales data by removing any rows with duplicate transaction_id values.",
+    "Parse transaction_date from string to a proper timestamp and standardise the format to ISO 8601.",
+    "Cast quantity to a signed integer and unit_price, total_amount to decimal(10,2) for accurate arithmetic.",
+    "Handle missing store_id values by replacing them with a placeholder 'UNKNOWN_STORE' and flagging the row for review.",
+    "Normalize product_name and category strings by trimming whitespace, converting to title case, and removing non-alphanumeric characters.",
+    "Enrich sales records with store location details by joining on store_id and propagating region, city, and state columns."
+  ],
+  "rules": [
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "standard_price",
+      "target_column": "standard_price",
+      "data_type": "float",
+      "transformation_logic": "cast_float"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "transaction_id",
+      "target_column": "transaction_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "transaction_date",
+      "target_column": "transaction_date",
+      "data_type": "string",
+      "transformation_logic": "to_timestamp(col('transaction_date'), 'yyyy-MM-dd') or to_timestamp(col('transaction_date'), 'MM/dd/yyyy')"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "when(col('store_id').isNull(), lit('UNKNOWN_STORE')).otherwise(col('store_id'))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "trim(regexp_replace(col('product_name'), '\\\\W', ''))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "trim(regexp_replace(col('category'), '\\\\W', ''))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "quantity",
+      "target_column": "quantity",
+      "data_type": "integer",
+      "transformation_logic": "cast(col('quantity') as IntegerType)"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "unit_price",
+      "target_column": "unit_price",
+      "data_type": "float",
+      "transformation_logic": "cast(col('unit_price') as DecimalType(10,2))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "total_amount",
+      "target_column": "total_amount",
+      "data_type": "float",
+      "transformation_logic": "cast(col('total_amount') as DecimalType(10,2))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "customer_segment",
+      "target_column": "customer_segment",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "payment_method",
+      "target_column": "payment_method",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "store_name",
+      "target_column": "store_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "region",
+      "target_column": "region",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "city",
+      "target_column": "city",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "state",
+      "target_column": "state",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    }
+  ],
+  "notes": [
+    "There are 46 nulls in store_id within sales_data_bronze.parquet; these need imputation or exclusion.",
+    "All product and store tables have zero nulls and duplicates, simplifying joins.",
+    "total_amount is already present but should be recalculated as quantity * unit_price to ensure consistency.",
+    "transaction_date is stored as a string; its format varies (e.g., 'MM/DD/YYYY', 'YYYY-MM-DD'), requiring robust parsing.",
+    "The sales data has 2000 rows, making it feasible to perform in-memory transformations without performance bottlenecks."
+  ]
+}

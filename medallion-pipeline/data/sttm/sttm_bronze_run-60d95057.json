@@ -1,0 +1,162 @@
+{
+  "phase": "bronze",
+  "business_intent": "waht is the product generated more revanue",
+  "objectives": [
+    "Validate all foreign key relationships (product_id in sales_data must exist in products, store_id must exist in stores).",
+    "Transform transaction_date from string to ISO 8601 date.",
+    "Recalculate total_amount as quantity * unit_price and flag discrepancies.",
+    "Normalize customer_segment and payment_method to lower\u2011case for consistency.",
+    "Generate a revenue aggregation per product (sum of total_amount).",
+    "Create a derived column product_category by joining category from products to sales_data."
+  ],
+  "rules": [
+    {
+      "source_file": "products.csv",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "products.csv",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "products.csv",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "products.csv",
+      "source_column": "standard_price",
+      "target_column": "standard_price",
+      "data_type": "float",
+      "transformation_logic": "cast_float"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "transaction_id",
+      "target_column": "transaction_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "transaction_date",
+      "target_column": "transaction_date",
+      "data_type": "string",
+      "transformation_logic": "parse string to date format YYYY\u2011MM\u2011DD; if parsing fails, flag as error."
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "quantity",
+      "target_column": "quantity",
+      "data_type": "integer",
+      "transformation_logic": "cast_integer"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "unit_price",
+      "target_column": "unit_price",
+      "data_type": "float",
+      "transformation_logic": "cast_float"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "total_amount",
+      "target_column": "total_amount",
+      "data_type": "float",
+      "transformation_logic": "recompute as quantity * unit_price; if existing value differs > 0.01, set flag 'amount_mismatch'."
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "customer_segment",
+      "target_column": "customer_segment",
+      "data_type": "string",
+      "transformation_logic": "convert to lowercase; trim whitespace."
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "payment_method",
+      "target_column": "payment_method",
+      "data_type": "string",
+      "transformation_logic": "convert to lowercase; trim whitespace."
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "store_name",
+      "target_column": "store_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "region",
+      "target_column": "region",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "city",
+      "target_column": "city",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "state",
+      "target_column": "state",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    }
+  ],
+  "notes": [
+    "All source files contain no nulls; data completeness is high.",
+    "Standard_price in products.csv is not used in sales_data; consider cross\u2011checking unit_price against standard_price.",
+    "quantity is integer but may contain negative values; ensure they are positive.",
+    "transaction_id is unique but no timestamp; rely on transaction_date for ordering.",
+    "customer_segment and payment_method values are case\u2011sensitive; standardize for downstream analytics.",
+    "stores.csv has only 10 rows; ensure store_id mapping is exhaustive for sales_data."
+  ]
+}

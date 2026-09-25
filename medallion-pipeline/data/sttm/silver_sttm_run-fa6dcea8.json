@@ -1,0 +1,281 @@
+{
+  "phase": "silver",
+  "description": "LLM-guided data cleaning, deduplication, and standardization",
+  "business_intent": "What is the yearly sales per product and location?",
+  "source_to_target": {
+    "source_files": [
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\bronze_layer\\products_bronze.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\bronze_layer\\sales_data_bronze.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\bronze_layer\\stores_bronze.parquet"
+    ],
+    "source_layer": "bronze_layer",
+    "target_layer": "silver_layer",
+    "llm_analysis": {
+      "key_columns": [
+        "product_id",
+        "store_id",
+        "transaction_date"
+      ],
+      "transformations": [
+        {
+          "operation": "deduplicate",
+          "source": "sales_data_bronze.parquet",
+          "columns": [
+            "transaction_id"
+          ]
+        },
+        {
+          "operation": "clean_nulls",
+          "source": "sales_data_bronze.parquet",
+          "columns": [
+            "store_id"
+          ],
+          "strategy": "forward_fill"
+        },
+        {
+          "operation": "parse_date",
+          "source": "sales_data_bronze.parquet",
+          "column": "transaction_date",
+          "format": "yyyy-MM-dd"
+        },
+        {
+          "operation": "type_cast",
+          "source": "sales_data_bronze.parquet",
+          "columns": {
+            "quantity": "int",
+            "unit_price": "decimal(10,2)",
+            "total_amount": "decimal(10,2)"
+          }
+        },
+        {
+          "operation": "normalize_string",
+          "source": "products_bronze.parquet",
+          "columns": [
+            "product_name",
+            "category"
+          ]
+        },
+        {
+          "operation": "normalize_string",
+          "source": "stores_bronze.parquet",
+          "columns": [
+            "store_name",
+            "region",
+            "city",
+            "state"
+          ]
+        }
+      ],
+      "columns_to_standardize": [
+        "product_name",
+        "category",
+        "store_name",
+        "region",
+        "city",
+        "state"
+      ],
+      "date_columns": [
+        {
+          "file": "sales_data_bronze.parquet",
+          "column": "transaction_date",
+          "format": "yyyy-MM-dd"
+        }
+      ],
+      "numeric_columns": [
+        {
+          "file": "sales_data_bronze.parquet",
+          "columns": [
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ],
+          "type": "decimal(10,2)"
+        }
+      ],
+      "data_quality_checks": [
+        {
+          "check": "not_null",
+          "columns": [
+            "transaction_id",
+            "transaction_date",
+            "product_id",
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ]
+        },
+        {
+          "check": "unique",
+          "columns": [
+            "transaction_id"
+          ]
+        },
+        {
+          "check": "range",
+          "column": "quantity",
+          "min": 1,
+          "max": null
+        },
+        {
+          "check": "range",
+          "column": "unit_price",
+          "min": 0.01,
+          "max": null
+        },
+        {
+          "check": "range",
+          "column": "total_amount",
+          "min": 0.01,
+          "max": null
+        },
+        {
+          "check": "join_consistency",
+          "left_file": "sales_data_bronze.parquet",
+          "right_file": "products_bronze.parquet",
+          "left_key": "product_id",
+          "right_key": "product_id",
+          "expected_match_rate": 1.0
+        },
+        {
+          "check": "join_consistency",
+          "left_file": "sales_data_bronze.parquet",
+          "right_file": "stores_bronze.parquet",
+          "left_key": "store_id",
+          "right_key": "store_id",
+          "expected_match_rate": 0.95
+        }
+      ],
+      "business_context": "The business question requires accurate yearly sales per product and location. Therefore, we ensure:\n1. All transaction dates are parsed consistently to allow year extraction.\n2. Product and store identifiers are unique and non\u2011null for correct joins.\n3. Quantities and prices are validated to prevent negative or zero values that would distort sales totals.\n4. String fields that influence product or location names are normalized (trim, case, diacritics removal) to avoid duplicate records due to formatting differences.\n5. Missing store_id values are forward\u2011filled from the most recent transaction to maintain continuity in location aggregation."
+    },
+    "mapping": [
+      {
+        "source": "bronze_parquet",
+        "target": "silver_parquet",
+        "operation": "clean_and_standardize",
+        "transformations": [
+          {
+            "operation": "deduplicate",
+            "source": "sales_data_bronze.parquet",
+            "columns": [
+              "transaction_id"
+            ]
+          },
+          {
+            "operation": "clean_nulls",
+            "source": "sales_data_bronze.parquet",
+            "columns": [
+              "store_id"
+            ],
+            "strategy": "forward_fill"
+          },
+          {
+            "operation": "parse_date",
+            "source": "sales_data_bronze.parquet",
+            "column": "transaction_date",
+            "format": "yyyy-MM-dd"
+          },
+          {
+            "operation": "type_cast",
+            "source": "sales_data_bronze.parquet",
+            "columns": {
+              "quantity": "int",
+              "unit_price": "decimal(10,2)",
+              "total_amount": "decimal(10,2)"
+            }
+          },
+          {
+            "operation": "normalize_string",
+            "source": "products_bronze.parquet",
+            "columns": [
+              "product_name",
+              "category"
+            ]
+          },
+          {
+            "operation": "normalize_string",
+            "source": "stores_bronze.parquet",
+            "columns": [
+              "store_name",
+              "region",
+              "city",
+              "state"
+            ]
+          }
+        ],
+        "key_columns": [
+          "product_id",
+          "store_id",
+          "transaction_date"
+        ],
+        "columns_to_standardize": [
+          "product_name",
+          "category",
+          "store_name",
+          "region",
+          "city",
+          "state"
+        ],
+        "date_columns": [
+          {
+            "file": "sales_data_bronze.parquet",
+            "column": "transaction_date",
+            "format": "yyyy-MM-dd"
+          }
+        ],
+        "quality_checks": [
+          {
+            "check": "not_null",
+            "columns": [
+              "transaction_id",
+              "transaction_date",
+              "product_id",
+              "quantity",
+              "unit_price",
+              "total_amount"
+            ]
+          },
+          {
+            "check": "unique",
+            "columns": [
+              "transaction_id"
+            ]
+          },
+          {
+            "check": "range",
+            "column": "quantity",
+            "min": 1,
+            "max": null
+          },
+          {
+            "check": "range",
+            "column": "unit_price",
+            "min": 0.01,
+            "max": null
+          },
+          {
+            "check": "range",
+            "column": "total_amount",
+            "min": 0.01,
+            "max": null
+          },
+          {
+            "check": "join_consistency",
+            "left_file": "sales_data_bronze.parquet",
+            "right_file": "products_bronze.parquet",
+            "left_key": "product_id",
+            "right_key": "product_id",
+            "expected_match_rate": 1.0
+          },
+          {
+            "check": "join_consistency",
+            "left_file": "sales_data_bronze.parquet",
+            "right_file": "stores_bronze.parquet",
+            "left_key": "store_id",
+            "right_key": "store_id",
+            "expected_match_rate": 0.95
+          }
+        ]
+      }
+    ]
+  }
+}

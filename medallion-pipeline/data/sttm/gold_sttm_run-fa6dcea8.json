@@ -1,0 +1,226 @@
+{
+  "phase": "gold",
+  "description": "LLM-guided business KPI aggregation and dimensional modeling",
+  "business_intent": "What is the yearly sales per product and location?",
+  "source_to_target": {
+    "source_files": [
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\products_silver.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\sales_data_silver.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\stores_silver.parquet"
+    ],
+    "source_layer": "silver_layer",
+    "target_layer": "gold_layer",
+    "llm_analysis": {
+      "kpi_metrics": [
+        "revenue_by_product_and_location",
+        "quantity_sold_by_product_and_location",
+        "average_unit_price_by_product_and_location",
+        "yearly_revenue_by_product",
+        "yearly_revenue_by_location"
+      ],
+      "dimensions": [
+        "product_id",
+        "product_name",
+        "category",
+        "store_id",
+        "store_name",
+        "region",
+        "city",
+        "state",
+        "year"
+      ],
+      "transformations": [
+        {
+          "name": "join_sales_with_stores",
+          "operation": "inner_join",
+          "on": [
+            "store_id"
+          ],
+          "tables": [
+            "sales_data_silver.parquet",
+            "stores_silver.parquet"
+          ]
+        },
+        {
+          "name": "extract_year",
+          "operation": "date_part",
+          "column": "transaction_date",
+          "part": "year",
+          "output_column": "year"
+        },
+        {
+          "name": "calculate_revenue",
+          "operation": "multiply",
+          "columns": [
+            "quantity",
+            "unit_price"
+          ],
+          "output_column": "revenue"
+        },
+        {
+          "name": "aggregate_kpis",
+          "operation": "group_by",
+          "group_by_columns": [
+            "product_id",
+            "product_name",
+            "category",
+            "store_id",
+            "store_name",
+            "region",
+            "city",
+            "state",
+            "year"
+          ],
+          "aggregations": [
+            {
+              "function": "sum",
+              "column": "revenue",
+              "alias": "total_revenue"
+            },
+            {
+              "function": "sum",
+              "column": "quantity",
+              "alias": "total_quantity"
+            },
+            {
+              "function": "avg",
+              "column": "unit_price",
+              "alias": "avg_unit_price"
+            }
+          ]
+        }
+      ],
+      "data_quality_checks": [
+        {
+          "name": "non_negative_revenue",
+          "check": "total_revenue >= 0",
+          "severity": "error"
+        },
+        {
+          "name": "positive_quantity",
+          "check": "total_quantity > 0",
+          "severity": "warning"
+        },
+        {
+          "name": "consistent_product_info",
+          "check": "product_name and category match across sales and products tables",
+          "severity": "error"
+        },
+        {
+          "name": "store_existence",
+          "check": "store_id exists in stores_silver.parquet",
+          "severity": "error"
+        }
+      ],
+      "business_context": "The business question asks for yearly sales per product and location. The KPIs above provide total revenue, quantity sold, and average unit price broken down by product attributes and store/location attributes for each calendar year. These aggregations enable the business to see which products perform best in which regions, identify high\u2011performing stores, and assess pricing effectiveness over time."
+    },
+    "mapping": [
+      {
+        "source": "silver_parquet",
+        "target": "gold_parquet",
+        "operation": "aggregate_and_model",
+        "transformations": [
+          {
+            "name": "join_sales_with_stores",
+            "operation": "inner_join",
+            "on": [
+              "store_id"
+            ],
+            "tables": [
+              "sales_data_silver.parquet",
+              "stores_silver.parquet"
+            ]
+          },
+          {
+            "name": "extract_year",
+            "operation": "date_part",
+            "column": "transaction_date",
+            "part": "year",
+            "output_column": "year"
+          },
+          {
+            "name": "calculate_revenue",
+            "operation": "multiply",
+            "columns": [
+              "quantity",
+              "unit_price"
+            ],
+            "output_column": "revenue"
+          },
+          {
+            "name": "aggregate_kpis",
+            "operation": "group_by",
+            "group_by_columns": [
+              "product_id",
+              "product_name",
+              "category",
+              "store_id",
+              "store_name",
+              "region",
+              "city",
+              "state",
+              "year"
+            ],
+            "aggregations": [
+              {
+                "function": "sum",
+                "column": "revenue",
+                "alias": "total_revenue"
+              },
+              {
+                "function": "sum",
+                "column": "quantity",
+                "alias": "total_quantity"
+              },
+              {
+                "function": "avg",
+                "column": "unit_price",
+                "alias": "avg_unit_price"
+              }
+            ]
+          }
+        ],
+        "kpi_targets": [
+          "revenue_by_product_and_location",
+          "quantity_sold_by_product_and_location",
+          "average_unit_price_by_product_and_location",
+          "yearly_revenue_by_product",
+          "yearly_revenue_by_location"
+        ],
+        "dimensions": [
+          "product_id",
+          "product_name",
+          "category",
+          "store_id",
+          "store_name",
+          "region",
+          "city",
+          "state",
+          "year"
+        ],
+        "quality_checks": [
+          {
+            "name": "non_negative_revenue",
+            "check": "total_revenue >= 0",
+            "severity": "error"
+          },
+          {
+            "name": "positive_quantity",
+            "check": "total_quantity > 0",
+            "severity": "warning"
+          },
+          {
+            "name": "consistent_product_info",
+            "check": "product_name and category match across sales and products tables",
+            "severity": "error"
+          },
+          {
+            "name": "store_existence",
+            "check": "store_id exists in stores_silver.parquet",
+            "severity": "error"
+          }
+        ]
+      }
+    ]
+  }
+}

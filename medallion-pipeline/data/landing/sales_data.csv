@@ -1,55 +1,2001 @@
 transaction_id,transaction_date,store_id,product_id,product_name,category,quantity,unit_price,total_amount,customer_segment,payment_method
-T1001,2024-01-15,S01,P001,Wireless Headphones,Electronics,2,79.99,159.98,Loyal,Credit Card
-T1002,01/15/2024,S02,P002,USB-C Cable, electronics,3,12.50,37.50,Std,Debit Card
-T1003,01-16-2024,S01,P003,Smart Watch,ELECTRONICS,1,129.99,129.99,Premium,Mobile Wallet
-T1004,2024-01-17,,P004,Cotton T-Shirt,Clothing,2,24.99,49.98,Bgt,Cash
-T1005,01/18/2024,S03,P005,Running Shoes,Clothing,1,89.95,89.95,Standard,Credit Card
-T1006,01-19-2024,S02,P006,Coffee Maker,Home & Kitchen,1,64.50,64.50,Loyal,Debit Card
-T1007,2024-01-20,S04,P007,LED Desk Lamp,Home & Kitchen,2,28.75,57.50,Premium,Mobile Wallet
-T1008,01/21/2024,S01,P008,Office Chair,Home & Kitchen,1,149.00,149.00,Std,Credit Card
-T1009,01-22-2024,S03,P009,Bluetooth Speaker,Elec.,2,45.00,90.00,Budget,Cash
-T1010,2024-01-23,S02,P010,Notebook Set,Stationery,4,8.25,33.00,Loyal,Debit Card
-T1011,01/24/2024,S04,P011,Mechanical Keyboard,Electronics,1,99.99,99.99,Prem,Credit Card
-T1012,01-25-2024,,P012,Water Bottle,Sports & Outdoors,3,15.00,45.00,Std,Mobile Wallet
-T1013,2024-01-26,S01,P013,Backpack,Sports & Outdoors,1,54.95,54.95,Standard,Credit Card
-T1014,01/27/2024,S03,P014,Air Fryer,Home & Kitchen,1,119.99,119.99,Premium,Debit Card
-T1015,01-28-2024,S02,P015,Jeans,Clothing,2,49.50,99.00,Bgt,Cash
-T1016,2024-01-29,S04,P016,Phone Case,Electronics,3,18.99,56.97,Loyal,Mobile Wallet
-T1017,01/30/2024,S01,P017,Desk Organizer,Stationery,2,11.49,22.98,Standard,Credit Card
-T1018,01-31-2024,S03,P018,Yoga Mat,Sports & Outdoors,1,32.00,32.00,Prem,Debit Card
-T1019,2024-02-01,S02,P019,Tablet Stand,Elec.,1,39.99,39.99,Std,Mobile Wallet
-T1020,02/02/2024,S04,P020,Winter Jacket,Clothing,1,135.00,135.00,Premium,Credit Card
-T1021,02-03-2024,S01,P001,Wireless Headphones,Electronics,1,79.99,79.99,Loyal,Debit Card
-T1022,2024-02-04,,P002,USB-C Cable,electronics,2,12.50,25.00,Budget,Cash
-T1023,02/05/2024,S03,P003,Smart Watch,ELECTRONICS,1,129.99,129.99,Prem,Mobile Wallet
-T1024,02-06-2024,S02,P004,Cotton T-Shirt,Clothing,3,24.99,74.97,Std,Credit Card
-T1025,2024-02-07,S04,P005,Running Shoes,Clothing,2,89.95,179.90,Standard,Debit Card
-T1026,02/08/2024,S01,P006,Coffee Maker,Home & Kitchen,1,64.50,64.50,Loyal,Mobile Wallet
-T1027,02-09-2024,S03,P007,LED Desk Lamp,Home & Kitchen,1,28.75,28.75,Bgt,Cash
-T1028,2024-02-10,S02,P008,Office Chair,Home & Kitchen,1,149.00,149.00,Premium,Credit Card
-T1029,02/11/2024,S04,P009,Bluetooth Speaker,Elec.,1,45.00,45.00,Std,Debit Card
-T1030,02-12-2024,S01,P010,Notebook Set,Stationery,5,8.25,41.25,Budget,Cash
-T1031,2024-02-13,S03,P011,Mechanical Keyboard,Electronics,2,99.99,199.98,Prem,Credit Card
-T1032,02/14/2024,,P012,Water Bottle,Sports & Outdoors,1,15.00,15.00,Loyal,Mobile Wallet
-T1033,02-15-2024,S02,P013,Backpack,Sports & Outdoors,2,54.95,109.90,Standard,Debit Card
-T1034,2024-02-16,S04,P014,Air Fryer,Home & Kitchen,1,119.99,119.99,Premium,Credit Card
-T1035,02/17/2024,S01,P015,Jeans,Clothing,1,49.50,49.50,Bgt,Cash
-T1036,02-18-2024,S03,P016,Phone Case,Electronics,-1,18.99,-18.99,Std,Mobile Wallet
-T1037,2024-02-19,S02,P017,Desk Organizer,Stationery,3,11.49,34.47,Loyal,Credit Card
-T1038,02/20/2024,S04,P018,Yoga Mat,Sports & Outdoors,-1,32.00,-32.00,Prem,Debit Card
-T1039,02-21-2024,S01,P019,Tablet Stand,Elec.,2,39.99,79.98,Standard,Mobile Wallet
-T1040,2024-02-22,,P020,Winter Jacket,Clothing,-1,135.00,-135.00,Budget,Credit Card
-T1041,02/23/2024,S03,P001,Wireless Headphones,Electronics,1,79.99,79.99,Loyal,Debit Card
-T1042,02-24-2024,S02,P002,USB-C Cable,electronics,4,12.50,50.00,Std,Cash
-T1043,2024-02-25,S04,P003,Smart Watch,ELECTRONICS,1,129.99,129.99,Premium,Mobile Wallet
-T1044,02/26/2024,S01,P004,Cotton T-Shirt,Clothing,2,24.99,49.98,Bgt,Credit Card
-T1045,02-27-2024,S03,P005,Running Shoes,Clothing,1,89.95,89.95,Standard,Debit Card
-T1001,2024-01-15,S01,P001,Wireless Headphones,Electronics,2,79.99,159.98,Loyal,Credit Card
-T1008,01/21/2024,S01,P008,Office Chair,Home & Kitchen,1,149.00,149.00,Std,Credit Card
-T1020,02-02-2024,S04,P020,Winter Jacket,Clothing,1,135.00,135.00,Premium,Credit Card
-T1036,2024-02-18,S03,P016,Phone Case,Electronics,-1,18.99,-18.99,Std,Mobile Wallet
-T1046,02/28/2024,,P006,Coffee Maker,Home & Kitchen,1,64.50,64.50,Budget,Cash
-T1047,02-29-2024,S02,P007,LED Desk Lamp,Home & Kitchen,2,28.75,57.50,Loyal,Debit Card
-T1048,2024-03-01,S04,P011,Mechanical Keyboard,Elec.,1,99.99,99.99,Prem,Credit Card
-T1049,03/02/2024,S01,P013,Backpack,Sports & Outdoors,1,54.95,54.95,Std,Mobile Wallet
-T1050,03-03-2024,S03,P018,Yoga Mat,Sports & Outdoors,2,32.00,64.00,Standard,Cash
+T3001,2022-03-10,S13,P026,Nespresso Vertuo,Home & Kitchen,2,182.21,364.42,Standard,Mobile Wallet
+T3002,08/04/2023,S18,P045,Olaplex No.3 Treatment,Beauty,1,29.26,29.26,Standard,Mobile Wallet
+T3003,2024-06-22,S05,P014,Nike Air Max 270,Apparel,4,132.96,531.84,Premium,Mobile Wallet
+T3004,2022-10-01,S09,P003,AirPods Pro 2nd Gen,Electronics,5,242.64,1213.2,Budget,Gift Card
+T3005,2022/03/24,S15,P039,Foam Roller,Sports,1,34.94,34.94,Loyal,Gift Card
+T3006,2024-08-02,S04,P003,AirPods Pro 2nd Gen,Electronics,1,245.91,245.91,Budget,Credit Card
+T3007,2023-04-13,S01,P040,Jump Rope Speed,Sports,4,19.92,79.68,Loyal,Mobile Wallet
+T3008,01/29/2024,S25,P026,Nespresso Vertuo,Home & Kitchen,2,178.7,357.4,Loyal,Gift Card
+T3009,2022/04/01,S04,P008,LG 27 4K Monitor,Electronics,1,441.66,441.66,Loyal,Debit Card
+T3010,01-03-2024,S25,P021,Carhartt Work Pants,Apparel,4,72.36,289.44,Loyal,Credit Card
+T3011,2023/06/22,S19,P001,iPhone 15 Pro,Electronics,1,1096.68,1096.68,Budget,Mobile Wallet
+T3012,2024/07/23,S03,P035,Bowflex SelectTech Dumbbells,Sports,2,415.11,830.22,Loyal,Cash
+T3013,06/09/2024,S21,P015,Patagonia Fleece Jacket,Apparel,6,178.08,1068.48,Loyal,Mobile Wallet
+T3014,05-02-2024,S03,P049,Staples Desk Organiser,Books & Office,4,40.14,160.56,Standard,Mobile Wallet
+T3015,11/08/2024,S14,P017,Adidas Running Shorts,Apparel,3,40.11,120.33,Standard,Mobile Wallet
+T3016,06/22/2022,S20,P039,Foam Roller,Sports,6,35.94,215.64,Standard,Credit Card
+T3017,23-11-2024,S10,P045,Olaplex No.3 Treatment,Beauty,2,29.16,58.32,Budget,Debit Card
+T3018,2023-04-14,S22,P023,Instant Pot Duo 7in1,Home & Kitchen,4,97.02,388.08,Standard,Debit Card
+T3019,27-08-2024,S07,P029,Dyson V15 Vacuum,Home & Kitchen,3,720.91,2162.73,Loyal,Credit Card
+T3020,03-06-2022,S03,P020,New Balance 990,Apparel,5,170.19,850.95,Standard,Debit Card
+T3021,2023/03/08,S13,P026,Nespresso Vertuo,Home & Kitchen,2,177.42,354.84,Budget,Mobile Wallet
+T3022,2022/10/21,S06,P046,Tatcha Rice Wash Cleanser,Beauty,3,37.62,112.86,Loyal,Mobile Wallet
+T3023,2022/05/03,S16,P041,CeraVe Moisturizing Cream,Beauty,6,18.68,112.08,Premium,Credit Card
+T3024,15-12-2022,S03,P032,French Press Coffee,Home & Kitchen,3,30.66,91.98,Premium,Gift Card
+T3025,2022-01-19,S06,P017,Adidas Running Shorts,Apparel,2,40.68,81.36,Standard,Gift Card
+T3026,08/02/2022,S10,P049,Staples Desk Organiser,Books & Office,2,41.47,82.94,Loyal,Credit Card
+T3027,04/12/2023,S09,P018,Under Armour T-Shirt,Apparel,6,34.97,209.82,Standard,Gift Card
+T3028,2022-10-07,S04,P044,Neutrogena SPF 50 Sunscreen,Beauty,6,13.71,82.26,Premium,Gift Card
+T3029,11/08/2024,S12,P011,Webcam 4K,Electronics,6,88.96,533.76,Standard,Credit Card
+T3030,2024/03/16,S14,P041,CeraVe Moisturizing Cream,Beauty,2,18.89,37.78,Premium,Debit Card
+T3031,2024-11-04,S04,P044,Neutrogena SPF 50 Sunscreen,Beauty,2,14.2,28.4,Loyal,Debit Card
+T3032,11-01-2023,S09,P024,KitchenAid Stand Mixer,Home & Kitchen,3,386.5,1159.5,Loyal,Debit Card
+T3033,2023-02-07,S18,P019,Columbia Rain Jacket,Apparel,3,148.97,446.91,Standard,Debit Card
+T3034,2024/01/18,S11,P021,Carhartt Work Pants,Apparel,6,69.72,418.32,Standard,Gift Card
+T3035,2024/05/27,S23,P010,Mechanical Keyboard,Electronics,6,145.71,874.26,Budget,Gift Card
+T3036,04/18/2024,S08,P050,HP 65XL Ink Cartridge,Books & Office,2,35.41,70.82,Standard,Debit Card
+T3037,04/14/2022,S14,P007,Dell XPS 15,Electronics,1,1522.86,1522.86,Loyal,Cash
+T3038,2022-11-26,S06,P017,Adidas Running Shorts,Apparel,5,41.25,206.25,Budget,Mobile Wallet
+T3039,2023-11-10,S08,P038,Resistance Bands Set,Sports,3,30.13,90.39,Standard,Gift Card
+T3040,08/11/2024,S19,P047,Atomic Habits Book,Books & Office,4,18.74,74.96,Loyal,Debit Card
+T3041,2024-12-10,S06,P016,Champion Hoodie,Apparel,6,54.48,326.88,Loyal,Debit Card
+T3042,04-05-2023,S23,P044,Neutrogena SPF 50 Sunscreen,Beauty,4,14.01,56.04,Standard,Gift Card
+T3043,01-02-2022,S04,P013,Levis 501 Jeans,Apparel,6,87.03,522.18,Loyal,Credit Card
+T3044,06/01/2023,S09,P012,Portable SSD 1TB,Electronics,6,108.93,653.58,Standard,Credit Card
+T3045,2022-08-20,S05,P025,Vitamix 5200 Blender,Home & Kitchen,6,447.43,2684.58,Premium,Cash
+T3046,07/11/2024,S03,P039,Foam Roller,Sports,4,33.99,135.96,Loyal,Credit Card
+T3047,2022-02-06,S07,P012,Portable SSD 1TB,Electronics,2,109.71,219.42,Budget,Credit Card
+T3048,12-07-2023,S23,P006,iPad Pro 12.9,Electronics,6,1099.53,6597.18,Standard,Cash
+T3049,17-05-2022,S17,P018,Under Armour T-Shirt,Apparel,2,34.13,68.26,Premium,Cash
+T3050,2024-09-24,S20,P040,Jump Rope Speed,Sports,2,19.73,39.46,Standard,Credit Card
+T3051,2024/12/26,S24,P008,LG 27 4K Monitor,Electronics,1,446.65,446.65,Budget,Cash
+T3052,24-02-2024,S20,P016,Champion Hoodie,Apparel,6,55.7,334.2,Budget,Debit Card
+T3053,2024-02-13,S15,P018,Under Armour T-Shirt,Apparel,6,35.32,211.92,Premium,Gift Card
+T3054,2024-10-27,S14,P009,Logitech MX Master 3,Electronics,2,100.38,200.76,Premium,Credit Card
+T3055,09-08-2022,S07,P014,Nike Air Max 270,Apparel,6,132.75,796.5,Loyal,Debit Card
+T3056,2022/04/05,S10,P045,Olaplex No.3 Treatment,Beauty,2,28.74,57.48,Budget,Credit Card
+T3057,2024-05-20,S10,P034,TRX Suspension Trainer,Sports,3,155.68,467.04,Premium,Gift Card
+T3058,09/05/2022,S16,P017,Adidas Running Shorts,Apparel,4,39.21,156.84,Standard,Mobile Wallet
+T3059,06/18/2022,S21,P017,Adidas Running Shorts,Apparel,2,40.27,80.54,Loyal,Gift Card
+T3060,2024-10-20,S03,P034,TRX Suspension Trainer,Sports,2,152.16,304.32,Standard,Mobile Wallet
+T3061,2023-02-12,S01,P006,iPad Pro 12.9,Electronics,4,1074.77,4299.08,Loyal,Credit Card
+T3062,06/08/2022,S07,P020,New Balance 990,Apparel,1,171.79,171.79,Loyal,Credit Card
+T3063,2023/01/22,S01,P021,Carhartt Work Pants,Apparel,2,69.56,139.12,Standard,Mobile Wallet
+T3064,12/22/2024,S07,P023,Instant Pot Duo 7in1,Home & Kitchen,3,98.04,294.12,Loyal,Gift Card
+T3065,23-09-2023,S16,P046,Tatcha Rice Wash Cleanser,Beauty,2,38.7,77.4,Premium,Credit Card
+T3066,13-06-2022,S05,P023,Instant Pot Duo 7in1,Home & Kitchen,2,100.48,200.96,Standard,Debit Card
+T3067,17-01-2023,S25,P045,Olaplex No.3 Treatment,Beauty,6,27.39,164.34,Budget,Debit Card
+T3068,2023/10/06,S06,P003,AirPods Pro 2nd Gen,Electronics,6,244.34,1466.04,Standard,Gift Card
+T3069,06/29/2024,S09,P025,Vitamix 5200 Blender,Home & Kitchen,1,469.51,469.51,Premium,Cash
+T3070,05-03-2022,S12,P001,iPhone 15 Pro,Electronics,4,1094.57,4378.28,Standard,Mobile Wallet
+T3071,14-01-2024,S22,P009,Logitech MX Master 3,Electronics,2,99.29,198.58,Loyal,Debit Card
+T3072,17-02-2024,S05,P036,CamelBak Hydration Pack,Sports,3,89.47,268.41,Premium,Mobile Wallet
+T3073,2022-09-17,S03,P042,Dyson Airwrap Styler,Beauty,4,624.22,2496.88,Loyal,Mobile Wallet
+T3074,2024-06-30,S12,P005,MacBook Air M2,Electronics,5,1360.51,6802.55,Premium,Credit Card
+T3075,2024/08/22,S24,P047,Atomic Habits Book,Books & Office,1,19.11,19.11,Premium,Debit Card
+T3076,2023/03/06,S08,P039,Foam Roller,Sports,2,36.7,73.4,Standard,Gift Card
+T3077,2022/05/08,S02,P047,Atomic Habits Book,Books & Office,3,18.51,55.53,Standard,Mobile Wallet
+T3078,17-01-2022,S19,P019,Columbia Rain Jacket,Apparel,3,153.86,461.58,Standard,Gift Card
+T3079,2023-09-03,S14,P043,La Mer Moisturizer 1oz,Beauty,6,183.36,1100.16,Budget,Mobile Wallet
+T3080,16-01-2023,S20,P017,Adidas Running Shorts,Apparel,3,40.33,120.99,Loyal,Debit Card
+T3081,11-05-2022,S01,P046,Tatcha Rice Wash Cleanser,Beauty,2,38.47,76.94,Budget,Cash
+T3082,26-08-2023,S12,P017,Adidas Running Shorts,Apparel,2,38.82,77.64,Budget,Cash
+T3083,2024/09/14,S11,P012,Portable SSD 1TB,Electronics,5,107.93,539.65,Loyal,Mobile Wallet
+T3084,29-09-2024,S23,P008,LG 27 4K Monitor,Electronics,4,471.96,1887.84,Standard,Debit Card
+T3085,07/16/2024,S08,P006,iPad Pro 12.9,Electronics,6,1133.77,6802.62,Loyal,Mobile Wallet
+T3086,2024/02/14,S11,P015,Patagonia Fleece Jacket,Apparel,1,176.27,176.27,Budget,Debit Card
+T3087,2024/11/30,S15,P017,Adidas Running Shorts,Apparel,3,40.42,121.26,Budget,Cash
+T3088,2023/03/11,S20,P011,Webcam 4K,Electronics,2,90.75,181.5,Budget,Mobile Wallet
+T3089,2022/08/17,S17,P044,Neutrogena SPF 50 Sunscreen,Beauty,4,14.24,56.96,Premium,Mobile Wallet
+T3090,2023/07/15,S15,P044,Neutrogena SPF 50 Sunscreen,Beauty,2,13.71,27.42,Standard,Credit Card
+T3091,2023-01-01,S04,P009,Logitech MX Master 3,Electronics,5,100.43,502.15,Loyal,Gift Card
+T3092,2024-01-31,S08,P009,Logitech MX Master 3,Electronics,3,97.15,291.45,Loyal,Credit Card
+T3093,25-08-2022,S07,P039,Foam Roller,Sports,2,35.39,70.78,Budget,Cash
+T3094,02/23/2024,S11,P023,Instant Pot Duo 7in1,Home & Kitchen,2,99.33,198.66,Premium,Debit Card
+T3095,29-08-2024,S10,P026,Nespresso Vertuo,Home & Kitchen,3,178.5,535.5,Standard,Mobile Wallet
+T3096,2024-06-18,S16,P001,iPhone 15 Pro,Electronics,1,1089.43,1089.43,Premium,Mobile Wallet
+T3097,07-07-2023,S23,P024,KitchenAid Stand Mixer,Home & Kitchen,6,368.7,2212.2,Standard,Cash
+T3098,2022-06-08,S13,P017,Adidas Running Shorts,Apparel,2,40.73,81.46,Premium,Mobile Wallet
+T3099,06/14/2023,S22,P006,iPad Pro 12.9,Electronics,2,1076.8,2153.6,Loyal,Credit Card
+T3100,04-01-2024,S09,P036,CamelBak Hydration Pack,Sports,5,90.15,450.75,Standard,Debit Card
+T3101,2024-12-09,S24,P032,French Press Coffee,Home & Kitchen,2,29.5,59.0,Premium,Debit Card
+T3102,01-07-2022,S16,P023,Instant Pot Duo 7in1,Home & Kitchen,2,97.47,194.94,Loyal,Cash
+T3103,2022-11-03,S08,P004,Sony WH-1000XM5,Electronics,3,351.57,1054.71,Loyal,Credit Card
+T3104,11/12/2023,S07,P044,Neutrogena SPF 50 Sunscreen,Beauty,3,14.12,42.36,Loyal,Mobile Wallet
+T3105,08/16/2024,S09,P030,Robot Vacuum iRobot,Home & Kitchen,4,366.46,1465.84,Standard,Gift Card
+T3106,2022-10-11,S11,P014,Nike Air Max 270,Apparel,4,134.25,537.0,Loyal,Credit Card
+T3107,2022-05-08,S14,P018,Under Armour T-Shirt,Apparel,1,34.15,34.15,Premium,Credit Card
+T3108,07/10/2024,S24,P002,Samsung Galaxy S24 Ultra,Electronics,3,1240.52,3721.56,Budget,Mobile Wallet
+T3109,09-02-2023,S06,P028,Cast Iron Skillet 12in,Home & Kitchen,4,49.27,197.08,Loyal,Cash
+T3110,23-01-2024,S20,P020,New Balance 990,Apparel,1,178.67,178.67,Loyal,Gift Card
+T3111,2022/03/25,S18,P018,Under Armour T-Shirt,Apparel,4,36.04,144.16,Premium,Debit Card
+T3112,2023-05-16,S21,P011,Webcam 4K,Electronics,4,93.36,373.44,Loyal,Debit Card
+T3113,2023/11/08,S18,P050,HP 65XL Ink Cartridge,Books & Office,1,35.84,35.84,Standard,Gift Card
+T3114,25-08-2024,S15,P034,TRX Suspension Trainer,Sports,2,152.21,304.42,Budget,Debit Card
+T3115,02/05/2024,S04,P039,Foam Roller,Sports,2,34.13,68.26,Loyal,Gift Card
+T3116,07/17/2022,S14,P038,Resistance Bands Set,Sports,6,29.79,178.74,Standard,Gift Card
+T3117,2023/03/21,S07,P039,Foam Roller,Sports,5,36.03,180.15,Standard,Gift Card
+T3118,23-05-2022,S11,P011,Webcam 4K,Electronics,3,92.14,276.42,Loyal,Gift Card
+T3119,23-05-2022,S24,P007,Dell XPS 15,Electronics,4,1538.78,6155.12,Budget,Debit Card
+T3120,2022-07-06,S10,P040,Jump Rope Speed,Sports,1,20.22,20.22,Budget,Debit Card
+T3121,10/20/2024,S18,P018,Under Armour T-Shirt,Apparel,1,34.34,34.34,Standard,Debit Card
+T3122,10-08-2024,S17,P002,Samsung Galaxy S24 Ultra,Electronics,1,1210.25,1210.25,Budget,Gift Card
+T3123,28-10-2023,S16,P048,Moleskine Notebook,Books & Office,1,25.46,25.46,Loyal,Cash
+T3124,03/24/2022,S22,P045,Olaplex No.3 Treatment,Beauty,1,28.6,28.6,Standard,Gift Card
+T3125,2023/07/15,S19,P015,Patagonia Fleece Jacket,Apparel,4,184.94,739.76,Standard,Credit Card
+T3126,12/19/2023,S03,P038,Resistance Bands Set,Sports,1,30.01,30.01,Loyal,Gift Card
+T3127,09/06/2024,S04,P020,New Balance 990,Apparel,1,182.2,182.2,Loyal,Gift Card
+T3128,14-10-2023,S13,P005,MacBook Air M2,Electronics,2,1314.3,2628.6,Budget,Gift Card
+T3129,2022/07/28,S06,P047,Atomic Habits Book,Books & Office,4,18.63,74.52,Budget,Cash
+T3130,2023/04/20,S13,P045,Olaplex No.3 Treatment,Beauty,3,27.33,81.99,Premium,Mobile Wallet
+T3131,2024/08/14,S18,P028,Cast Iron Skillet 12in,Home & Kitchen,1,51.19,51.19,Budget,Credit Card
+T3132,11/29/2022,S08,P005,MacBook Air M2,Electronics,5,1328.39,6641.95,Standard,Mobile Wallet
+T3133,2023/10/21,S22,P048,Moleskine Notebook,Books & Office,3,25.63,76.89,Premium,Debit Card
+T3134,06/14/2023,S24,P026,Nespresso Vertuo,Home & Kitchen,2,173.77,347.54,Standard,Cash
+T3135,12/12/2024,S10,P031,Electric Kettle,Home & Kitchen,4,39.97,159.88,Premium,Credit Card
+T3136,11-06-2024,S17,P038,Resistance Bands Set,Sports,1,30.34,30.34,Budget,Credit Card
+T3137,2024/11/20,S02,P048,Moleskine Notebook,Books & Office,4,24.61,98.44,Standard,Credit Card
+T3138,2023-07-22,S19,P018,Under Armour T-Shirt,Apparel,4,35.54,142.16,Loyal,Gift Card
+T3139,31-08-2024,S17,P032,French Press Coffee,Home & Kitchen,2,29.61,59.22,Premium,Mobile Wallet
+T3140,2024-03-15,S23,P029,Dyson V15 Vacuum,Home & Kitchen,5,729.36,3646.8,Loyal,Mobile Wallet
+T3141,12-05-2022,S09,P015,Patagonia Fleece Jacket,Apparel,6,175.58,1053.48,Standard,Mobile Wallet
+T3142,2023/09/22,S15,P025,Vitamix 5200 Blender,Home & Kitchen,5,467.4,2337.0,Premium,Cash
+T3143,2024-08-09,S11,P009,Logitech MX Master 3,Electronics,1,96.99,96.99,Standard,Gift Card
+T3144,2023-04-28,S13,P050,HP 65XL Ink Cartridge,Books & Office,6,36.43,218.58,Standard,Gift Card
+T3145,2023-07-25,S05,P040,Jump Rope Speed,Sports,1,20.68,20.68,Standard,Cash
+T3146,2022-02-19,S24,P010,Mechanical Keyboard,Electronics,1,148.43,148.43,Budget,Gift Card
+T3147,2024-07-03,S04,P033,Peloton Yoga Mat,Sports,4,78.04,312.16,Standard,Gift Card
+T3148,09/08/2024,S03,P028,Cast Iron Skillet 12in,Home & Kitchen,2,52.01,104.02,Standard,Gift Card
+T3149,2022-11-07,S16,P050,HP 65XL Ink Cartridge,Books & Office,6,34.28,205.68,Premium,Debit Card
+T3150,2024/07/15,S17,P029,Dyson V15 Vacuum,Home & Kitchen,2,728.73,1457.46,Loyal,Debit Card
+T3151,2022-10-29,S10,P022,Hanes Crew Socks 6pk,Apparel,4,15.58,62.32,Standard,Mobile Wallet
+T3152,2024-10-24,S10,P016,Champion Hoodie,Apparel,3,56.54,169.62,Premium,Cash
+T3153,2022/12/31,S11,P037,Garmin Forerunner 255,Sports,5,363.15,1815.75,Loyal,Debit Card
+T3154,17-08-2024,S24,P003,AirPods Pro 2nd Gen,Electronics,1,248.98,248.98,Standard,Debit Card
+T3155,12/08/2023,S14,P050,HP 65XL Ink Cartridge,Books & Office,2,36.02,72.04,Premium,Cash
+T3156,2024/01/25,S24,P001,iPhone 15 Pro,Electronics,1,1073.61,1073.61,Loyal,Debit Card
+T3157,2023/10/25,S20,P006,iPad Pro 12.9,Electronics,6,1145.53,6873.18,Loyal,Cash
+T3158,2024/06/27,S10,P029,Dyson V15 Vacuum,Home & Kitchen,4,704.58,2818.32,Loyal,Mobile Wallet
+T3159,2024/10/13,S05,P036,CamelBak Hydration Pack,Sports,3,88.84,266.52,Standard,Mobile Wallet
+T3160,19-02-2022,S10,P020,New Balance 990,Apparel,3,172.58,517.74,Premium,Cash
+T3161,2024/03/03,S19,P044,Neutrogena SPF 50 Sunscreen,Beauty,2,14.43,28.86,Loyal,Mobile Wallet
+T3162,09/10/2022,S20,P030,Robot Vacuum iRobot,Home & Kitchen,4,345.97,1383.88,Premium,Credit Card
+T3163,13-05-2022,S17,P032,French Press Coffee,Home & Kitchen,2,30.51,61.02,Budget,Credit Card
+T3164,01/03/2024,S06,P030,Robot Vacuum iRobot,Home & Kitchen,2,355.01,710.02,Loyal,Cash
+T3165,02/03/2022,S25,P012,Portable SSD 1TB,Electronics,1,109.92,109.92,Standard,Cash
+T3166,2022-09-30,S07,P041,CeraVe Moisturizing Cream,Beauty,3,18.86,56.58,Budget,Credit Card
+T3167,03/12/2024,S16,P001,iPhone 15 Pro,Electronics,5,1144.2,5721.0,Budget,Mobile Wallet
+T3168,2023/11/09,S06,P026,Nespresso Vertuo,Home & Kitchen,4,180.4,721.6,Loyal,Gift Card
+T3169,05/31/2022,S04,P008,LG 27 4K Monitor,Electronics,5,460.26,2301.3,Budget,Gift Card
+T3170,2024-10-23,S20,P001,iPhone 15 Pro,Electronics,3,1070.61,3211.83,Premium,Mobile Wallet
+T3171,11/20/2022,S20,P020,New Balance 990,Apparel,3,178.95,536.85,Budget,Credit Card
+T3172,2023-05-14,S05,P014,Nike Air Max 270,Apparel,6,126.72,760.32,Premium,Credit Card
+T3173,26-04-2022,S13,P003,AirPods Pro 2nd Gen,Electronics,5,243.8,1219.0,Standard,Gift Card
+T3174,11-03-2024,S23,P017,Adidas Running Shorts,Apparel,1,38.99,38.99,Premium,Mobile Wallet
+T3175,20-07-2022,S18,P044,Neutrogena SPF 50 Sunscreen,Beauty,2,14.08,28.16,Loyal,Credit Card
+T3176,2023-06-16,S13,P030,Robot Vacuum iRobot,Home & Kitchen,2,367.06,734.12,Loyal,Cash
+T3177,2024-10-09,S13,P045,Olaplex No.3 Treatment,Beauty,1,27.29,27.29,Standard,Gift Card
+T3178,2022-07-11,S05,P003,AirPods Pro 2nd Gen,Electronics,3,248.53,745.59,Premium,Debit Card
+T3179,11-04-2024,S23,P025,Vitamix 5200 Blender,Home & Kitchen,3,470.55,1411.65,Budget,Gift Card
+T3180,2024/01/14,S18,P009,Logitech MX Master 3,Electronics,2,100.3,200.6,Loyal,Gift Card
+T3181,2023-07-31,S07,P025,Vitamix 5200 Blender,Home & Kitchen,1,441.26,441.26,Loyal,Cash
+T3182,2024/05/02,S04,P001,iPhone 15 Pro,Electronics,3,1087.04,3261.12,Budget,Gift Card
+T3183,2024-04-16,S01,P027,Cuisinart Air Fryer,Home & Kitchen,5,134.39,671.95,Premium,Debit Card
+T3184,2024/05/08,S01,P021,Carhartt Work Pants,Apparel,3,72.97,218.91,Loyal,Mobile Wallet
+T3185,12/30/2022,S21,P050,HP 65XL Ink Cartridge,Books & Office,6,34.45,206.7,Budget,Cash
+T3186,12/18/2024,S12,P028,Cast Iron Skillet 12in,Home & Kitchen,5,50.16,250.8,Loyal,Credit Card
+T3187,02/19/2024,S22,P032,French Press Coffee,Home & Kitchen,6,31.19,187.14,Standard,Credit Card
+T3188,08/23/2024,S08,P047,Atomic Habits Book,Books & Office,4,18.79,75.16,Budget,Debit Card
+T3189,2024/02/05,S24,P046,Tatcha Rice Wash Cleanser,Beauty,5,39.34,196.7,Loyal,Gift Card
+T3190,2023/01/12,S04,P030,Robot Vacuum iRobot,Home & Kitchen,1,363.53,363.53,Budget,Cash
+T3191,2023-05-21,S14,P044,Neutrogena SPF 50 Sunscreen,Beauty,2,14.06,28.12,Loyal,Credit Card
+T3192,26-11-2023,S20,P043,La Mer Moisturizer 1oz,Beauty,2,184.24,368.48,Premium,Cash
+T3193,2022/11/04,S08,P034,TRX Suspension Trainer,Sports,2,145.63,291.26,Loyal,Mobile Wallet
+T3194,26-11-2024,S19,P031,Electric Kettle,Home & Kitchen,2,39.76,79.52,Premium,Credit Card
+T3195,21-10-2024,S25,P014,Nike Air Max 270,Apparel,4,134.43,537.72,Premium,Mobile Wallet
+T3196,08/23/2024,S10,P002,Samsung Galaxy S24 Ultra,Electronics,3,1231.81,3695.43,Standard,Mobile Wallet
+T3197,03/11/2023,S10,P012,Portable SSD 1TB,Electronics,3,112.14,336.42,Budget,Mobile Wallet
+T3198,27-06-2023,S22,P028,Cast Iron Skillet 12in,Home & Kitchen,4,51.82,207.28,Budget,Debit Card
+T3199,2023/05/03,S02,P010,Mechanical Keyboard,Electronics,6,154.45,926.7,Premium,Cash
+T3200,17-05-2024,S03,P017,Adidas Running Shorts,Apparel,1,41.49,41.49,Budget,Credit Card
+T3201,2023-03-09,S25,P040,Jump Rope Speed,Sports,3,19.73,59.19,Standard,Mobile Wallet
+T3202,18-12-2022,S02,P016,Champion Hoodie,Apparel,4,53.39,213.56,Premium,Credit Card
+T3203,21-04-2024,S11,P021,Carhartt Work Pants,Apparel,5,73.45,367.25,Loyal,Gift Card
+T3204,01/27/2024,S19,P029,Dyson V15 Vacuum,Home & Kitchen,6,680.73,4084.38,Premium,Cash
+T3205,01-03-2022,S22,P003,AirPods Pro 2nd Gen,Electronics,2,244.35,488.7,Budget,Credit Card
+T3206,09/05/2024,S04,P020,New Balance 990,Apparel,1,176.22,176.22,Loyal,Cash
+T3207,2024/12/25,S01,P035,Bowflex SelectTech Dumbbells,Sports,3,403.64,1210.92,Budget,Gift Card
+T3208,10/12/2024,S21,P002,Samsung Galaxy S24 Ultra,Electronics,6,1175.56,7053.36,Loyal,Cash
+T3209,2023-07-09,S24,P046,Tatcha Rice Wash Cleanser,Beauty,2,37.2,74.4,Standard,Debit Card
+T3210,2022-10-24,S22,P024,KitchenAid Stand Mixer,Home & Kitchen,5,379.74,1898.7,Loyal,Debit Card
+T3211,2022-11-29,S19,P013,Levis 501 Jeans,Apparel,6,91.65,549.9,Loyal,Mobile Wallet
+T3212,2022/05/13,S10,P031,Electric Kettle,Home & Kitchen,5,41.37,206.85,Budget,Gift Card
+T3213,2022/11/09,S19,P017,Adidas Running Shorts,Apparel,2,41.62,83.24,Premium,Mobile Wallet
+T3214,2023/04/30,S01,P029,Dyson V15 Vacuum,Home & Kitchen,2,705.28,1410.56,Standard,Cash
+T3215,2022/03/16,S09,P028,Cast Iron Skillet 12in,Home & Kitchen,6,49.92,299.52,Budget,Gift Card
+T3216,2023-06-01,S15,P010,Mechanical Keyboard,Electronics,1,155.14,155.14,Premium,Mobile Wallet
+T3217,2023/10/21,S21,P026,Nespresso Vertuo,Home & Kitchen,6,181.54,1089.24,Premium,Gift Card
+T3218,10-05-2023,S19,P005,MacBook Air M2,Electronics,5,1339.6,6698.0,Loyal,Credit Card
+T3219,26-06-2024,S23,P014,Nike Air Max 270,Apparel,2,130.37,260.74,Budget,Gift Card
+T3220,26-07-2024,,P012,Portable SSD 1TB,Electronics,1,107.34,107.34,Standard,Debit Card
+T3221,05/31/2022,S08,P022,Hanes Crew Socks 6pk,Apparel,1,14.87,14.87,Budget,Gift Card
+T3222,2022-07-26,S16,P008,LG 27 4K Monitor,Electronics,2,456.51,913.02,Loyal,Credit Card
+T3223,2023/05/25,S15,P010,Mechanical Keyboard,Electronics,5,154.64,773.2,Budget,Cash
+T3224,02/27/2023,S04,P013,Levis 501 Jeans,Apparel,2,90.12,180.24,Loyal,Cash
+T3225,2022/09/28,S21,P031,Electric Kettle,Home & Kitchen,6,41.06,246.36,Budget,Cash
+T3226,11/18/2022,S08,P018,Under Armour T-Shirt,Apparel,1,35.08,35.08,Budget,Credit Card
+T3227,2024-05-12,S14,P030,Robot Vacuum iRobot,Home & Kitchen,6,363.88,2183.28,Loyal,Mobile Wallet
+T3228,16-05-2022,S06,P010,Mechanical Keyboard,Electronics,1,151.75,151.75,Standard,Credit Card
+T3229,11/30/2024,S11,P018,Under Armour T-Shirt,Apparel,4,36.66,146.64,Loyal,Cash
+T3230,02/24/2023,S03,P049,Staples Desk Organiser,Books & Office,6,40.35,242.1,Loyal,Mobile Wallet
+T3231,2022-07-31,S18,P034,TRX Suspension Trainer,Sports,3,152.12,456.36,Budget,Debit Card
+T3232,2022-01-12,S18,P002,Samsung Galaxy S24 Ultra,Electronics,2,1168.52,2337.04,Budget,Debit Card
+T3233,2022-02-23,S15,P039,Foam Roller,Sports,6,36.69,220.14,Budget,Gift Card
+T3234,2024/06/19,S09,P035,Bowflex SelectTech Dumbbells,Sports,3,415.35,1246.05,Standard,Gift Card
+T3235,2023/12/18,S02,P020,New Balance 990,Apparel,1,170.47,170.47,Premium,Mobile Wallet
+T3236,2022-12-21,S20,P035,Bowflex SelectTech Dumbbells,Sports,2,393.52,787.04,Loyal,Mobile Wallet
+T3237,03/01/2023,S19,P037,Garmin Forerunner 255,Sports,3,365.5,1096.5,Premium,Debit Card
+T3238,25-12-2024,S03,P024,KitchenAid Stand Mixer,Home & Kitchen,5,386.32,1931.6,Standard,Gift Card
+T3239,06/01/2024,S15,P013,Levis 501 Jeans,Apparel,6,92.4,554.4,Premium,Debit Card
+T3240,10-02-2024,S25,P012,Portable SSD 1TB,Electronics,1,110.3,110.3,Budget,Mobile Wallet
+T3241,2024-02-19,S22,P007,Dell XPS 15,Electronics,2,1533.44,3066.88,Budget,Gift Card
+T3242,30-06-2022,S07,P023,Instant Pot Duo 7in1,Home & Kitchen,3,103.64,310.92,Standard,Debit Card
+T3243,2022-08-11,S06,P028,Cast Iron Skillet 12in,Home & Kitchen,5,50.99,254.95,Loyal,Mobile Wallet
+T3244,01/26/2022,S11,P003,AirPods Pro 2nd Gen,Electronics,3,246.96,740.88,Premium,Mobile Wallet
+T3245,2024-10-16,S14,P006,iPad Pro 12.9,Electronics,2,1070.32,2140.64,Budget,Credit Card
+T3246,2024/11/09,S19,P024,KitchenAid Stand Mixer,Home & Kitchen,1,398.5,398.5,Loyal,Cash
+T3247,11/08/2024,S25,P007,Dell XPS 15,Electronics,1,1563.11,1563.11,Premium,Mobile Wallet
+T3248,2024/12/15,S08,P027,Cuisinart Air Fryer,Home & Kitchen,3,134.52,403.56,Loyal,Credit Card
+T3249,06/02/2022,S22,P045,Olaplex No.3 Treatment,Beauty,6,27.29,163.74,Standard,Gift Card
+T3250,21-11-2024,S09,P005,MacBook Air M2,Electronics,5,1302.08,6510.4,Loyal,Cash
+T3251,2024-08-13,S08,P004,Sony WH-1000XM5,Electronics,4,358.91,1435.64,Premium,Credit Card
+T3252,2023-10-23,S20,P050,HP 65XL Ink Cartridge,Books & Office,2,34.71,69.42,Standard,Gift Card
+T3253,08/15/2023,S06,P002,Samsung Galaxy S24 Ultra,Electronics,6,1232.7,7396.2,Budget,Debit Card
+T3254,2024-12-03,S02,P020,New Balance 990,Apparel,5,173.44,867.2,Standard,Mobile Wallet
+T3255,08/19/2024,S23,P021,Carhartt Work Pants,Apparel,2,72.96,145.92,Budget,Gift Card
+T3256,2023/01/22,S11,P050,HP 65XL Ink Cartridge,Books & Office,4,36.21,144.84,Loyal,Debit Card
+T3257,08/30/2022,S18,P024,KitchenAid Stand Mixer,Home & Kitchen,5,373.99,1869.95,Premium,Credit Card
+T3258,02/02/2024,S09,P013,Levis 501 Jeans,Apparel,5,87.63,438.15,Budget,Gift Card
+T3259,2023-06-20,S23,P001,iPhone 15 Pro,Electronics,5,1076.47,5382.35,Premium,Gift Card
+T3260,2023-12-15,S03,P027,Cuisinart Air Fryer,Home & Kitchen,5,135.31,676.55,Standard,Gift Card
+T3261,2024-05-25,S23,P021,Carhartt Work Pants,Apparel,6,73.2,439.2,Budget,Credit Card
+T3262,10-11-2024,S07,P034,TRX Suspension Trainer,Sports,2,156.13,312.26,Premium,Credit Card
+T3263,2024/10/05,S24,P035,Bowflex SelectTech Dumbbells,Sports,4,387.27,1549.08,Loyal,Credit Card
+T3264,2024-08-02,S24,P020,New Balance 990,Apparel,6,176.7,1060.2,Premium,Mobile Wallet
+T3265,06/14/2023,S08,P014,Nike Air Max 270,Apparel,1,134.38,134.38,Premium,Credit Card
+T3266,05/16/2024,S23,P033,Peloton Yoga Mat,Sports,6,82.06,492.36,Loyal,Cash
+T3267,16-12-2024,S16,P011,Webcam 4K,Electronics,5,93.03,465.15,Budget,Mobile Wallet
+T3268,2024/08/22,S17,P022,Hanes Crew Socks 6pk,Apparel,1,15.42,15.42,Premium,Credit Card
+T3269,2024/04/29,S02,P035,Bowflex SelectTech Dumbbells,Sports,1,409.79,409.79,Standard,Credit Card
+T3270,21-03-2024,S09,P008,LG 27 4K Monitor,Electronics,2,468.11,936.22,Loyal,Cash
+T3271,04-09-2023,S10,P035,Bowflex SelectTech Dumbbells,Sports,6,414.14,2484.84,Standard,Credit Card
+T3272,2023-03-29,S16,P029,Dyson V15 Vacuum,Home & Kitchen,4,700.06,2800.24,Budget,Cash
+T3273,10-08-2023,S24,P003,AirPods Pro 2nd Gen,Electronics,4,254.42,1017.68,Standard,Gift Card
+T3274,05/08/2022,S22,P015,Patagonia Fleece Jacket,Apparel,3,175.36,526.08,Premium,Gift Card
+T3275,2022/03/06,S16,P049,Staples Desk Organiser,Books & Office,4,40.0,160.0,Budget,Debit Card
+T3276,02/27/2024,S20,P001,iPhone 15 Pro,Electronics,4,1078.08,4312.32,Standard,Cash
+T3277,10/17/2024,S02,P037,Garmin Forerunner 255,Sports,1,364.92,364.92,Budget,Mobile Wallet
+T3278,2024-09-28,S11,P016,Champion Hoodie,Apparel,4,54.86,219.44,Premium,Mobile Wallet
+T3279,2024-02-25,S20,P010,Mechanical Keyboard,Electronics,4,154.19,616.76,Standard,Gift Card
+T3280,2023/07/25,S09,P045,Olaplex No.3 Treatment,Beauty,2,28.92,57.84,Loyal,Gift Card
+T3281,2024/11/02,S24,P050,HP 65XL Ink Cartridge,Books & Office,1,34.5,34.5,Loyal,Cash
+T3282,17-04-2022,S15,P002,Samsung Galaxy S24 Ultra,Electronics,4,1245.76,4983.04,Premium,Mobile Wallet
+T3283,2023/12/09,S19,P029,Dyson V15 Vacuum,Home & Kitchen,6,692.42,4154.52,Standard,Debit Card
+T3284,2022/11/06,S04,P011,Webcam 4K,Electronics,1,88.98,88.98,Loyal,Cash
+T3285,31-05-2023,S03,P008,LG 27 4K Monitor,Electronics,5,454.92,2274.6,Loyal,Debit Card
+T3286,2023-05-10,S19,P044,Neutrogena SPF 50 Sunscreen,Beauty,3,14.12,42.36,Loyal,Mobile Wallet
+T3287,24-02-2023,S01,P020,New Balance 990,Apparel,3,169.86,509.58,Standard,Debit Card
+T3288,2022-01-20,S18,P002,Samsung Galaxy S24 Ultra,Electronics,1,1200.88,1200.88,Loyal,Cash
+T3289,2022-03-09,S03,P013,Levis 501 Jeans,Apparel,3,93.0,279.0,Standard,Debit Card
+T3290,10/15/2022,S20,P045,Olaplex No.3 Treatment,Beauty,5,28.24,141.2,Standard,Gift Card
+T3291,2023/06/19,S19,P011,Webcam 4K,Electronics,6,90.0,540.0,Loyal,Credit Card
+T3292,08/03/2022,S12,P037,Garmin Forerunner 255,Sports,3,356.0,1068.0,Premium,Cash
+T3293,2024-08-12,S02,P018,Under Armour T-Shirt,Apparel,6,36.01,216.06,Standard,Gift Card
+T3294,12-08-2024,S22,P027,Cuisinart Air Fryer,Home & Kitchen,6,133.73,802.38,Standard,Mobile Wallet
+T3295,2022/08/13,S15,P042,Dyson Airwrap Styler,Beauty,1,586.48,586.48,Loyal,Cash
+T3296,05/05/2022,S12,P037,Garmin Forerunner 255,Sports,6,340.85,2045.1,Premium,Gift Card
+T3297,2022/10/22,S15,P024,KitchenAid Stand Mixer,Home & Kitchen,3,382.03,1146.09,Standard,Cash
+T3298,02/19/2023,S18,P015,Patagonia Fleece Jacket,Apparel,6,179.41,1076.46,Budget,Mobile Wallet
+T3299,09/03/2022,S09,P004,Sony WH-1000XM5,Electronics,2,361.48,722.96,Budget,Credit Card
+T3300,2022/07/15,S02,P003,AirPods Pro 2nd Gen,Electronics,1,246.49,246.49,Budget,Cash
+T3301,2024/01/25,S09,P050,HP 65XL Ink Cartridge,Books & Office,4,34.0,136.0,Budget,Credit Card
+T3302,10/18/2024,S11,P034,TRX Suspension Trainer,Sports,5,146.1,730.5,Premium,Debit Card
+T3303,06/02/2022,S07,P014,Nike Air Max 270,Apparel,5,128.77,643.85,Premium,Credit Card
+T3304,2022-11-30,S24,P024,KitchenAid Stand Mixer,Home & Kitchen,3,386.61,1159.83,Budget,Gift Card
+T3305,23-12-2022,S04,P008,LG 27 4K Monitor,Electronics,1,463.51,463.51,Budget,Gift Card
+T3306,2023-02-09,S10,P008,LG 27 4K Monitor,Electronics,1,453.63,453.63,Premium,Cash
+T3307,2023-10-24,S09,P014,Nike Air Max 270,Apparel,3,132.2,396.6,Standard,Cash
+T3308,28-05-2023,S02,P024,KitchenAid Stand Mixer,Home & Kitchen,4,382.89,1531.56,Premium,Debit Card
+T3309,2023-02-02,S09,P037,Garmin Forerunner 255,Sports,5,350.8,1754.0,Budget,Gift Card
+T3310,06-10-2024,S06,P045,Olaplex No.3 Treatment,Beauty,4,28.65,114.6,Premium,Debit Card
+T3311,2023/10/23,S04,P043,La Mer Moisturizer 1oz,Beauty,3,185.85,557.55,Standard,Gift Card
+T3312,07/30/2024,S16,P046,Tatcha Rice Wash Cleanser,Beauty,6,37.38,224.28,Budget,Debit Card
+T3313,2022/04/07,S16,P010,Mechanical Keyboard,Electronics,1,152.64,152.64,Standard,Gift Card
+T3314,10/24/2024,S21,P026,Nespresso Vertuo,Home & Kitchen,6,182.45,1094.7,Standard,Mobile Wallet
+T3315,10-03-2024,S08,P046,Tatcha Rice Wash Cleanser,Beauty,2,39.81,79.62,Standard,Cash
+T3316,06/18/2023,S15,P040,Jump Rope Speed,Sports,5,19.83,99.15,Budget,Mobile Wallet
+T3317,28-01-2024,S20,P006,iPad Pro 12.9,Electronics,1,1083.54,1083.54,Standard,Gift Card
+T3318,02/22/2022,S10,P024,KitchenAid Stand Mixer,Home & Kitchen,3,382.13,1146.39,Premium,Debit Card
+T3319,12-05-2023,S19,P040,Jump Rope Speed,Sports,3,20.82,62.46,Standard,Cash
+T3320,05-08-2023,S16,P024,KitchenAid Stand Mixer,Home & Kitchen,6,375.36,2252.16,Standard,Cash
+T3321,2024/10/15,S08,P030,Robot Vacuum iRobot,Home & Kitchen,4,340.45,1361.8,Loyal,Mobile Wallet
+T3322,2022-08-29,S16,P012,Portable SSD 1TB,Electronics,1,111.78,111.78,Budget,Cash
+T3323,2022/05/15,S13,P034,TRX Suspension Trainer,Sports,5,147.15,735.75,Loyal,Debit Card
+T3324,2022-12-18,S24,P011,Webcam 4K,Electronics,1,91.06,91.06,Premium,Credit Card
+T3325,28-07-2024,S17,P029,Dyson V15 Vacuum,Home & Kitchen,6,733.86,4403.16,Budget,Debit Card
+T3326,2024-12-18,S20,P029,Dyson V15 Vacuum,Home & Kitchen,4,685.57,2742.28,Budget,Cash
+T3327,14-07-2023,,P038,Resistance Bands Set,Sports,5,30.06,150.3,Premium,Debit Card
+T3328,08/06/2024,S08,P024,KitchenAid Stand Mixer,Home & Kitchen,2,391.15,782.3,Premium,Mobile Wallet
+T3329,16-09-2022,S04,P042,Dyson Airwrap Styler,Beauty,5,618.93,3094.65,Standard,Debit Card
+T3330,28-03-2024,S11,P012,Portable SSD 1TB,Electronics,2,113.2,226.4,Budget,Cash
+T3331,2023-09-29,S17,P004,Sony WH-1000XM5,Electronics,1,355.87,355.87,Premium,Debit Card
+T3332,04/24/2024,S25,P043,La Mer Moisturizer 1oz,Beauty,5,192.73,963.65,Loyal,Mobile Wallet
+T3333,2022/08/04,S17,P001,iPhone 15 Pro,Electronics,3,1099.07,3297.21,Loyal,Cash
+T3334,31-01-2024,S02,P014,Nike Air Max 270,Apparel,6,129.02,774.12,Loyal,Mobile Wallet
+T3335,02/21/2023,S10,P024,KitchenAid Stand Mixer,Home & Kitchen,3,375.31,1125.93,Budget,Mobile Wallet
+T3336,17-03-2023,S22,P010,Mechanical Keyboard,Electronics,4,153.43,613.72,Budget,Debit Card
+T3337,05/27/2023,S08,P002,Samsung Galaxy S24 Ultra,Electronics,5,1223.81,6119.05,Premium,Mobile Wallet
+T3338,2022-06-29,S15,P040,Jump Rope Speed,Sports,6,20.42,122.52,Loyal,Gift Card
+T3339,10/24/2024,S24,P031,Electric Kettle,Home & Kitchen,2,39.23,78.46,Standard,Cash
+T3340,2022/09/22,S08,P044,Neutrogena SPF 50 Sunscreen,Beauty,1,14.26,14.26,Standard,Gift Card
+T3341,2022/10/11,S10,P046,Tatcha Rice Wash Cleanser,Beauty,5,39.63,198.15,Premium,Credit Card
+T3342,11/16/2024,S14,P043,La Mer Moisturizer 1oz,Beauty,6,184.21,1105.26,Standard,Debit Card
+T3343,2023/05/27,S23,P038,Resistance Bands Set,Sports,5,30.23,151.15,Standard,Cash
+T3344,2023-01-04,S03,P047,Atomic Habits Book,Books & Office,2,18.53,37.06,Premium,Cash
+T3345,2022-03-03,S08,P016,Champion Hoodie,Apparel,2,53.59,107.18,Premium,Credit Card
+T3346,09-12-2023,S07,P005,MacBook Air M2,Electronics,4,1345.81,5383.24,Premium,Cash
+T3347,2024-08-30,S18,P020,New Balance 990,Apparel,5,173.16,865.8,Premium,Debit Card
+T3348,07/25/2023,S03,P009,Logitech MX Master 3,Electronics,3,101.63,304.89,Budget,Cash
+T3349,2024-03-18,S02,P047,Atomic Habits Book,Books & Office,4,19.86,79.44,Standard,Mobile Wallet
+T3350,2023-07-25,S02,P042,Dyson Airwrap Styler,Beauty,6,603.31,3619.86,Premium,Gift Card
+T3351,2022/10/30,S09,P038,Resistance Bands Set,Sports,3,30.26,90.78,Budget,Cash
+T3352,08-03-2023,S13,P014,Nike Air Max 270,Apparel,6,126.95,761.7,Premium,Credit Card
+T3353,2024/07/19,,P049,Staples Desk Organiser,Books & Office,2,41.99,83.98,Loyal,Credit Card
+T3354,15-03-2022,S21,P017,Adidas Running Shorts,Apparel,1,41.17,41.17,Budget,Cash
+T3355,05/19/2022,,P019,Columbia Rain Jacket,Apparel,2,151.91,303.82,Loyal,Gift Card
+T3356,07/09/2023,S11,P028,Cast Iron Skillet 12in,Home & Kitchen,1,52.22,52.22,Budget,Debit Card
+T3357,11/03/2022,S06,P009,Logitech MX Master 3,Electronics,1,97.44,97.44,Budget,Credit Card
+T3358,03/17/2024,S01,P047,Atomic Habits Book,Books & Office,2,19.69,39.38,Budget,Debit Card
+T3359,22-02-2023,S23,P034,TRX Suspension Trainer,Sports,2,155.81,311.62,Standard,Gift Card
+T3360,08-05-2022,S10,P016,Champion Hoodie,Apparel,3,54.12,162.36,Standard,Cash
+T3361,08/28/2023,S13,P011,Webcam 4K,Electronics,3,92.24,276.72,Budget,Debit Card
+T3362,01/22/2022,S05,P028,Cast Iron Skillet 12in,Home & Kitchen,2,49.61,99.22,Premium,Cash
+T3363,2024/09/04,S16,P008,LG 27 4K Monitor,Electronics,5,459.07,2295.35,Budget,Debit Card
+T3364,08/10/2024,S17,P008,LG 27 4K Monitor,Electronics,2,447.14,894.28,Budget,Gift Card
+T3365,18-11-2024,S16,P041,CeraVe Moisturizing Cream,Beauty,5,19.41,97.05,Standard,Cash
+T3366,01-06-2024,S09,P009,Logitech MX Master 3,Electronics,5,100.28,501.4,Premium,Credit Card
+T3367,01/17/2023,S15,P027,Cuisinart Air Fryer,Home & Kitchen,4,135.76,543.04,Loyal,Credit Card
+T3368,2024-05-04,S12,P039,Foam Roller,Sports,4,34.38,137.52,Standard,Credit Card
+T3369,11/20/2022,S24,P021,Carhartt Work Pants,Apparel,1,71.97,71.97,Standard,Cash
+T3370,2022-08-05,S12,P029,Dyson V15 Vacuum,Home & Kitchen,5,727.91,3639.55,Standard,Gift Card
+T3371,11-09-2024,S05,P029,Dyson V15 Vacuum,Home & Kitchen,4,689.74,2758.96,Standard,Gift Card
+T3372,06/12/2024,S11,P032,French Press Coffee,Home & Kitchen,4,29.96,119.84,Loyal,Mobile Wallet
+T3373,10-11-2024,S13,P030,Robot Vacuum iRobot,Home & Kitchen,3,343.03,1029.09,Budget,Cash
+T3374,2022/04/15,S12,P007,Dell XPS 15,Electronics,6,1467.09,8802.54,Premium,Gift Card
+T3375,2022-02-07,S25,P001,iPhone 15 Pro,Electronics,1,1150.8,1150.8,Budget,Credit Card
+T3376,02/14/2024,S16,P039,Foam Roller,Sports,5,34.92,174.6,Loyal,Mobile Wallet
+T3377,2022/08/12,S06,P002,Samsung Galaxy S24 Ultra,Electronics,1,1192.26,1192.26,Premium,Mobile Wallet
+T3378,2024/12/06,S06,P038,Resistance Bands Set,Sports,4,30.71,122.84,Loyal,Cash
+T3379,2023/07/15,S10,P039,Foam Roller,Sports,3,34.86,104.58,Loyal,Credit Card
+T3380,05/08/2023,S01,P038,Resistance Bands Set,Sports,3,29.73,89.19,Loyal,Cash
+T3381,10/07/2023,S24,P046,Tatcha Rice Wash Cleanser,Beauty,1,38.16,38.16,Standard,Credit Card
+T3382,09-11-2024,S14,P016,Champion Hoodie,Apparel,6,54.1,324.6,Loyal,Debit Card
+T3383,12/04/2023,S18,P018,Under Armour T-Shirt,Apparel,6,35.49,212.94,Standard,Cash
+T3384,07/14/2022,S14,P035,Bowflex SelectTech Dumbbells,Sports,1,410.53,410.53,Standard,Debit Card
+T3385,15-02-2023,S19,P025,Vitamix 5200 Blender,Home & Kitchen,6,460.66,2763.96,Standard,Cash
+T3386,2024/03/12,S12,P012,Portable SSD 1TB,Electronics,4,114.6,458.4,Loyal,Credit Card
+T3387,11/17/2022,,P015,Patagonia Fleece Jacket,Apparel,6,185.25,1111.5,Loyal,Gift Card
+T3388,2022/10/14,S08,P010,Mechanical Keyboard,Electronics,3,155.18,465.54,Standard,Mobile Wallet
+T3389,19-12-2024,S15,P029,Dyson V15 Vacuum,Home & Kitchen,6,712.19,4273.14,Budget,Credit Card
+T3390,2024-09-11,S05,P013,Levis 501 Jeans,Apparel,2,87.53,175.06,Standard,Debit Card
+T3391,2022-04-08,S10,P034,TRX Suspension Trainer,Sports,2,153.84,307.68,Standard,Cash
+T3392,2023-04-01,S11,P022,Hanes Crew Socks 6pk,Apparel,2,15.54,31.08,Premium,Debit Card
+T3393,29-06-2023,S14,P042,Dyson Airwrap Styler,Beauty,2,594.76,1189.52,Premium,Cash
+T3394,2024-05-12,S07,P003,AirPods Pro 2nd Gen,Electronics,2,256.94,513.88,Premium,Debit Card
+T3395,06/21/2024,S16,P017,Adidas Running Shorts,Apparel,1,39.56,39.56,Standard,Debit Card
+T3396,2024/11/16,S03,P021,Carhartt Work Pants,Apparel,6,68.81,412.86,Standard,Gift Card
+T3397,2023/06/17,S06,P029,Dyson V15 Vacuum,Home & Kitchen,3,697.16,2091.48,Premium,Mobile Wallet
+T3398,2024-10-01,S11,P036,CamelBak Hydration Pack,Sports,4,92.74,370.96,Premium,Cash
+T3399,2024-06-19,S10,P032,French Press Coffee,Home & Kitchen,6,29.78,178.68,Loyal,Cash
+T3400,03/26/2024,S08,P048,Moleskine Notebook,Books & Office,5,24.91,124.55,Premium,Cash
+T3401,2023/07/24,S06,P002,Samsung Galaxy S24 Ultra,Electronics,6,1224.63,7347.78,Budget,Debit Card
+T3402,10/19/2022,S06,P038,Resistance Bands Set,Sports,2,30.55,61.1,Premium,Debit Card
+T3403,05-12-2024,S17,P036,CamelBak Hydration Pack,Sports,4,90.96,363.84,Premium,Mobile Wallet
+T3404,06/12/2024,S15,P045,Olaplex No.3 Treatment,Beauty,1,28.47,28.47,Premium,Mobile Wallet
+T3405,2022/07/17,S07,P014,Nike Air Max 270,Apparel,4,131.75,527.0,Loyal,Debit Card
+T3406,2023-03-31,S10,P019,Columbia Rain Jacket,Apparel,1,148.78,148.78,Loyal,Mobile Wallet
+T3407,08/18/2024,S06,P033,Peloton Yoga Mat,Sports,1,82.56,82.56,Standard,Cash
+T3408,2024/10/16,S05,P047,Atomic Habits Book,Books & Office,2,19.29,38.58,Standard,Gift Card
+T3409,02-07-2023,S03,P017,Adidas Running Shorts,Apparel,3,38.82,116.46,Loyal,Cash
+T3410,28-07-2024,S09,P013,Levis 501 Jeans,Apparel,3,92.83,278.49,Premium,Cash
+T3411,16-01-2024,S04,P025,Vitamix 5200 Blender,Home & Kitchen,5,469.56,2347.8,Standard,Cash
+T3412,2023/06/20,S24,P013,Levis 501 Jeans,Apparel,1,90.15,90.15,Budget,Cash
+T3413,25-07-2022,S24,P007,Dell XPS 15,Electronics,3,1457.05,4371.15,Loyal,Debit Card
+T3414,2022/06/26,S13,P025,Vitamix 5200 Blender,Home & Kitchen,2,463.9,927.8,Premium,Debit Card
+T3415,2023-04-25,S12,P019,Columbia Rain Jacket,Apparel,5,152.08,760.4,Budget,Debit Card
+T3416,2023-03-22,S20,P003,AirPods Pro 2nd Gen,Electronics,2,255.92,511.84,Premium,Credit Card
+T3417,2024/04/14,S13,P037,Garmin Forerunner 255,Sports,3,361.83,1085.49,Loyal,Mobile Wallet
+T3418,2022/05/13,S11,P034,TRX Suspension Trainer,Sports,6,147.37,884.22,Standard,Gift Card
+T3419,23-05-2023,S06,P006,iPad Pro 12.9,Electronics,1,1094.63,1094.63,Loyal,Debit Card
+T3420,19-08-2023,S19,P005,MacBook Air M2,Electronics,5,1335.2,6676.0,Premium,Cash
+T3421,08/10/2024,S17,P046,Tatcha Rice Wash Cleanser,Beauty,1,37.51,37.51,Premium,Credit Card
+T3422,14-12-2024,S24,P016,Champion Hoodie,Apparel,5,54.01,270.05,Loyal,Cash
+T3423,2022/10/30,S07,P012,Portable SSD 1TB,Electronics,4,112.03,448.12,Budget,Debit Card
+T3424,2024-09-23,S07,P015,Patagonia Fleece Jacket,Apparel,6,182.91,1097.46,Premium,Credit Card
+T3425,2023-07-26,S09,P030,Robot Vacuum iRobot,Home & Kitchen,1,341.91,341.91,Loyal,Cash
+T3426,18-03-2022,S02,P040,Jump Rope Speed,Sports,3,19.91,59.73,Premium,Gift Card
+T3427,07/07/2023,S18,P047,Atomic Habits Book,Books & Office,1,19.34,19.34,Standard,Debit Card
+T3428,2024-11-17,S06,P004,Sony WH-1000XM5,Electronics,6,351.49,2108.94,Premium,Mobile Wallet
+T3429,06/10/2022,S18,P016,Champion Hoodie,Apparel,3,56.89,170.67,Budget,Debit Card
+T3430,2022-10-15,S06,P002,Samsung Galaxy S24 Ultra,Electronics,5,1164.2,5821.0,Premium,Cash
+T3431,2024-12-21,S18,P041,CeraVe Moisturizing Cream,Beauty,3,18.62,55.86,Loyal,Cash
+T3432,2023-11-12,S13,P011,Webcam 4K,Electronics,6,93.71,562.26,Standard,Gift Card
+T3433,17-07-2024,S15,P035,Bowflex SelectTech Dumbbells,Sports,3,407.18,1221.54,Premium,Mobile Wallet
+T3434,07/05/2024,,P017,Adidas Running Shorts,Apparel,2,40.53,81.06,Loyal,Debit Card
+T3435,2022-09-01,S24,P018,Under Armour T-Shirt,Apparel,3,35.87,107.61,Loyal,Gift Card
+T3436,16-10-2024,S12,P030,Robot Vacuum iRobot,Home & Kitchen,2,364.86,729.72,Budget,Mobile Wallet
+T3437,03-04-2024,S10,P034,TRX Suspension Trainer,Sports,3,149.81,449.43,Loyal,Debit Card
+T3438,03-05-2022,S16,P047,Atomic Habits Book,Books & Office,2,18.7,37.4,Budget,Cash
+T3439,2022/04/30,S12,P007,Dell XPS 15,Electronics,1,1546.98,1546.98,Premium,Cash
+T3440,2024-04-26,S10,P012,Portable SSD 1TB,Electronics,2,110.16,220.32,Standard,Cash
+T3441,2024/10/03,S17,P043,La Mer Moisturizer 1oz,Beauty,1,184.11,184.11,Loyal,Cash
+T3442,11/19/2023,S08,P007,Dell XPS 15,Electronics,6,1496.9,8981.4,Budget,Cash
+T3443,2024-07-22,S12,P030,Robot Vacuum iRobot,Home & Kitchen,2,359.16,718.32,Loyal,Mobile Wallet
+T3444,2024/09/29,S15,P007,Dell XPS 15,Electronics,3,1470.51,4411.53,Loyal,Cash
+T3445,10/09/2024,S11,P006,iPad Pro 12.9,Electronics,5,1095.91,5479.55,Standard,Credit Card
+T3446,14-03-2023,S07,P028,Cast Iron Skillet 12in,Home & Kitchen,4,49.74,198.96,Budget,Cash
+T3447,2023/09/26,S23,P043,La Mer Moisturizer 1oz,Beauty,2,192.72,385.44,Loyal,Cash
+T3448,05/28/2023,S25,P008,LG 27 4K Monitor,Electronics,2,472.38,944.76,Standard,Mobile Wallet
+T3449,2024-08-23,S21,P007,Dell XPS 15,Electronics,4,1491.98,5967.92,Premium,Cash
+T3450,11-07-2023,S03,P033,Peloton Yoga Mat,Sports,4,82.71,330.84,Loyal,Cash
+T3451,01/03/2024,S11,P033,Peloton Yoga Mat,Sports,2,80.42,160.84,Standard,Cash
+T3452,09/12/2024,S03,P013,Levis 501 Jeans,Apparel,6,91.87,551.22,Loyal,Gift Card
+T3453,2024-06-22,S15,P013,Levis 501 Jeans,Apparel,3,88.51,265.53,Loyal,Cash
+T3454,2023-11-24,S12,P045,Olaplex No.3 Treatment,Beauty,3,29.03,87.09,Standard,Cash
+T3455,2024-12-04,S11,P010,Mechanical Keyboard,Electronics,1,156.17,156.17,Premium,Cash
+T3456,2024/08/26,S06,P018,Under Armour T-Shirt,Apparel,5,35.75,178.75,Budget,Cash
+T3457,2024/10/13,S16,P013,Levis 501 Jeans,Apparel,3,90.73,272.19,Premium,Mobile Wallet
+T3458,2024/10/30,S12,P018,Under Armour T-Shirt,Apparel,1,34.06,34.06,Premium,Debit Card
+T3459,12/11/2024,S03,P020,New Balance 990,Apparel,6,173.19,1039.14,Budget,Mobile Wallet
+T3460,2024/05/09,S13,P019,Columbia Rain Jacket,Apparel,6,155.65,933.9,Standard,Credit Card
+T3461,02/12/2023,S21,P017,Adidas Running Shorts,Apparel,2,40.0,80.0,Standard,Cash
+T3462,2024-01-31,S04,P043,La Mer Moisturizer 1oz,Beauty,5,180.56,902.8,Loyal,Gift Card
+T3463,06/29/2022,S22,P025,Vitamix 5200 Blender,Home & Kitchen,3,466.58,1399.74,Premium,Mobile Wallet
+T3464,04/14/2022,S14,P009,Logitech MX Master 3,Electronics,5,100.41,502.05,Standard,Debit Card
+T3465,2022-03-16,S04,P039,Foam Roller,Sports,5,36.11,180.55,Budget,Cash
+T3466,12-09-2022,S09,P046,Tatcha Rice Wash Cleanser,Beauty,3,39.28,117.84,Premium,Cash
+T3467,01/07/2024,S11,P044,Neutrogena SPF 50 Sunscreen,Beauty,4,14.56,58.24,Premium,Cash
+T3468,28-01-2024,S12,P039,Foam Roller,Sports,1,35.4,35.4,Loyal,Credit Card
+T3469,08/06/2024,S05,P039,Foam Roller,Sports,6,34.55,207.3,Premium,Cash
+T3470,12/22/2023,S05,P031,Electric Kettle,Home & Kitchen,2,40.14,80.28,Standard,Gift Card
+T3471,2022-02-09,S12,P022,Hanes Crew Socks 6pk,Apparel,4,15.73,62.92,Loyal,Gift Card
+T3472,17-03-2023,S13,P046,Tatcha Rice Wash Cleanser,Beauty,2,39.58,79.16,Loyal,Credit Card
+T3473,04/07/2022,S03,P017,Adidas Running Shorts,Apparel,1,39.89,39.89,Premium,Mobile Wallet
+T3474,2024/09/29,S06,P007,Dell XPS 15,Electronics,1,1472.73,1472.73,Standard,Mobile Wallet
+T3475,2024/05/02,S18,P017,Adidas Running Shorts,Apparel,4,40.29,161.16,Standard,Cash
+T3476,06/06/2022,S16,P018,Under Armour T-Shirt,Apparel,1,34.97,34.97,Standard,Credit Card
+T3477,04/19/2023,S05,P012,Portable SSD 1TB,Electronics,1,112.78,112.78,Budget,Cash
+T3478,2023/01/11,S06,P047,Atomic Habits Book,Books & Office,4,19.68,78.72,Standard,Credit Card
+T3479,2022-10-21,,P050,HP 65XL Ink Cartridge,Books & Office,5,34.19,170.95,Standard,Debit Card
+T3480,2022/04/22,S08,P026,Nespresso Vertuo,Home & Kitchen,3,187.44,562.32,Loyal,Gift Card
+T3481,31-08-2024,S04,P006,iPad Pro 12.9,Electronics,1,1069.8,1069.8,Premium,Cash
+T3482,04/08/2023,S23,P020,New Balance 990,Apparel,6,178.83,1072.98,Premium,Credit Card
+T3483,2024-04-28,S13,P042,Dyson Airwrap Styler,Beauty,3,589.59,1768.77,Premium,Cash
+T3484,29-05-2023,S21,P025,Vitamix 5200 Blender,Home & Kitchen,1,442.15,442.15,Budget,Mobile Wallet
+T3485,2023/09/29,S22,P012,Portable SSD 1TB,Electronics,4,113.76,455.04,Premium,Gift Card
+T3486,08/14/2024,S19,P033,Peloton Yoga Mat,Sports,2,78.03,156.06,Budget,Debit Card
+T3487,07/26/2024,S02,P043,La Mer Moisturizer 1oz,Beauty,5,192.4,962.0,Premium,Cash
+T3488,10/31/2022,S08,P045,Olaplex No.3 Treatment,Beauty,5,28.46,142.3,Standard,Debit Card
+T3489,06/08/2022,S23,P032,French Press Coffee,Home & Kitchen,5,30.55,152.75,Standard,Debit Card
+T3490,12-12-2024,S10,P001,iPhone 15 Pro,Electronics,1,1069.18,1069.18,Loyal,Mobile Wallet
+T3491,2024/05/21,S10,P002,Samsung Galaxy S24 Ultra,Electronics,5,1230.88,6154.4,Premium,Gift Card
+T3492,07/18/2024,S07,P004,Sony WH-1000XM5,Electronics,1,362.55,362.55,Budget,Gift Card
+T3493,2022-03-01,S13,P039,Foam Roller,Sports,1,34.72,34.72,Standard,Cash
+T3494,2023-10-08,S22,P012,Portable SSD 1TB,Electronics,6,109.9,659.4,Premium,Gift Card
+T3495,2024/10/01,S02,P041,CeraVe Moisturizing Cream,Beauty,3,18.93,56.79,Loyal,Mobile Wallet
+T3496,27-05-2024,S01,P044,Neutrogena SPF 50 Sunscreen,Beauty,2,13.64,27.28,Standard,Credit Card
+T3497,2024/11/15,S03,P008,LG 27 4K Monitor,Electronics,5,456.25,2281.25,Standard,Debit Card
+T3498,08/15/2024,S09,P037,Garmin Forerunner 255,Sports,4,363.86,1455.44,Loyal,Cash
+T3499,2023/05/28,S13,P001,iPhone 15 Pro,Electronics,1,1079.51,1079.51,Premium,Credit Card
+T3500,2023/01/18,S06,P012,Portable SSD 1TB,Electronics,2,114.1,228.2,Standard,Gift Card
+T3501,06/16/2022,S08,P004,Sony WH-1000XM5,Electronics,2,351.64,703.28,Premium,Cash
+T3502,11-12-2023,S03,P013,Levis 501 Jeans,Apparel,1,89.48,89.48,Standard,Mobile Wallet
+T3503,28-12-2023,S04,P030,Robot Vacuum iRobot,Home & Kitchen,1,353.16,353.16,Standard,Credit Card
+T3504,03/13/2023,S22,P047,Atomic Habits Book,Books & Office,2,19.3,38.6,Premium,Cash
+T3505,06/08/2023,,P007,Dell XPS 15,Electronics,2,1499.58,2999.16,Loyal,Cash
+T3506,02/01/2024,S12,P032,French Press Coffee,Home & Kitchen,6,29.67,178.02,Standard,Cash
+T3507,2022/09/30,S12,P041,CeraVe Moisturizing Cream,Beauty,2,19.74,39.48,Loyal,Gift Card
+T3508,2023/06/25,S20,P040,Jump Rope Speed,Sports,6,20.19,121.14,Premium,Cash
+T3509,2022/09/21,S21,P021,Carhartt Work Pants,Apparel,6,69.75,418.5,Loyal,Debit Card
+T3510,12/12/2023,S01,P049,Staples Desk Organiser,Books & Office,1,41.21,41.21,Standard,Cash
+T3511,2022/05/27,S21,P023,Instant Pot Duo 7in1,Home & Kitchen,2,97.11,194.22,Budget,Debit Card
+T3512,2024/03/10,S23,P027,Cuisinart Air Fryer,Home & Kitchen,1,132.16,132.16,Budget,Mobile Wallet
+T3513,2024/12/13,S02,P002,Samsung Galaxy S24 Ultra,Electronics,1,1216.81,1216.81,Loyal,Debit Card
+T3514,2022-02-16,S11,P031,Electric Kettle,Home & Kitchen,1,38.99,38.99,Budget,Cash
+T3515,2023-09-27,S25,P032,French Press Coffee,Home & Kitchen,2,30.29,60.58,Standard,Mobile Wallet
+T3516,07-01-2024,S05,P029,Dyson V15 Vacuum,Home & Kitchen,3,690.68,2072.04,Budget,Cash
+T3517,01/16/2022,S02,P039,Foam Roller,Sports,3,35.72,107.16,Budget,Debit Card
+T3518,2022/11/13,S13,P028,Cast Iron Skillet 12in,Home & Kitchen,4,49.92,199.68,Budget,Mobile Wallet
+T3519,2023-11-18,S07,P027,Cuisinart Air Fryer,Home & Kitchen,6,126.53,759.18,Standard,Debit Card
+T3520,2022-11-14,S08,P032,French Press Coffee,Home & Kitchen,6,29.86,179.16,Loyal,Mobile Wallet
+T3521,04-11-2023,S09,P004,Sony WH-1000XM5,Electronics,1,365.05,365.05,Premium,Cash
+T3522,2023/10/25,S05,P049,Staples Desk Organiser,Books & Office,4,41.44,165.76,Budget,Cash
+T3523,2022/10/10,S22,P030,Robot Vacuum iRobot,Home & Kitchen,1,361.56,361.56,Premium,Mobile Wallet
+T3524,2022/08/19,S09,P006,iPad Pro 12.9,Electronics,3,1107.34,3322.02,Budget,Debit Card
+T3525,2024-02-05,S25,P045,Olaplex No.3 Treatment,Beauty,1,28.24,28.24,Standard,Gift Card
+T3526,11/25/2024,S07,P009,Logitech MX Master 3,Electronics,6,97.59,585.54,Budget,Mobile Wallet
+T3527,2024/04/05,S20,P024,KitchenAid Stand Mixer,Home & Kitchen,4,375.85,1503.4,Loyal,Cash
+T3528,2024-05-22,S09,P018,Under Armour T-Shirt,Apparel,1,36.59,36.59,Budget,Debit Card
+T3529,07/23/2024,S14,P044,Neutrogena SPF 50 Sunscreen,Beauty,1,14.33,14.33,Loyal,Gift Card
+T3530,2023/02/03,S23,P036,CamelBak Hydration Pack,Sports,5,88.39,441.95,Standard,Credit Card
+T3531,2023-05-12,S20,P005,MacBook Air M2,Electronics,3,1301.49,3904.47,Standard,Gift Card
+T3532,19-09-2023,S16,P046,Tatcha Rice Wash Cleanser,Beauty,3,37.64,112.92,Standard,Cash
+T3533,2023/08/09,S01,P005,MacBook Air M2,Electronics,6,1336.93,8021.58,Loyal,Mobile Wallet
+T3534,11/23/2024,S01,P013,Levis 501 Jeans,Apparel,6,88.42,530.52,Loyal,Gift Card
+T3535,08/30/2022,S18,P044,Neutrogena SPF 50 Sunscreen,Beauty,2,14.63,29.26,Premium,Gift Card
+T3536,2024/09/20,S21,P049,Staples Desk Organiser,Books & Office,4,39.08,156.32,Loyal,Credit Card
+T3537,04/18/2024,S13,P019,Columbia Rain Jacket,Apparel,2,152.77,305.54,Budget,Cash
+T3538,25-12-2024,S19,P010,Mechanical Keyboard,Electronics,1,157.08,157.08,Standard,Gift Card
+T3539,2023-06-11,S15,P005,MacBook Air M2,Electronics,2,1354.12,2708.24,Loyal,Debit Card
+T3540,2023-10-14,S04,P036,CamelBak Hydration Pack,Sports,1,91.83,91.83,Premium,Gift Card
+T3541,06-04-2023,S16,P021,Carhartt Work Pants,Apparel,5,70.58,352.9,Premium,Cash
+T3542,2024-04-26,S18,P044,Neutrogena SPF 50 Sunscreen,Beauty,1,14.56,14.56,Loyal,Debit Card
+T3543,2022-06-22,S11,P010,Mechanical Keyboard,Electronics,3,151.04,453.12,Loyal,Credit Card
+T3544,2024/04/26,S02,P045,Olaplex No.3 Treatment,Beauty,5,27.31,136.55,Budget,Gift Card
+T3545,07/24/2022,S16,P023,Instant Pot Duo 7in1,Home & Kitchen,4,100.42,401.68,Budget,Cash
+T3546,2023-11-23,S13,P035,Bowflex SelectTech Dumbbells,Sports,4,393.56,1574.24,Premium,Gift Card
+T3547,2022-02-16,S24,P042,Dyson Airwrap Styler,Beauty,5,614.47,3072.35,Budget,Mobile Wallet
+T3548,2023-05-27,S25,P019,Columbia Rain Jacket,Apparel,6,152.98,917.88,Budget,Gift Card
+T3549,2023/01/25,S12,P050,HP 65XL Ink Cartridge,Books & Office,2,36.13,72.26,Standard,Debit Card
+T3550,02/06/2024,S15,P022,Hanes Crew Socks 6pk,Apparel,2,15.6,31.2,Budget,Mobile Wallet
+T3551,2024-01-04,S12,P026,Nespresso Vertuo,Home & Kitchen,2,180.55,361.1,Premium,Mobile Wallet
+T3552,05/19/2023,S09,P034,TRX Suspension Trainer,Sports,6,157.3,943.8,Standard,Mobile Wallet
+T3553,2022-03-07,S13,P038,Resistance Bands Set,Sports,1,29.33,29.33,Standard,Mobile Wallet
+T3554,2022/07/25,S19,P043,La Mer Moisturizer 1oz,Beauty,6,189.01,1134.06,Budget,Mobile Wallet
+T3555,02/21/2022,S02,P027,Cuisinart Air Fryer,Home & Kitchen,4,130.61,522.44,Loyal,Gift Card
+T3556,2023/05/30,S19,P029,Dyson V15 Vacuum,Home & Kitchen,3,703.59,2110.77,Premium,Cash
+T3557,2024/03/15,S16,P030,Robot Vacuum iRobot,Home & Kitchen,3,350.89,1052.67,Budget,Mobile Wallet
+T3558,26-01-2024,S06,P024,KitchenAid Stand Mixer,Home & Kitchen,3,372.99,1118.97,Standard,Cash
+T3559,2022/11/01,S11,P027,Cuisinart Air Fryer,Home & Kitchen,6,135.1,810.6,Premium,Mobile Wallet
+T3560,2022/03/25,,P039,Foam Roller,Sports,6,35.83,214.98,Loyal,Mobile Wallet
+T3561,2024/06/13,S01,P046,Tatcha Rice Wash Cleanser,Beauty,5,39.87,199.35,Standard,Credit Card
+T3562,2023/08/21,S02,P011,Webcam 4K,Electronics,3,91.03,273.09,Loyal,Cash
+T3563,10/19/2024,S24,P043,La Mer Moisturizer 1oz,Beauty,1,185.21,185.21,Standard,Gift Card
+T3564,2022/03/08,S25,P043,La Mer Moisturizer 1oz,Beauty,1,191.13,191.13,Premium,Mobile Wallet
+T3565,21-08-2023,S23,P034,TRX Suspension Trainer,Sports,3,151.74,455.22,Loyal,Credit Card
+T3566,13-12-2024,S25,P004,Sony WH-1000XM5,Electronics,5,340.12,1700.6,Standard,Cash
+T3567,2022-04-17,S10,P018,Under Armour T-Shirt,Apparel,5,34.62,173.1,Standard,Debit Card
+T3568,05-02-2024,S22,P034,TRX Suspension Trainer,Sports,1,152.58,152.58,Standard,Mobile Wallet
+T3569,2024/01/06,S18,P022,Hanes Crew Socks 6pk,Apparel,2,15.1,30.2,Premium,Cash
+T3570,21-03-2023,S18,P005,MacBook Air M2,Electronics,6,1268.06,7608.36,Premium,Gift Card
+T3571,2023-09-10,S16,P026,Nespresso Vertuo,Home & Kitchen,4,176.55,706.2,Loyal,Cash
+T3572,12/07/2023,S10,P003,AirPods Pro 2nd Gen,Electronics,5,243.96,1219.8,Standard,Cash
+T3573,2022/03/28,S07,P047,Atomic Habits Book,Books & Office,4,19.58,78.32,Standard,Gift Card
+T3574,2024/10/02,S23,P034,TRX Suspension Trainer,Sports,1,149.17,149.17,Loyal,Gift Card
+T3575,2024-01-08,S21,P004,Sony WH-1000XM5,Electronics,6,366.48,2198.88,Premium,Debit Card
+T3576,2022/10/20,S20,P006,iPad Pro 12.9,Electronics,3,1127.1,3381.3,Premium,Gift Card
+T3577,11-08-2023,S16,P045,Olaplex No.3 Treatment,Beauty,2,29.34,58.68,Loyal,Debit Card
+T3578,2024-09-15,S18,P046,Tatcha Rice Wash Cleanser,Beauty,4,38.14,152.56,Standard,Credit Card
+T3579,2022/05/25,S23,P029,Dyson V15 Vacuum,Home & Kitchen,5,686.61,3433.05,Standard,Mobile Wallet
+T3580,12/09/2024,S21,P045,Olaplex No.3 Treatment,Beauty,2,28.88,57.76,Premium,Mobile Wallet
+T3581,05/04/2023,S23,P038,Resistance Bands Set,Sports,3,30.74,92.22,Loyal,Cash
+T3582,2023/02/07,S24,P039,Foam Roller,Sports,1,35.16,35.16,Premium,Cash
+T3583,2022/01/19,S19,P028,Cast Iron Skillet 12in,Home & Kitchen,6,51.28,307.68,Premium,Mobile Wallet
+T3584,2024/07/21,S22,P005,MacBook Air M2,Electronics,6,1340.44,8042.64,Premium,Gift Card
+T3585,2024-02-09,S02,P001,iPhone 15 Pro,Electronics,5,1107.65,5538.25,Standard,Credit Card
+T3586,08-06-2023,S04,P033,Peloton Yoga Mat,Sports,3,79.56,238.68,Standard,Credit Card
+T3587,2024/07/12,S12,P021,Carhartt Work Pants,Apparel,2,72.92,145.84,Loyal,Gift Card
+T3588,26-01-2024,S11,P031,Electric Kettle,Home & Kitchen,5,39.62,198.1,Budget,Cash
+T3589,10/03/2022,S25,P049,Staples Desk Organiser,Books & Office,4,41.33,165.32,Premium,Debit Card
+T3590,05/25/2024,S25,P046,Tatcha Rice Wash Cleanser,Beauty,2,38.51,77.02,Budget,Cash
+T3591,18-07-2024,S16,P049,Staples Desk Organiser,Books & Office,6,39.05,234.3,Premium,Cash
+T3592,08/10/2023,S19,P036,CamelBak Hydration Pack,Sports,1,94.18,94.18,Loyal,Credit Card
+T3593,03/28/2023,S01,P003,AirPods Pro 2nd Gen,Electronics,2,245.91,491.82,Standard,Mobile Wallet
+T3594,2024/07/23,S07,P050,HP 65XL Ink Cartridge,Books & Office,2,35.02,70.04,Loyal,Cash
+T3595,2023-07-20,S05,P032,French Press Coffee,Home & Kitchen,3,29.97,89.91,Budget,Mobile Wallet
+T3596,19-06-2023,S16,P023,Instant Pot Duo 7in1,Home & Kitchen,5,100.76,503.8,Loyal,Gift Card
+T3597,2024/02/21,S13,P035,Bowflex SelectTech Dumbbells,Sports,6,398.17,2389.02,Standard,Debit Card
+T3598,06-07-2023,S25,P028,Cast Iron Skillet 12in,Home & Kitchen,3,49.23,147.69,Standard,Debit Card
+T3599,2022-02-14,S22,P010,Mechanical Keyboard,Electronics,6,149.96,899.76,Budget,Gift Card
+T3600,02/04/2022,S17,P043,La Mer Moisturizer 1oz,Beauty,1,181.21,181.21,Standard,Gift Card
+T3601,2023-12-20,S21,P024,KitchenAid Stand Mixer,Home & Kitchen,4,379.27,1517.08,Budget,Credit Card
+T3602,04/19/2024,S13,P008,LG 27 4K Monitor,Electronics,1,465.12,465.12,Premium,Mobile Wallet
+T3603,2023-10-06,S22,P027,Cuisinart Air Fryer,Home & Kitchen,4,132.6,530.4,Loyal,Debit Card
+T3604,2022-06-18,S02,P037,Garmin Forerunner 255,Sports,1,343.12,343.12,Standard,Debit Card
+T3605,2022/08/30,S24,P025,Vitamix 5200 Blender,Home & Kitchen,3,442.52,1327.56,Budget,Credit Card
+T3606,06/05/2022,S11,P032,French Press Coffee,Home & Kitchen,4,30.31,121.24,Standard,Credit Card
+T3607,2024/05/04,S21,P041,CeraVe Moisturizing Cream,Beauty,4,19.93,79.72,Premium,Cash
+T3608,2023-08-06,S25,P035,Bowflex SelectTech Dumbbells,Sports,1,387.71,387.71,Loyal,Cash
+T3609,2022/10/10,S10,P013,Levis 501 Jeans,Apparel,2,90.55,181.1,Loyal,Debit Card
+T3610,28-04-2024,S21,P008,LG 27 4K Monitor,Electronics,1,453.26,453.26,Premium,Credit Card
+T3611,2022-03-14,S03,P014,Nike Air Max 270,Apparel,2,127.4,254.8,Standard,Gift Card
+T3612,04/16/2024,S06,P039,Foam Roller,Sports,2,36.71,73.42,Standard,Credit Card
+T3613,10/20/2022,S19,P040,Jump Rope Speed,Sports,1,19.6,19.6,Standard,Mobile Wallet
+T3614,17-09-2024,S19,P005,MacBook Air M2,Electronics,2,1285.96,2571.92,Budget,Debit Card
+T3615,12/27/2024,S06,P010,Mechanical Keyboard,Electronics,3,150.24,450.72,Loyal,Credit Card
+T3616,08/08/2022,S23,P044,Neutrogena SPF 50 Sunscreen,Beauty,3,14.53,43.59,Premium,Credit Card
+T3617,2023/08/16,S16,P018,Under Armour T-Shirt,Apparel,6,34.55,207.3,Standard,Mobile Wallet
+T3618,2024-02-19,S11,P035,Bowflex SelectTech Dumbbells,Sports,4,407.19,1628.76,Loyal,Gift Card
+T3619,2023/01/06,S19,P007,Dell XPS 15,Electronics,5,1478.51,7392.55,Budget,Credit Card
+T3620,07-12-2023,S06,P020,New Balance 990,Apparel,2,173.95,347.9,Loyal,Cash
+T3621,04-10-2024,S01,P018,Under Armour T-Shirt,Apparel,1,34.27,34.27,Premium,Gift Card
+T3622,2022-06-24,S09,P015,Patagonia Fleece Jacket,Apparel,3,187.07,561.21,Budget,Credit Card
+T3623,20-09-2022,S02,P035,Bowflex SelectTech Dumbbells,Sports,2,404.92,809.84,Budget,Debit Card
+T3624,12/15/2022,S01,P043,La Mer Moisturizer 1oz,Beauty,5,181.3,906.5,Loyal,Mobile Wallet
+T3625,05/06/2023,S09,P029,Dyson V15 Vacuum,Home & Kitchen,1,729.14,729.14,Budget,Mobile Wallet
+T3626,2024/12/04,S25,P021,Carhartt Work Pants,Apparel,3,71.5,214.5,Premium,Mobile Wallet
+T3627,2024/09/25,S12,P042,Dyson Airwrap Styler,Beauty,4,590.9,2363.6,Premium,Credit Card
+T3628,01/21/2023,S20,P045,Olaplex No.3 Treatment,Beauty,1,29.02,29.02,Standard,Cash
+T3629,06/17/2023,S24,P006,iPad Pro 12.9,Electronics,4,1071.0,4284.0,Standard,Credit Card
+T3630,2024-12-27,S12,P028,Cast Iron Skillet 12in,Home & Kitchen,2,48.61,97.22,Budget,Credit Card
+T3631,2022/09/12,S12,P034,TRX Suspension Trainer,Sports,1,150.44,150.44,Loyal,Debit Card
+T3632,2023-02-14,S16,P008,LG 27 4K Monitor,Electronics,1,450.33,450.33,Standard,Mobile Wallet
+T3633,22-05-2024,,P012,Portable SSD 1TB,Electronics,3,110.78,332.34,Budget,Credit Card
+T3634,2024/02/29,S05,P037,Garmin Forerunner 255,Sports,1,354.86,354.86,Loyal,Cash
+T3635,12/15/2022,S04,P026,Nespresso Vertuo,Home & Kitchen,2,178.39,356.78,Premium,Cash
+T3636,07/22/2024,S18,P011,Webcam 4K,Electronics,6,88.51,531.06,Loyal,Credit Card
+T3637,2024-09-25,S17,P034,TRX Suspension Trainer,Sports,1,150.22,150.22,Budget,Credit Card
+T3638,13-10-2022,S18,P042,Dyson Airwrap Styler,Beauty,1,585.91,585.91,Budget,Debit Card
+T3639,03/06/2023,S25,P010,Mechanical Keyboard,Electronics,1,149.24,149.24,Loyal,Gift Card
+T3640,2024-03-08,S07,P002,Samsung Galaxy S24 Ultra,Electronics,2,1237.33,2474.66,Budget,Mobile Wallet
+T3641,2022-04-05,S17,P042,Dyson Airwrap Styler,Beauty,4,621.0,2484.0,Standard,Gift Card
+T3642,2022-12-07,S08,P036,CamelBak Hydration Pack,Sports,3,92.33,276.99,Premium,Gift Card
+T3643,08-03-2022,S21,P007,Dell XPS 15,Electronics,3,1540.8,4622.4,Loyal,Mobile Wallet
+T3644,2023/08/08,S03,P045,Olaplex No.3 Treatment,Beauty,2,28.61,57.22,Loyal,Cash
+T3645,26-04-2023,S05,P017,Adidas Running Shorts,Apparel,6,39.98,239.88,Standard,Cash
+T3646,28-06-2023,S17,P037,Garmin Forerunner 255,Sports,5,351.35,1756.75,Standard,Debit Card
+T3647,2024-06-19,S18,P043,La Mer Moisturizer 1oz,Beauty,2,187.16,374.32,Premium,Debit Card
+T3648,2023-03-08,S18,P031,Electric Kettle,Home & Kitchen,1,41.95,41.95,Premium,Cash
+T3649,2024/03/15,S13,P023,Instant Pot Duo 7in1,Home & Kitchen,4,104.54,418.16,Standard,Debit Card
+T3650,05/05/2024,S09,P038,Resistance Bands Set,Sports,1,30.81,30.81,Premium,Debit Card
+T3651,2024-02-21,S22,P040,Jump Rope Speed,Sports,1,20.3,20.3,Loyal,Debit Card
+T3652,2022/10/10,S15,P038,Resistance Bands Set,Sports,2,30.53,61.06,Loyal,Gift Card
+T3653,05/14/2022,S08,P038,Resistance Bands Set,Sports,6,31.17,187.02,Premium,Credit Card
+T3654,06/12/2024,S12,P023,Instant Pot Duo 7in1,Home & Kitchen,5,102.7,513.5,Premium,Credit Card
+T3655,2022-06-06,S18,P040,Jump Rope Speed,Sports,5,20.96,104.8,Premium,Credit Card
+T3656,2023/10/27,S06,P029,Dyson V15 Vacuum,Home & Kitchen,3,687.82,2063.46,Loyal,Mobile Wallet
+T3657,06/28/2024,S09,P022,Hanes Crew Socks 6pk,Apparel,2,15.51,31.02,Standard,Mobile Wallet
+T3658,2022-03-04,S01,P027,Cuisinart Air Fryer,Home & Kitchen,3,135.79,407.37,Standard,Mobile Wallet
+T3659,03/08/2023,S17,P018,Under Armour T-Shirt,Apparel,4,35.51,142.04,Loyal,Gift Card
+T3660,2024/07/08,S11,P028,Cast Iron Skillet 12in,Home & Kitchen,2,49.04,98.08,Premium,Credit Card
+T3661,03-01-2023,S05,P024,KitchenAid Stand Mixer,Home & Kitchen,2,382.05,764.1,Standard,Credit Card
+T3662,09-11-2024,S03,P035,Bowflex SelectTech Dumbbells,Sports,1,403.49,403.49,Premium,Mobile Wallet
+T3663,07-05-2024,S14,P031,Electric Kettle,Home & Kitchen,5,41.63,208.15,Loyal,Debit Card
+T3664,2024-09-14,S13,P035,Bowflex SelectTech Dumbbells,Sports,1,414.46,414.46,Standard,Debit Card
+T3665,2024/03/26,S16,P037,Garmin Forerunner 255,Sports,3,349.34,1048.02,Loyal,Credit Card
+T3666,2024-05-07,S13,P038,Resistance Bands Set,Sports,5,30.06,150.3,Budget,Gift Card
+T3667,02-03-2022,S03,P011,Webcam 4K,Electronics,2,94.12,188.24,Loyal,Gift Card
+T3668,2023/12/02,S07,P028,Cast Iron Skillet 12in,Home & Kitchen,6,49.17,295.02,Budget,Gift Card
+T3669,2022/07/10,S10,P013,Levis 501 Jeans,Apparel,6,88.47,530.82,Loyal,Cash
+T3670,03-05-2024,S15,P004,Sony WH-1000XM5,Electronics,4,352.64,1410.56,Loyal,Cash
+T3671,01-11-2022,S08,P011,Webcam 4K,Electronics,4,88.88,355.52,Standard,Mobile Wallet
+T3672,02-03-2024,S02,P003,AirPods Pro 2nd Gen,Electronics,5,253.21,1266.05,Standard,Cash
+T3673,2022/12/16,S05,P018,Under Armour T-Shirt,Apparel,5,34.85,174.25,Premium,Cash
+T3674,20-06-2024,S20,P029,Dyson V15 Vacuum,Home & Kitchen,2,682.52,1365.04,Budget,Credit Card
+T3675,01/24/2024,S17,P028,Cast Iron Skillet 12in,Home & Kitchen,5,51.21,256.05,Budget,Gift Card
+T3676,11-07-2023,S04,P041,CeraVe Moisturizing Cream,Beauty,6,19.36,116.16,Standard,Gift Card
+T3677,2023/07/20,S21,P013,Levis 501 Jeans,Apparel,1,89.24,89.24,Loyal,Gift Card
+T3678,2022-06-08,S03,P020,New Balance 990,Apparel,1,178.92,178.92,Standard,Cash
+T3679,06/27/2024,S15,P035,Bowflex SelectTech Dumbbells,Sports,3,412.35,1237.05,Standard,Gift Card
+T3680,07-07-2022,S18,P042,Dyson Airwrap Styler,Beauty,2,618.09,1236.18,Loyal,Debit Card
+T3681,15-10-2024,S24,P013,Levis 501 Jeans,Apparel,1,90.59,90.59,Budget,Debit Card
+T3682,04/19/2022,S08,P028,Cast Iron Skillet 12in,Home & Kitchen,5,51.68,258.4,Loyal,Credit Card
+T3683,13-09-2022,S15,P017,Adidas Running Shorts,Apparel,4,39.52,158.08,Standard,Mobile Wallet
+T3684,10/07/2024,S20,P017,Adidas Running Shorts,Apparel,2,40.2,80.4,Loyal,Mobile Wallet
+T3685,2024/04/21,,P018,Under Armour T-Shirt,Apparel,6,34.84,209.04,Budget,Mobile Wallet
+T3686,2023-05-18,S18,P011,Webcam 4K,Electronics,6,89.79,538.74,Premium,Gift Card
+T3687,2023-12-30,S06,P020,New Balance 990,Apparel,6,177.88,1067.28,Premium,Mobile Wallet
+T3688,2024/04/06,S19,P049,Staples Desk Organiser,Books & Office,5,39.78,198.9,Standard,Gift Card
+T3689,2024/10/08,S19,P008,LG 27 4K Monitor,Electronics,6,462.27,2773.62,Premium,Credit Card
+T3690,2023-03-28,S21,P033,Peloton Yoga Mat,Sports,1,80.68,80.68,Standard,Gift Card
+T3691,2024/12/23,S06,P015,Patagonia Fleece Jacket,Apparel,1,182.11,182.11,Budget,Debit Card
+T3692,10/28/2023,S08,P050,HP 65XL Ink Cartridge,Books & Office,5,34.23,171.15,Budget,Debit Card
+T3693,2024-05-06,S19,P021,Carhartt Work Pants,Apparel,6,71.01,426.06,Loyal,Gift Card
+T3694,2023-12-09,S22,P012,Portable SSD 1TB,Electronics,2,107.58,215.16,Budget,Mobile Wallet
+T3695,04/05/2023,S12,P039,Foam Roller,Sports,6,33.96,203.76,Standard,Mobile Wallet
+T3696,07/05/2023,S17,P039,Foam Roller,Sports,4,34.48,137.92,Premium,Gift Card
+T3697,2023/10/19,S02,P040,Jump Rope Speed,Sports,2,19.67,39.34,Loyal,Credit Card
+T3698,01/19/2023,S16,P030,Robot Vacuum iRobot,Home & Kitchen,2,361.35,722.7,Loyal,Gift Card
+T3699,04-10-2024,S22,P017,Adidas Running Shorts,Apparel,2,39.57,79.14,Loyal,Debit Card
+T3700,26-07-2023,S11,P002,Samsung Galaxy S24 Ultra,Electronics,3,1180.68,3542.04,Standard,Credit Card
+T3701,06/03/2024,S18,P027,Cuisinart Air Fryer,Home & Kitchen,5,129.17,645.85,Standard,Debit Card
+T3702,02/11/2024,S16,P043,La Mer Moisturizer 1oz,Beauty,4,188.34,753.36,Loyal,Gift Card
+T3703,2022-11-07,S14,P020,New Balance 990,Apparel,5,170.21,851.05,Loyal,Credit Card
+T3704,2022-11-06,S16,P026,Nespresso Vertuo,Home & Kitchen,1,173.91,173.91,Loyal,Debit Card
+T3705,11-05-2023,S15,P019,Columbia Rain Jacket,Apparel,2,152.89,305.78,Standard,Credit Card
+T3706,04/11/2024,S16,P045,Olaplex No.3 Treatment,Beauty,1,27.83,27.83,Loyal,Credit Card
+T3707,2023-04-28,S17,P010,Mechanical Keyboard,Electronics,5,146.19,730.95,Loyal,Cash
+T3708,15-07-2022,S08,P031,Electric Kettle,Home & Kitchen,2,41.24,82.48,Standard,Cash
+T3709,2024/08/03,S16,P024,KitchenAid Stand Mixer,Home & Kitchen,5,391.1,1955.5,Standard,Gift Card
+T3710,2024-04-22,S21,P017,Adidas Running Shorts,Apparel,4,39.43,157.72,Loyal,Debit Card
+T3711,2024-06-10,S04,P007,Dell XPS 15,Electronics,5,1466.76,7333.8,Standard,Mobile Wallet
+T3712,11/25/2023,S20,P027,Cuisinart Air Fryer,Home & Kitchen,1,128.51,128.51,Budget,Credit Card
+T3713,2022/07/27,S08,P034,TRX Suspension Trainer,Sports,6,156.58,939.48,Budget,Credit Card
+T3714,2022/12/09,S01,P030,Robot Vacuum iRobot,Home & Kitchen,5,367.25,1836.25,Loyal,Mobile Wallet
+T3715,02-06-2023,S11,P036,CamelBak Hydration Pack,Sports,3,88.46,265.38,Budget,Gift Card
+T3716,26-02-2023,S03,P042,Dyson Airwrap Styler,Beauty,1,586.72,586.72,Loyal,Credit Card
+T3717,08-04-2024,S10,P038,Resistance Bands Set,Sports,3,29.97,89.91,Loyal,Gift Card
+T3718,2023-04-26,S19,P005,MacBook Air M2,Electronics,4,1355.08,5420.32,Premium,Cash
+T3719,2024-09-03,S20,P033,Peloton Yoga Mat,Sports,2,77.32,154.64,Loyal,Mobile Wallet
+T3720,03-09-2022,S17,P025,Vitamix 5200 Blender,Home & Kitchen,1,440.73,440.73,Standard,Cash
+T3721,2022/06/29,S01,P008,LG 27 4K Monitor,Electronics,3,439.75,1319.25,Premium,Mobile Wallet
+T3722,04-05-2022,S07,P019,Columbia Rain Jacket,Apparel,4,146.58,586.32,Premium,Debit Card
+T3723,2023/04/17,S24,P034,TRX Suspension Trainer,Sports,3,148.74,446.22,Standard,Debit Card
+T3724,2024-04-16,S01,P032,French Press Coffee,Home & Kitchen,1,29.34,29.34,Loyal,Credit Card
+T3725,04/04/2022,S16,P042,Dyson Airwrap Styler,Beauty,5,625.81,3129.05,Loyal,Cash
+T3726,15-11-2022,S11,P050,HP 65XL Ink Cartridge,Books & Office,3,34.32,102.96,Premium,Debit Card
+T3727,05-08-2022,S04,P045,Olaplex No.3 Treatment,Beauty,6,29.06,174.36,Standard,Debit Card
+T3728,09-02-2024,S08,P008,LG 27 4K Monitor,Electronics,5,454.2,2271.0,Premium,Gift Card
+T3729,28-05-2023,S23,P050,HP 65XL Ink Cartridge,Books & Office,3,34.29,102.87,Standard,Credit Card
+T3730,02/04/2022,S14,P046,Tatcha Rice Wash Cleanser,Beauty,4,37.5,150.0,Loyal,Debit Card
+T3731,2023-04-10,S17,P004,Sony WH-1000XM5,Electronics,6,340.58,2043.48,Premium,Debit Card
+T3732,2024/09/15,S24,P041,CeraVe Moisturizing Cream,Beauty,1,19.27,19.27,Standard,Credit Card
+T3733,2023/06/02,S03,P043,La Mer Moisturizer 1oz,Beauty,2,186.16,372.32,Loyal,Credit Card
+T3734,2022-11-25,S10,P021,Carhartt Work Pants,Apparel,3,68.99,206.97,Standard,Cash
+T3735,09/27/2024,S08,P039,Foam Roller,Sports,2,35.88,71.76,Standard,Gift Card
+T3736,03/15/2024,S18,P016,Champion Hoodie,Apparel,4,54.7,218.8,Loyal,Cash
+T3737,04/05/2022,S14,P002,Samsung Galaxy S24 Ultra,Electronics,1,1205.39,1205.39,Premium,Gift Card
+T3738,2023-01-08,S10,P024,KitchenAid Stand Mixer,Home & Kitchen,5,373.19,1865.95,Budget,Debit Card
+T3739,06/17/2023,S24,P028,Cast Iron Skillet 12in,Home & Kitchen,3,50.61,151.83,Loyal,Gift Card
+T3740,2023/06/06,S17,P023,Instant Pot Duo 7in1,Home & Kitchen,4,100.27,401.08,Premium,Cash
+T3741,2022/08/01,S17,P003,AirPods Pro 2nd Gen,Electronics,3,249.22,747.66,Loyal,Credit Card
+T3742,2023/09/26,S17,P042,Dyson Airwrap Styler,Beauty,4,625.96,2503.84,Loyal,Gift Card
+T3743,2024-01-10,S06,P030,Robot Vacuum iRobot,Home & Kitchen,6,352.28,2113.68,Loyal,Mobile Wallet
+T3744,11/12/2024,S07,P047,Atomic Habits Book,Books & Office,4,19.56,78.24,Loyal,Credit Card
+T3745,08-12-2024,S19,P014,Nike Air Max 270,Apparel,6,131.72,790.32,Standard,Mobile Wallet
+T3746,2024/05/14,S01,P006,iPad Pro 12.9,Electronics,1,1070.75,1070.75,Standard,Credit Card
+T3747,12/16/2023,S22,P040,Jump Rope Speed,Sports,1,19.54,19.54,Loyal,Debit Card
+T3748,01/26/2022,S08,P021,Carhartt Work Pants,Apparel,2,71.36,142.72,Standard,Debit Card
+T3749,07/27/2024,S03,P037,Garmin Forerunner 255,Sports,6,354.73,2128.38,Budget,Cash
+T3750,2022-09-06,S02,P039,Foam Roller,Sports,3,35.64,106.92,Premium,Mobile Wallet
+T3751,22-01-2023,S10,P043,La Mer Moisturizer 1oz,Beauty,2,189.62,379.24,Loyal,Cash
+T3752,2023-08-18,S13,P037,Garmin Forerunner 255,Sports,5,359.44,1797.2,Loyal,Credit Card
+T3753,01/17/2022,S12,P021,Carhartt Work Pants,Apparel,6,70.0,420.0,Premium,Mobile Wallet
+T3754,09-03-2022,S14,P050,HP 65XL Ink Cartridge,Books & Office,5,34.69,173.45,Budget,Gift Card
+T3755,2024/07/07,S24,P023,Instant Pot Duo 7in1,Home & Kitchen,1,97.33,97.33,Premium,Credit Card
+T3756,21-12-2022,S06,P031,Electric Kettle,Home & Kitchen,2,39.72,79.44,Premium,Gift Card
+T3757,2024/02/22,S09,P044,Neutrogena SPF 50 Sunscreen,Beauty,6,13.6,81.6,Premium,Debit Card
+T3758,2022/01/02,S07,P022,Hanes Crew Socks 6pk,Apparel,4,15.43,61.72,Budget,Gift Card
+T3759,2022-06-15,S03,P044,Neutrogena SPF 50 Sunscreen,Beauty,4,14.38,57.52,Loyal,Mobile Wallet
+T3760,2023-11-29,S04,P027,Cuisinart Air Fryer,Home & Kitchen,1,129.66,129.66,Budget,Cash
+T3761,2023/03/13,S21,P036,CamelBak Hydration Pack,Sports,4,91.74,366.96,Budget,Credit Card
+T3762,12/27/2022,S22,P007,Dell XPS 15,Electronics,6,1526.09,9156.54,Budget,Credit Card
+T3763,18-12-2023,S21,P014,Nike Air Max 270,Apparel,4,135.45,541.8,Budget,Gift Card
+T3764,2024-09-03,S20,P003,AirPods Pro 2nd Gen,Electronics,2,254.65,509.3,Budget,Cash
+T3765,2023-01-03,S11,P004,Sony WH-1000XM5,Electronics,1,345.9,345.9,Budget,Mobile Wallet
+T3766,29-11-2023,S16,P033,Peloton Yoga Mat,Sports,1,77.84,77.84,Premium,Debit Card
+T3767,10/22/2024,S18,P011,Webcam 4K,Electronics,6,93.58,561.48,Standard,Cash
+T3768,03-12-2024,S17,P030,Robot Vacuum iRobot,Home & Kitchen,5,356.07,1780.35,Budget,Credit Card
+T3769,2022/03/24,S08,P050,HP 65XL Ink Cartridge,Books & Office,5,34.08,170.4,Budget,Gift Card
+T3770,05/22/2022,S03,P033,Peloton Yoga Mat,Sports,5,81.3,406.5,Budget,Mobile Wallet
+T3771,24-09-2024,S01,P019,Columbia Rain Jacket,Apparel,2,152.96,305.92,Premium,Mobile Wallet
+T3772,2023-11-07,S07,P004,Sony WH-1000XM5,Electronics,6,365.34,2192.04,Premium,Debit Card
+T3773,21-11-2024,S13,P030,Robot Vacuum iRobot,Home & Kitchen,5,342.41,1712.05,Premium,Credit Card
+T3774,09/11/2022,S07,P010,Mechanical Keyboard,Electronics,3,156.09,468.27,Loyal,Mobile Wallet
+T3775,17-05-2024,S19,P041,CeraVe Moisturizing Cream,Beauty,3,19.59,58.77,Standard,Debit Card
+T3776,2022-02-11,S15,P017,Adidas Running Shorts,Apparel,3,41.61,124.83,Standard,Debit Card
+T3777,07/28/2023,S05,P027,Cuisinart Air Fryer,Home & Kitchen,5,134.14,670.7,Loyal,Cash
+T3778,11/01/2022,S08,P027,Cuisinart Air Fryer,Home & Kitchen,1,134.69,134.69,Standard,Debit Card
+T3779,05/21/2024,S23,P039,Foam Roller,Sports,2,36.66,73.32,Budget,Credit Card
+T3780,06-12-2024,S11,P013,Levis 501 Jeans,Apparel,6,91.85,551.1,Premium,Debit Card
+T3781,2024-07-21,,P031,Electric Kettle,Home & Kitchen,5,40.11,200.55,Budget,Debit Card
+T3782,2023/07/25,S24,P035,Bowflex SelectTech Dumbbells,Sports,6,406.23,2437.38,Budget,Gift Card
+T3783,2024/04/26,S02,P001,iPhone 15 Pro,Electronics,6,1073.08,6438.48,Budget,Debit Card
+T3784,05-10-2022,S08,P028,Cast Iron Skillet 12in,Home & Kitchen,4,50.22,200.88,Premium,Cash
+T3785,2022-05-05,S08,P037,Garmin Forerunner 255,Sports,2,343.77,687.54,Loyal,Gift Card
+T3786,2023/03/26,S12,P022,Hanes Crew Socks 6pk,Apparel,6,15.36,92.16,Budget,Debit Card
+T3787,08/11/2023,S20,P040,Jump Rope Speed,Sports,6,19.6,117.6,Budget,Gift Card
+T3788,04/09/2023,S01,P013,Levis 501 Jeans,Apparel,5,90.17,450.85,Loyal,Credit Card
+T3789,16-03-2024,S24,P036,CamelBak Hydration Pack,Sports,4,94.3,377.2,Budget,Credit Card
+T3790,2024-06-29,S18,P024,KitchenAid Stand Mixer,Home & Kitchen,2,376.77,753.54,Premium,Gift Card
+T3791,12-07-2022,S12,P047,Atomic Habits Book,Books & Office,1,19.88,19.88,Budget,Gift Card
+T3792,2022/02/28,S17,P046,Tatcha Rice Wash Cleanser,Beauty,2,39.74,79.48,Standard,Debit Card
+T3793,2023-08-15,S03,P024,KitchenAid Stand Mixer,Home & Kitchen,5,369.21,1846.05,Loyal,Gift Card
+T3794,12-02-2024,S23,P022,Hanes Crew Socks 6pk,Apparel,3,14.68,44.04,Premium,Mobile Wallet
+T3795,07-10-2023,S12,P001,iPhone 15 Pro,Electronics,4,1132.3,4529.2,Loyal,Mobile Wallet
+T3796,09-11-2024,S03,P046,Tatcha Rice Wash Cleanser,Beauty,4,39.01,156.04,Standard,Mobile Wallet
+T3797,01/14/2024,S08,P008,LG 27 4K Monitor,Electronics,5,448.22,2241.1,Budget,Mobile Wallet
+T3798,23-07-2024,S22,P019,Columbia Rain Jacket,Apparel,2,153.55,307.1,Budget,Credit Card
+T3799,06/22/2024,S25,P024,KitchenAid Stand Mixer,Home & Kitchen,3,370.51,1111.53,Loyal,Cash
+T3800,2023/06/01,S05,P048,Moleskine Notebook,Books & Office,2,25.51,51.02,Budget,Debit Card
+T3801,2024-08-20,S18,P049,Staples Desk Organiser,Books & Office,6,40.25,241.5,Loyal,Mobile Wallet
+T3802,05/16/2024,S13,P048,Moleskine Notebook,Books & Office,4,25.9,103.6,Loyal,Gift Card
+T3803,05/11/2023,S06,P027,Cuisinart Air Fryer,Home & Kitchen,6,134.67,808.02,Premium,Credit Card
+T3804,2022/04/25,S02,P048,Moleskine Notebook,Books & Office,3,24.83,74.49,Standard,Debit Card
+T3805,01/06/2024,S06,P004,Sony WH-1000XM5,Electronics,5,343.4,1717.0,Loyal,Cash
+T3806,07-03-2024,S15,P003,AirPods Pro 2nd Gen,Electronics,3,257.05,771.15,Premium,Credit Card
+T3807,2023-09-24,S06,P022,Hanes Crew Socks 6pk,Apparel,4,15.11,60.44,Premium,Cash
+T3808,2022-08-03,S20,P015,Patagonia Fleece Jacket,Apparel,5,185.3,926.5,Loyal,Mobile Wallet
+T3809,2024-02-07,S08,P005,MacBook Air M2,Electronics,5,1324.42,6622.1,Budget,Cash
+T3810,02-09-2024,,P032,French Press Coffee,Home & Kitchen,1,29.27,29.27,Standard,Debit Card
+T3811,07/20/2024,S19,P014,Nike Air Max 270,Apparel,2,132.16,264.32,Standard,Cash
+T3812,2022/05/02,S05,P013,Levis 501 Jeans,Apparel,5,88.09,440.45,Standard,Gift Card
+T3813,24-04-2024,S04,P001,iPhone 15 Pro,Electronics,6,1125.29,6751.74,Budget,Cash
+T3814,07/07/2024,S09,P021,Carhartt Work Pants,Apparel,4,70.85,283.4,Budget,Mobile Wallet
+T3815,2024-11-04,S13,P021,Carhartt Work Pants,Apparel,1,72.32,72.32,Premium,Cash
+T3816,03-12-2024,S20,P043,La Mer Moisturizer 1oz,Beauty,3,188.33,564.99,Premium,Mobile Wallet
+T3817,07/18/2024,S21,P028,Cast Iron Skillet 12in,Home & Kitchen,6,48.62,291.72,Standard,Mobile Wallet
+T3818,2024/10/24,S03,P039,Foam Roller,Sports,1,35.88,35.88,Loyal,Debit Card
+T3819,2022/11/04,S16,P048,Moleskine Notebook,Books & Office,6,26.21,157.26,Loyal,Cash
+T3820,02/07/2024,S13,P045,Olaplex No.3 Treatment,Beauty,3,27.42,82.26,Premium,Gift Card
+T3821,2022/04/16,S19,P032,French Press Coffee,Home & Kitchen,5,30.56,152.8,Loyal,Mobile Wallet
+T3822,08/11/2023,S17,P044,Neutrogena SPF 50 Sunscreen,Beauty,4,13.92,55.68,Loyal,Cash
+T3823,27-09-2024,S03,P025,Vitamix 5200 Blender,Home & Kitchen,3,441.5,1324.5,Premium,Cash
+T3824,2024/05/01,S18,P023,Instant Pot Duo 7in1,Home & Kitchen,4,99.23,396.92,Premium,Gift Card
+T3825,2024-04-20,S21,P002,Samsung Galaxy S24 Ultra,Electronics,1,1222.32,1222.32,Standard,Cash
+T3826,2022/02/12,S22,P006,iPad Pro 12.9,Electronics,1,1107.47,1107.47,Standard,Credit Card
+T3827,12/11/2023,S24,P013,Levis 501 Jeans,Apparel,2,93.74,187.48,Loyal,Gift Card
+T3828,07/22/2023,S17,P031,Electric Kettle,Home & Kitchen,2,40.01,80.02,Standard,Credit Card
+T3829,2022-02-05,S18,P041,CeraVe Moisturizing Cream,Beauty,3,19.71,59.13,Standard,Credit Card
+T3830,2023-09-29,S25,P038,Resistance Bands Set,Sports,6,31.29,187.74,Standard,Debit Card
+T3831,31-01-2023,S19,P017,Adidas Running Shorts,Apparel,4,40.86,163.44,Premium,Gift Card
+T3832,05/17/2024,S06,P037,Garmin Forerunner 255,Sports,4,361.93,1447.72,Loyal,Credit Card
+T3833,12-10-2023,S08,P005,MacBook Air M2,Electronics,3,1354.72,4064.16,Standard,Credit Card
+T3834,2024-08-23,S18,P007,Dell XPS 15,Electronics,5,1561.21,7806.05,Loyal,Mobile Wallet
+T3835,11/24/2024,S24,P008,LG 27 4K Monitor,Electronics,3,448.94,1346.82,Standard,Mobile Wallet
+T3836,2024-06-27,S10,P034,TRX Suspension Trainer,Sports,4,150.01,600.04,Loyal,Gift Card
+T3837,07-03-2023,S16,P028,Cast Iron Skillet 12in,Home & Kitchen,5,49.2,246.0,Premium,Mobile Wallet
+T3838,11/05/2023,S20,P017,Adidas Running Shorts,Apparel,1,40.89,40.89,Loyal,Credit Card
+T3839,2023-11-12,S20,P004,Sony WH-1000XM5,Electronics,2,347.05,694.1,Loyal,Debit Card
+T3840,08/10/2022,S01,P027,Cuisinart Air Fryer,Home & Kitchen,5,132.85,664.25,Loyal,Credit Card
+T3841,2024-12-30,S03,P003,AirPods Pro 2nd Gen,Electronics,1,259.42,259.42,Premium,Gift Card
+T3842,09/04/2022,S01,P028,Cast Iron Skillet 12in,Home & Kitchen,3,50.08,150.24,Standard,Debit Card
+T3843,2024/08/24,S09,P011,Webcam 4K,Electronics,2,92.13,184.26,Standard,Credit Card
+T3844,2022-12-01,S03,P041,CeraVe Moisturizing Cream,Beauty,3,18.67,56.01,Premium,Debit Card
+T3845,2022/12/04,S23,P038,Resistance Bands Set,Sports,5,29.67,148.35,Premium,Cash
+T3846,2024/06/17,S15,P010,Mechanical Keyboard,Electronics,3,147.25,441.75,Loyal,Gift Card
+T3847,09-10-2024,S18,P003,AirPods Pro 2nd Gen,Electronics,5,260.96,1304.8,Standard,Mobile Wallet
+T3848,2024/06/28,S10,P040,Jump Rope Speed,Sports,2,20.34,40.68,Standard,Gift Card
+T3849,2024/04/21,S11,P043,La Mer Moisturizer 1oz,Beauty,2,191.53,383.06,Loyal,Mobile Wallet
+T3850,26-06-2023,S12,P005,MacBook Air M2,Electronics,5,1264.55,6322.75,Premium,Mobile Wallet
+T3851,04/19/2023,S21,P046,Tatcha Rice Wash Cleanser,Beauty,1,37.57,37.57,Budget,Mobile Wallet
+T3852,11-12-2024,S12,P035,Bowflex SelectTech Dumbbells,Sports,5,416.23,2081.15,Budget,Cash
+T3853,2024-05-15,S06,P027,Cuisinart Air Fryer,Home & Kitchen,2,130.68,261.36,Standard,Mobile Wallet
+T3854,23-05-2022,S09,P040,Jump Rope Speed,Sports,1,20.3,20.3,Loyal,Credit Card
+T3855,03/06/2024,S23,P042,Dyson Airwrap Styler,Beauty,4,592.65,2370.6,Loyal,Credit Card
+T3856,2023-09-19,S12,P006,iPad Pro 12.9,Electronics,3,1074.52,3223.56,Standard,Mobile Wallet
+T3857,2023/10/03,S21,P045,Olaplex No.3 Treatment,Beauty,6,28.26,169.56,Premium,Mobile Wallet
+T3858,2022-01-15,S17,P025,Vitamix 5200 Blender,Home & Kitchen,3,443.53,1330.59,Premium,Mobile Wallet
+T3859,2023/07/27,S17,P046,Tatcha Rice Wash Cleanser,Beauty,4,39.79,159.16,Loyal,Credit Card
+T3860,2022-05-01,S18,P043,La Mer Moisturizer 1oz,Beauty,3,193.52,580.56,Standard,Credit Card
+T3861,29-09-2023,S02,P043,La Mer Moisturizer 1oz,Beauty,1,183.49,183.49,Premium,Debit Card
+T3862,24-02-2022,S13,P012,Portable SSD 1TB,Electronics,6,110.55,663.3,Loyal,Mobile Wallet
+T3863,2023-05-09,S14,P014,Nike Air Max 270,Apparel,3,133.4,400.2,Budget,Cash
+T3864,05-10-2022,S13,P025,Vitamix 5200 Blender,Home & Kitchen,1,460.57,460.57,Premium,Cash
+T3865,2024-12-05,S06,P003,AirPods Pro 2nd Gen,Electronics,6,252.46,1514.76,Loyal,Cash
+T3866,01-12-2023,S03,P049,Staples Desk Organiser,Books & Office,2,39.06,78.12,Premium,Debit Card
+T3867,2022-04-15,,P026,Nespresso Vertuo,Home & Kitchen,5,175.99,879.95,Budget,Debit Card
+T3868,2023/06/08,S06,P023,Instant Pot Duo 7in1,Home & Kitchen,5,98.79,493.95,Standard,Mobile Wallet
+T3869,06/13/2023,,P002,Samsung Galaxy S24 Ultra,Electronics,3,1172.85,3518.55,Loyal,Cash
+T3870,06-08-2022,S10,P030,Robot Vacuum iRobot,Home & Kitchen,1,363.86,363.86,Premium,Gift Card
+T3871,2024/12/20,S16,P049,Staples Desk Organiser,Books & Office,4,40.53,162.12,Standard,Debit Card
+T3872,03/30/2023,S14,P050,HP 65XL Ink Cartridge,Books & Office,1,36.08,36.08,Loyal,Debit Card
+T3873,2024-03-18,S17,P014,Nike Air Max 270,Apparel,2,133.78,267.56,Standard,Cash
+T3874,11/11/2024,S03,P014,Nike Air Max 270,Apparel,6,129.45,776.7,Budget,Gift Card
+T3875,2024/08/06,S25,P003,AirPods Pro 2nd Gen,Electronics,2,258.8,517.6,Standard,Credit Card
+T3876,2023/04/16,S25,P007,Dell XPS 15,Electronics,6,1478.77,8872.62,Premium,Gift Card
+T3877,03/26/2022,S15,P020,New Balance 990,Apparel,3,171.81,515.43,Standard,Gift Card
+T3878,11/14/2022,S22,P001,iPhone 15 Pro,Electronics,3,1095.7,3287.1,Premium,Cash
+T3879,07/17/2022,S13,P043,La Mer Moisturizer 1oz,Beauty,2,189.9,379.8,Premium,Mobile Wallet
+T3880,26-06-2023,S01,P033,Peloton Yoga Mat,Sports,6,82.75,496.5,Premium,Mobile Wallet
+T3881,2024-11-29,S19,P022,Hanes Crew Socks 6pk,Apparel,6,14.75,88.5,Premium,Gift Card
+T3882,2023/06/26,S11,P045,Olaplex No.3 Treatment,Beauty,3,27.79,83.37,Premium,Debit Card
+T3883,2024-03-08,S17,P018,Under Armour T-Shirt,Apparel,4,35.2,140.8,Standard,Mobile Wallet
+T3884,2023-11-26,S12,P021,Carhartt Work Pants,Apparel,1,70.84,70.84,Budget,Gift Card
+T3885,11-08-2022,S08,P009,Logitech MX Master 3,Electronics,5,102.4,512.0,Standard,Gift Card
+T3886,18-05-2023,S02,P031,Electric Kettle,Home & Kitchen,6,40.3,241.8,Premium,Cash
+T3887,03/10/2023,S19,P045,Olaplex No.3 Treatment,Beauty,3,28.8,86.4,Standard,Cash
+T3888,2022-01-18,S04,P020,New Balance 990,Apparel,4,179.02,716.08,Premium,Cash
+T3889,12-03-2023,S19,P008,LG 27 4K Monitor,Electronics,1,441.55,441.55,Budget,Gift Card
+T3890,29-05-2024,S25,P048,Moleskine Notebook,Books & Office,1,24.76,24.76,Budget,Gift Card
+T3891,04-11-2022,S14,P017,Adidas Running Shorts,Apparel,1,39.01,39.01,Premium,Cash
+T3892,2023-07-13,S09,P026,Nespresso Vertuo,Home & Kitchen,2,183.67,367.34,Loyal,Cash
+T3893,09/09/2022,S01,P011,Webcam 4K,Electronics,2,92.8,185.6,Loyal,Debit Card
+T3894,2022-10-01,S17,P015,Patagonia Fleece Jacket,Apparel,5,183.38,916.9,Premium,Cash
+T3895,2022/05/18,S08,P013,Levis 501 Jeans,Apparel,6,88.98,533.88,Loyal,Cash
+T3896,30-12-2022,S02,P026,Nespresso Vertuo,Home & Kitchen,1,175.99,175.99,Loyal,Mobile Wallet
+T3897,2024-07-31,S25,P004,Sony WH-1000XM5,Electronics,6,366.26,2197.56,Standard,Gift Card
+T3898,29-09-2024,S06,P043,La Mer Moisturizer 1oz,Beauty,4,184.53,738.12,Standard,Gift Card
+T3899,2022-07-19,S13,P020,New Balance 990,Apparel,5,172.87,864.35,Loyal,Cash
+T3900,2023-06-06,S09,P011,Webcam 4K,Electronics,1,91.18,91.18,Loyal,Gift Card
+T3901,2024/11/14,S18,P015,Patagonia Fleece Jacket,Apparel,5,183.06,915.3,Budget,Debit Card
+T3902,2024-09-06,S01,P017,Adidas Running Shorts,Apparel,6,41.99,251.94,Budget,Gift Card
+T3903,2022-01-31,S15,P047,Atomic Habits Book,Books & Office,2,18.83,37.66,Budget,Debit Card
+T3904,16-04-2023,S06,P005,MacBook Air M2,Electronics,5,1261.98,6309.9,Budget,Cash
+T3905,02-03-2024,S24,P025,Vitamix 5200 Blender,Home & Kitchen,5,470.21,2351.05,Standard,Credit Card
+T3906,2023-06-17,S20,P046,Tatcha Rice Wash Cleanser,Beauty,2,38.56,77.12,Premium,Mobile Wallet
+T3907,2022-04-13,S20,P019,Columbia Rain Jacket,Apparel,3,155.18,465.54,Standard,Mobile Wallet
+T3908,2024-02-15,S19,P008,LG 27 4K Monitor,Electronics,1,450.32,450.32,Loyal,Cash
+T3909,02/09/2023,S14,P043,La Mer Moisturizer 1oz,Beauty,2,184.42,368.84,Budget,Mobile Wallet
+T3910,06/10/2023,S06,P005,MacBook Air M2,Electronics,6,1286.54,7719.24,Premium,Cash
+T3911,03/10/2022,S13,P001,iPhone 15 Pro,Electronics,5,1071.39,5356.95,Loyal,Mobile Wallet
+T3912,2022/08/29,S20,P050,HP 65XL Ink Cartridge,Books & Office,3,36.59,109.77,Loyal,Credit Card
+T3913,2023/06/04,S11,P045,Olaplex No.3 Treatment,Beauty,4,29.26,117.04,Budget,Debit Card
+T3914,2022/06/12,S20,P001,iPhone 15 Pro,Electronics,5,1084.8,5424.0,Loyal,Debit Card
+T3915,2023-07-05,S08,P025,Vitamix 5200 Blender,Home & Kitchen,4,447.2,1788.8,Premium,Cash
+T3916,2022-06-17,S05,P040,Jump Rope Speed,Sports,6,20.21,121.26,Loyal,Credit Card
+T3917,2023/10/17,S02,P025,Vitamix 5200 Blender,Home & Kitchen,5,457.75,2288.75,Standard,Gift Card
+T3918,2024-09-11,S06,P031,Electric Kettle,Home & Kitchen,5,41.99,209.95,Budget,Gift Card
+T3919,14-03-2024,S21,P030,Robot Vacuum iRobot,Home & Kitchen,3,349.84,1049.52,Loyal,Credit Card
+T3920,2024/05/16,S01,P036,CamelBak Hydration Pack,Sports,2,91.18,182.36,Standard,Credit Card
+T3921,2024/09/22,S09,P001,iPhone 15 Pro,Electronics,4,1113.71,4454.84,Premium,Gift Card
+T3922,27-09-2022,S17,P048,Moleskine Notebook,Books & Office,5,24.88,124.4,Standard,Gift Card
+T3923,06-11-2024,S06,P008,LG 27 4K Monitor,Electronics,2,453.08,906.16,Budget,Credit Card
+T3924,06/16/2024,S12,P017,Adidas Running Shorts,Apparel,2,39.64,79.28,Loyal,Gift Card
+T3925,2023-09-28,S08,P036,CamelBak Hydration Pack,Sports,3,92.06,276.18,Standard,Credit Card
+T3926,09/20/2024,S22,P049,Staples Desk Organiser,Books & Office,2,41.81,83.62,Budget,Gift Card
+T3927,2024-05-31,S11,P017,Adidas Running Shorts,Apparel,3,38.89,116.67,Standard,Cash
+T3928,19-02-2024,S16,P047,Atomic Habits Book,Books & Office,5,18.74,93.7,Loyal,Cash
+T3929,2023/01/26,S02,P027,Cuisinart Air Fryer,Home & Kitchen,2,128.56,257.12,Standard,Mobile Wallet
+T3930,09-03-2023,S06,P043,La Mer Moisturizer 1oz,Beauty,5,181.31,906.55,Standard,Cash
+T3931,2023/06/01,,P021,Carhartt Work Pants,Apparel,4,70.92,283.68,Loyal,Mobile Wallet
+T3932,2022-08-08,S09,P018,Under Armour T-Shirt,Apparel,1,36.75,36.75,Standard,Debit Card
+T3933,2024-04-15,S13,P035,Bowflex SelectTech Dumbbells,Sports,1,407.31,407.31,Premium,Cash
+T3934,24-07-2022,S19,P038,Resistance Bands Set,Sports,2,30.17,60.34,Loyal,Cash
+T3935,2023/09/16,S02,P001,iPhone 15 Pro,Electronics,6,1081.32,6487.92,Budget,Gift Card
+T3936,24-07-2022,S18,P037,Garmin Forerunner 255,Sports,2,353.56,707.12,Budget,Gift Card
+T3937,01/14/2022,S21,P038,Resistance Bands Set,Sports,2,29.35,58.7,Loyal,Cash
+T3938,05/13/2024,S07,P042,Dyson Airwrap Styler,Beauty,5,592.74,2963.7,Standard,Gift Card
+T3939,2023-08-06,S10,P030,Robot Vacuum iRobot,Home & Kitchen,5,352.64,1763.2,Budget,Credit Card
+T3940,2024-04-20,S24,P038,Resistance Bands Set,Sports,3,29.93,89.79,Standard,Mobile Wallet
+T3941,09/09/2024,S04,P031,Electric Kettle,Home & Kitchen,4,40.58,162.32,Budget,Gift Card
+T3942,2024/09/09,S15,P024,KitchenAid Stand Mixer,Home & Kitchen,2,393.29,786.58,Loyal,Debit Card
+T3943,2022-02-01,S21,P011,Webcam 4K,Electronics,6,90.84,545.04,Premium,Cash
+T3944,2022-05-11,S21,P022,Hanes Crew Socks 6pk,Apparel,5,15.23,76.15,Loyal,Debit Card
+T3945,07/13/2024,S13,P047,Atomic Habits Book,Books & Office,4,18.51,74.04,Standard,Credit Card
+T3946,06/09/2023,S05,P030,Robot Vacuum iRobot,Home & Kitchen,4,366.3,1465.2,Standard,Cash
+T3947,20-11-2022,S18,P047,Atomic Habits Book,Books & Office,6,18.65,111.9,Standard,Debit Card
+T3948,23-06-2022,S05,P042,Dyson Airwrap Styler,Beauty,6,605.64,3633.84,Premium,Credit Card
+T3949,03/06/2022,S16,P024,KitchenAid Stand Mixer,Home & Kitchen,5,380.88,1904.4,Budget,Gift Card
+T3950,21-06-2023,S08,P037,Garmin Forerunner 255,Sports,2,354.88,709.76,Loyal,Mobile Wallet
+T3951,2022/12/11,S15,P041,CeraVe Moisturizing Cream,Beauty,2,19.86,39.72,Standard,Mobile Wallet
+T3952,13-04-2023,S14,P012,Portable SSD 1TB,Electronics,2,110.17,220.34,Premium,Debit Card
+T3953,10/05/2022,S02,P049,Staples Desk Organiser,Books & Office,4,38.93,155.72,Loyal,Mobile Wallet
+T3954,2024-09-09,S25,P005,MacBook Air M2,Electronics,2,1273.61,2547.22,Budget,Credit Card
+T3955,2024-05-30,S12,P035,Bowflex SelectTech Dumbbells,Sports,3,409.81,1229.43,Standard,Credit Card
+T3956,07/03/2024,S13,P037,Garmin Forerunner 255,Sports,6,347.17,2083.02,Loyal,Mobile Wallet
+T3957,01/02/2024,S22,P045,Olaplex No.3 Treatment,Beauty,2,28.09,56.18,Budget,Mobile Wallet
+T3958,09-04-2024,S15,P037,Garmin Forerunner 255,Sports,4,342.76,1371.04,Standard,Credit Card
+T3959,2022/10/18,S21,P042,Dyson Airwrap Styler,Beauty,4,589.54,2358.16,Loyal,Credit Card
+T3960,2022/03/10,S21,P021,Carhartt Work Pants,Apparel,3,73.34,220.02,Premium,Cash
+T3961,11-11-2024,S17,P029,Dyson V15 Vacuum,Home & Kitchen,1,703.2,703.2,Premium,Mobile Wallet
+T3962,2022-05-29,S05,P034,TRX Suspension Trainer,Sports,3,152.61,457.83,Premium,Cash
+T3963,01-12-2023,,P037,Garmin Forerunner 255,Sports,6,341.89,2051.34,Loyal,Cash
+T3964,06/03/2024,S08,P041,CeraVe Moisturizing Cream,Beauty,5,19.63,98.15,Budget,Mobile Wallet
+T3965,18-11-2024,S22,P010,Mechanical Keyboard,Electronics,6,145.53,873.18,Budget,Credit Card
+T3966,09-02-2024,S23,P035,Bowflex SelectTech Dumbbells,Sports,6,402.01,2412.06,Premium,Mobile Wallet
+T3967,2023-05-10,S12,P011,Webcam 4K,Electronics,2,94.32,188.64,Budget,Gift Card
+T3968,2023/12/17,S10,P037,Garmin Forerunner 255,Sports,5,343.96,1719.8,Premium,Debit Card
+T3969,25-06-2022,S13,P023,Instant Pot Duo 7in1,Home & Kitchen,6,100.3,601.8,Premium,Debit Card
+T3970,06-03-2024,,P031,Electric Kettle,Home & Kitchen,3,40.54,121.62,Premium,Cash
+T3971,2023-09-02,S14,P045,Olaplex No.3 Treatment,Beauty,5,29.31,146.55,Budget,Cash
+T3972,2022/10/27,S11,P040,Jump Rope Speed,Sports,5,20.18,100.9,Standard,Cash
+T3973,2024/10/15,S08,P008,LG 27 4K Monitor,Electronics,1,447.9,447.9,Standard,Debit Card
+T3974,2024/03/11,,P003,AirPods Pro 2nd Gen,Electronics,1,257.12,257.12,Standard,Mobile Wallet
+T3975,16-02-2022,S23,P014,Nike Air Max 270,Apparel,1,126.53,126.53,Budget,Cash
+T3976,04/19/2022,S10,P018,Under Armour T-Shirt,Apparel,5,36.19,180.95,Standard,Mobile Wallet
+T3977,2022-05-15,S07,P027,Cuisinart Air Fryer,Home & Kitchen,4,127.63,510.52,Budget,Gift Card
+T3978,2024-09-17,S02,P032,French Press Coffee,Home & Kitchen,6,30.46,182.76,Premium,Mobile Wallet
+T3979,2023-01-15,S02,P040,Jump Rope Speed,Sports,5,20.52,102.6,Standard,Gift Card
+T3980,2023/05/09,S21,P021,Carhartt Work Pants,Apparel,5,68.07,340.35,Premium,Credit Card
+T3981,20-04-2024,S21,P017,Adidas Running Shorts,Apparel,1,41.72,41.72,Loyal,Gift Card
+T3982,05/11/2022,S25,P002,Samsung Galaxy S24 Ultra,Electronics,2,1209.6,2419.2,Loyal,Mobile Wallet
+T3983,16-12-2024,S02,P018,Under Armour T-Shirt,Apparel,6,36.13,216.78,Loyal,Debit Card
+T3984,12/01/2024,S08,P013,Levis 501 Jeans,Apparel,5,87.08,435.4,Budget,Debit Card
+T3985,2022-10-13,S24,P007,Dell XPS 15,Electronics,4,1502.91,6011.64,Standard,Debit Card
+T3986,07-11-2023,S03,P031,Electric Kettle,Home & Kitchen,4,39.16,156.64,Loyal,Debit Card
+T3987,24-03-2022,S04,P004,Sony WH-1000XM5,Electronics,3,365.24,1095.72,Budget,Debit Card
+T3988,2024/12/04,S03,P036,CamelBak Hydration Pack,Sports,5,88.32,441.6,Premium,Gift Card
+T3989,05/18/2024,S06,P008,LG 27 4K Monitor,Electronics,1,470.26,470.26,Budget,Cash
+T3990,07-05-2022,S12,P018,Under Armour T-Shirt,Apparel,4,35.12,140.48,Standard,Cash
+T3991,2023-07-18,S23,P041,CeraVe Moisturizing Cream,Beauty,4,19.29,77.16,Loyal,Debit Card
+T3992,06/11/2024,S24,P050,HP 65XL Ink Cartridge,Books & Office,1,36.3,36.3,Loyal,Mobile Wallet
+T3993,2022/12/16,S09,P042,Dyson Airwrap Styler,Beauty,6,591.27,3547.62,Premium,Cash
+T3994,2022-12-10,S17,P010,Mechanical Keyboard,Electronics,1,147.45,147.45,Standard,Gift Card
+T3995,06/11/2024,S18,P034,TRX Suspension Trainer,Sports,5,151.37,756.85,Premium,Cash
+T3996,03/14/2023,S01,P030,Robot Vacuum iRobot,Home & Kitchen,1,352.89,352.89,Premium,Gift Card
+T3997,05/23/2022,S24,P021,Carhartt Work Pants,Apparel,3,70.34,211.02,Premium,Gift Card
+T3998,22-07-2024,S24,P041,CeraVe Moisturizing Cream,Beauty,3,18.48,55.44,Standard,Gift Card
+T3999,2022/09/09,S15,P042,Dyson Airwrap Styler,Beauty,1,615.43,615.43,Premium,Credit Card
+T4000,2024/08/21,S03,P046,Tatcha Rice Wash Cleanser,Beauty,3,37.1,111.3,Standard,Mobile Wallet
+T4001,2023/10/20,S24,P006,iPad Pro 12.9,Electronics,1,1093.79,1093.79,Loyal,Credit Card
+T4002,24-10-2024,S11,P018,Under Armour T-Shirt,Apparel,1,34.82,34.82,Loyal,Debit Card
+T4003,12-05-2024,S09,P015,Patagonia Fleece Jacket,Apparel,6,177.3,1063.8,Standard,Credit Card
+T4004,04/01/2023,S21,P023,Instant Pot Duo 7in1,Home & Kitchen,5,97.98,489.9,Premium,Mobile Wallet
+T4005,01-09-2024,S12,P004,Sony WH-1000XM5,Electronics,3,347.25,1041.75,Premium,Mobile Wallet
+T4006,13-08-2022,S03,P009,Logitech MX Master 3,Electronics,2,103.76,207.52,Budget,Debit Card
+T4007,2022-05-22,S23,P026,Nespresso Vertuo,Home & Kitchen,4,178.36,713.44,Premium,Credit Card
+T4008,06/26/2022,S18,P033,Peloton Yoga Mat,Sports,1,79.17,79.17,Standard,Debit Card
+T4009,2023/05/11,S13,P016,Champion Hoodie,Apparel,6,56.08,336.48,Standard,Cash
+T4010,2023/09/27,S19,P026,Nespresso Vertuo,Home & Kitchen,4,181.62,726.48,Loyal,Debit Card
+T4011,2023/05/17,S04,P041,CeraVe Moisturizing Cream,Beauty,6,19.8,118.8,Loyal,Credit Card
+T4012,2024/07/26,S15,P046,Tatcha Rice Wash Cleanser,Beauty,1,39.59,39.59,Loyal,Mobile Wallet
+T4013,2023-01-22,S13,P004,Sony WH-1000XM5,Electronics,1,362.33,362.33,Premium,Cash
+T4014,2023-06-10,S10,P004,Sony WH-1000XM5,Electronics,5,346.98,1734.9,Loyal,Mobile Wallet
+T4015,2022/12/21,S21,P044,Neutrogena SPF 50 Sunscreen,Beauty,1,13.77,13.77,Loyal,Cash
+T4016,21-10-2022,S14,P027,Cuisinart Air Fryer,Home & Kitchen,1,130.66,130.66,Premium,Debit Card
+T4017,2023-03-26,S10,P026,Nespresso Vertuo,Home & Kitchen,1,185.19,185.19,Budget,Mobile Wallet
+T4018,2024/04/12,S09,P015,Patagonia Fleece Jacket,Apparel,3,187.05,561.15,Standard,Credit Card
+T4019,2024/08/11,S24,P026,Nespresso Vertuo,Home & Kitchen,5,183.35,916.75,Loyal,Gift Card
+T4020,2023-03-29,S12,P019,Columbia Rain Jacket,Apparel,4,151.91,607.64,Premium,Debit Card
+T4021,2023-05-07,S25,P040,Jump Rope Speed,Sports,5,19.83,99.15,Loyal,Gift Card
+T4022,2023-10-13,S02,P042,Dyson Airwrap Styler,Beauty,5,621.96,3109.8,Budget,Cash
+T4023,2022-03-15,S22,P024,KitchenAid Stand Mixer,Home & Kitchen,5,398.58,1992.9,Budget,Mobile Wallet
+T4024,21-04-2022,S23,P003,AirPods Pro 2nd Gen,Electronics,6,259.72,1558.32,Budget,Mobile Wallet
+T4025,2024/09/20,S05,P027,Cuisinart Air Fryer,Home & Kitchen,4,130.86,523.44,Budget,Credit Card
+T4026,15-10-2023,S04,P012,Portable SSD 1TB,Electronics,2,108.09,216.18,Premium,Gift Card
+T4027,2024/02/26,S23,P006,iPad Pro 12.9,Electronics,4,1068.44,4273.76,Standard,Mobile Wallet
+T4028,12/29/2024,S06,P018,Under Armour T-Shirt,Apparel,4,34.58,138.32,Budget,Mobile Wallet
+T4029,2023-04-03,S22,P039,Foam Roller,Sports,5,34.78,173.9,Budget,Gift Card
+T4030,2022/12/26,S18,P038,Resistance Bands Set,Sports,1,30.36,30.36,Premium,Credit Card
+T4031,11/11/2024,S10,P042,Dyson Airwrap Styler,Beauty,6,623.25,3739.5,Standard,Cash
+T4032,2022/09/15,S17,P035,Bowflex SelectTech Dumbbells,Sports,2,402.36,804.72,Budget,Gift Card
+T4033,11-10-2024,S07,P044,Neutrogena SPF 50 Sunscreen,Beauty,5,13.87,69.35,Loyal,Mobile Wallet
+T4034,2022/10/24,S23,P030,Robot Vacuum iRobot,Home & Kitchen,3,365.8,1097.4,Premium,Mobile Wallet
+T4035,2023-12-07,S18,P030,Robot Vacuum iRobot,Home & Kitchen,5,342.31,1711.55,Premium,Credit Card
+T4036,2022-08-12,S19,P013,Levis 501 Jeans,Apparel,3,92.97,278.91,Loyal,Credit Card
+T4037,2024-04-30,S19,P040,Jump Rope Speed,Sports,5,20.12,100.6,Budget,Mobile Wallet
+T4038,2024/07/30,S07,P038,Resistance Bands Set,Sports,1,30.46,30.46,Premium,Gift Card
+T4039,2024-08-31,S10,P024,KitchenAid Stand Mixer,Home & Kitchen,3,395.13,1185.39,Standard,Debit Card
+T4040,2022/09/07,S06,P017,Adidas Running Shorts,Apparel,5,40.72,203.6,Budget,Debit Card
+T4041,2023/11/13,S13,P008,LG 27 4K Monitor,Electronics,4,457.5,1830.0,Standard,Mobile Wallet
+T4042,2024-03-30,S01,P002,Samsung Galaxy S24 Ultra,Electronics,1,1256.08,1256.08,Standard,Cash
+T4043,11/12/2022,S09,P050,HP 65XL Ink Cartridge,Books & Office,2,34.5,69.0,Premium,Debit Card
+T4044,10/13/2023,S13,P026,Nespresso Vertuo,Home & Kitchen,2,177.26,354.52,Budget,Gift Card
+T4045,16-11-2024,S01,P022,Hanes Crew Socks 6pk,Apparel,5,15.12,75.6,Budget,Gift Card
+T4046,2023/06/11,S18,P018,Under Armour T-Shirt,Apparel,4,34.95,139.8,Budget,Debit Card
+T4047,2024-07-05,S18,P021,Carhartt Work Pants,Apparel,2,69.02,138.04,Loyal,Debit Card
+T4048,12/24/2024,,P018,Under Armour T-Shirt,Apparel,4,36.05,144.2,Premium,Mobile Wallet
+T4049,12/22/2023,S19,P029,Dyson V15 Vacuum,Home & Kitchen,5,724.61,3623.05,Budget,Debit Card
+T4050,04-09-2024,S10,P035,Bowflex SelectTech Dumbbells,Sports,1,389.77,389.77,Standard,Gift Card
+T4051,2023-10-02,S24,P034,TRX Suspension Trainer,Sports,1,152.88,152.88,Premium,Cash
+T4052,2022-02-24,S04,P015,Patagonia Fleece Jacket,Apparel,2,176.4,352.8,Standard,Debit Card
+T4053,2024-04-03,S08,P034,TRX Suspension Trainer,Sports,5,145.63,728.15,Budget,Gift Card
+T4054,2024-09-15,S19,P001,iPhone 15 Pro,Electronics,4,1151.19,4604.76,Premium,Cash
+T4055,04/26/2023,S04,P018,Under Armour T-Shirt,Apparel,5,34.27,171.35,Loyal,Debit Card
+T4056,2023/03/01,S13,P034,TRX Suspension Trainer,Sports,6,147.69,886.14,Loyal,Debit Card
+T4057,2023/04/29,S13,P041,CeraVe Moisturizing Cream,Beauty,1,18.43,18.43,Budget,Credit Card
+T4058,2024/11/03,S06,P003,AirPods Pro 2nd Gen,Electronics,3,243.17,729.51,Loyal,Cash
+T4059,2024/02/18,S11,P037,Garmin Forerunner 255,Sports,2,363.81,727.62,Premium,Debit Card
+T4060,29-01-2022,S16,P020,New Balance 990,Apparel,2,173.31,346.62,Premium,Cash
+T4061,2023-11-07,S12,P027,Cuisinart Air Fryer,Home & Kitchen,1,128.21,128.21,Budget,Debit Card
+T4062,2022-07-29,S20,P036,CamelBak Hydration Pack,Sports,1,91.71,91.71,Budget,Mobile Wallet
+T4063,07/29/2022,S03,P024,KitchenAid Stand Mixer,Home & Kitchen,3,376.89,1130.67,Standard,Credit Card
+T4064,2022/05/16,S20,P047,Atomic Habits Book,Books & Office,1,18.54,18.54,Premium,Cash
+T4065,10/21/2024,S25,P020,New Balance 990,Apparel,5,173.15,865.75,Premium,Gift Card
+T4066,2022-01-15,S18,P017,Adidas Running Shorts,Apparel,1,41.88,41.88,Standard,Credit Card
+T4067,06/02/2024,S11,P037,Garmin Forerunner 255,Sports,4,347.59,1390.36,Budget,Cash
+T4068,2022-04-20,S05,P041,CeraVe Moisturizing Cream,Beauty,5,19.37,96.85,Loyal,Gift Card
+T4069,05/05/2022,S20,P005,MacBook Air M2,Electronics,6,1357.04,8142.24,Standard,Credit Card
+T4070,19-02-2023,S06,P023,Instant Pot Duo 7in1,Home & Kitchen,1,98.34,98.34,Loyal,Mobile Wallet
+T4071,11/26/2023,S11,P048,Moleskine Notebook,Books & Office,1,25.23,25.23,Premium,Cash
+T4072,2023/05/14,S14,P041,CeraVe Moisturizing Cream,Beauty,6,18.99,113.94,Loyal,Debit Card
+T4073,12-09-2023,S19,P025,Vitamix 5200 Blender,Home & Kitchen,5,441.85,2209.25,Loyal,Cash
+T4074,2024/01/04,S14,P046,Tatcha Rice Wash Cleanser,Beauty,6,38.23,229.38,Loyal,Gift Card
+T4075,07-06-2022,S04,P009,Logitech MX Master 3,Electronics,5,103.81,519.05,Standard,Mobile Wallet
+T4076,2023-11-09,S17,P027,Cuisinart Air Fryer,Home & Kitchen,4,136.21,544.84,Budget,Cash
+T4077,2023-10-19,S11,P018,Under Armour T-Shirt,Apparel,5,35.49,177.45,Budget,Credit Card
+T4078,2022-09-17,S20,P011,Webcam 4K,Electronics,4,92.34,369.36,Loyal,Gift Card
+T4079,2024/05/12,S02,P043,La Mer Moisturizer 1oz,Beauty,2,188.87,377.74,Standard,Mobile Wallet
+T4080,2023/08/01,S02,P009,Logitech MX Master 3,Electronics,1,101.88,101.88,Standard,Credit Card
+T4081,04/24/2023,S09,P044,Neutrogena SPF 50 Sunscreen,Beauty,6,13.8,82.8,Loyal,Debit Card
+T4082,04/17/2023,S22,P024,KitchenAid Stand Mixer,Home & Kitchen,1,386.33,386.33,Budget,Gift Card
+T4083,2023-02-24,S19,P006,iPad Pro 12.9,Electronics,1,1097.09,1097.09,Standard,Credit Card
+T4084,24-03-2022,S18,P044,Neutrogena SPF 50 Sunscreen,Beauty,5,14.16,70.8,Standard,Gift Card
+T4085,2022/12/16,S19,P046,Tatcha Rice Wash Cleanser,Beauty,4,37.3,149.2,Standard,Gift Card
+T4086,2022/04/06,S14,P033,Peloton Yoga Mat,Sports,1,80.37,80.37,Budget,Debit Card
+T4087,2024-03-08,S10,P009,Logitech MX Master 3,Electronics,5,98.92,494.6,Loyal,Debit Card
+T4088,10/22/2023,S02,P034,TRX Suspension Trainer,Sports,3,154.24,462.72,Budget,Mobile Wallet
+T4089,11-04-2022,S11,P023,Instant Pot Duo 7in1,Home & Kitchen,5,99.48,497.4,Premium,Cash
+T4090,02-06-2024,S18,P040,Jump Rope Speed,Sports,6,20.92,125.52,Loyal,Cash
+T4091,2024-11-21,S25,P034,TRX Suspension Trainer,Sports,3,149.98,449.94,Premium,Gift Card
+T4092,06-02-2022,S19,P040,Jump Rope Speed,Sports,4,20.76,83.04,Budget,Mobile Wallet
+T4093,10/11/2022,S12,P044,Neutrogena SPF 50 Sunscreen,Beauty,4,13.93,55.72,Premium,Cash
+T4094,2023-03-05,S17,P018,Under Armour T-Shirt,Apparel,1,34.27,34.27,Loyal,Gift Card
+T4095,2022/03/13,S14,P049,Staples Desk Organiser,Books & Office,6,39.52,237.12,Standard,Debit Card
+T4096,02/19/2022,S18,P019,Columbia Rain Jacket,Apparel,2,156.05,312.1,Standard,Gift Card
+T4097,2024/06/16,S23,P045,Olaplex No.3 Treatment,Beauty,4,27.93,111.72,Budget,Cash
+T4098,28-04-2023,S14,P019,Columbia Rain Jacket,Apparel,6,154.54,927.24,Loyal,Credit Card
+T4099,2024-04-02,S15,P005,MacBook Air M2,Electronics,6,1291.76,7750.56,Premium,Credit Card
+T4100,22-06-2022,S01,P006,iPad Pro 12.9,Electronics,2,1097.3,2194.6,Loyal,Debit Card
+T4101,2023-06-01,S07,P034,TRX Suspension Trainer,Sports,5,156.86,784.3,Loyal,Debit Card
+T4102,08/02/2023,S07,P045,Olaplex No.3 Treatment,Beauty,4,27.68,110.72,Standard,Credit Card
+T4103,07-10-2024,S09,P039,Foam Roller,Sports,6,35.5,213.0,Loyal,Debit Card
+T4104,2023/01/29,S24,P042,Dyson Airwrap Styler,Beauty,1,607.32,607.32,Premium,Cash
+T4105,2023/08/27,S01,P013,Levis 501 Jeans,Apparel,1,92.69,92.69,Budget,Credit Card
+T4106,2024-07-31,S01,P040,Jump Rope Speed,Sports,1,20.14,20.14,Standard,Debit Card
+T4107,2022/06/04,S09,P033,Peloton Yoga Mat,Sports,3,78.83,236.49,Budget,Gift Card
+T4108,03/04/2022,S18,P048,Moleskine Notebook,Books & Office,3,24.67,74.01,Premium,Cash
+T4109,09-04-2022,S24,P002,Samsung Galaxy S24 Ultra,Electronics,1,1214.11,1214.11,Standard,Mobile Wallet
+T4110,2023-08-25,S05,P024,KitchenAid Stand Mixer,Home & Kitchen,4,378.28,1513.12,Premium,Debit Card
+T4111,2024/05/30,S25,P012,Portable SSD 1TB,Electronics,6,110.62,663.72,Budget,Credit Card
+T4112,16-12-2023,S05,P012,Portable SSD 1TB,Electronics,6,113.35,680.1,Loyal,Gift Card
+T4113,2024-07-12,S04,P023,Instant Pot Duo 7in1,Home & Kitchen,6,100.19,601.14,Budget,Mobile Wallet
+T4114,2024-03-17,S01,P025,Vitamix 5200 Blender,Home & Kitchen,2,461.84,923.68,Premium,Gift Card
+T4115,2023-04-22,S14,P041,CeraVe Moisturizing Cream,Beauty,2,18.6,37.2,Premium,Cash
+T4116,2024-06-29,S12,P042,Dyson Airwrap Styler,Beauty,6,593.47,3560.82,Loyal,Credit Card
+T4117,01/13/2023,S21,P035,Bowflex SelectTech Dumbbells,Sports,2,418.63,837.26,Premium,Debit Card
+T4118,23-04-2023,S22,P014,Nike Air Max 270,Apparel,5,128.64,643.2,Loyal,Mobile Wallet
+T4119,2024-02-12,S06,P028,Cast Iron Skillet 12in,Home & Kitchen,2,49.07,98.14,Premium,Gift Card
+T4120,2023-05-28,S21,P009,Logitech MX Master 3,Electronics,1,101.53,101.53,Premium,Cash
+T4121,2023-05-12,,P037,Garmin Forerunner 255,Sports,5,365.62,1828.1,Premium,Credit Card
+T4122,10-07-2024,S13,P027,Cuisinart Air Fryer,Home & Kitchen,1,127.0,127.0,Standard,Gift Card
+T4123,2022/03/07,S07,P004,Sony WH-1000XM5,Electronics,1,354.63,354.63,Standard,Mobile Wallet
+T4124,05-09-2022,S02,P005,MacBook Air M2,Electronics,3,1287.03,3861.09,Standard,Mobile Wallet
+T4125,2022/04/06,S01,P045,Olaplex No.3 Treatment,Beauty,3,27.91,83.73,Standard,Cash
+T4126,06-12-2022,S11,P030,Robot Vacuum iRobot,Home & Kitchen,3,339.72,1019.16,Budget,Cash
+T4127,2023/08/31,S04,P001,iPhone 15 Pro,Electronics,5,1120.25,5601.25,Premium,Cash
+T4128,2023-05-16,S04,P012,Portable SSD 1TB,Electronics,4,107.85,431.4,Budget,Mobile Wallet
+T4129,2024/05/31,S18,P027,Cuisinart Air Fryer,Home & Kitchen,1,127.76,127.76,Standard,Gift Card
+T4130,2024-12-04,S02,P046,Tatcha Rice Wash Cleanser,Beauty,6,38.61,231.66,Standard,Mobile Wallet
+T4131,2023-07-30,S14,P033,Peloton Yoga Mat,Sports,3,79.34,238.02,Premium,Credit Card
+T4132,12/16/2024,S03,P032,French Press Coffee,Home & Kitchen,6,29.37,176.22,Budget,Credit Card
+T4133,2024/02/27,S07,P041,CeraVe Moisturizing Cream,Beauty,1,19.69,19.69,Premium,Cash
+T4134,11/28/2024,S10,P005,MacBook Air M2,Electronics,1,1314.44,1314.44,Premium,Debit Card
+T4135,09-05-2024,S25,P003,AirPods Pro 2nd Gen,Electronics,3,252.89,758.67,Budget,Debit Card
+T4136,2024-03-07,S07,P015,Patagonia Fleece Jacket,Apparel,5,182.33,911.65,Budget,Cash
+T4137,29-01-2023,S10,P041,CeraVe Moisturizing Cream,Beauty,4,19.93,79.72,Premium,Debit Card
+T4138,20-03-2023,S20,P023,Instant Pot Duo 7in1,Home & Kitchen,4,97.69,390.76,Budget,Credit Card
+T4139,2023-08-03,S13,P019,Columbia Rain Jacket,Apparel,3,152.37,457.11,Budget,Debit Card
+T4140,26-05-2023,S14,P027,Cuisinart Air Fryer,Home & Kitchen,4,136.3,545.2,Standard,Mobile Wallet
+T4141,17-09-2024,S10,P035,Bowflex SelectTech Dumbbells,Sports,5,415.59,2077.95,Budget,Debit Card
+T4142,2022-01-29,,P003,AirPods Pro 2nd Gen,Electronics,6,244.31,1465.86,Standard,Debit Card
+T4143,2024-04-24,S16,P023,Instant Pot Duo 7in1,Home & Kitchen,2,97.93,195.86,Standard,Cash
+T4144,2023/01/02,S12,P040,Jump Rope Speed,Sports,2,19.61,39.22,Loyal,Gift Card
+T4145,27-10-2022,S14,P020,New Balance 990,Apparel,2,174.05,348.1,Budget,Debit Card
+T4146,2024-12-08,S09,P004,Sony WH-1000XM5,Electronics,3,347.01,1041.03,Premium,Cash
+T4147,01/16/2024,S04,P033,Peloton Yoga Mat,Sports,5,81.42,407.1,Loyal,Credit Card
+T4148,2024-06-18,S13,P046,Tatcha Rice Wash Cleanser,Beauty,5,39.19,195.95,Premium,Debit Card
+T4149,20-11-2024,S12,P035,Bowflex SelectTech Dumbbells,Sports,3,413.93,1241.79,Premium,Debit Card
+T4150,2024/05/07,S17,P006,iPad Pro 12.9,Electronics,3,1077.36,3232.08,Premium,Cash
+T4151,10-01-2023,S08,P017,Adidas Running Shorts,Apparel,2,41.38,82.76,Premium,Gift Card
+T4152,04-07-2024,S14,P024,KitchenAid Stand Mixer,Home & Kitchen,1,387.57,387.57,Budget,Credit Card
+T4153,2023-12-21,,P001,iPhone 15 Pro,Electronics,4,1109.6,4438.4,Loyal,Credit Card
+T4154,2024/11/30,S05,P015,Patagonia Fleece Jacket,Apparel,5,181.43,907.15,Budget,Cash
+T4155,2023-07-29,S06,P038,Resistance Bands Set,Sports,6,29.41,176.46,Budget,Mobile Wallet
+T4156,25-10-2023,S21,P003,AirPods Pro 2nd Gen,Electronics,3,260.2,780.6,Loyal,Mobile Wallet
+T4157,2022/07/31,S14,P016,Champion Hoodie,Apparel,2,57.6,115.2,Loyal,Cash
+T4158,01/24/2023,S01,P005,MacBook Air M2,Electronics,6,1300.78,7804.68,Loyal,Cash
+T4159,19-01-2022,S12,P011,Webcam 4K,Electronics,3,87.55,262.65,Premium,Mobile Wallet
+T4160,09/12/2024,S07,P029,Dyson V15 Vacuum,Home & Kitchen,4,721.47,2885.88,Standard,Debit Card
+T4161,2024/09/05,S03,P015,Patagonia Fleece Jacket,Apparel,6,177.2,1063.2,Budget,Debit Card
+T4162,2023/03/24,S07,P003,AirPods Pro 2nd Gen,Electronics,2,258.68,517.36,Loyal,Debit Card
+T4163,2023/02/14,S13,P037,Garmin Forerunner 255,Sports,6,349.39,2096.34,Premium,Gift Card
+T4164,13-06-2024,S14,P030,Robot Vacuum iRobot,Home & Kitchen,3,355.72,1067.16,Standard,Debit Card
+T4165,06/09/2024,S21,P005,MacBook Air M2,Electronics,1,1268.67,1268.67,Budget,Mobile Wallet
+T4166,2024/08/27,S23,P035,Bowflex SelectTech Dumbbells,Sports,5,394.52,1972.6,Premium,Cash
+T4167,11-03-2023,S02,P031,Electric Kettle,Home & Kitchen,6,40.3,241.8,Budget,Mobile Wallet
+T4168,07/28/2022,S11,P043,La Mer Moisturizer 1oz,Beauty,1,194.07,194.07,Budget,Debit Card
+T4169,2024/05/05,S01,P040,Jump Rope Speed,Sports,6,20.15,120.9,Standard,Credit Card
+T4170,2022/05/02,S15,P011,Webcam 4K,Electronics,4,90.9,363.6,Budget,Cash
+T4171,2023-05-29,S07,P001,iPhone 15 Pro,Electronics,5,1095.09,5475.45,Standard,Mobile Wallet
+T4172,2023/08/26,S10,P017,Adidas Running Shorts,Apparel,6,41.43,248.58,Standard,Credit Card
+T4173,2022/10/31,S10,P040,Jump Rope Speed,Sports,5,20.27,101.35,Standard,Credit Card
+T4174,10/27/2024,S25,P022,Hanes Crew Socks 6pk,Apparel,2,15.43,30.86,Loyal,Debit Card
+T4175,02-03-2023,,P020,New Balance 990,Apparel,6,183.03,1098.18,Premium,Gift Card
+T4176,2023/07/24,S09,P028,Cast Iron Skillet 12in,Home & Kitchen,3,48.98,146.94,Budget,Credit Card
+T4177,05/19/2024,S20,P038,Resistance Bands Set,Sports,4,31.31,125.24,Premium,Gift Card
+T4178,2024/04/09,S02,P023,Instant Pot Duo 7in1,Home & Kitchen,3,100.82,302.46,Premium,Debit Card
+T4179,2024-03-07,S11,P045,Olaplex No.3 Treatment,Beauty,1,28.5,28.5,Premium,Credit Card
+T4180,2022-07-01,S18,P026,Nespresso Vertuo,Home & Kitchen,2,182.65,365.3,Premium,Gift Card
+T4181,2022-07-26,S19,P049,Staples Desk Organiser,Books & Office,6,39.73,238.38,Premium,Gift Card
+T4182,2022/04/01,,P013,Levis 501 Jeans,Apparel,6,88.86,533.16,Budget,Gift Card
+T4183,06/04/2024,S24,P013,Levis 501 Jeans,Apparel,2,89.93,179.86,Budget,Gift Card
+T4184,2024-12-06,S17,P008,LG 27 4K Monitor,Electronics,4,446.25,1785.0,Standard,Cash
+T4185,2024/11/29,S19,P015,Patagonia Fleece Jacket,Apparel,1,187.95,187.95,Budget,Gift Card
+T4186,05/11/2024,S22,P006,iPad Pro 12.9,Electronics,1,1149.45,1149.45,Budget,Mobile Wallet
+T4187,2024/07/27,S04,P001,iPhone 15 Pro,Electronics,4,1130.91,4523.64,Loyal,Credit Card
+T4188,2024-11-22,S01,P048,Moleskine Notebook,Books & Office,5,25.29,126.45,Budget,Cash
+T4189,02/05/2022,S18,P003,AirPods Pro 2nd Gen,Electronics,4,258.8,1035.2,Budget,Debit Card
+T4190,2022-01-13,S03,P010,Mechanical Keyboard,Electronics,3,153.46,460.38,Premium,Gift Card
+T4191,2024/08/05,S22,P045,Olaplex No.3 Treatment,Beauty,6,28.22,169.32,Budget,Cash
+T4192,2022-09-25,S22,P021,Carhartt Work Pants,Apparel,1,70.35,70.35,Standard,Credit Card
+T4193,05/31/2024,S14,P040,Jump Rope Speed,Sports,6,19.84,119.04,Premium,Gift Card
+T4194,2023/08/05,S11,P022,Hanes Crew Socks 6pk,Apparel,6,14.64,87.84,Standard,Credit Card
+T4195,2024-12-02,S08,P001,iPhone 15 Pro,Electronics,1,1113.02,1113.02,Premium,Cash
+T4196,2022/05/31,S15,P008,LG 27 4K Monitor,Electronics,1,440.17,440.17,Budget,Debit Card
+T4197,2024-07-11,S21,P043,La Mer Moisturizer 1oz,Beauty,6,191.35,1148.1,Loyal,Debit Card
+T4198,2023/06/17,S20,P004,Sony WH-1000XM5,Electronics,1,357.9,357.9,Premium,Credit Card
+T4199,02/06/2024,S01,P049,Staples Desk Organiser,Books & Office,6,39.64,237.84,Loyal,Gift Card
+T4200,17-01-2023,S11,P033,Peloton Yoga Mat,Sports,6,82.52,495.12,Standard,Mobile Wallet
+T4201,11/21/2024,S17,P020,New Balance 990,Apparel,3,180.52,541.56,Loyal,Mobile Wallet
+T4202,19-08-2023,S18,P040,Jump Rope Speed,Sports,1,20.89,20.89,Premium,Gift Card
+T4203,17-04-2024,S25,P035,Bowflex SelectTech Dumbbells,Sports,1,388.41,388.41,Premium,Cash
+T4204,11-03-2022,S24,P036,CamelBak Hydration Pack,Sports,4,89.54,358.16,Premium,Gift Card
+T4205,2024/09/03,S25,P015,Patagonia Fleece Jacket,Apparel,1,181.48,181.48,Loyal,Mobile Wallet
+T4206,2024/01/05,S12,P043,La Mer Moisturizer 1oz,Beauty,5,191.22,956.1,Premium,Mobile Wallet
+T4207,11/08/2024,S12,P008,LG 27 4K Monitor,Electronics,6,450.24,2701.44,Premium,Credit Card
+T4208,2023/10/31,S07,P038,Resistance Bands Set,Sports,5,30.2,151.0,Loyal,Mobile Wallet
+T4209,2022/07/04,S23,P046,Tatcha Rice Wash Cleanser,Beauty,4,37.03,148.12,Budget,Debit Card
+T4210,2022-09-14,S23,P043,La Mer Moisturizer 1oz,Beauty,1,185.78,185.78,Budget,Mobile Wallet
+T4211,2024-10-16,S17,P028,Cast Iron Skillet 12in,Home & Kitchen,3,49.46,148.38,Budget,Mobile Wallet
+T4212,2022-05-01,S10,P043,La Mer Moisturizer 1oz,Beauty,3,192.22,576.66,Loyal,Mobile Wallet
+T4213,26-11-2023,S10,P041,CeraVe Moisturizing Cream,Beauty,5,19.62,98.1,Premium,Cash
+T4214,2023/06/11,S23,P030,Robot Vacuum iRobot,Home & Kitchen,1,360.05,360.05,Budget,Gift Card
+T4215,2024-12-25,S25,P015,Patagonia Fleece Jacket,Apparel,6,179.72,1078.32,Premium,Credit Card
+T4216,2022-04-15,S23,P013,Levis 501 Jeans,Apparel,3,93.6,280.8,Budget,Cash
+T4217,2022-12-16,S22,P036,CamelBak Hydration Pack,Sports,3,93.03,279.09,Budget,Credit Card
+T4218,12-03-2024,S02,P030,Robot Vacuum iRobot,Home & Kitchen,6,342.6,2055.6,Loyal,Cash
+T4219,16-03-2023,S20,P014,Nike Air Max 270,Apparel,2,131.6,263.2,Budget,Credit Card
+T4220,2023/11/05,S07,P022,Hanes Crew Socks 6pk,Apparel,1,15.16,15.16,Standard,Mobile Wallet
+T4221,2023-11-29,S03,P040,Jump Rope Speed,Sports,5,20.57,102.85,Standard,Debit Card
+T4222,01/10/2023,S25,P005,MacBook Air M2,Electronics,5,1295.66,6478.3,Loyal,Gift Card
+T4223,06/30/2024,S20,P049,Staples Desk Organiser,Books & Office,2,38.9,77.8,Standard,Cash
+T4224,2024-08-30,S25,P031,Electric Kettle,Home & Kitchen,5,40.4,202.0,Standard,Credit Card
+T4225,2023-08-13,S12,P044,Neutrogena SPF 50 Sunscreen,Beauty,6,14.22,85.32,Premium,Gift Card
+T4226,2024-08-30,S16,P006,iPad Pro 12.9,Electronics,5,1090.67,5453.35,Premium,Cash
+T4227,01/12/2022,S07,P005,MacBook Air M2,Electronics,6,1300.48,7802.88,Budget,Gift Card
+T4228,11/20/2024,S22,P031,Electric Kettle,Home & Kitchen,6,39.87,239.22,Premium,Cash
+T4229,11/26/2024,S20,P043,La Mer Moisturizer 1oz,Beauty,4,184.0,736.0,Premium,Gift Card
+T4230,18-01-2022,S10,P009,Logitech MX Master 3,Electronics,3,101.56,304.68,Budget,Credit Card
+T4231,25-10-2024,S09,P034,TRX Suspension Trainer,Sports,6,147.31,883.86,Premium,Credit Card
+T4232,2024/09/26,S16,P040,Jump Rope Speed,Sports,1,20.6,20.6,Premium,Cash
+T4233,10-12-2024,S08,P002,Samsung Galaxy S24 Ultra,Electronics,5,1166.79,5833.95,Premium,Credit Card
+T4234,07-05-2023,S21,P050,HP 65XL Ink Cartridge,Books & Office,2,36.67,73.34,Premium,Credit Card
+T4235,2022/11/21,S08,P018,Under Armour T-Shirt,Apparel,4,36.11,144.44,Standard,Credit Card
+T4236,2022-01-21,S18,P010,Mechanical Keyboard,Electronics,3,151.57,454.71,Standard,Debit Card
+T4237,2023/11/24,S21,P046,Tatcha Rice Wash Cleanser,Beauty,6,37.62,225.72,Standard,Gift Card
+T4238,11/07/2023,S14,P029,Dyson V15 Vacuum,Home & Kitchen,3,707.89,2123.67,Premium,Debit Card
+T4239,2023/04/25,S19,P005,MacBook Air M2,Electronics,1,1326.55,1326.55,Loyal,Debit Card
+T4240,2022-01-08,S22,P012,Portable SSD 1TB,Electronics,5,111.75,558.75,Budget,Gift Card
+T4241,11-07-2024,S08,P018,Under Armour T-Shirt,Apparel,1,36.31,36.31,Budget,Mobile Wallet
+T4242,2023/01/12,S13,P003,AirPods Pro 2nd Gen,Electronics,4,245.07,980.28,Budget,Credit Card
+T4243,2023-12-31,S08,P019,Columbia Rain Jacket,Apparel,2,155.79,311.58,Budget,Credit Card
+T4244,05/03/2022,S01,P047,Atomic Habits Book,Books & Office,2,18.79,37.58,Budget,Gift Card
+T4245,25-05-2022,,P023,Instant Pot Duo 7in1,Home & Kitchen,6,104.88,629.28,Standard,Gift Card
+T4246,28-12-2023,S25,P039,Foam Roller,Sports,4,35.54,142.16,Loyal,Mobile Wallet
+T4247,2023/12/02,S07,P036,CamelBak Hydration Pack,Sports,6,94.02,564.12,Budget,Debit Card
+T4248,12/13/2023,S07,P003,AirPods Pro 2nd Gen,Electronics,4,244.71,978.84,Budget,Debit Card
+T4249,2024-06-25,S07,P039,Foam Roller,Sports,6,35.32,211.92,Premium,Credit Card
+T4250,2024-08-03,S07,P007,Dell XPS 15,Electronics,6,1516.94,9101.64,Loyal,Mobile Wallet
+T4251,2023/02/08,S21,P005,MacBook Air M2,Electronics,1,1280.25,1280.25,Budget,Gift Card
+T4252,02/15/2024,S03,P015,Patagonia Fleece Jacket,Apparel,6,180.08,1080.48,Budget,Gift Card
+T4253,2024-09-11,S07,P006,iPad Pro 12.9,Electronics,3,1116.38,3349.14,Loyal,Cash
+T4254,2024-05-25,S08,P038,Resistance Bands Set,Sports,1,30.89,30.89,Budget,Debit Card
+T4255,2022-12-16,S21,P037,Garmin Forerunner 255,Sports,6,346.91,2081.46,Budget,Cash
+T4256,2022-11-26,S15,P005,MacBook Air M2,Electronics,4,1349.21,5396.84,Budget,Credit Card
+T4257,11/03/2022,S23,P039,Foam Roller,Sports,4,35.94,143.76,Premium,Mobile Wallet
+T4258,11/03/2024,S18,P009,Logitech MX Master 3,Electronics,6,97.89,587.34,Premium,Mobile Wallet
+T4259,08/25/2024,S18,P026,Nespresso Vertuo,Home & Kitchen,1,181.04,181.04,Budget,Mobile Wallet
+T4260,19-02-2024,S06,P025,Vitamix 5200 Blender,Home & Kitchen,6,451.24,2707.44,Budget,Gift Card
+T4261,2022/08/29,S20,P019,Columbia Rain Jacket,Apparel,5,157.36,786.8,Premium,Gift Card
+T4262,05/16/2024,S20,P005,MacBook Air M2,Electronics,4,1362.25,5449.0,Premium,Credit Card
+T4263,21-04-2022,S08,P040,Jump Rope Speed,Sports,1,20.29,20.29,Standard,Debit Card
+T4264,12-05-2022,,P009,Logitech MX Master 3,Electronics,1,101.22,101.22,Standard,Credit Card
+T4265,22-12-2024,S15,P008,LG 27 4K Monitor,Electronics,3,450.93,1352.79,Standard,Gift Card
+T4266,2023/06/27,S10,P045,Olaplex No.3 Treatment,Beauty,4,27.75,111.0,Loyal,Gift Card
+T4267,22-04-2022,S19,P046,Tatcha Rice Wash Cleanser,Beauty,2,39.71,79.42,Premium,Credit Card
+T4268,03/28/2022,S21,P020,New Balance 990,Apparel,1,181.42,181.42,Loyal,Credit Card
+T4269,10/04/2022,S25,P045,Olaplex No.3 Treatment,Beauty,4,29.09,116.36,Standard,Gift Card
+T4270,09/12/2023,S20,P009,Logitech MX Master 3,Electronics,6,104.24,625.44,Budget,Gift Card
+T4271,16-09-2022,S11,P015,Patagonia Fleece Jacket,Apparel,5,179.28,896.4,Standard,Cash
+T4272,2024-07-29,S06,P026,Nespresso Vertuo,Home & Kitchen,2,182.95,365.9,Standard,Mobile Wallet
+T4273,23-05-2022,S03,P049,Staples Desk Organiser,Books & Office,1,38.84,38.84,Loyal,Debit Card
+T4274,04/30/2023,S08,P030,Robot Vacuum iRobot,Home & Kitchen,5,360.82,1804.1,Standard,Gift Card
+T4275,08/18/2024,S01,P012,Portable SSD 1TB,Electronics,3,114.87,344.61,Budget,Gift Card
+T4276,01-05-2023,S06,P018,Under Armour T-Shirt,Apparel,6,34.35,206.1,Premium,Debit Card
+T4277,13-08-2024,S12,P034,TRX Suspension Trainer,Sports,3,156.96,470.88,Loyal,Credit Card
+T4278,01/12/2023,S25,P031,Electric Kettle,Home & Kitchen,5,39.67,198.35,Budget,Gift Card
+T4279,05/28/2023,S10,P038,Resistance Bands Set,Sports,2,30.87,61.74,Budget,Cash
+T4280,21-07-2022,S25,P012,Portable SSD 1TB,Electronics,2,108.76,217.52,Budget,Mobile Wallet
+T4281,2022/06/14,S15,P017,Adidas Running Shorts,Apparel,3,40.22,120.66,Budget,Mobile Wallet
+T4282,2024/11/18,S10,P008,LG 27 4K Monitor,Electronics,4,460.83,1843.32,Loyal,Cash
+T4283,2022/12/22,S23,P028,Cast Iron Skillet 12in,Home & Kitchen,3,48.77,146.31,Premium,Mobile Wallet
+T4284,2024/11/02,S03,P018,Under Armour T-Shirt,Apparel,2,35.01,70.02,Loyal,Cash
+T4285,2023/03/28,S12,P012,Portable SSD 1TB,Electronics,2,114.55,229.1,Standard,Cash
+T4286,2024-11-28,S06,P033,Peloton Yoga Mat,Sports,5,77.06,385.3,Loyal,Mobile Wallet
+T4287,2023-06-13,S02,P025,Vitamix 5200 Blender,Home & Kitchen,5,462.06,2310.3,Premium,Debit Card
+T4288,04-10-2024,S21,P036,CamelBak Hydration Pack,Sports,3,89.54,268.62,Loyal,Gift Card
+T4289,2024-09-20,S09,P044,Neutrogena SPF 50 Sunscreen,Beauty,4,14.14,56.56,Budget,Mobile Wallet
+T4290,07/26/2023,S17,P010,Mechanical Keyboard,Electronics,2,147.42,294.84,Budget,Cash
+T4291,2024/04/27,S17,P015,Patagonia Fleece Jacket,Apparel,1,180.51,180.51,Premium,Gift Card
+T4292,2024/12/31,S13,P045,Olaplex No.3 Treatment,Beauty,1,27.96,27.96,Premium,Credit Card
+T4293,2023-04-05,S10,P041,CeraVe Moisturizing Cream,Beauty,4,19.15,76.6,Standard,Mobile Wallet
+T4294,11/26/2022,S04,P009,Logitech MX Master 3,Electronics,4,103.27,413.08,Premium,Cash
+T4295,2023-09-28,S18,P047,Atomic Habits Book,Books & Office,1,19.28,19.28,Premium,Debit Card
+T4296,2024/10/03,S13,P015,Patagonia Fleece Jacket,Apparel,3,176.8,530.4,Loyal,Cash
+T4297,2024/12/09,S04,P016,Champion Hoodie,Apparel,6,56.24,337.44,Budget,Credit Card
+T4298,2022/06/17,S15,P039,Foam Roller,Sports,2,34.75,69.5,Budget,Cash
+T4299,11/24/2023,,P027,Cuisinart Air Fryer,Home & Kitchen,2,128.18,256.36,Premium,Credit Card
+T4300,2022-04-25,S09,P017,Adidas Running Shorts,Apparel,2,39.83,79.66,Budget,Debit Card
+T4301,13-03-2022,S19,P013,Levis 501 Jeans,Apparel,2,93.91,187.82,Budget,Credit Card
+T4302,12/24/2022,S16,P040,Jump Rope Speed,Sports,2,20.34,40.68,Loyal,Mobile Wallet
+T4303,2023/08/21,S06,P008,LG 27 4K Monitor,Electronics,6,445.97,2675.82,Budget,Debit Card
+T4304,05-07-2022,S24,P014,Nike Air Max 270,Apparel,3,135.82,407.46,Premium,Cash
+T4305,07/31/2022,S13,P014,Nike Air Max 270,Apparel,6,130.43,782.58,Premium,Cash
+T4306,2024-04-26,S07,P038,Resistance Bands Set,Sports,1,30.82,30.82,Budget,Mobile Wallet
+T4307,2024/04/26,S09,P015,Patagonia Fleece Jacket,Apparel,5,183.99,919.95,Premium,Mobile Wallet
+T4308,2022-03-11,S02,P029,Dyson V15 Vacuum,Home & Kitchen,2,679.89,1359.78,Budget,Debit Card
+T4309,2023/09/03,S25,P041,CeraVe Moisturizing Cream,Beauty,1,19.45,19.45,Loyal,Credit Card
+T4310,2022-12-01,S06,P004,Sony WH-1000XM5,Electronics,5,357.31,1786.55,Premium,Debit Card
+T4311,2022/01/07,S20,P049,Staples Desk Organiser,Books & Office,2,40.72,81.44,Standard,Cash
+T4312,2023-03-21,S14,P010,Mechanical Keyboard,Electronics,5,146.64,733.2,Budget,Mobile Wallet
+T4313,07-02-2023,S24,P038,Resistance Bands Set,Sports,3,30.16,90.48,Loyal,Cash
+T4314,2024/07/12,S18,P019,Columbia Rain Jacket,Apparel,4,153.64,614.56,Budget,Mobile Wallet
+T4315,2022/11/06,S24,P002,Samsung Galaxy S24 Ultra,Electronics,2,1178.45,2356.9,Premium,Gift Card
+T4316,08-06-2024,S13,P011,Webcam 4K,Electronics,5,91.88,459.4,Premium,Gift Card
+T4317,07-05-2024,S03,P030,Robot Vacuum iRobot,Home & Kitchen,6,349.31,2095.86,Loyal,Cash
+T4318,2024/05/25,S04,P049,Staples Desk Organiser,Books & Office,6,40.33,241.98,Standard,Gift Card
+T4319,09/17/2023,S07,P010,Mechanical Keyboard,Electronics,6,149.92,899.52,Standard,Mobile Wallet
+T4320,2024/06/02,S23,P005,MacBook Air M2,Electronics,3,1283.89,3851.67,Budget,Cash
+T4321,2022-04-17,S01,P009,Logitech MX Master 3,Electronics,2,100.3,200.6,Standard,Gift Card
+T4322,2022/12/14,S16,P034,TRX Suspension Trainer,Sports,5,147.27,736.35,Loyal,Cash
+T4323,11-09-2024,S15,P041,CeraVe Moisturizing Cream,Beauty,3,19.89,59.67,Premium,Cash
+T4324,01/08/2022,S25,P047,Atomic Habits Book,Books & Office,2,19.62,39.24,Standard,Cash
+T4325,17-07-2024,S20,P020,New Balance 990,Apparel,4,181.94,727.76,Loyal,Debit Card
+T4326,2023/10/12,S12,P006,iPad Pro 12.9,Electronics,6,1105.21,6631.26,Loyal,Debit Card
+T4327,09-06-2024,S25,P018,Under Armour T-Shirt,Apparel,5,34.1,170.5,Standard,Cash
+T4328,10-05-2023,S16,P020,New Balance 990,Apparel,3,178.27,534.81,Budget,Mobile Wallet
+T4329,08/15/2024,S21,P015,Patagonia Fleece Jacket,Apparel,5,177.57,887.85,Loyal,Gift Card
+T4330,07/29/2022,,P028,Cast Iron Skillet 12in,Home & Kitchen,2,52.41,104.82,Loyal,Gift Card
+T4331,2022-02-28,S13,P021,Carhartt Work Pants,Apparel,5,71.27,356.35,Budget,Debit Card
+T4332,2024-01-04,S05,P028,Cast Iron Skillet 12in,Home & Kitchen,4,50.31,201.24,Premium,Credit Card
+T4333,08-03-2024,S12,P026,Nespresso Vertuo,Home & Kitchen,2,183.66,367.32,Premium,Debit Card
+T4334,23-06-2022,S11,P047,Atomic Habits Book,Books & Office,4,19.87,79.48,Budget,Gift Card
+T4335,11/25/2023,S24,P033,Peloton Yoga Mat,Sports,3,82.78,248.34,Loyal,Credit Card
+T4336,2023-05-15,S19,P012,Portable SSD 1TB,Electronics,6,112.83,676.98,Budget,Cash
+T4337,2024-11-07,S08,P013,Levis 501 Jeans,Apparel,1,90.17,90.17,Loyal,Gift Card
+T4338,03/09/2023,,P009,Logitech MX Master 3,Electronics,1,100.77,100.77,Premium,Debit Card
+T4339,2024/08/02,S22,P007,Dell XPS 15,Electronics,1,1572.53,1572.53,Loyal,Credit Card
+T4340,2022/11/09,S21,P037,Garmin Forerunner 255,Sports,1,365.85,365.85,Budget,Credit Card
+T4341,07/03/2023,S11,P024,KitchenAid Stand Mixer,Home & Kitchen,2,370.91,741.82,Standard,Gift Card
+T4342,2023/11/20,S25,P046,Tatcha Rice Wash Cleanser,Beauty,4,37.16,148.64,Standard,Debit Card
+T4343,2024-03-07,S02,P014,Nike Air Max 270,Apparel,4,133.5,534.0,Standard,Debit Card
+T4344,2024/05/15,S09,P024,KitchenAid Stand Mixer,Home & Kitchen,5,384.27,1921.35,Premium,Debit Card
+T4345,2024/12/07,S13,P029,Dyson V15 Vacuum,Home & Kitchen,6,707.75,4246.5,Budget,Cash
+T4346,05/02/2024,S21,P005,MacBook Air M2,Electronics,3,1354.38,4063.14,Premium,Debit Card
+T4347,01/04/2023,S01,P033,Peloton Yoga Mat,Sports,4,80.94,323.76,Budget,Debit Card
+T4348,01/26/2023,S08,P036,CamelBak Hydration Pack,Sports,4,88.57,354.28,Budget,Gift Card
+T4349,06-06-2024,S07,P014,Nike Air Max 270,Apparel,4,136.29,545.16,Premium,Credit Card
+T4350,2024-05-18,S24,P005,MacBook Air M2,Electronics,2,1262.59,2525.18,Standard,Mobile Wallet
+T4351,2023-12-16,S14,P026,Nespresso Vertuo,Home & Kitchen,5,187.08,935.4,Loyal,Cash
+T4352,2024/09/26,S12,P049,Staples Desk Organiser,Books & Office,2,39.09,78.18,Loyal,Mobile Wallet
+T4353,2024/02/06,S07,P040,Jump Rope Speed,Sports,4,20.6,82.4,Premium,Mobile Wallet
+T4354,2023/06/11,S07,P022,Hanes Crew Socks 6pk,Apparel,1,14.65,14.65,Loyal,Cash
+T4355,08/12/2023,S16,P010,Mechanical Keyboard,Electronics,2,148.93,297.86,Loyal,Mobile Wallet
+T4356,02/17/2022,S10,P003,AirPods Pro 2nd Gen,Electronics,3,256.32,768.96,Standard,Credit Card
+T4357,2022/01/30,S02,P018,Under Armour T-Shirt,Apparel,3,34.25,102.75,Loyal,Gift Card
+T4358,17-12-2024,S01,P026,Nespresso Vertuo,Home & Kitchen,6,183.19,1099.14,Standard,Cash
+T4359,01/15/2023,S09,P007,Dell XPS 15,Electronics,5,1504.04,7520.2,Premium,Mobile Wallet
+T4360,2024/10/12,S17,P020,New Balance 990,Apparel,6,183.01,1098.06,Loyal,Debit Card
+T4361,2023-11-03,S07,P042,Dyson Airwrap Styler,Beauty,4,606.44,2425.76,Standard,Gift Card
+T4362,01-09-2023,S15,P015,Patagonia Fleece Jacket,Apparel,3,186.57,559.71,Standard,Debit Card
+T4363,2024-05-03,S08,P046,Tatcha Rice Wash Cleanser,Beauty,4,37.79,151.16,Budget,Credit Card
+T4364,2023-08-24,S13,P022,Hanes Crew Socks 6pk,Apparel,6,15.49,92.94,Budget,Gift Card
+T4365,15-02-2024,S13,P022,Hanes Crew Socks 6pk,Apparel,6,15.2,91.2,Premium,Mobile Wallet
+T4366,2022/09/30,S23,P042,Dyson Airwrap Styler,Beauty,6,584.29,3505.74,Standard,Mobile Wallet
+T4367,15-01-2022,S09,P007,Dell XPS 15,Electronics,2,1480.98,2961.96,Budget,Cash
+T4368,04/26/2024,S05,P025,Vitamix 5200 Blender,Home & Kitchen,3,443.44,1330.32,Premium,Credit Card
+T4369,2023-04-09,S06,P033,Peloton Yoga Mat,Sports,1,82.78,82.78,Loyal,Mobile Wallet
+T4370,04/21/2022,S25,P003,AirPods Pro 2nd Gen,Electronics,5,246.42,1232.1,Standard,Cash
+T4371,2022/10/16,S19,P008,LG 27 4K Monitor,Electronics,2,442.5,885.0,Loyal,Cash
+T4372,2022/03/12,S15,P005,MacBook Air M2,Electronics,1,1327.9,1327.9,Standard,Gift Card
+T4373,07-05-2023,S05,P005,MacBook Air M2,Electronics,2,1324.53,2649.06,Budget,Debit Card
+T4374,04-09-2023,S23,P011,Webcam 4K,Electronics,5,94.01,470.05,Premium,Cash
+T4375,07-10-2024,S21,P008,LG 27 4K Monitor,Electronics,5,449.63,2248.15,Loyal,Cash
+T4376,2022-11-08,S09,P032,French Press Coffee,Home & Kitchen,2,29.76,59.52,Budget,Cash
+T4377,2024-04-29,S14,P038,Resistance Bands Set,Sports,3,29.63,88.89,Standard,Cash
+T4378,23-09-2022,S09,P017,Adidas Running Shorts,Apparel,2,40.78,81.56,Standard,Cash
+T4379,2022-10-24,S01,P050,HP 65XL Ink Cartridge,Books & Office,1,34.38,34.38,Standard,Debit Card
+T4380,2022/10/11,S02,P035,Bowflex SelectTech Dumbbells,Sports,2,392.87,785.74,Budget,Credit Card
+T4381,2023/03/28,S25,P044,Neutrogena SPF 50 Sunscreen,Beauty,6,14.68,88.08,Budget,Gift Card
+T4382,15-01-2022,S17,P007,Dell XPS 15,Electronics,4,1565.62,6262.48,Loyal,Cash
+T4383,23-08-2023,S14,P014,Nike Air Max 270,Apparel,5,130.02,650.1,Standard,Debit Card
+T4384,2024-05-21,S15,P024,KitchenAid Stand Mixer,Home & Kitchen,4,376.11,1504.44,Standard,Mobile Wallet
+T4385,10-10-2022,S04,P040,Jump Rope Speed,Sports,3,19.98,59.94,Standard,Mobile Wallet
+T4386,02-11-2024,S15,P042,Dyson Airwrap Styler,Beauty,3,622.67,1868.01,Loyal,Mobile Wallet
+T4387,10/07/2023,S10,P004,Sony WH-1000XM5,Electronics,5,347.23,1736.15,Budget,Credit Card
+T4388,2023-08-20,S25,P015,Patagonia Fleece Jacket,Apparel,6,182.5,1095.0,Budget,Mobile Wallet
+T4389,02/24/2024,S16,P003,AirPods Pro 2nd Gen,Electronics,5,246.25,1231.25,Premium,Gift Card
+T4390,04/08/2024,S10,P045,Olaplex No.3 Treatment,Beauty,2,27.84,55.68,Loyal,Mobile Wallet
+T4391,02/27/2024,S18,P019,Columbia Rain Jacket,Apparel,4,153.98,615.92,Premium,Mobile Wallet
+T4392,2023-12-29,S16,P049,Staples Desk Organiser,Books & Office,4,38.85,155.4,Loyal,Gift Card
+T4393,2024/01/31,S19,P016,Champion Hoodie,Apparel,3,55.08,165.24,Budget,Credit Card
+T4394,2022-12-11,S11,P044,Neutrogena SPF 50 Sunscreen,Beauty,4,14.37,57.48,Loyal,Cash
+T4395,06-07-2023,S23,P032,French Press Coffee,Home & Kitchen,2,30.93,61.86,Premium,Mobile Wallet
+T4396,2023/03/02,S12,P035,Bowflex SelectTech Dumbbells,Sports,2,402.48,804.96,Standard,Credit Card
+T4397,29-08-2022,S21,P004,Sony WH-1000XM5,Electronics,1,345.91,345.91,Standard,Credit Card
+T4398,05/01/2022,S16,P050,HP 65XL Ink Cartridge,Books & Office,5,35.15,175.75,Standard,Cash
+T4399,04-12-2024,S10,P041,CeraVe Moisturizing Cream,Beauty,3,19.1,57.3,Standard,Debit Card
+T4400,2024-08-19,S15,P018,Under Armour T-Shirt,Apparel,1,36.07,36.07,Standard,Credit Card
+T4401,09-02-2024,S16,P017,Adidas Running Shorts,Apparel,6,40.06,240.36,Standard,Debit Card
+T4402,02-05-2024,S15,P011,Webcam 4K,Electronics,6,88.4,530.4,Budget,Gift Card
+T4403,02/13/2023,S13,P001,iPhone 15 Pro,Electronics,2,1107.97,2215.94,Loyal,Credit Card
+T4404,2023-10-10,S01,P049,Staples Desk Organiser,Books & Office,4,41.92,167.68,Standard,Gift Card
+T4405,2022-06-27,S15,P036,CamelBak Hydration Pack,Sports,4,94.1,376.4,Premium,Gift Card
+T4406,2024-07-23,S11,P047,Atomic Habits Book,Books & Office,1,19.19,19.19,Premium,Credit Card
+T4407,23-07-2023,S20,P009,Logitech MX Master 3,Electronics,4,102.25,409.0,Standard,Debit Card
+T4408,12/22/2024,S07,P028,Cast Iron Skillet 12in,Home & Kitchen,4,51.93,207.72,Premium,Mobile Wallet
+T4409,2024/09/18,S15,P047,Atomic Habits Book,Books & Office,6,19.57,117.42,Loyal,Debit Card
+T4410,2024/12/25,S24,P044,Neutrogena SPF 50 Sunscreen,Beauty,3,14.36,43.08,Budget,Mobile Wallet
+T4411,05/21/2022,S10,P027,Cuisinart Air Fryer,Home & Kitchen,4,131.87,527.48,Premium,Debit Card
+T4412,21-02-2023,S06,P041,CeraVe Moisturizing Cream,Beauty,4,19.66,78.64,Loyal,Cash
+T4413,2022/06/23,S04,P021,Carhartt Work Pants,Apparel,2,68.81,137.62,Budget,Debit Card
+T4414,04/05/2023,S22,P013,Levis 501 Jeans,Apparel,4,91.48,365.92,Premium,Credit Card
+T4415,2024-07-17,S21,P031,Electric Kettle,Home & Kitchen,1,40.89,40.89,Loyal,Credit Card
+T4416,29-03-2023,S13,P024,KitchenAid Stand Mixer,Home & Kitchen,3,384.4,1153.2,Budget,Cash
+T4417,12-09-2024,S19,P016,Champion Hoodie,Apparel,3,54.93,164.79,Loyal,Mobile Wallet
+T4418,2024-04-30,S13,P010,Mechanical Keyboard,Electronics,4,154.7,618.8,Premium,Debit Card
+T4419,12/08/2024,S03,P039,Foam Roller,Sports,1,34.14,34.14,Standard,Mobile Wallet
+T4420,09-05-2022,S15,P007,Dell XPS 15,Electronics,2,1468.13,2936.26,Budget,Gift Card
+T4421,17-07-2022,S21,P007,Dell XPS 15,Electronics,2,1507.88,3015.76,Standard,Gift Card
+T4422,2024/01/23,S16,P027,Cuisinart Air Fryer,Home & Kitchen,4,134.65,538.6,Loyal,Mobile Wallet
+T4423,05/27/2024,S19,P039,Foam Roller,Sports,3,35.21,105.63,Premium,Mobile Wallet
+T4424,2023/06/23,S22,P031,Electric Kettle,Home & Kitchen,2,39.01,78.02,Standard,Cash
+T4425,08/27/2023,S13,P021,Carhartt Work Pants,Apparel,3,70.64,211.92,Standard,Mobile Wallet
+T4426,10/19/2023,S05,P004,Sony WH-1000XM5,Electronics,5,358.21,1791.05,Loyal,Cash
+T4427,2023/08/13,S17,P021,Carhartt Work Pants,Apparel,2,72.67,145.34,Budget,Credit Card
+T4428,04/13/2024,S19,P004,Sony WH-1000XM5,Electronics,5,358.64,1793.2,Premium,Credit Card
+T4429,2024/04/03,S17,P013,Levis 501 Jeans,Apparel,1,93.69,93.69,Premium,Credit Card
+T4430,08/14/2022,S16,P016,Champion Hoodie,Apparel,4,56.78,227.12,Standard,Mobile Wallet
+T4431,2024-06-04,S06,P032,French Press Coffee,Home & Kitchen,1,30.45,30.45,Loyal,Mobile Wallet
+T4432,2023/10/17,S19,P006,iPad Pro 12.9,Electronics,2,1105.33,2210.66,Premium,Credit Card
+T4433,16-04-2023,S15,P009,Logitech MX Master 3,Electronics,6,102.79,616.74,Standard,Credit Card
+T4434,18-11-2022,S22,P048,Moleskine Notebook,Books & Office,6,24.72,148.32,Loyal,Credit Card
+T4435,2022-11-27,S18,P034,TRX Suspension Trainer,Sports,1,146.44,146.44,Standard,Credit Card
+T4436,07/29/2022,S07,P049,Staples Desk Organiser,Books & Office,5,40.25,201.25,Premium,Gift Card
+T4437,2023/12/11,S23,P001,iPhone 15 Pro,Electronics,4,1126.76,4507.04,Loyal,Mobile Wallet
+T4438,12-10-2022,S13,P049,Staples Desk Organiser,Books & Office,4,41.46,165.84,Standard,Gift Card
+T4439,05/16/2024,S21,P014,Nike Air Max 270,Apparel,3,126.95,380.85,Premium,Mobile Wallet
+T4440,24-06-2022,S05,P032,French Press Coffee,Home & Kitchen,1,29.86,29.86,Loyal,Cash
+T4441,2022-02-21,S02,P002,Samsung Galaxy S24 Ultra,Electronics,1,1179.16,1179.16,Loyal,Cash
+T4442,19-01-2022,S24,P049,Staples Desk Organiser,Books & Office,4,40.45,161.8,Budget,Credit Card
+T4443,11/26/2024,S24,P037,Garmin Forerunner 255,Sports,6,361.83,2170.98,Standard,Debit Card
+T4444,29-03-2023,S12,P018,Under Armour T-Shirt,Apparel,5,35.22,176.1,Budget,Mobile Wallet
+T4445,01/08/2022,S06,P030,Robot Vacuum iRobot,Home & Kitchen,5,356.4,1782.0,Standard,Gift Card
+T4446,01-07-2023,S22,P014,Nike Air Max 270,Apparel,2,130.64,261.28,Loyal,Debit Card
+T4447,01-11-2023,S06,P048,Moleskine Notebook,Books & Office,4,25.61,102.44,Premium,Credit Card
+T4448,2024/01/13,S01,P004,Sony WH-1000XM5,Electronics,2,351.24,702.48,Budget,Cash
+T4449,09/05/2022,S04,P040,Jump Rope Speed,Sports,6,19.81,118.86,Premium,Credit Card
+T4450,06-02-2023,S21,P047,Atomic Habits Book,Books & Office,5,19.27,96.35,Standard,Cash
+T4451,09/21/2024,S21,P040,Jump Rope Speed,Sports,2,20.15,40.3,Budget,Credit Card
+T4452,2024-12-19,S21,P030,Robot Vacuum iRobot,Home & Kitchen,5,340.6,1703.0,Standard,Credit Card
+T4453,2024/07/19,S15,P030,Robot Vacuum iRobot,Home & Kitchen,5,341.4,1707.0,Standard,Gift Card
+T4454,2023-01-24,S10,P041,CeraVe Moisturizing Cream,Beauty,1,19.92,19.92,Standard,Credit Card
+T4455,2024-07-06,S14,P040,Jump Rope Speed,Sports,5,20.79,103.95,Loyal,Credit Card
+T4456,09/05/2023,S23,P003,AirPods Pro 2nd Gen,Electronics,6,256.51,1539.06,Budget,Debit Card
+T4457,2022-10-29,,P037,Garmin Forerunner 255,Sports,6,349.43,2096.58,Loyal,Cash
+T4458,2024/04/18,S23,P005,MacBook Air M2,Electronics,6,1310.09,7860.54,Premium,Debit Card
+T4459,04/12/2023,,P040,Jump Rope Speed,Sports,3,20.82,62.46,Premium,Cash
+T4460,2022/12/08,S20,P007,Dell XPS 15,Electronics,6,1573.36,9440.16,Standard,Cash
+T4461,2024/09/20,S01,P013,Levis 501 Jeans,Apparel,1,92.61,92.61,Standard,Gift Card
+T4462,2024-04-12,S17,P034,TRX Suspension Trainer,Sports,6,147.41,884.46,Loyal,Credit Card
+T4463,2023-01-15,S12,P003,AirPods Pro 2nd Gen,Electronics,3,262.26,786.78,Premium,Mobile Wallet
+T4464,2024/12/16,S21,P009,Logitech MX Master 3,Electronics,1,97.7,97.7,Standard,Credit Card
+T4465,01/16/2022,S25,P027,Cuisinart Air Fryer,Home & Kitchen,3,133.63,400.89,Budget,Credit Card
+T4466,10-05-2023,S06,P038,Resistance Bands Set,Sports,4,30.44,121.76,Premium,Credit Card
+T4467,2023/11/08,S04,P009,Logitech MX Master 3,Electronics,2,100.92,201.84,Standard,Cash
+T4468,2024-04-23,S06,P023,Instant Pot Duo 7in1,Home & Kitchen,1,104.33,104.33,Premium,Gift Card
+T4469,2024/04/07,S14,P035,Bowflex SelectTech Dumbbells,Sports,5,390.86,1954.3,Loyal,Cash
+T4470,05/26/2024,S21,P036,CamelBak Hydration Pack,Sports,2,93.6,187.2,Standard,Mobile Wallet
+T4471,2024/08/13,S01,P046,Tatcha Rice Wash Cleanser,Beauty,6,37.64,225.84,Premium,Mobile Wallet
+T4472,2023-10-24,S03,P048,Moleskine Notebook,Books & Office,3,24.92,74.76,Loyal,Gift Card
+T4473,2024/10/04,S10,P026,Nespresso Vertuo,Home & Kitchen,3,181.59,544.77,Premium,Credit Card
+T4474,06-12-2024,S24,P007,Dell XPS 15,Electronics,6,1548.84,9293.04,Loyal,Credit Card
+T4475,27-01-2022,S05,P024,KitchenAid Stand Mixer,Home & Kitchen,6,369.05,2214.3,Standard,Debit Card
+T4476,06/29/2022,S15,P039,Foam Roller,Sports,6,36.66,219.96,Budget,Mobile Wallet
+T4477,2024-12-16,S17,P002,Samsung Galaxy S24 Ultra,Electronics,1,1219.43,1219.43,Budget,Mobile Wallet
+T4478,2022/07/10,S02,P034,TRX Suspension Trainer,Sports,4,149.53,598.12,Loyal,Debit Card
+T4479,02-09-2022,S02,P030,Robot Vacuum iRobot,Home & Kitchen,2,350.93,701.86,Standard,Credit Card
+T4480,2022-08-20,S21,P039,Foam Roller,Sports,2,34.98,69.96,Standard,Debit Card
+T4481,2023/04/23,S20,P020,New Balance 990,Apparel,1,180.63,180.63,Premium,Cash
+T4482,09/09/2024,S25,P029,Dyson V15 Vacuum,Home & Kitchen,3,698.4,2095.2,Premium,Debit Card
+T4483,2023/06/11,S08,P043,La Mer Moisturizer 1oz,Beauty,3,185.64,556.92,Loyal,Cash
+T4484,2024/04/03,S24,P004,Sony WH-1000XM5,Electronics,6,341.99,2051.94,Premium,Debit Card
+T4485,2024-07-07,S24,P034,TRX Suspension Trainer,Sports,5,154.85,774.25,Budget,Cash
+T4486,2022/04/30,S14,P041,CeraVe Moisturizing Cream,Beauty,4,19.93,79.72,Budget,Debit Card
+T4487,06/22/2022,S14,P018,Under Armour T-Shirt,Apparel,2,35.81,71.62,Premium,Cash
+T4488,30-05-2022,S07,P024,KitchenAid Stand Mixer,Home & Kitchen,5,396.52,1982.6,Budget,Credit Card
+T4489,2023/04/21,S06,P014,Nike Air Max 270,Apparel,4,130.67,522.68,Loyal,Credit Card
+T4490,23-01-2024,S20,P009,Logitech MX Master 3,Electronics,3,98.89,296.67,Budget,Credit Card
+T4491,2024/07/08,S09,P027,Cuisinart Air Fryer,Home & Kitchen,3,131.82,395.46,Budget,Mobile Wallet
+T4492,06-01-2022,S13,P035,Bowflex SelectTech Dumbbells,Sports,5,391.15,1955.75,Standard,Debit Card
+T4493,2023/01/20,S12,P009,Logitech MX Master 3,Electronics,3,98.11,294.33,Premium,Cash
+T4494,09/17/2023,S07,P038,Resistance Bands Set,Sports,4,31.44,125.76,Standard,Credit Card
+T4495,29-12-2023,S17,P046,Tatcha Rice Wash Cleanser,Beauty,4,39.05,156.2,Premium,Mobile Wallet
+T4496,2023/12/20,S03,P009,Logitech MX Master 3,Electronics,4,99.78,399.12,Loyal,Cash
+T4497,12/02/2024,S23,P031,Electric Kettle,Home & Kitchen,5,40.3,201.5,Standard,Debit Card
+T4498,2024-11-06,S20,P032,French Press Coffee,Home & Kitchen,5,30.09,150.45,Standard,Cash
+T4499,06/22/2022,S19,P043,La Mer Moisturizer 1oz,Beauty,1,184.15,184.15,Loyal,Gift Card
+T4500,2022-10-18,S10,P043,La Mer Moisturizer 1oz,Beauty,4,186.18,744.72,Premium,Cash
+T4501,07/17/2024,S03,P006,iPad Pro 12.9,Electronics,6,1124.52,6747.12,Loyal,Cash
+T4502,29-10-2022,S14,P023,Instant Pot Duo 7in1,Home & Kitchen,6,103.6,621.6,Loyal,Cash
+T4503,02/26/2023,S01,P012,Portable SSD 1TB,Electronics,2,109.67,219.34,Standard,Mobile Wallet
+T4504,18-01-2023,S04,P012,Portable SSD 1TB,Electronics,2,111.55,223.1,Standard,Cash
+T4505,2024-07-29,S18,P031,Electric Kettle,Home & Kitchen,2,39.73,79.46,Budget,Debit Card
+T4506,21-08-2023,S18,P005,MacBook Air M2,Electronics,2,1364.4,2728.8,Loyal,Debit Card
+T4507,07/07/2023,S03,P012,Portable SSD 1TB,Electronics,1,113.16,113.16,Loyal,Credit Card
+T4508,30-08-2024,S15,P019,Columbia Rain Jacket,Apparel,6,152.23,913.38,Budget,Mobile Wallet
+T4509,2022/08/13,S20,P008,LG 27 4K Monitor,Electronics,6,469.04,2814.24,Loyal,Cash
+T4510,26-07-2022,S03,P048,Moleskine Notebook,Books & Office,3,25.25,75.75,Loyal,Debit Card
+T4511,2024/02/13,S10,P017,Adidas Running Shorts,Apparel,6,40.3,241.8,Loyal,Credit Card
+T4512,05-10-2023,S24,P044,Neutrogena SPF 50 Sunscreen,Beauty,5,14.22,71.1,Loyal,Cash
+T4513,2024/06/08,S16,P020,New Balance 990,Apparel,6,173.89,1043.34,Loyal,Debit Card
+T4514,09/19/2023,S20,P027,Cuisinart Air Fryer,Home & Kitchen,5,128.69,643.45,Premium,Cash
+T4515,2024/09/26,S15,P039,Foam Roller,Sports,1,36.61,36.61,Premium,Debit Card
+T4516,09/01/2022,S16,P021,Carhartt Work Pants,Apparel,2,69.96,139.92,Premium,Cash
+T4517,2023-08-22,S01,P033,Peloton Yoga Mat,Sports,3,81.47,244.41,Premium,Debit Card
+T4518,2023-01-23,S04,P010,Mechanical Keyboard,Electronics,2,156.53,313.06,Budget,Credit Card
+T4519,2022/06/04,S20,P015,Patagonia Fleece Jacket,Apparel,6,186.98,1121.88,Loyal,Debit Card
+T4520,29-07-2023,S24,P015,Patagonia Fleece Jacket,Apparel,5,181.67,908.35,Premium,Gift Card
+T4521,04-09-2024,S07,P050,HP 65XL Ink Cartridge,Books & Office,3,34.9,104.7,Loyal,Cash
+T4522,2023/05/05,S19,P042,Dyson Airwrap Styler,Beauty,1,629.95,629.95,Budget,Mobile Wallet
+T4523,03/14/2023,S13,P035,Bowflex SelectTech Dumbbells,Sports,5,410.43,2052.15,Loyal,Gift Card
+T4524,2023/08/27,S10,P003,AirPods Pro 2nd Gen,Electronics,6,261.71,1570.26,Premium,Gift Card
+T4525,2023-09-20,S18,P018,Under Armour T-Shirt,Apparel,3,36.11,108.33,Loyal,Mobile Wallet
+T4526,11-12-2022,S05,P018,Under Armour T-Shirt,Apparel,5,34.78,173.9,Budget,Mobile Wallet
+T4527,2024-12-22,S17,P032,French Press Coffee,Home & Kitchen,6,29.98,179.88,Premium,Debit Card
+T4528,11/13/2024,S22,P012,Portable SSD 1TB,Electronics,1,113.55,113.55,Budget,Credit Card
+T4529,11/05/2024,S12,P036,CamelBak Hydration Pack,Sports,3,93.18,279.54,Premium,Debit Card
+T4530,07/20/2024,S19,P035,Bowflex SelectTech Dumbbells,Sports,6,399.62,2397.72,Standard,Cash
+T4531,11/12/2022,S07,P029,Dyson V15 Vacuum,Home & Kitchen,2,712.79,1425.58,Budget,Gift Card
+T4532,2024/08/18,S14,P018,Under Armour T-Shirt,Apparel,4,36.24,144.96,Budget,Cash
+T4533,11/15/2022,S04,P033,Peloton Yoga Mat,Sports,5,79.7,398.5,Budget,Mobile Wallet
+T4534,04/20/2023,S15,P035,Bowflex SelectTech Dumbbells,Sports,3,417.06,1251.18,Standard,Credit Card
+T4535,10/26/2023,S17,P036,CamelBak Hydration Pack,Sports,5,92.12,460.6,Standard,Credit Card
+T4536,21-12-2023,S11,P025,Vitamix 5200 Blender,Home & Kitchen,6,445.6,2673.6,Budget,Cash
+T4537,2023-04-08,S06,P009,Logitech MX Master 3,Electronics,6,101.96,611.76,Budget,Debit Card
+T4538,12/30/2023,S04,P038,Resistance Bands Set,Sports,1,29.85,29.85,Premium,Mobile Wallet
+T4539,2023-08-01,S23,P017,Adidas Running Shorts,Apparel,2,40.9,81.8,Budget,Mobile Wallet
+T4540,2024/12/11,,P034,TRX Suspension Trainer,Sports,5,157.44,787.2,Loyal,Gift Card
+T4541,21-03-2022,S16,P038,Resistance Bands Set,Sports,4,30.87,123.48,Loyal,Mobile Wallet
+T4542,2022/08/24,S24,P014,Nike Air Max 270,Apparel,2,127.01,254.02,Loyal,Cash
+T4543,2022-12-30,,P048,Moleskine Notebook,Books & Office,6,25.2,151.2,Standard,Mobile Wallet
+T4544,12/03/2024,S13,P009,Logitech MX Master 3,Electronics,5,101.13,505.65,Standard,Credit Card
+T4545,08/05/2024,S11,P012,Portable SSD 1TB,Electronics,3,109.12,327.36,Premium,Credit Card
+T4546,2024-09-18,S21,P041,CeraVe Moisturizing Cream,Beauty,5,19.85,99.25,Loyal,Mobile Wallet
+T4547,09-06-2024,S20,P002,Samsung Galaxy S24 Ultra,Electronics,2,1166.24,2332.48,Budget,Credit Card
+T4548,21-07-2023,S12,P024,KitchenAid Stand Mixer,Home & Kitchen,1,398.3,398.3,Premium,Credit Card
+T4549,02/06/2024,S25,P019,Columbia Rain Jacket,Apparel,5,153.03,765.15,Loyal,Mobile Wallet
+T4550,2022/05/25,S23,P019,Columbia Rain Jacket,Apparel,6,150.08,900.48,Premium,Mobile Wallet
+T4551,02/04/2024,S02,P035,Bowflex SelectTech Dumbbells,Sports,4,394.4,1577.6,Standard,Cash
+T4552,2023/08/26,S18,P015,Patagonia Fleece Jacket,Apparel,5,173.65,868.25,Loyal,Mobile Wallet
+T4553,27-06-2023,S02,P004,Sony WH-1000XM5,Electronics,5,367.09,1835.45,Standard,Mobile Wallet
+T4554,11/04/2022,S21,P042,Dyson Airwrap Styler,Beauty,5,595.2,2976.0,Premium,Gift Card
+T4555,23-08-2022,S14,P011,Webcam 4K,Electronics,6,89.78,538.68,Standard,Mobile Wallet
+T4556,11/24/2024,S19,P019,Columbia Rain Jacket,Apparel,2,149.82,299.64,Standard,Cash
+T4557,2024-05-28,S12,P028,Cast Iron Skillet 12in,Home & Kitchen,4,52.17,208.68,Budget,Mobile Wallet
+T4558,13-10-2023,S25,P028,Cast Iron Skillet 12in,Home & Kitchen,3,48.78,146.34,Loyal,Debit Card
+T4559,2024-06-21,S14,P012,Portable SSD 1TB,Electronics,3,115.48,346.44,Standard,Cash
+T4560,12-01-2023,S04,P041,CeraVe Moisturizing Cream,Beauty,1,19.66,19.66,Budget,Credit Card
+T4561,2024-09-28,S25,P018,Under Armour T-Shirt,Apparel,3,35.52,106.56,Budget,Debit Card
+T4562,30-07-2022,S07,P012,Portable SSD 1TB,Electronics,5,110.51,552.55,Budget,Credit Card
+T4563,2024-03-13,S09,P037,Garmin Forerunner 255,Sports,1,351.03,351.03,Premium,Debit Card
+T4564,06/04/2024,S11,P006,iPad Pro 12.9,Electronics,5,1136.71,5683.55,Standard,Gift Card
+T4565,11/15/2023,S03,P022,Hanes Crew Socks 6pk,Apparel,3,14.57,43.71,Premium,Mobile Wallet
+T4566,01/08/2023,S10,P025,Vitamix 5200 Blender,Home & Kitchen,4,436.58,1746.32,Standard,Gift Card
+T4567,2024-01-30,S01,P003,AirPods Pro 2nd Gen,Electronics,6,257.71,1546.26,Standard,Gift Card
+T4568,12/12/2022,S15,P030,Robot Vacuum iRobot,Home & Kitchen,3,351.63,1054.89,Standard,Gift Card
+T4569,2023/10/21,S10,P049,Staples Desk Organiser,Books & Office,5,39.37,196.85,Standard,Mobile Wallet
+T4570,2023/09/28,S14,P045,Olaplex No.3 Treatment,Beauty,3,29.37,88.11,Loyal,Credit Card
+T4571,06/09/2022,S16,P032,French Press Coffee,Home & Kitchen,6,31.34,188.04,Standard,Gift Card
+T4572,01/24/2023,S15,P027,Cuisinart Air Fryer,Home & Kitchen,4,132.04,528.16,Loyal,Mobile Wallet
+T4573,20-02-2023,S19,P048,Moleskine Notebook,Books & Office,5,25.56,127.8,Premium,Credit Card
+T4574,2022/09/17,S19,P006,iPad Pro 12.9,Electronics,2,1071.4,2142.8,Loyal,Mobile Wallet
+T4575,2022-03-29,S25,P021,Carhartt Work Pants,Apparel,2,69.63,139.26,Standard,Cash
+T4576,06/19/2022,S14,P043,La Mer Moisturizer 1oz,Beauty,2,180.03,360.06,Standard,Mobile Wallet
+T4577,2024/05/04,S15,P004,Sony WH-1000XM5,Electronics,3,345.42,1036.26,Premium,Credit Card
+T4578,01-01-2024,S22,P012,Portable SSD 1TB,Electronics,2,109.53,219.06,Budget,Cash
+T4579,2023-11-03,S02,P024,KitchenAid Stand Mixer,Home & Kitchen,3,377.31,1131.93,Standard,Credit Card
+T4580,24-09-2023,S13,P044,Neutrogena SPF 50 Sunscreen,Beauty,3,14.04,42.12,Premium,Cash
+T4581,05/19/2023,S04,P027,Cuisinart Air Fryer,Home & Kitchen,1,133.14,133.14,Standard,Gift Card
+T4582,2022-11-22,S20,P045,Olaplex No.3 Treatment,Beauty,3,29.15,87.45,Budget,Mobile Wallet
+T4583,07/27/2024,S20,P035,Bowflex SelectTech Dumbbells,Sports,5,402.01,2010.05,Loyal,Mobile Wallet
+T4584,2022-05-23,S21,P011,Webcam 4K,Electronics,3,93.34,280.02,Loyal,Mobile Wallet
+T4585,03/15/2022,S01,P026,Nespresso Vertuo,Home & Kitchen,6,184.95,1109.7,Loyal,Cash
+T4586,2024/09/05,S10,P021,Carhartt Work Pants,Apparel,1,72.53,72.53,Premium,Credit Card
+T4587,06/11/2022,S01,P040,Jump Rope Speed,Sports,6,20.9,125.4,Standard,Mobile Wallet
+T4588,2023-12-26,S17,P014,Nike Air Max 270,Apparel,1,126.17,126.17,Budget,Mobile Wallet
+T4589,2022-07-14,S13,P020,New Balance 990,Apparel,3,170.49,511.47,Loyal,Mobile Wallet
+T4590,24-10-2022,S11,P017,Adidas Running Shorts,Apparel,2,39.03,78.06,Budget,Credit Card
+T4591,2024-11-08,S04,P039,Foam Roller,Sports,5,36.3,181.5,Budget,Gift Card
+T4592,2024/06/01,S10,P043,La Mer Moisturizer 1oz,Beauty,1,179.65,179.65,Loyal,Debit Card
+T4593,2024/09/26,S11,P040,Jump Rope Speed,Sports,5,20.91,104.55,Premium,Debit Card
+T4594,2024/11/01,S13,P040,Jump Rope Speed,Sports,6,20.37,122.22,Loyal,Gift Card
+T4595,2024-03-06,S11,P042,Dyson Airwrap Styler,Beauty,1,624.15,624.15,Budget,Cash
+T4596,30-09-2024,,P033,Peloton Yoga Mat,Sports,3,78.23,234.69,Premium,Mobile Wallet
+T4597,2022/10/24,S24,P001,iPhone 15 Pro,Electronics,3,1089.73,3269.19,Budget,Debit Card
+T4598,2024/08/25,S04,P033,Peloton Yoga Mat,Sports,5,78.38,391.9,Budget,Cash
+T4599,2024/03/26,S01,P035,Bowflex SelectTech Dumbbells,Sports,2,393.27,786.54,Loyal,Cash
+T4600,2024/03/15,S07,P040,Jump Rope Speed,Sports,1,20.6,20.6,Budget,Credit Card
+T4601,2024-09-26,S10,P006,iPad Pro 12.9,Electronics,4,1087.0,4348.0,Standard,Cash
+T4602,01-05-2024,S04,P013,Levis 501 Jeans,Apparel,1,91.48,91.48,Standard,Debit Card
+T4603,2024/01/10,S01,P029,Dyson V15 Vacuum,Home & Kitchen,5,709.41,3547.05,Loyal,Debit Card
+T4604,16-09-2024,S17,P012,Portable SSD 1TB,Electronics,4,113.67,454.68,Budget,Debit Card
+T4605,12-06-2022,S05,P014,Nike Air Max 270,Apparel,6,127.15,762.9,Budget,Cash
+T4606,06-01-2023,S13,P036,CamelBak Hydration Pack,Sports,3,93.43,280.29,Standard,Mobile Wallet
+T4607,2024-01-03,S21,P022,Hanes Crew Socks 6pk,Apparel,1,15.25,15.25,Standard,Gift Card
+T4608,07/05/2022,S05,P047,Atomic Habits Book,Books & Office,1,19.87,19.87,Premium,Cash
+T4609,11/03/2023,S21,P033,Peloton Yoga Mat,Sports,1,78.5,78.5,Budget,Mobile Wallet
+T4610,2023/10/19,S01,P032,French Press Coffee,Home & Kitchen,6,30.85,185.1,Loyal,Mobile Wallet
+T4611,2023-10-25,S08,P004,Sony WH-1000XM5,Electronics,2,356.85,713.7,Premium,Credit Card
+T4612,2023-12-09,S19,P041,CeraVe Moisturizing Cream,Beauty,3,19.03,57.09,Budget,Debit Card
+T4613,2024/07/28,S04,P032,French Press Coffee,Home & Kitchen,5,31.0,155.0,Standard,Debit Card
+T4614,2022/07/18,S01,P027,Cuisinart Air Fryer,Home & Kitchen,4,135.28,541.12,Premium,Credit Card
+T4615,2023-02-04,S17,P039,Foam Roller,Sports,5,34.21,171.05,Standard,Cash
+T4616,19-06-2023,S15,P022,Hanes Crew Socks 6pk,Apparel,2,15.62,31.24,Loyal,Cash
+T4617,2022/03/31,S01,P036,CamelBak Hydration Pack,Sports,3,87.32,261.96,Loyal,Gift Card
+T4618,10/24/2023,S13,P004,Sony WH-1000XM5,Electronics,4,367.17,1468.68,Budget,Cash
+T4619,2024-03-26,S14,P016,Champion Hoodie,Apparel,3,54.46,163.38,Budget,Credit Card
+T4620,01/31/2022,S05,P003,AirPods Pro 2nd Gen,Electronics,6,248.52,1491.12,Premium,Mobile Wallet
+T4621,2022-07-10,S10,P027,Cuisinart Air Fryer,Home & Kitchen,4,130.03,520.12,Premium,Mobile Wallet
+T4622,2024-01-04,S03,P030,Robot Vacuum iRobot,Home & Kitchen,5,364.02,1820.1,Standard,Gift Card
+T4623,2022/06/28,S16,P020,New Balance 990,Apparel,2,172.71,345.42,Budget,Credit Card
+T4624,2022/09/27,S08,P032,French Press Coffee,Home & Kitchen,3,30.62,91.86,Premium,Debit Card
+T4625,10/31/2023,S08,P024,KitchenAid Stand Mixer,Home & Kitchen,2,390.18,780.36,Loyal,Credit Card
+T4626,04/14/2024,S22,P045,Olaplex No.3 Treatment,Beauty,1,28.07,28.07,Standard,Credit Card
+T4627,2022/08/31,S19,P019,Columbia Rain Jacket,Apparel,1,153.57,153.57,Premium,Cash
+T4628,2024-10-24,S07,P050,HP 65XL Ink Cartridge,Books & Office,5,36.02,180.1,Premium,Cash
+T4629,06/20/2024,S21,P037,Garmin Forerunner 255,Sports,6,339.66,2037.96,Standard,Credit Card
+T4630,08/01/2022,S16,P013,Levis 501 Jeans,Apparel,3,91.61,274.83,Standard,Credit Card
+T4631,16-08-2023,S13,P008,LG 27 4K Monitor,Electronics,6,463.32,2779.92,Standard,Cash
+T4632,2022-02-11,S11,P018,Under Armour T-Shirt,Apparel,5,34.36,171.8,Standard,Mobile Wallet
+T4633,2024/07/15,S19,P034,TRX Suspension Trainer,Sports,6,148.05,888.3,Premium,Gift Card
+T4634,2023-09-17,S04,P020,New Balance 990,Apparel,6,181.62,1089.72,Budget,Cash
+T4635,27-03-2022,S02,P017,Adidas Running Shorts,Apparel,1,41.31,41.31,Standard,Debit Card
+T4636,08/06/2024,S22,P003,AirPods Pro 2nd Gen,Electronics,1,256.45,256.45,Premium,Mobile Wallet
+T4637,2022-07-31,S01,P020,New Balance 990,Apparel,1,173.61,173.61,Budget,Mobile Wallet
+T4638,2023/01/27,S17,P001,iPhone 15 Pro,Electronics,4,1069.17,4276.68,Standard,Cash
+T4639,05/24/2023,S23,P045,Olaplex No.3 Treatment,Beauty,5,29.27,146.35,Standard,Mobile Wallet
+T4640,2024/07/07,S24,P044,Neutrogena SPF 50 Sunscreen,Beauty,2,13.91,27.82,Standard,Gift Card
+T4641,07/10/2024,S05,P043,La Mer Moisturizer 1oz,Beauty,3,193.87,581.61,Standard,Credit Card
+T4642,2022-04-03,S08,P012,Portable SSD 1TB,Electronics,5,107.99,539.95,Premium,Cash
+T4643,11-09-2024,S23,P032,French Press Coffee,Home & Kitchen,1,31.08,31.08,Budget,Mobile Wallet
+T4644,2022/07/22,S16,P028,Cast Iron Skillet 12in,Home & Kitchen,6,50.42,302.52,Loyal,Gift Card
+T4645,2022-07-30,S12,P009,Logitech MX Master 3,Electronics,3,101.88,305.64,Premium,Debit Card
+T4646,2024-03-03,S14,P046,Tatcha Rice Wash Cleanser,Beauty,4,37.7,150.8,Premium,Cash
+T4647,2024-04-10,S05,P025,Vitamix 5200 Blender,Home & Kitchen,3,443.44,1330.32,Loyal,Cash
+T4648,05/05/2023,S14,P025,Vitamix 5200 Blender,Home & Kitchen,6,442.01,2652.06,Premium,Gift Card
+T4649,2024/09/06,S24,P012,Portable SSD 1TB,Electronics,6,111.38,668.28,Loyal,Debit Card
+T4650,2023-01-06,S18,P019,Columbia Rain Jacket,Apparel,5,147.73,738.65,Premium,Gift Card
+T4651,04/07/2024,S18,P049,Staples Desk Organiser,Books & Office,6,41.43,248.58,Budget,Credit Card
+T4652,2024/05/08,S21,P025,Vitamix 5200 Blender,Home & Kitchen,6,465.63,2793.78,Standard,Cash
+T4653,05-01-2023,S11,P024,KitchenAid Stand Mixer,Home & Kitchen,3,387.91,1163.73,Premium,Debit Card
+T4654,10-09-2022,S06,P007,Dell XPS 15,Electronics,1,1500.22,1500.22,Standard,Mobile Wallet
+T4655,12/28/2023,S24,P010,Mechanical Keyboard,Electronics,1,146.81,146.81,Standard,Credit Card
+T4656,2023-10-22,S19,P041,CeraVe Moisturizing Cream,Beauty,3,18.66,55.98,Loyal,Cash
+T4657,2023-01-07,S17,P047,Atomic Habits Book,Books & Office,6,19.58,117.48,Standard,Cash
+T4658,01/25/2024,S25,P011,Webcam 4K,Electronics,3,93.13,279.39,Budget,Mobile Wallet
+T4659,2024-10-03,S01,P046,Tatcha Rice Wash Cleanser,Beauty,6,38.66,231.96,Standard,Cash
+T4660,08/26/2024,S15,P035,Bowflex SelectTech Dumbbells,Sports,6,392.2,2353.2,Premium,Debit Card
+T4661,2024-05-02,S08,P040,Jump Rope Speed,Sports,2,19.56,39.12,Loyal,Gift Card
+T4662,29-06-2023,S07,P002,Samsung Galaxy S24 Ultra,Electronics,6,1195.84,7175.04,Loyal,Credit Card
+T4663,06/29/2024,S13,P027,Cuisinart Air Fryer,Home & Kitchen,5,133.98,669.9,Standard,Gift Card
+T4664,08-10-2023,S05,P020,New Balance 990,Apparel,2,172.33,344.66,Loyal,Gift Card
+T4665,08-04-2024,S19,P032,French Press Coffee,Home & Kitchen,6,30.43,182.58,Standard,Gift Card
+T4666,08/05/2024,S03,P010,Mechanical Keyboard,Electronics,3,146.34,439.02,Loyal,Mobile Wallet
+T4667,2023-06-28,S04,P016,Champion Hoodie,Apparel,6,54.69,328.14,Premium,Debit Card
+T4668,2022-02-17,S01,P039,Foam Roller,Sports,1,34.64,34.64,Premium,Mobile Wallet
+T4669,01/09/2024,S21,P028,Cast Iron Skillet 12in,Home & Kitchen,1,49.3,49.3,Loyal,Credit Card
+T4670,2023-01-28,S19,P034,TRX Suspension Trainer,Sports,6,153.51,921.06,Standard,Credit Card
+T4671,2024/10/13,S19,P037,Garmin Forerunner 255,Sports,1,353.73,353.73,Standard,Credit Card
+T4672,2022-08-27,S07,P001,iPhone 15 Pro,Electronics,4,1109.5,4438.0,Budget,Cash
+T4673,10-08-2023,S11,P036,CamelBak Hydration Pack,Sports,1,89.17,89.17,Standard,Cash
+T4674,02/16/2023,S03,P044,Neutrogena SPF 50 Sunscreen,Beauty,3,14.15,42.45,Standard,Mobile Wallet
+T4675,12/10/2023,S03,P032,French Press Coffee,Home & Kitchen,4,29.31,117.24,Standard,Mobile Wallet
+T4676,2023-02-16,S04,P004,Sony WH-1000XM5,Electronics,1,350.92,350.92,Premium,Cash
+T4677,07/08/2023,S20,P049,Staples Desk Organiser,Books & Office,2,40.4,80.8,Standard,Credit Card
+T4678,2024-12-06,S17,P029,Dyson V15 Vacuum,Home & Kitchen,1,704.0,704.0,Loyal,Cash
+T4679,08/13/2024,S18,P023,Instant Pot Duo 7in1,Home & Kitchen,2,104.45,208.9,Premium,Credit Card
+T4680,15-01-2023,S11,P042,Dyson Airwrap Styler,Beauty,2,627.65,1255.3,Premium,Cash
+T4681,05-12-2022,S05,P036,CamelBak Hydration Pack,Sports,1,91.65,91.65,Premium,Cash
+T4682,2022/06/10,S03,P003,AirPods Pro 2nd Gen,Electronics,1,253.24,253.24,Budget,Mobile Wallet
+T4683,2022-11-08,S03,P045,Olaplex No.3 Treatment,Beauty,5,29.26,146.3,Standard,Cash
+T4684,05-12-2024,S23,P018,Under Armour T-Shirt,Apparel,6,35.63,213.78,Premium,Cash
+T4685,2024/08/02,S02,P029,Dyson V15 Vacuum,Home & Kitchen,4,701.16,2804.64,Budget,Cash
+T4686,12/22/2024,S12,P018,Under Armour T-Shirt,Apparel,6,34.29,205.74,Premium,Credit Card
+T4687,2024/08/28,S02,P026,Nespresso Vertuo,Home & Kitchen,6,180.44,1082.64,Budget,Gift Card
+T4688,2023-09-15,S23,P011,Webcam 4K,Electronics,3,87.55,262.65,Loyal,Gift Card
+T4689,05/24/2022,S18,P002,Samsung Galaxy S24 Ultra,Electronics,4,1214.22,4856.88,Budget,Mobile Wallet
+T4690,12/20/2022,S03,P021,Carhartt Work Pants,Apparel,2,73.03,146.06,Budget,Debit Card
+T4691,2024/05/10,S11,P013,Levis 501 Jeans,Apparel,6,87.29,523.74,Budget,Debit Card
+T4692,2024/04/13,S01,P042,Dyson Airwrap Styler,Beauty,3,599.72,1799.16,Standard,Cash
+T4693,2022/02/26,S07,P037,Garmin Forerunner 255,Sports,1,358.46,358.46,Standard,Mobile Wallet
+T4694,2023/04/03,S06,P030,Robot Vacuum iRobot,Home & Kitchen,3,352.67,1058.01,Loyal,Cash
+T4695,09/22/2024,S20,P029,Dyson V15 Vacuum,Home & Kitchen,6,734.0,4404.0,Loyal,Mobile Wallet
+T4696,2023/04/27,S11,P022,Hanes Crew Socks 6pk,Apparel,4,15.37,61.48,Loyal,Mobile Wallet
+T4697,25-07-2023,S13,P003,AirPods Pro 2nd Gen,Electronics,5,243.44,1217.2,Budget,Cash
+T4698,06/10/2022,S09,P025,Vitamix 5200 Blender,Home & Kitchen,5,456.62,2283.1,Budget,Credit Card
+T4699,26-12-2023,S10,P007,Dell XPS 15,Electronics,6,1549.79,9298.74,Premium,Mobile Wallet
+T4700,03/01/2022,S06,P012,Portable SSD 1TB,Electronics,4,113.9,455.6,Budget,Credit Card
+T4701,07-03-2023,S03,P037,Garmin Forerunner 255,Sports,3,359.31,1077.93,Premium,Cash
+T4702,2024-11-09,S24,P034,TRX Suspension Trainer,Sports,3,146.3,438.9,Budget,Debit Card
+T4703,06/13/2024,S16,P048,Moleskine Notebook,Books & Office,1,24.77,24.77,Premium,Mobile Wallet
+T4704,2024-09-24,S16,P028,Cast Iron Skillet 12in,Home & Kitchen,2,48.58,97.16,Budget,Gift Card
+T4705,2023-08-08,S03,P026,Nespresso Vertuo,Home & Kitchen,1,176.12,176.12,Premium,Credit Card
+T4706,2022-10-29,S19,P047,Atomic Habits Book,Books & Office,6,19.46,116.76,Budget,Gift Card
+T4707,2022-10-15,S17,P019,Columbia Rain Jacket,Apparel,1,154.67,154.67,Loyal,Debit Card
+T4708,2024-05-31,S22,P004,Sony WH-1000XM5,Electronics,5,349.78,1748.9,Loyal,Debit Card
+T4709,08-07-2022,S13,P004,Sony WH-1000XM5,Electronics,1,347.17,347.17,Loyal,Mobile Wallet
+T4710,03/28/2024,S04,P019,Columbia Rain Jacket,Apparel,2,149.04,298.08,Loyal,Debit Card
+T4711,2024-10-01,S22,P037,Garmin Forerunner 255,Sports,1,341.46,341.46,Standard,Gift Card
+T4712,03/19/2024,S13,P041,CeraVe Moisturizing Cream,Beauty,4,19.28,77.12,Premium,Credit Card
+T4713,2023/08/28,S14,P010,Mechanical Keyboard,Electronics,6,148.39,890.34,Budget,Cash
+T4714,01/14/2022,S11,P030,Robot Vacuum iRobot,Home & Kitchen,1,348.98,348.98,Loyal,Mobile Wallet
+T4715,08/01/2023,S02,P021,Carhartt Work Pants,Apparel,4,68.04,272.16,Loyal,Debit Card
+T4716,09/18/2024,,P042,Dyson Airwrap Styler,Beauty,2,629.27,1258.54,Loyal,Mobile Wallet
+T4717,2023/07/09,S15,P004,Sony WH-1000XM5,Electronics,2,363.97,727.94,Premium,Credit Card
+T4718,2022/10/07,S25,P023,Instant Pot Duo 7in1,Home & Kitchen,1,100.54,100.54,Standard,Cash
+T4719,12-04-2024,S08,P010,Mechanical Keyboard,Electronics,3,154.91,464.73,Standard,Mobile Wallet
+T4720,12/11/2024,S07,P038,Resistance Bands Set,Sports,1,29.55,29.55,Premium,Credit Card
+T4721,11/16/2022,S10,P033,Peloton Yoga Mat,Sports,2,77.21,154.42,Premium,Credit Card
+T4722,07/21/2024,S18,P027,Cuisinart Air Fryer,Home & Kitchen,1,134.95,134.95,Standard,Mobile Wallet
+T4723,2022-11-12,S08,P009,Logitech MX Master 3,Electronics,5,102.76,513.8,Loyal,Credit Card
+T4724,2024/01/18,S04,P005,MacBook Air M2,Electronics,4,1324.15,5296.6,Budget,Mobile Wallet
+T4725,2023/06/11,S13,P006,iPad Pro 12.9,Electronics,6,1075.39,6452.34,Premium,Credit Card
+T4726,31-08-2022,S01,P048,Moleskine Notebook,Books & Office,4,24.79,99.16,Loyal,Credit Card
+T4727,22-04-2024,S06,P022,Hanes Crew Socks 6pk,Apparel,1,14.56,14.56,Budget,Cash
+T4728,31-05-2024,S05,P016,Champion Hoodie,Apparel,1,55.89,55.89,Standard,Mobile Wallet
+T4729,2024-06-29,S13,P002,Samsung Galaxy S24 Ultra,Electronics,1,1251.95,1251.95,Premium,Debit Card
+T4730,01/05/2023,S02,P013,Levis 501 Jeans,Apparel,1,92.78,92.78,Standard,Gift Card
+T4731,2023-11-15,S14,P025,Vitamix 5200 Blender,Home & Kitchen,2,464.4,928.8,Premium,Mobile Wallet
+T4732,07/24/2022,S04,P042,Dyson Airwrap Styler,Beauty,5,584.47,2922.35,Standard,Mobile Wallet
+T4733,2024/03/15,S01,P050,HP 65XL Ink Cartridge,Books & Office,2,34.5,69.0,Standard,Cash
+T4734,04/11/2024,S05,P012,Portable SSD 1TB,Electronics,2,113.83,227.66,Standard,Debit Card
+T4735,2022/05/03,S09,P023,Instant Pot Duo 7in1,Home & Kitchen,6,103.02,618.12,Standard,Mobile Wallet
+T4736,2024/04/11,,P040,Jump Rope Speed,Sports,6,20.32,121.92,Loyal,Cash
+T4737,2022-10-05,S01,P015,Patagonia Fleece Jacket,Apparel,1,183.78,183.78,Budget,Credit Card
+T4738,15-10-2024,S13,P035,Bowflex SelectTech Dumbbells,Sports,1,403.94,403.94,Loyal,Credit Card
+T4739,16-02-2024,S01,P012,Portable SSD 1TB,Electronics,2,112.29,224.58,Budget,Credit Card
+T4740,2023/02/25,S02,P031,Electric Kettle,Home & Kitchen,3,41.26,123.78,Loyal,Cash
+T4741,11-10-2022,S23,P025,Vitamix 5200 Blender,Home & Kitchen,3,450.19,1350.57,Standard,Mobile Wallet
+T4742,2023-07-26,S12,P030,Robot Vacuum iRobot,Home & Kitchen,4,343.36,1373.44,Budget,Debit Card
+T4743,17-02-2024,S10,P042,Dyson Airwrap Styler,Beauty,4,597.87,2391.48,Standard,Cash
+T4744,2024/06/22,S13,P036,CamelBak Hydration Pack,Sports,3,92.78,278.34,Loyal,Debit Card
+T4745,2024-08-01,S17,P026,Nespresso Vertuo,Home & Kitchen,1,183.64,183.64,Premium,Gift Card
+T4746,06/06/2022,S19,P046,Tatcha Rice Wash Cleanser,Beauty,4,38.03,152.12,Standard,Mobile Wallet
+T4747,2024-03-13,S03,P030,Robot Vacuum iRobot,Home & Kitchen,3,355.94,1067.82,Budget,Debit Card
+T4748,03/19/2023,S04,P029,Dyson V15 Vacuum,Home & Kitchen,2,728.72,1457.44,Premium,Cash
+T4749,11/12/2022,S16,P050,HP 65XL Ink Cartridge,Books & Office,1,35.94,35.94,Loyal,Credit Card
+T4750,2023-09-16,S10,P029,Dyson V15 Vacuum,Home & Kitchen,1,727.44,727.44,Premium,Cash
+T4751,2024-02-01,S14,P024,KitchenAid Stand Mixer,Home & Kitchen,4,375.06,1500.24,Premium,Credit Card
+T4752,12/27/2024,S12,P040,Jump Rope Speed,Sports,4,20.12,80.48,Loyal,Debit Card
+T4753,30-01-2024,S13,P026,Nespresso Vertuo,Home & Kitchen,5,187.15,935.75,Budget,Mobile Wallet
+T4754,12/15/2022,S03,P021,Carhartt Work Pants,Apparel,3,68.58,205.74,Premium,Debit Card
+T4755,07/09/2022,S01,P033,Peloton Yoga Mat,Sports,2,80.45,160.9,Premium,Debit Card
+T4756,2022-05-09,S16,P009,Logitech MX Master 3,Electronics,3,104.71,314.13,Budget,Gift Card
+T4757,2024/06/16,S05,P032,French Press Coffee,Home & Kitchen,3,30.67,92.01,Premium,Debit Card
+T4758,2023-06-09,S01,P009,Logitech MX Master 3,Electronics,3,102.08,306.24,Premium,Gift Card
+T4759,2023/12/16,S01,P050,HP 65XL Ink Cartridge,Books & Office,5,36.57,182.85,Loyal,Cash
+T4760,04-03-2023,S22,P047,Atomic Habits Book,Books & Office,1,19.72,19.72,Standard,Debit Card
+T4761,2023/02/20,S23,P005,MacBook Air M2,Electronics,6,1334.07,8004.42,Loyal,Credit Card
+T4762,2023-11-27,S06,P010,Mechanical Keyboard,Electronics,6,157.4,944.4,Premium,Credit Card
+T4763,2023/06/11,S17,P010,Mechanical Keyboard,Electronics,2,150.67,301.34,Premium,Debit Card
+T4764,2023/08/19,S01,P015,Patagonia Fleece Jacket,Apparel,2,176.44,352.88,Budget,Mobile Wallet
+T4765,2023-10-27,S07,P037,Garmin Forerunner 255,Sports,5,356.87,1784.35,Budget,Cash
+T4766,2024/01/02,S04,P013,Levis 501 Jeans,Apparel,6,89.56,537.36,Premium,Debit Card
+T4767,07/29/2024,S15,P018,Under Armour T-Shirt,Apparel,6,35.65,213.9,Budget,Mobile Wallet
+T4768,14-03-2024,S05,P047,Atomic Habits Book,Books & Office,3,19.85,59.55,Premium,Gift Card
+T4769,12-10-2022,S06,P043,La Mer Moisturizer 1oz,Beauty,4,192.08,768.32,Loyal,Cash
+T4770,05-09-2024,S12,P033,Peloton Yoga Mat,Sports,1,81.94,81.94,Premium,Gift Card
+T4771,2022-03-04,S13,P023,Instant Pot Duo 7in1,Home & Kitchen,4,100.38,401.52,Budget,Gift Card
+T4772,05/11/2023,S02,P009,Logitech MX Master 3,Electronics,4,104.63,418.52,Budget,Cash
+T4773,26-11-2024,S12,P038,Resistance Bands Set,Sports,4,30.68,122.72,Premium,Cash
+T4774,2022/01/03,S24,P013,Levis 501 Jeans,Apparel,2,89.21,178.42,Premium,Cash
+T4775,02-09-2023,S14,P040,Jump Rope Speed,Sports,2,20.48,40.96,Loyal,Mobile Wallet
+T4776,15-01-2024,S09,P034,TRX Suspension Trainer,Sports,2,152.78,305.56,Loyal,Cash
+T4777,2024/10/20,S16,P021,Carhartt Work Pants,Apparel,1,69.12,69.12,Budget,Cash
+T4778,10/22/2024,S15,P031,Electric Kettle,Home & Kitchen,2,41.28,82.56,Loyal,Mobile Wallet
+T4779,12-03-2022,S15,P042,Dyson Airwrap Styler,Beauty,2,601.25,1202.5,Standard,Mobile Wallet
+T4780,2023/08/13,S15,P034,TRX Suspension Trainer,Sports,3,153.35,460.05,Premium,Credit Card
+T4781,2023/03/03,S10,P025,Vitamix 5200 Blender,Home & Kitchen,4,445.46,1781.84,Loyal,Debit Card
+T4782,14-12-2022,S22,P010,Mechanical Keyboard,Electronics,5,153.04,765.2,Loyal,Credit Card
+T4783,11/15/2022,S21,P026,Nespresso Vertuo,Home & Kitchen,2,180.54,361.08,Loyal,Gift Card
+T4784,2022/12/07,S21,P029,Dyson V15 Vacuum,Home & Kitchen,5,717.67,3588.35,Standard,Mobile Wallet
+T4785,2022/10/21,S07,P022,Hanes Crew Socks 6pk,Apparel,2,14.68,29.36,Standard,Credit Card
+T4786,10-01-2024,S07,P006,iPad Pro 12.9,Electronics,4,1152.22,4608.88,Loyal,Credit Card
+T4787,02/14/2023,S25,P009,Logitech MX Master 3,Electronics,3,101.35,304.05,Premium,Gift Card
+T4788,18-01-2022,S25,P010,Mechanical Keyboard,Electronics,1,151.57,151.57,Premium,Gift Card
+T4789,10/04/2022,S04,P017,Adidas Running Shorts,Apparel,4,39.28,157.12,Premium,Credit Card
+T4790,17-08-2022,S02,P003,AirPods Pro 2nd Gen,Electronics,2,254.13,508.26,Standard,Mobile Wallet
+T4791,2023-06-23,S17,P002,Samsung Galaxy S24 Ultra,Electronics,5,1239.27,6196.35,Premium,Gift Card
+T4792,04/16/2024,S20,P049,Staples Desk Organiser,Books & Office,4,40.19,160.76,Budget,Gift Card
+T4793,02/01/2022,S24,P040,Jump Rope Speed,Sports,3,20.33,60.99,Premium,Debit Card
+T4794,18-11-2024,S13,P036,CamelBak Hydration Pack,Sports,3,88.15,264.45,Budget,Debit Card
+T4795,10/23/2022,S08,P039,Foam Roller,Sports,4,35.32,141.28,Premium,Debit Card
+T4796,2024/10/10,S22,P022,Hanes Crew Socks 6pk,Apparel,4,15.01,60.04,Loyal,Credit Card
+T4797,17-06-2024,S24,P013,Levis 501 Jeans,Apparel,1,88.5,88.5,Loyal,Credit Card
+T4798,2022/09/07,S05,P008,LG 27 4K Monitor,Electronics,6,470.99,2825.94,Standard,Debit Card
+T4799,2023-10-08,S12,P029,Dyson V15 Vacuum,Home & Kitchen,2,686.24,1372.48,Loyal,Credit Card
+T4800,2024-03-16,S04,P040,Jump Rope Speed,Sports,5,20.41,102.05,Premium,Debit Card
+T4801,03/14/2024,S10,P008,LG 27 4K Monitor,Electronics,5,442.01,2210.05,Loyal,Cash
+T4802,2023/09/02,S01,P010,Mechanical Keyboard,Electronics,3,157.35,472.05,Premium,Gift Card
+T4803,2023/04/05,S14,P008,LG 27 4K Monitor,Electronics,3,452.16,1356.48,Standard,Credit Card
+T4804,2022-10-28,S19,P046,Tatcha Rice Wash Cleanser,Beauty,1,37.22,37.22,Budget,Debit Card
+T4805,2024-10-11,S19,P042,Dyson Airwrap Styler,Beauty,5,614.6,3073.0,Standard,Credit Card
+T4806,2024/02/08,S19,P043,La Mer Moisturizer 1oz,Beauty,1,180.63,180.63,Budget,Credit Card
+T4807,2024/03/31,S02,P010,Mechanical Keyboard,Electronics,2,150.0,300.0,Budget,Mobile Wallet
+T4808,08-01-2024,S16,P003,AirPods Pro 2nd Gen,Electronics,1,246.32,246.32,Premium,Gift Card
+T4809,2022/05/28,S14,P019,Columbia Rain Jacket,Apparel,3,149.36,448.08,Premium,Mobile Wallet
+T4810,01-06-2024,S09,P015,Patagonia Fleece Jacket,Apparel,5,180.81,904.05,Budget,Gift Card
+T4811,01/06/2024,S15,P014,Nike Air Max 270,Apparel,5,130.31,651.55,Loyal,Gift Card
+T4812,2023-10-10,S14,P047,Atomic Habits Book,Books & Office,3,19.39,58.17,Standard,Cash
+T4813,2023-01-25,S18,P031,Electric Kettle,Home & Kitchen,1,41.86,41.86,Standard,Mobile Wallet
+T4814,2022/10/16,S12,P050,HP 65XL Ink Cartridge,Books & Office,3,35.97,107.91,Standard,Gift Card
+T4815,2023-09-08,S03,P040,Jump Rope Speed,Sports,6,20.93,125.58,Standard,Debit Card
+T4816,2022-01-26,S20,P031,Electric Kettle,Home & Kitchen,3,41.51,124.53,Standard,Cash
+T4817,2022-12-16,S21,P013,Levis 501 Jeans,Apparel,5,87.85,439.25,Loyal,Credit Card
+T4818,02/17/2024,S05,P017,Adidas Running Shorts,Apparel,1,39.43,39.43,Standard,Cash
+T4819,24-08-2024,,P014,Nike Air Max 270,Apparel,5,127.94,639.7,Budget,Cash
+T4820,2023/09/28,S23,P045,Olaplex No.3 Treatment,Beauty,1,29.14,29.14,Loyal,Cash
+T4821,2022-05-31,S10,P037,Garmin Forerunner 255,Sports,3,361.25,1083.75,Loyal,Debit Card
+T4822,08-10-2023,S23,P022,Hanes Crew Socks 6pk,Apparel,5,14.7,73.5,Standard,Mobile Wallet
+T4823,03/03/2022,S03,P042,Dyson Airwrap Styler,Beauty,1,582.07,582.07,Budget,Gift Card
+T4824,2022-11-10,S21,P036,CamelBak Hydration Pack,Sports,4,90.99,363.96,Loyal,Cash
+T4825,2024/06/20,S05,P005,MacBook Air M2,Electronics,2,1279.9,2559.8,Premium,Cash
+T4826,2023-10-31,S09,P045,Olaplex No.3 Treatment,Beauty,5,28.39,141.95,Budget,Credit Card
+T4827,03/07/2022,S08,P012,Portable SSD 1TB,Electronics,3,106.82,320.46,Loyal,Credit Card
+T4828,2024/06/07,S21,P009,Logitech MX Master 3,Electronics,4,97.02,388.08,Standard,Mobile Wallet
+T4829,08/13/2022,,P034,TRX Suspension Trainer,Sports,1,149.78,149.78,Budget,Gift Card
+T4830,04/05/2024,S22,P022,Hanes Crew Socks 6pk,Apparel,4,15.15,60.6,Budget,Cash
+T4831,2024/05/28,S13,P015,Patagonia Fleece Jacket,Apparel,4,176.97,707.88,Standard,Credit Card
+T4832,26-06-2024,S13,P022,Hanes Crew Socks 6pk,Apparel,4,15.15,60.6,Premium,Debit Card
+T4833,2024-02-10,S15,P043,La Mer Moisturizer 1oz,Beauty,3,179.95,539.85,Budget,Debit Card
+T4834,11-11-2024,S21,P023,Instant Pot Duo 7in1,Home & Kitchen,5,101.25,506.25,Standard,Mobile Wallet
+T4835,2024/01/26,S15,P039,Foam Roller,Sports,6,35.97,215.82,Loyal,Credit Card
+T4836,2022-01-17,S10,P016,Champion Hoodie,Apparel,1,54.03,54.03,Standard,Gift Card
+T4837,2024/12/26,S05,P001,iPhone 15 Pro,Electronics,6,1108.85,6653.1,Premium,Mobile Wallet
+T4838,02/26/2024,S08,P033,Peloton Yoga Mat,Sports,6,79.48,476.88,Premium,Debit Card
+T4839,11-05-2022,S12,P029,Dyson V15 Vacuum,Home & Kitchen,2,693.99,1387.98,Standard,Credit Card
+T4840,2024-09-25,S23,P036,CamelBak Hydration Pack,Sports,1,89.23,89.23,Loyal,Debit Card
+T4841,2024-03-31,S18,P007,Dell XPS 15,Electronics,6,1459.62,8757.72,Budget,Gift Card
+T4842,05/21/2024,S21,P010,Mechanical Keyboard,Electronics,2,148.73,297.46,Standard,Credit Card
+T4843,2024-07-19,S13,P045,Olaplex No.3 Treatment,Beauty,4,28.24,112.96,Premium,Cash
+T4844,08/10/2023,S08,P018,Under Armour T-Shirt,Apparel,6,35.73,214.38,Loyal,Mobile Wallet
+T4845,2024/10/24,S04,P010,Mechanical Keyboard,Electronics,6,148.95,893.7,Premium,Mobile Wallet
+T4846,05/24/2024,S20,P011,Webcam 4K,Electronics,5,89.66,448.3,Premium,Gift Card
+T4847,2023/04/12,S11,P030,Robot Vacuum iRobot,Home & Kitchen,5,351.29,1756.45,Budget,Cash
+T4848,2024-01-14,S19,P024,KitchenAid Stand Mixer,Home & Kitchen,3,398.54,1195.62,Standard,Debit Card
+T4849,06/13/2022,S12,P047,Atomic Habits Book,Books & Office,2,19.16,38.32,Premium,Cash
+T4850,2024/10/25,S15,P007,Dell XPS 15,Electronics,5,1477.07,7385.35,Standard,Cash
+T4851,2023-05-15,S21,P012,Portable SSD 1TB,Electronics,1,110.94,110.94,Budget,Cash
+T4852,2023/10/24,S19,P023,Instant Pot Duo 7in1,Home & Kitchen,4,101.07,404.28,Loyal,Gift Card
+T4853,2024-07-11,S03,P025,Vitamix 5200 Blender,Home & Kitchen,4,469.49,1877.96,Budget,Debit Card
+T4854,03/25/2023,S15,P049,Staples Desk Organiser,Books & Office,2,40.95,81.9,Premium,Cash
+T4855,04/11/2024,S19,P008,LG 27 4K Monitor,Electronics,6,446.42,2678.52,Premium,Cash
+T4856,2024-07-24,S11,P021,Carhartt Work Pants,Apparel,1,70.76,70.76,Standard,Gift Card
+T4857,09/09/2024,S14,P013,Levis 501 Jeans,Apparel,1,88.16,88.16,Premium,Gift Card
+T4858,2022-08-27,S14,P017,Adidas Running Shorts,Apparel,4,40.89,163.56,Budget,Cash
+T4859,11-01-2024,S09,P026,Nespresso Vertuo,Home & Kitchen,4,181.04,724.16,Budget,Gift Card
+T4860,2022-03-03,S24,P002,Samsung Galaxy S24 Ultra,Electronics,2,1232.11,2464.22,Standard,Debit Card
+T4861,07/20/2024,S05,P009,Logitech MX Master 3,Electronics,5,98.31,491.55,Budget,Mobile Wallet
+T4862,01/14/2022,S04,P039,Foam Roller,Sports,1,34.0,34.0,Premium,Gift Card
+T4863,2023/09/01,S11,P006,iPad Pro 12.9,Electronics,5,1084.47,5422.35,Premium,Gift Card
+T4864,28-05-2023,S15,P043,La Mer Moisturizer 1oz,Beauty,3,183.8,551.4,Standard,Credit Card
+T4865,2022-04-29,S19,P028,Cast Iron Skillet 12in,Home & Kitchen,6,49.09,294.54,Standard,Credit Card
+T4866,07/16/2023,S17,P019,Columbia Rain Jacket,Apparel,6,148.17,889.02,Loyal,Mobile Wallet
+T4867,2024/05/24,S14,P045,Olaplex No.3 Treatment,Beauty,5,27.34,136.7,Standard,Credit Card
+T4868,2024-05-16,S16,P005,MacBook Air M2,Electronics,5,1292.47,6462.35,Standard,Mobile Wallet
+T4869,04/25/2022,S19,P034,TRX Suspension Trainer,Sports,2,150.98,301.96,Budget,Gift Card
+T4870,05/25/2023,S02,P050,HP 65XL Ink Cartridge,Books & Office,2,34.02,68.04,Budget,Gift Card
+T4871,2024/07/29,S03,P023,Instant Pot Duo 7in1,Home & Kitchen,6,100.62,603.72,Budget,Credit Card
+T4872,28-11-2024,S23,P032,French Press Coffee,Home & Kitchen,6,30.45,182.7,Budget,Cash
+T4873,2023/11/24,S20,P016,Champion Hoodie,Apparel,5,53.87,269.35,Loyal,Debit Card
+T4874,2022/09/11,S21,P021,Carhartt Work Pants,Apparel,3,68.19,204.57,Budget,Mobile Wallet
+T4875,20-12-2022,S10,P030,Robot Vacuum iRobot,Home & Kitchen,2,364.37,728.74,Budget,Gift Card
+T4876,2023/04/20,S11,P005,MacBook Air M2,Electronics,5,1351.55,6757.75,Budget,Debit Card
+T4877,2024-01-28,S14,P017,Adidas Running Shorts,Apparel,6,41.92,251.52,Loyal,Credit Card
+T4878,2024/08/10,S16,P017,Adidas Running Shorts,Apparel,6,41.13,246.78,Loyal,Credit Card
+T4879,09/22/2024,S07,P026,Nespresso Vertuo,Home & Kitchen,4,175.11,700.44,Loyal,Debit Card
+T4880,2022/05/11,S21,P019,Columbia Rain Jacket,Apparel,3,146.51,439.53,Budget,Mobile Wallet
+T4881,2023/01/16,S24,P009,Logitech MX Master 3,Electronics,4,104.34,417.36,Budget,Mobile Wallet
+T4882,2022-12-25,S05,P021,Carhartt Work Pants,Apparel,4,68.4,273.6,Budget,Gift Card
+T4883,2024-09-10,S24,P019,Columbia Rain Jacket,Apparel,2,151.4,302.8,Standard,Mobile Wallet
+T4884,2022-05-30,S09,P026,Nespresso Vertuo,Home & Kitchen,4,174.38,697.52,Premium,Debit Card
+T4885,04-05-2023,S16,P046,Tatcha Rice Wash Cleanser,Beauty,6,38.13,228.78,Premium,Gift Card
+T4886,2023/04/30,S02,P012,Portable SSD 1TB,Electronics,3,110.49,331.47,Standard,Gift Card
+T4887,04/18/2024,S15,P004,Sony WH-1000XM5,Electronics,6,361.91,2171.46,Budget,Mobile Wallet
+T4888,17-04-2024,S04,P010,Mechanical Keyboard,Electronics,3,152.58,457.74,Standard,Credit Card
+T4889,01/24/2024,S16,P041,CeraVe Moisturizing Cream,Beauty,2,18.47,36.94,Loyal,Credit Card
+T4890,28-03-2024,S13,P035,Bowflex SelectTech Dumbbells,Sports,1,416.9,416.9,Standard,Credit Card
+T4891,08/08/2022,S25,P016,Champion Hoodie,Apparel,6,55.9,335.4,Premium,Gift Card
+T4892,2023/07/13,S24,P044,Neutrogena SPF 50 Sunscreen,Beauty,3,14.19,42.57,Budget,Debit Card
+T4893,2022/06/09,S21,P039,Foam Roller,Sports,5,34.99,174.95,Budget,Gift Card
+T4894,2024/04/21,,P007,Dell XPS 15,Electronics,3,1499.84,4499.52,Budget,Gift Card
+T4895,2024-10-09,S12,P014,Nike Air Max 270,Apparel,4,134.19,536.76,Standard,Credit Card
+T4896,08-06-2022,S21,P021,Carhartt Work Pants,Apparel,4,72.48,289.92,Loyal,Credit Card
+T4897,2024-05-24,S03,P027,Cuisinart Air Fryer,Home & Kitchen,1,134.72,134.72,Budget,Cash
+T4898,04/30/2023,S08,P023,Instant Pot Duo 7in1,Home & Kitchen,5,100.1,500.5,Standard,Mobile Wallet
+T4899,2024/01/22,S09,P007,Dell XPS 15,Electronics,4,1501.88,6007.52,Loyal,Credit Card
+T4900,10/19/2023,S09,P028,Cast Iron Skillet 12in,Home & Kitchen,6,49.01,294.06,Budget,Credit Card
+T4901,2022-01-12,S12,P030,Robot Vacuum iRobot,Home & Kitchen,5,365.26,1826.3,Premium,Credit Card
+T4902,2022/11/27,S23,P031,Electric Kettle,Home & Kitchen,4,40.49,161.96,Loyal,Gift Card
+T4903,2024-08-06,S10,P045,Olaplex No.3 Treatment,Beauty,6,28.17,169.02,Premium,Cash
+T4904,07/16/2022,S20,P017,Adidas Running Shorts,Apparel,6,39.01,234.06,Budget,Mobile Wallet
+T4905,08-10-2024,,P002,Samsung Galaxy S24 Ultra,Electronics,1,1234.13,1234.13,Premium,Gift Card
+T4906,2023-09-27,S09,P012,Portable SSD 1TB,Electronics,1,110.12,110.12,Standard,Cash
+T4907,11-12-2023,S17,P003,AirPods Pro 2nd Gen,Electronics,3,256.98,770.94,Budget,Cash
+T4908,2024/06/30,S12,P003,AirPods Pro 2nd Gen,Electronics,3,247.56,742.68,Budget,Gift Card
+T4909,09/27/2022,S24,P022,Hanes Crew Socks 6pk,Apparel,6,15.68,94.08,Budget,Gift Card
+T4910,19-11-2022,S07,P015,Patagonia Fleece Jacket,Apparel,6,174.73,1048.38,Premium,Mobile Wallet
+T4911,02/14/2024,S18,P028,Cast Iron Skillet 12in,Home & Kitchen,4,50.65,202.6,Budget,Cash
+T4912,19-11-2024,,P008,LG 27 4K Monitor,Electronics,5,447.63,2238.15,Loyal,Gift Card
+T4913,08/28/2024,S16,P021,Carhartt Work Pants,Apparel,5,73.3,366.5,Budget,Cash
+T4914,2023/12/02,S01,P041,CeraVe Moisturizing Cream,Beauty,6,19.87,119.22,Standard,Cash
+T4915,2023/10/30,S10,P016,Champion Hoodie,Apparel,6,53.82,322.92,Premium,Gift Card
+T4916,01/25/2022,S03,P019,Columbia Rain Jacket,Apparel,1,148.64,148.64,Premium,Mobile Wallet
+T4917,2022-07-21,S13,P039,Foam Roller,Sports,3,36.52,109.56,Loyal,Credit Card
+T4918,2024/12/28,S06,P042,Dyson Airwrap Styler,Beauty,2,623.54,1247.08,Premium,Cash
+T4919,11/15/2024,S01,P007,Dell XPS 15,Electronics,6,1561.51,9369.06,Budget,Debit Card
+T4920,09-09-2022,S13,P031,Electric Kettle,Home & Kitchen,6,40.59,243.54,Premium,Credit Card
+T4921,08/07/2024,S19,P044,Neutrogena SPF 50 Sunscreen,Beauty,6,14.02,84.12,Loyal,Credit Card
+T4922,2023-07-29,S14,P029,Dyson V15 Vacuum,Home & Kitchen,4,702.58,2810.32,Budget,Mobile Wallet
+T4923,2022-04-13,S18,P043,La Mer Moisturizer 1oz,Beauty,2,181.55,363.1,Budget,Mobile Wallet
+T4924,08-06-2022,S03,P037,Garmin Forerunner 255,Sports,6,340.92,2045.52,Standard,Debit Card
+T4925,2022-06-27,S18,P014,Nike Air Max 270,Apparel,5,135.15,675.75,Standard,Credit Card
+T4926,2022/08/27,S14,P043,La Mer Moisturizer 1oz,Beauty,2,183.25,366.5,Premium,Debit Card
+T4927,2023/01/02,S01,P044,Neutrogena SPF 50 Sunscreen,Beauty,4,14.52,58.08,Standard,Cash
+T4928,22-01-2022,S06,P048,Moleskine Notebook,Books & Office,6,25.31,151.86,Premium,Gift Card
+T4929,2022/09/04,S25,P011,Webcam 4K,Electronics,6,92.09,552.54,Premium,Cash
+T4930,2024-12-11,S03,P035,Bowflex SelectTech Dumbbells,Sports,1,403.55,403.55,Premium,Credit Card
+T4931,2023/06/24,S07,P019,Columbia Rain Jacket,Apparel,6,151.44,908.64,Premium,Debit Card
+T4932,2024/05/04,S12,P044,Neutrogena SPF 50 Sunscreen,Beauty,5,13.82,69.1,Standard,Cash
+T4933,2023/11/04,,P007,Dell XPS 15,Electronics,4,1503.95,6015.8,Loyal,Gift Card
+T4934,11-04-2024,S14,P041,CeraVe Moisturizing Cream,Beauty,5,19.9,99.5,Budget,Cash
+T4935,06-08-2023,S18,P006,iPad Pro 12.9,Electronics,2,1146.3,2292.6,Loyal,Gift Card
+T4936,08/14/2024,S01,P006,iPad Pro 12.9,Electronics,2,1152.54,2305.08,Premium,Gift Card
+T4937,11/03/2024,S22,P008,LG 27 4K Monitor,Electronics,5,439.04,2195.2,Premium,Debit Card
+T4938,19-08-2022,S01,P018,Under Armour T-Shirt,Apparel,6,35.22,211.32,Standard,Gift Card
+T4939,27-08-2023,S19,P026,Nespresso Vertuo,Home & Kitchen,1,179.03,179.03,Budget,Credit Card
+T4940,03-06-2023,S23,P043,La Mer Moisturizer 1oz,Beauty,4,189.36,757.44,Premium,Credit Card
+T4941,05/31/2023,S25,P018,Under Armour T-Shirt,Apparel,6,36.43,218.58,Premium,Gift Card
+T4942,07/27/2022,S16,P019,Columbia Rain Jacket,Apparel,2,148.5,297.0,Premium,Gift Card
+T4943,12-02-2022,S19,P009,Logitech MX Master 3,Electronics,4,102.41,409.64,Budget,Mobile Wallet
+T4944,2022/09/27,S16,P027,Cuisinart Air Fryer,Home & Kitchen,5,128.24,641.2,Standard,Debit Card
+T4945,2024-10-13,S03,P013,Levis 501 Jeans,Apparel,3,90.99,272.97,Standard,Mobile Wallet
+T4946,2022/04/20,S14,P040,Jump Rope Speed,Sports,3,20.81,62.43,Premium,Cash
+T4947,2024/09/06,S06,P043,La Mer Moisturizer 1oz,Beauty,6,188.32,1129.92,Premium,Debit Card
+T4948,29-03-2023,S18,P025,Vitamix 5200 Blender,Home & Kitchen,1,471.31,471.31,Premium,Mobile Wallet
+T4949,2024-02-11,S19,P006,iPad Pro 12.9,Electronics,4,1092.08,4368.32,Loyal,Gift Card
+T4950,11/29/2022,S24,P014,Nike Air Max 270,Apparel,5,128.91,644.55,Loyal,Gift Card
+T4951,12/04/2023,S03,P018,Under Armour T-Shirt,Apparel,5,35.89,179.45,Budget,Credit Card
+T4952,09-03-2024,S13,P027,Cuisinart Air Fryer,Home & Kitchen,2,135.46,270.92,Loyal,Credit Card
+T4953,05/16/2022,S22,P023,Instant Pot Duo 7in1,Home & Kitchen,1,101.57,101.57,Loyal,Gift Card
+T4954,2023-10-01,S02,P042,Dyson Airwrap Styler,Beauty,6,604.23,3625.38,Loyal,Gift Card
+T4955,2022-10-05,S21,P015,Patagonia Fleece Jacket,Apparel,6,181.3,1087.8,Loyal,Cash
+T4956,19-11-2023,S09,P047,Atomic Habits Book,Books & Office,3,19.7,59.1,Loyal,Mobile Wallet
+T4957,23-09-2023,S09,P011,Webcam 4K,Electronics,3,88.73,266.19,Budget,Mobile Wallet
+T4958,06-12-2024,S11,P041,CeraVe Moisturizing Cream,Beauty,5,18.71,93.55,Standard,Cash
+T4959,01-11-2024,S01,P005,MacBook Air M2,Electronics,1,1275.92,1275.92,Loyal,Debit Card
+T4960,08/07/2022,S03,P013,Levis 501 Jeans,Apparel,5,91.29,456.45,Standard,Cash
+T4961,07-06-2022,S03,P030,Robot Vacuum iRobot,Home & Kitchen,4,357.77,1431.08,Loyal,Debit Card
+T4962,08-01-2022,S25,P003,AirPods Pro 2nd Gen,Electronics,1,260.77,260.77,Loyal,Mobile Wallet
+T4963,2024-12-28,S10,P028,Cast Iron Skillet 12in,Home & Kitchen,1,50.54,50.54,Standard,Debit Card
+T4964,2024/03/25,,P007,Dell XPS 15,Electronics,5,1513.59,7567.95,Standard,Credit Card
+T4965,03/12/2024,S09,P028,Cast Iron Skillet 12in,Home & Kitchen,5,50.28,251.4,Standard,Gift Card
+T4966,2024/01/31,S11,P002,Samsung Galaxy S24 Ultra,Electronics,1,1204.9,1204.9,Budget,Cash
+T4967,2022-09-01,S03,P046,Tatcha Rice Wash Cleanser,Beauty,3,39.38,118.14,Premium,Credit Card
+T4968,2022/05/01,S06,P012,Portable SSD 1TB,Electronics,2,111.95,223.9,Budget,Gift Card
+T4969,24-12-2023,S17,P027,Cuisinart Air Fryer,Home & Kitchen,4,131.18,524.72,Premium,Credit Card
+T4970,2024-07-31,S02,P031,Electric Kettle,Home & Kitchen,4,40.35,161.4,Standard,Cash
+T4971,2023-03-04,S23,P030,Robot Vacuum iRobot,Home & Kitchen,2,353.4,706.8,Budget,Credit Card
+T4972,2024/10/12,S17,P024,KitchenAid Stand Mixer,Home & Kitchen,2,387.73,775.46,Budget,Cash
+T4973,07/05/2023,S19,P042,Dyson Airwrap Styler,Beauty,4,618.06,2472.24,Loyal,Credit Card
+T4974,2023-04-13,S10,P050,HP 65XL Ink Cartridge,Books & Office,1,34.22,34.22,Premium,Gift Card
+T4975,21-10-2022,,P008,LG 27 4K Monitor,Electronics,1,452.07,452.07,Standard,Mobile Wallet
+T4976,2024/11/18,S13,P035,Bowflex SelectTech Dumbbells,Sports,3,391.71,1175.13,Standard,Gift Card
+T4977,2023-11-21,S14,P030,Robot Vacuum iRobot,Home & Kitchen,3,353.91,1061.73,Budget,Credit Card
+T4978,2024/09/24,S21,P020,New Balance 990,Apparel,1,176.88,176.88,Loyal,Gift Card
+T4979,2024-05-22,S06,P022,Hanes Crew Socks 6pk,Apparel,3,15.61,46.83,Budget,Debit Card
+T4980,11-06-2023,S02,P035,Bowflex SelectTech Dumbbells,Sports,2,406.13,812.26,Loyal,Debit Card
+T4981,02-05-2023,S18,P029,Dyson V15 Vacuum,Home & Kitchen,4,693.64,2774.56,Standard,Gift Card
+T4982,21-05-2023,S18,P026,Nespresso Vertuo,Home & Kitchen,4,179.91,719.64,Standard,Debit Card
+T4983,04/25/2023,S15,P002,Samsung Galaxy S24 Ultra,Electronics,1,1194.09,1194.09,Loyal,Debit Card
+T4984,03/03/2022,,P003,AirPods Pro 2nd Gen,Electronics,6,255.6,1533.6,Budget,Debit Card
+T4985,09-02-2023,S18,P028,Cast Iron Skillet 12in,Home & Kitchen,6,49.65,297.9,Budget,Credit Card
+T4986,2023-09-09,S07,P039,Foam Roller,Sports,1,36.19,36.19,Budget,Credit Card
+T4987,17-03-2023,S05,P018,Under Armour T-Shirt,Apparel,5,35.92,179.6,Standard,Credit Card
+T4988,31-07-2023,S13,P022,Hanes Crew Socks 6pk,Apparel,6,15.24,91.44,Premium,Mobile Wallet
+T4989,09/29/2022,S15,P004,Sony WH-1000XM5,Electronics,4,355.13,1420.52,Premium,Gift Card
+T4990,17-07-2023,S05,P001,iPhone 15 Pro,Electronics,3,1110.24,3330.72,Standard,Gift Card
+T4991,06-06-2023,S18,P049,Staples Desk Organiser,Books & Office,5,41.33,206.65,Standard,Gift Card
+T4992,04/30/2024,S11,P043,La Mer Moisturizer 1oz,Beauty,6,188.3,1129.8,Standard,Debit Card
+T4993,2024/01/29,S03,P030,Robot Vacuum iRobot,Home & Kitchen,4,349.25,1397.0,Standard,Mobile Wallet
+T4994,2024/04/07,S21,P016,Champion Hoodie,Apparel,6,56.52,339.12,Budget,Mobile Wallet
+T4995,07/03/2024,S11,P012,Portable SSD 1TB,Electronics,4,111.92,447.68,Standard,Gift Card
+T4996,13-10-2023,S10,P042,Dyson Airwrap Styler,Beauty,6,621.72,3730.32,Loyal,Credit Card
+T4997,08/05/2022,S24,P024,KitchenAid Stand Mixer,Home & Kitchen,3,390.58,1171.74,Loyal,Gift Card
+T4998,12/10/2022,S01,P005,MacBook Air M2,Electronics,1,1337.85,1337.85,Budget,Mobile Wallet
+T4999,07/15/2022,S12,P027,Cuisinart Air Fryer,Home & Kitchen,3,131.29,393.87,Loyal,Cash
+T5000,10/02/2024,S19,P025,Vitamix 5200 Blender,Home & Kitchen,4,452.01,1808.04,Standard,Gift Card

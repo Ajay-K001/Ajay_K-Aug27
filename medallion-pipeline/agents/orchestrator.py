@@ -41,18 +41,29 @@ def run_pipeline_phase(phase: str, file_paths: list[str], run_id: str = "") -> P
     return state
 
 
-def run_stepwise_pipeline(file_paths: list[str], run_id: str = "") -> dict[str, Any]:
-    """Return a phase-by-phase workflow plan that mirrors the UI orchestration."""
-    ordered = [
-        {"phase": i, "name": phase, "status": "pending", "run_id": run_id, "rows": None}
-        for i, phase in enumerate(PHASES)
-    ]
-    return {
-        "run_id": run_id,
-        "phase_count": len(PHASES),
-        "phases": ordered,
-        "files": [str(Path(p)) for p in file_paths],
-    }
+def run_stepwise_pipeline(
+    file_paths: list[str],
+    run_id: str = "",
+    business_intent: str = "",
+    base_dir: str | Path = ".",
+    skip_approval: bool = True,
+) -> dict[str, Any]:
+    """Execute the full medallion pipeline and return results.
+
+    Delegates to orchestrate_pipeline() which calls all agents in sequence:
+    Profile → Bronze STTM → Bronze ingest → Silver STTM → Silver clean →
+    Gold STTM → Gold aggregate → Reporter.
+
+    HITL approval gates are enforced by the Streamlit UI (streamlit_app.py).
+    In CLI mode, pass skip_approval=False and handle prompts in main.py.
+    """
+    return orchestrate_pipeline(
+        file_paths=file_paths,
+        run_id=run_id,
+        business_intent=business_intent,
+        skip_approval=skip_approval,
+        base_dir=base_dir,
+    )
 
 
 def orchestrate_pipeline(

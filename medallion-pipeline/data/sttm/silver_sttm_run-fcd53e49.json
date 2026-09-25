@@ -1,0 +1,430 @@
+{
+  "phase": "silver",
+  "description": "LLM-guided data cleaning, deduplication, and standardization",
+  "business_intent": "what is the product highest sales\n",
+  "source_to_target": {
+    "source_files": [
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\bronze_layer\\products_bronze.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\bronze_layer\\sales_data_bronze.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\bronze_layer\\stores_bronze.parquet"
+    ],
+    "source_layer": "bronze_layer",
+    "target_layer": "silver_layer",
+    "llm_analysis": {
+      "key_columns": [
+        "product_id",
+        "transaction_id",
+        "store_id"
+      ],
+      "transformations": [
+        {
+          "operation": "deduplicate",
+          "target_file": "products_bronze.parquet",
+          "key_columns": [
+            "product_id"
+          ],
+          "dedupe_strategy": "keep_first"
+        },
+        {
+          "operation": "deduplicate",
+          "target_file": "sales_data_bronze.parquet",
+          "key_columns": [
+            "transaction_id"
+          ],
+          "dedupe_strategy": "keep_first"
+        },
+        {
+          "operation": "deduplicate",
+          "target_file": "stores_bronze.parquet",
+          "key_columns": [
+            "store_id"
+          ],
+          "dedupe_strategy": "keep_first"
+        },
+        {
+          "operation": "parse_date",
+          "target_file": "sales_data_bronze.parquet",
+          "columns": [
+            "transaction_date"
+          ],
+          "format": "yyyy-MM-dd",
+          "nullable": false
+        },
+        {
+          "operation": "type_cast",
+          "target_file": "sales_data_bronze.parquet",
+          "columns": [
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ],
+          "type": "double"
+        },
+        {
+          "operation": "normalize_string",
+          "target_file": "products_bronze.parquet",
+          "columns": [
+            "product_name",
+            "category"
+          ],
+          "rules": [
+            "trim",
+            "lowercase",
+            "replace_multiple_spaces"
+          ]
+        },
+        {
+          "operation": "normalize_string",
+          "target_file": "sales_data_bronze.parquet",
+          "columns": [
+            "product_name",
+            "category",
+            "customer_segment",
+            "payment_method"
+          ],
+          "rules": [
+            "trim",
+            "lowercase",
+            "replace_multiple_spaces"
+          ]
+        },
+        {
+          "operation": "normalize_string",
+          "target_file": "stores_bronze.parquet",
+          "columns": [
+            "store_name",
+            "region",
+            "city",
+            "state"
+          ],
+          "rules": [
+            "trim",
+            "titlecase",
+            "replace_multiple_spaces"
+          ]
+        },
+        {
+          "operation": "validate",
+          "target_file": "sales_data_bronze.parquet",
+          "condition": "total_amount = quantity * unit_price",
+          "action_on_fail": "flag_row"
+        }
+      ],
+      "columns_to_standardize": [
+        "product_name",
+        "category",
+        "customer_segment",
+        "payment_method",
+        "store_name",
+        "region",
+        "city",
+        "state"
+      ],
+      "date_columns": [
+        {
+          "file": "sales_data_bronze.parquet",
+          "columns": [
+            "transaction_date"
+          ]
+        }
+      ],
+      "numeric_columns": [
+        {
+          "file": "sales_data_bronze.parquet",
+          "columns": [
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ]
+        },
+        {
+          "file": "products_bronze.parquet",
+          "columns": [
+            "standard_price"
+          ]
+        }
+      ],
+      "data_quality_checks": [
+        {
+          "check": "non_null",
+          "file": "products_bronze.parquet",
+          "columns": [
+            "product_id",
+            "product_name",
+            "category",
+            "standard_price"
+          ]
+        },
+        {
+          "check": "non_null",
+          "file": "sales_data_bronze.parquet",
+          "columns": [
+            "transaction_id",
+            "transaction_date",
+            "store_id",
+            "product_id",
+            "product_name",
+            "category",
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ]
+        },
+        {
+          "check": "non_null",
+          "file": "stores_bronze.parquet",
+          "columns": [
+            "store_id",
+            "store_name",
+            "region",
+            "city",
+            "state"
+          ]
+        },
+        {
+          "check": "unique",
+          "file": "products_bronze.parquet",
+          "columns": [
+            "product_id"
+          ]
+        },
+        {
+          "check": "unique",
+          "file": "sales_data_bronze.parquet",
+          "columns": [
+            "transaction_id"
+          ]
+        },
+        {
+          "check": "unique",
+          "file": "stores_bronze.parquet",
+          "columns": [
+            "store_id"
+          ]
+        },
+        {
+          "check": "range",
+          "file": "sales_data_bronze.parquet",
+          "columns": [
+            "quantity"
+          ],
+          "min": 1,
+          "max": null
+        },
+        {
+          "check": "range",
+          "file": "sales_data_bronze.parquet",
+          "columns": [
+            "unit_price",
+            "total_amount"
+          ],
+          "min": 0,
+          "max": null
+        }
+      ],
+      "business_context": "The goal is to identify the product with the highest sales volume and revenue. Therefore, we enforce strict deduplication on product and transaction identifiers, normalize product and category names to ensure consistent aggregation, and validate that total_amount matches quantity * unit_price to avoid erroneous revenue calculations. Date parsing is critical for time\u2011based aggregation, and non\u2011null checks guarantee completeness of key fields used in joins and aggregations."
+    },
+    "mapping": [
+      {
+        "source": "bronze_parquet",
+        "target": "silver_parquet",
+        "operation": "clean_and_standardize",
+        "transformations": [
+          {
+            "operation": "deduplicate",
+            "target_file": "products_bronze.parquet",
+            "key_columns": [
+              "product_id"
+            ],
+            "dedupe_strategy": "keep_first"
+          },
+          {
+            "operation": "deduplicate",
+            "target_file": "sales_data_bronze.parquet",
+            "key_columns": [
+              "transaction_id"
+            ],
+            "dedupe_strategy": "keep_first"
+          },
+          {
+            "operation": "deduplicate",
+            "target_file": "stores_bronze.parquet",
+            "key_columns": [
+              "store_id"
+            ],
+            "dedupe_strategy": "keep_first"
+          },
+          {
+            "operation": "parse_date",
+            "target_file": "sales_data_bronze.parquet",
+            "columns": [
+              "transaction_date"
+            ],
+            "format": "yyyy-MM-dd",
+            "nullable": false
+          },
+          {
+            "operation": "type_cast",
+            "target_file": "sales_data_bronze.parquet",
+            "columns": [
+              "quantity",
+              "unit_price",
+              "total_amount"
+            ],
+            "type": "double"
+          },
+          {
+            "operation": "normalize_string",
+            "target_file": "products_bronze.parquet",
+            "columns": [
+              "product_name",
+              "category"
+            ],
+            "rules": [
+              "trim",
+              "lowercase",
+              "replace_multiple_spaces"
+            ]
+          },
+          {
+            "operation": "normalize_string",
+            "target_file": "sales_data_bronze.parquet",
+            "columns": [
+              "product_name",
+              "category",
+              "customer_segment",
+              "payment_method"
+            ],
+            "rules": [
+              "trim",
+              "lowercase",
+              "replace_multiple_spaces"
+            ]
+          },
+          {
+            "operation": "normalize_string",
+            "target_file": "stores_bronze.parquet",
+            "columns": [
+              "store_name",
+              "region",
+              "city",
+              "state"
+            ],
+            "rules": [
+              "trim",
+              "titlecase",
+              "replace_multiple_spaces"
+            ]
+          },
+          {
+            "operation": "validate",
+            "target_file": "sales_data_bronze.parquet",
+            "condition": "total_amount = quantity * unit_price",
+            "action_on_fail": "flag_row"
+          }
+        ],
+        "key_columns": [
+          "product_id",
+          "transaction_id",
+          "store_id"
+        ],
+        "columns_to_standardize": [
+          "product_name",
+          "category",
+          "customer_segment",
+          "payment_method",
+          "store_name",
+          "region",
+          "city",
+          "state"
+        ],
+        "date_columns": [
+          {
+            "file": "sales_data_bronze.parquet",
+            "columns": [
+              "transaction_date"
+            ]
+          }
+        ],
+        "quality_checks": [
+          {
+            "check": "non_null",
+            "file": "products_bronze.parquet",
+            "columns": [
+              "product_id",
+              "product_name",
+              "category",
+              "standard_price"
+            ]
+          },
+          {
+            "check": "non_null",
+            "file": "sales_data_bronze.parquet",
+            "columns": [
+              "transaction_id",
+              "transaction_date",
+              "store_id",
+              "product_id",
+              "product_name",
+              "category",
+              "quantity",
+              "unit_price",
+              "total_amount"
+            ]
+          },
+          {
+            "check": "non_null",
+            "file": "stores_bronze.parquet",
+            "columns": [
+              "store_id",
+              "store_name",
+              "region",
+              "city",
+              "state"
+            ]
+          },
+          {
+            "check": "unique",
+            "file": "products_bronze.parquet",
+            "columns": [
+              "product_id"
+            ]
+          },
+          {
+            "check": "unique",
+            "file": "sales_data_bronze.parquet",
+            "columns": [
+              "transaction_id"
+            ]
+          },
+          {
+            "check": "unique",
+            "file": "stores_bronze.parquet",
+            "columns": [
+              "store_id"
+            ]
+          },
+          {
+            "check": "range",
+            "file": "sales_data_bronze.parquet",
+            "columns": [
+              "quantity"
+            ],
+            "min": 1,
+            "max": null
+          },
+          {
+            "check": "range",
+            "file": "sales_data_bronze.parquet",
+            "columns": [
+              "unit_price",
+              "total_amount"
+            ],
+            "min": 0,
+            "max": null
+          }
+        ]
+      }
+    ]
+  }
+}

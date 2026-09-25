@@ -1,0 +1,363 @@
+{
+  "phase": "bronze",
+  "description": "Raw data ingestion with LLM schema inference and validation",
+  "source_to_target": {
+    "source_files": [
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\products.csv",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\sales_data.csv",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\stores.csv"
+    ],
+    "target_layer": "bronze_layer",
+    "llm_schema_analysis": {
+      "source_tables": [
+        "products.csv",
+        "sales_data.csv"
+      ],
+      "target_layer": "bronze_layer",
+      "key_columns": [
+        "products.csv::product_id",
+        "sales_data.csv::transaction_id",
+        "sales_data.csv::product_id"
+      ],
+      "transformations": [
+        {
+          "table": "products.csv",
+          "description": "Standardise column names, trim whitespace, and cast numeric types.",
+          "steps": [
+            {
+              "operation": "rename_columns",
+              "mapping": {
+                "product_id": "product_id",
+                "product_name": "product_name",
+                "category": "category",
+                "standard_price": "standard_price"
+              }
+            },
+            {
+              "operation": "trim_whitespace",
+              "columns": [
+                "product_id",
+                "product_name",
+                "category"
+              ]
+            },
+            {
+              "operation": "cast",
+              "columns": {
+                "standard_price": "float64"
+              }
+            }
+          ]
+        },
+        {
+          "table": "sales_data.csv",
+          "description": "Normalize date format, trim whitespace, cast numeric types, and create derived columns.",
+          "steps": [
+            {
+              "operation": "rename_columns",
+              "mapping": {
+                "transaction_id": "transaction_id",
+                "transaction_date": "transaction_date",
+                "store_id": "store_id",
+                "product_id": "product_id",
+                "product_name": "product_name",
+                "category": "category",
+                "quantity": "quantity",
+                "unit_price": "unit_price",
+                "total_amount": "total_amount",
+                "customer_segment": "customer_segment",
+                "payment_method": "payment_method"
+              }
+            },
+            {
+              "operation": "trim_whitespace",
+              "columns": [
+                "transaction_id",
+                "store_id",
+                "product_id",
+                "product_name",
+                "category",
+                "customer_segment",
+                "payment_method"
+              ]
+            },
+            {
+              "operation": "normalize_date",
+              "column": "transaction_date",
+              "formats": [
+                "%Y-%m-%d",
+                "%m/%d/%Y",
+                "%d-%m-%Y"
+              ],
+              "target_format": "%Y-%m-%d"
+            },
+            {
+              "operation": "cast",
+              "columns": {
+                "quantity": "int64",
+                "unit_price": "float64",
+                "total_amount": "float64"
+              }
+            },
+            {
+              "operation": "derived_column",
+              "name": "calculated_total",
+              "expression": "quantity * unit_price"
+            },
+            {
+              "operation": "validate_amount",
+              "column": "total_amount",
+              "derived_column": "calculated_total",
+              "tolerance": 0.01
+            }
+          ]
+        }
+      ],
+      "data_quality_checks": [
+        {
+          "table": "products.csv",
+          "check": "unique_key",
+          "columns": [
+            "product_id"
+          ],
+          "description": "Ensure each product_id appears only once."
+        },
+        {
+          "table": "products.csv",
+          "check": "not_null",
+          "columns": [
+            "product_id",
+            "product_name",
+            "category",
+            "standard_price"
+          ],
+          "description": "All columns must have values."
+        },
+        {
+          "table": "sales_data.csv",
+          "check": "unique_key",
+          "columns": [
+            "transaction_id"
+          ],
+          "description": "Ensure each transaction_id is unique."
+        },
+        {
+          "table": "sales_data.csv",
+          "check": "foreign_key",
+          "columns": [
+            "product_id"
+          ],
+          "references": {
+            "table": "products.csv",
+            "column": "product_id"
+          },
+          "description": "Every product_id in sales must exist in products."
+        },
+        {
+          "table": "sales_data.csv",
+          "check": "date_format",
+          "column": "transaction_date",
+          "description": "Transaction dates must conform to ISO 8601 (YYYY-MM-DD)."
+        },
+        {
+          "table": "sales_data.csv",
+          "check": "numeric_range",
+          "columns": [
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ],
+          "range": {
+            "min": 0,
+            "max": null
+          },
+          "description": "Quantities and prices must be non\u2011negative."
+        },
+        {
+          "table": "sales_data.csv",
+          "check": "amount_consistency",
+          "columns": [
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ],
+          "tolerance": 0.01,
+          "description": "total_amount should equal quantity * unit_price within a small tolerance."
+        }
+      ]
+    },
+    "mapping": [
+      {
+        "source": "raw_csv",
+        "target": "bronze_parquet",
+        "operation": "ingest",
+        "transformations": [
+          {
+            "table": "products.csv",
+            "description": "Standardise column names, trim whitespace, and cast numeric types.",
+            "steps": [
+              {
+                "operation": "rename_columns",
+                "mapping": {
+                  "product_id": "product_id",
+                  "product_name": "product_name",
+                  "category": "category",
+                  "standard_price": "standard_price"
+                }
+              },
+              {
+                "operation": "trim_whitespace",
+                "columns": [
+                  "product_id",
+                  "product_name",
+                  "category"
+                ]
+              },
+              {
+                "operation": "cast",
+                "columns": {
+                  "standard_price": "float64"
+                }
+              }
+            ]
+          },
+          {
+            "table": "sales_data.csv",
+            "description": "Normalize date format, trim whitespace, cast numeric types, and create derived columns.",
+            "steps": [
+              {
+                "operation": "rename_columns",
+                "mapping": {
+                  "transaction_id": "transaction_id",
+                  "transaction_date": "transaction_date",
+                  "store_id": "store_id",
+                  "product_id": "product_id",
+                  "product_name": "product_name",
+                  "category": "category",
+                  "quantity": "quantity",
+                  "unit_price": "unit_price",
+                  "total_amount": "total_amount",
+                  "customer_segment": "customer_segment",
+                  "payment_method": "payment_method"
+                }
+              },
+              {
+                "operation": "trim_whitespace",
+                "columns": [
+                  "transaction_id",
+                  "store_id",
+                  "product_id",
+                  "product_name",
+                  "category",
+                  "customer_segment",
+                  "payment_method"
+                ]
+              },
+              {
+                "operation": "normalize_date",
+                "column": "transaction_date",
+                "formats": [
+                  "%Y-%m-%d",
+                  "%m/%d/%Y",
+                  "%d-%m-%Y"
+                ],
+                "target_format": "%Y-%m-%d"
+              },
+              {
+                "operation": "cast",
+                "columns": {
+                  "quantity": "int64",
+                  "unit_price": "float64",
+                  "total_amount": "float64"
+                }
+              },
+              {
+                "operation": "derived_column",
+                "name": "calculated_total",
+                "expression": "quantity * unit_price"
+              },
+              {
+                "operation": "validate_amount",
+                "column": "total_amount",
+                "derived_column": "calculated_total",
+                "tolerance": 0.01
+              }
+            ]
+          }
+        ],
+        "quality_checks": [
+          {
+            "table": "products.csv",
+            "check": "unique_key",
+            "columns": [
+              "product_id"
+            ],
+            "description": "Ensure each product_id appears only once."
+          },
+          {
+            "table": "products.csv",
+            "check": "not_null",
+            "columns": [
+              "product_id",
+              "product_name",
+              "category",
+              "standard_price"
+            ],
+            "description": "All columns must have values."
+          },
+          {
+            "table": "sales_data.csv",
+            "check": "unique_key",
+            "columns": [
+              "transaction_id"
+            ],
+            "description": "Ensure each transaction_id is unique."
+          },
+          {
+            "table": "sales_data.csv",
+            "check": "foreign_key",
+            "columns": [
+              "product_id"
+            ],
+            "references": {
+              "table": "products.csv",
+              "column": "product_id"
+            },
+            "description": "Every product_id in sales must exist in products."
+          },
+          {
+            "table": "sales_data.csv",
+            "check": "date_format",
+            "column": "transaction_date",
+            "description": "Transaction dates must conform to ISO 8601 (YYYY-MM-DD)."
+          },
+          {
+            "table": "sales_data.csv",
+            "check": "numeric_range",
+            "columns": [
+              "quantity",
+              "unit_price",
+              "total_amount"
+            ],
+            "range": {
+              "min": 0,
+              "max": null
+            },
+            "description": "Quantities and prices must be non\u2011negative."
+          },
+          {
+            "table": "sales_data.csv",
+            "check": "amount_consistency",
+            "columns": [
+              "quantity",
+              "unit_price",
+              "total_amount"
+            ],
+            "tolerance": 0.01,
+            "description": "total_amount should equal quantity * unit_price within a small tolerance."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "phase": "bronze",
+  "business_intent": "Which product generating more revenue and location\n",
+  "objectives": [
+    "Create a unified sales fact table with revenue per transaction.",
+    "Enrich sales records with store location details (region, city, state).",
+    "Validate product IDs against the product catalog to ensure referential integrity.",
+    "Compute total revenue per product and per location for reporting.",
+    "Maintain a timestamp field derived from transaction_date for time\u2011series analysis.",
+    "Flag and log any transactions with missing or inconsistent data."
+  ],
+  "rules": [
+    {
+      "source_file": "products.csv",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "products.csv",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "products.csv",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "products.csv",
+      "source_column": "standard_price",
+      "target_column": "standard_price",
+      "data_type": "float",
+      "transformation_logic": "cast_float"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "transaction_id",
+      "target_column": "transaction_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "transaction_date",
+      "target_column": "transaction_date",
+      "data_type": "string",
+      "transformation_logic": "parse to UTC datetime (ISO 8601)"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "lookup region, city, state from stores.csv; if not found, set location fields to NULL and flag record"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "lookup product_name and category from products.csv if missing or to validate consistency"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "quantity",
+      "target_column": "quantity",
+      "data_type": "integer",
+      "transformation_logic": "cast_integer"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "unit_price",
+      "target_column": "unit_price",
+      "data_type": "float",
+      "transformation_logic": "cast_float"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "total_amount",
+      "target_column": "total_amount",
+      "data_type": "float",
+      "transformation_logic": "ROUND(quantity * unit_price, 2)"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "customer_segment",
+      "target_column": "customer_segment",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "payment_method",
+      "target_column": "payment_method",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "store_name",
+      "target_column": "store_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "region",
+      "target_column": "region",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "city",
+      "target_column": "city",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "state",
+      "target_column": "state",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    }
+  ],
+  "notes": [
+    "All source files have no nulls in the sample; still perform null checks during ingestion.",
+    "product_id in sales_data.csv must match product_id in products.csv; mismatches should be logged.",
+    "transaction_date is a string; convert to ISO 8601 datetime.",
+    "store_id in sales_data.csv must exist in stores.csv; otherwise mark as orphan record.",
+    "unit_price and total_amount should be validated that total_amount \u2248 quantity * unit_price.",
+    "customer_segment and payment_method are categorical; preserve as strings for downstream segmentation."
+  ],
+  "log": [
+    "[2026-09-25 11:04:18 UTC] Bronze STTM generation started",
+    "[2026-09-25 11:04:18 UTC] LLM provider: GROQ",
+    "[2026-09-25 11:04:18 UTC] Source files analysed: 3",
+    "[2026-09-25 11:04:18 UTC]   \u2022 products.csv \u2014 50 rows, 4 columns",
+    "[2026-09-25 11:04:18 UTC]   \u2022 sales_data.csv \u2014 2000 rows, 11 columns",
+    "[2026-09-25 11:04:18 UTC]   \u2022 stores.csv \u2014 25 rows, 5 columns",
+    "[2026-09-25 11:04:18 UTC] Column rules generated: 20",
+    "[2026-09-25 11:04:18 UTC] LLM objectives/notes: applied",
+    "[2026-09-25 11:04:18 UTC] Bronze STTM ready for HITL approval"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "phase": "silver",
+  "business_intent": "Which product generating more revenue and location\n",
+  "objectives": [
+    "Remove duplicate sales transactions based on transaction_id",
+    "Parse transaction_date from string to timestamp and set timezone to UTC",
+    "Cast quantity to integer and unit_price, total_amount to float if not already",
+    "Normalize product_name and category strings to title case and trim whitespace",
+    "Replace null store_id values with a placeholder 'UNKNOWN_STORE' and log the count",
+    "Enrich sales data with store location (city, state, region) via join on store_id"
+  ],
+  "rules": [
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "products_bronze.parquet",
+      "source_column": "standard_price",
+      "target_column": "standard_price",
+      "data_type": "float",
+      "transformation_logic": "cast_float"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "transaction_id",
+      "target_column": "transaction_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "transaction_date",
+      "target_column": "transaction_date",
+      "data_type": "string",
+      "transformation_logic": "to_timestamp(transaction_date, 'yyyy-MM-dd') AT TIME ZONE 'UTC'"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "coalesce(store_id, 'UNKNOWN_STORE')"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "trim(upper(product_name))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "trim(upper(category))"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "quantity",
+      "target_column": "quantity",
+      "data_type": "integer",
+      "transformation_logic": "cast_integer"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "unit_price",
+      "target_column": "unit_price",
+      "data_type": "float",
+      "transformation_logic": "cast_float"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "total_amount",
+      "target_column": "total_amount",
+      "data_type": "float",
+      "transformation_logic": "cast_float"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "customer_segment",
+      "target_column": "customer_segment",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data_bronze.parquet",
+      "source_column": "payment_method",
+      "target_column": "payment_method",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "store_name",
+      "target_column": "store_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "region",
+      "target_column": "region",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "city",
+      "target_column": "city",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores_bronze.parquet",
+      "source_column": "state",
+      "target_column": "state",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    }
+  ],
+  "notes": [
+    "The sales_data_bronze table contains 46 null store_id entries out of 2000 rows",
+    "All product_id values are unique in products_bronze; no deduplication needed there",
+    "Standard_price in products_bronze is already float; no cast required",
+    "Transaction_date is stored as string; must be parsed to timestamp",
+    "No duplicate rows detected in any source files"
+  ],
+  "log": [
+    "[2026-09-25 11:04:40 UTC] Silver STTM generation started",
+    "[2026-09-25 11:04:40 UTC] LLM provider: GROQ",
+    "[2026-09-25 11:04:40 UTC] Bronze Parquet files read: 3",
+    "[2026-09-25 11:04:40 UTC]   \u2022 products_bronze.parquet \u2014 50 rows, 0 duplicates",
+    "[2026-09-25 11:04:40 UTC]   \u2022 sales_data_bronze.parquet \u2014 2000 rows, 0 duplicates",
+    "[2026-09-25 11:04:40 UTC]     Null counts: store_id=46",
+    "[2026-09-25 11:04:40 UTC]   \u2022 stores_bronze.parquet \u2014 25 rows, 0 duplicates",
+    "[2026-09-25 11:04:40 UTC] Cleaning rules generated: 20",
+    "[2026-09-25 11:04:40 UTC] LLM cleaning objectives: applied",
+    "[2026-09-25 11:04:40 UTC] Planned transforms: dedup, date-parse, type-cast, title-case, null-fill",
+    "[2026-09-25 11:04:40 UTC] Silver STTM ready for HITL approval"
+  ]
+}

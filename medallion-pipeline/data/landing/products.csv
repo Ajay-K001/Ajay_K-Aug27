@@ -1,21 +1,51 @@
 product_id,product_name,category,standard_price
-P001,iPhone 15,Electronics,899.99
-P002,Samsung Galaxy S24,Electronics,799.99
-P003,AirPods Pro,Electronics,249.99
+P001,iPhone 15 Pro,Electronics,1099.99
+P002,Samsung Galaxy S24 Ultra,Electronics,1199.99
+P003,AirPods Pro 2nd Gen,Electronics,249.99
 P004,Sony WH-1000XM5,Electronics,349.99
-P005,Levi's 501 Jeans,Apparel,89.50
-P006,Nike Air Max,Apparel,129.99
-P007,Patagonia Fleece,Apparel,149.00
-P008,Champion Hoodie,Apparel,45.00
-P009,Instant Pot Duo,Home & Kitchen,119.99
-P010,KitchenAid Mixer,Home & Kitchen,349.99
-P011,Vitamix Blender,Home & Kitchen,399.95
-P012,Nespresso Machine,Home & Kitchen,249.00
-P013,Peloton Mat,Sports,79.00
-P014,TRX Resistance Bands,Sports,39.99
-P015,Bowflex Dumbbells,Sports,149.00
-P016,CamelBak Water Bottle,Sports,35.00
-P017,CeraVe Moisturizer,Beauty,16.99
-P018,Dyson Airwrap,Beauty,599.99
-P019,La Mer Cream,Beauty,180.00
-P020,Neutrogena SPF 50,Beauty,13.99
+P005,MacBook Air M2,Electronics,1299.99
+P006,iPad Pro 12.9,Electronics,1099.99
+P007,Dell XPS 15,Electronics,1499.99
+P008,LG 27 4K Monitor,Electronics,449.99
+P009,Logitech MX Master 3,Electronics,99.99
+P010,Mechanical Keyboard,Electronics,149.99
+P011,Webcam 4K,Electronics,89.99
+P012,Portable SSD 1TB,Electronics,109.99
+P013,Levis 501 Jeans,Apparel,89.5
+P014,Nike Air Max 270,Apparel,129.99
+P015,Patagonia Fleece Jacket,Apparel,179.0
+P016,Champion Hoodie,Apparel,55.0
+P017,Adidas Running Shorts,Apparel,40.0
+P018,Under Armour T-Shirt,Apparel,35.0
+P019,Columbia Rain Jacket,Apparel,149.99
+P020,New Balance 990,Apparel,174.99
+P021,Carhartt Work Pants,Apparel,69.99
+P022,Hanes Crew Socks 6pk,Apparel,14.99
+P023,Instant Pot Duo 7in1,Home & Kitchen,99.99
+P024,KitchenAid Stand Mixer,Home & Kitchen,379.99
+P025,Vitamix 5200 Blender,Home & Kitchen,449.95
+P026,Nespresso Vertuo,Home & Kitchen,179.0
+P027,Cuisinart Air Fryer,Home & Kitchen,129.99
+P028,Cast Iron Skillet 12in,Home & Kitchen,49.99
+P029,Dyson V15 Vacuum,Home & Kitchen,699.99
+P030,Robot Vacuum iRobot,Home & Kitchen,349.99
+P031,Electric Kettle,Home & Kitchen,39.99
+P032,French Press Coffee,Home & Kitchen,29.99
+P033,Peloton Yoga Mat,Sports,79.0
+P034,TRX Suspension Trainer,Sports,149.99
+P035,Bowflex SelectTech Dumbbells,Sports,399.0
+P036,CamelBak Hydration Pack,Sports,89.99
+P037,Garmin Forerunner 255,Sports,349.99
+P038,Resistance Bands Set,Sports,29.99
+P039,Foam Roller,Sports,34.99
+P040,Jump Rope Speed,Sports,19.99
+P041,CeraVe Moisturizing Cream,Beauty,18.99
+P042,Dyson Airwrap Styler,Beauty,599.99
+P043,La Mer Moisturizer 1oz,Beauty,185.0
+P044,Neutrogena SPF 50 Sunscreen,Beauty,13.99
+P045,Olaplex No.3 Treatment,Beauty,28.0
+P046,Tatcha Rice Wash Cleanser,Beauty,38.0
+P047,Atomic Habits Book,Books & Office,18.99
+P048,Moleskine Notebook,Books & Office,24.99
+P049,Staples Desk Organiser,Books & Office,39.99
+P050,HP 65XL Ink Cartridge,Books & Office,34.99

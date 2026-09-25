@@ -1,11 +1,26 @@
 store_id,store_name,region,city,state
-S01,Downtown Flagship,Northeast,New York,NY
-S02,Boston Commons,Northeast,Boston,MA
-S03,Market Street,Northeast,Philadelphia,PA
-S04,Midtown Atlanta,Southeast,Atlanta,GA
-S05,Ocean Drive,Southeast,Miami,FL
-S06,Queen City,Southeast,Charlotte,NC
-S07,Windy City Outlet,Midwest,Chicago,IL
-S08,Motor City Store,Midwest,Detroit,MI
-S09,Pacific Grove,West,Los Angeles,CA
-S10,Golden Gate Outlet,West,San Francisco,CA
+S01,Fifth Avenue Flagship,Northeast,New York,NY
+S02,Boston Back Bay,Northeast,Boston,MA
+S03,Market Street Philly,Northeast,Philadelphia,PA
+S04,Downtown Hartford,Northeast,Hartford,CT
+S05,Providence Mall,Northeast,Providence,RI
+S06,Midtown Atlanta,Southeast,Atlanta,GA
+S07,Ocean Drive Miami,Southeast,Miami,FL
+S08,Queen City Charlotte,Southeast,Charlotte,NC
+S09,Music City Nashville,Southeast,Nashville,TN
+S10,Crescent City NOLA,Southeast,New Orleans,LA
+S11,Raleigh Triangle,Southeast,Raleigh,NC
+S12,Windy City Chicago,Midwest,Chicago,IL
+S13,Motor City Detroit,Midwest,Detroit,MI
+S14,Twin Cities Minneapolis,Midwest,Minneapolis,MN
+S15,Gateway St Louis,Midwest,St. Louis,MO
+S16,Buckeye Columbus,Midwest,Columbus,OH
+S17,Pacific Grove LA,West,Los Angeles,CA
+S18,Golden Gate SF,West,San Francisco,CA
+S19,Emerald City Seattle,West,Seattle,WA
+S20,Valley of Sun Phoenix,West,Phoenix,AZ
+S21,Mile High Denver,West,Denver,CO
+S22,Space City Houston,South,Houston,TX
+S23,Big D Dallas,South,Dallas,TX
+S24,River Walk San Antonio,South,San Antonio,TX
+S25,Lone Star Austin,South,Austin,TX

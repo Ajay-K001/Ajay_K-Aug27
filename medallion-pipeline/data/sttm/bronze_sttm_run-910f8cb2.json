@@ -1,0 +1,242 @@
+{
+  "phase": "bronze",
+  "description": "Raw data ingestion with LLM schema inference and validation",
+  "source_to_target": {
+    "source_files": [
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\products.csv",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\sales_data.csv",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\stores.csv"
+    ],
+    "target_layer": "bronze_layer",
+    "llm_schema_analysis": {
+      "source_tables": [
+        "products.csv",
+        "sales_data.csv"
+      ],
+      "target_layer": "bronze_layer",
+      "key_columns": [
+        "products.csv::product_id",
+        "sales_data.csv::transaction_id",
+        "sales_data.csv::product_id",
+        "sales_data.csv::store_id"
+      ],
+      "transformations": [
+        {
+          "description": "Normalize date formats",
+          "columns": [
+            "transaction_date"
+          ],
+          "rule": "Convert all values to ISO\u20118601 (YYYY\u2011MM\u2011DD). If parsing fails, set to null and flag for review."
+        },
+        {
+          "description": "Trim and lowercase categorical fields",
+          "columns": [
+            "category",
+            "customer_segment",
+            "payment_method"
+          ],
+          "rule": "Apply strip() and lower() to eliminate leading/trailing spaces and enforce case consistency."
+        },
+        {
+          "description": "Standardize product name",
+          "columns": [
+            "product_name"
+          ],
+          "rule": "Apply strip() and title() to ensure uniform formatting."
+        },
+        {
+          "description": "Validate numeric types",
+          "columns": [
+            "standard_price",
+            "unit_price",
+            "total_amount",
+            "quantity"
+          ],
+          "rule": "Coerce to numeric, set invalid entries to null and log error."
+        },
+        {
+          "description": "Derive total_amount if missing or incorrect",
+          "columns": [
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ],
+          "rule": "If total_amount is null or differs from quantity * unit_price by >1e-2, recompute and flag."
+        },
+        {
+          "description": "Create surrogate keys",
+          "columns": [],
+          "rule": "Generate a UUID4 for each row in sales_data.csv to serve as a unique bronze key."
+        }
+      ],
+      "data_quality_checks": [
+        {
+          "check_name": "Non\u2011null primary keys",
+          "columns": [
+            "product_id",
+            "transaction_id"
+          ],
+          "condition": "IS NOT NULL"
+        },
+        {
+          "check_name": "Unique transaction IDs",
+          "columns": [
+            "transaction_id"
+          ],
+          "condition": "COUNT() = COUNT(DISTINCT transaction_id)"
+        },
+        {
+          "check_name": "Foreign key consistency",
+          "columns": [
+            "sales_data.csv::product_id"
+          ],
+          "condition": "IN (SELECT product_id FROM products.csv)"
+        },
+        {
+          "check_name": "Quantity > 0",
+          "columns": [
+            "quantity"
+          ],
+          "condition": "quantity > 0"
+        },
+        {
+          "check_name": "Unit price matches standard price within tolerance",
+          "columns": [
+            "sales_data.csv::product_id",
+            "unit_price",
+            "standard_price"
+          ],
+          "condition": "ABS(unit_price - standard_price) <= 0.01"
+        },
+        {
+          "check_name": "Total amount consistency",
+          "columns": [
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ],
+          "condition": "ABS(total_amount - quantity * unit_price) <= 0.01"
+        },
+        {
+          "check_name": "Valid date format",
+          "columns": [
+            "transaction_date"
+          ],
+          "condition": "transaction_date IS NOT NULL AND transaction_date ~ '^\\d{4}-\\d{2}-\\d{2}$'"
+        }
+      ]
+    },
+    "mapping": [
+      {
+        "source": "raw_csv",
+        "target": "bronze_parquet",
+        "operation": "ingest",
+        "transformations": [
+          {
+            "description": "Normalize date formats",
+            "columns": [
+              "transaction_date"
+            ],
+            "rule": "Convert all values to ISO\u20118601 (YYYY\u2011MM\u2011DD). If parsing fails, set to null and flag for review."
+          },
+          {
+            "description": "Trim and lowercase categorical fields",
+            "columns": [
+              "category",
+              "customer_segment",
+              "payment_method"
+            ],
+            "rule": "Apply strip() and lower() to eliminate leading/trailing spaces and enforce case consistency."
+          },
+          {
+            "description": "Standardize product name",
+            "columns": [
+              "product_name"
+            ],
+            "rule": "Apply strip() and title() to ensure uniform formatting."
+          },
+          {
+            "description": "Validate numeric types",
+            "columns": [
+              "standard_price",
+              "unit_price",
+              "total_amount",
+              "quantity"
+            ],
+            "rule": "Coerce to numeric, set invalid entries to null and log error."
+          },
+          {
+            "description": "Derive total_amount if missing or incorrect",
+            "columns": [
+              "quantity",
+              "unit_price",
+              "total_amount"
+            ],
+            "rule": "If total_amount is null or differs from quantity * unit_price by >1e-2, recompute and flag."
+          },
+          {
+            "description": "Create surrogate keys",
+            "columns": [],
+            "rule": "Generate a UUID4 for each row in sales_data.csv to serve as a unique bronze key."
+          }
+        ],
+        "quality_checks": [
+          {
+            "check_name": "Non\u2011null primary keys",
+            "columns": [
+              "product_id",
+              "transaction_id"
+            ],
+            "condition": "IS NOT NULL"
+          },
+          {
+            "check_name": "Unique transaction IDs",
+            "columns": [
+              "transaction_id"
+            ],
+            "condition": "COUNT() = COUNT(DISTINCT transaction_id)"
+          },
+          {
+            "check_name": "Foreign key consistency",
+            "columns": [
+              "sales_data.csv::product_id"
+            ],
+            "condition": "IN (SELECT product_id FROM products.csv)"
+          },
+          {
+            "check_name": "Quantity > 0",
+            "columns": [
+              "quantity"
+            ],
+            "condition": "quantity > 0"
+          },
+          {
+            "check_name": "Unit price matches standard price within tolerance",
+            "columns": [
+              "sales_data.csv::product_id",
+              "unit_price",
+              "standard_price"
+            ],
+            "condition": "ABS(unit_price - standard_price) <= 0.01"
+          },
+          {
+            "check_name": "Total amount consistency",
+            "columns": [
+              "quantity",
+              "unit_price",
+              "total_amount"
+            ],
+            "condition": "ABS(total_amount - quantity * unit_price) <= 0.01"
+          },
+          {
+            "check_name": "Valid date format",
+            "columns": [
+              "transaction_date"
+            ],
+            "condition": "transaction_date IS NOT NULL AND transaction_date ~ '^\\d{4}-\\d{2}-\\d{2}$'"
+          }
+        ]
+      }
+    ]
+  }
+}

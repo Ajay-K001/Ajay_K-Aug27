@@ -1,0 +1,276 @@
+{
+  "phase": "bronze",
+  "description": "Raw data ingestion with LLM schema inference and validation",
+  "source_to_target": {
+    "source_files": [
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\products.csv",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\sales_data.csv",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\stores.csv"
+    ],
+    "target_layer": "bronze_layer",
+    "llm_schema_analysis": {
+      "source_tables": [
+        "products.csv",
+        "sales_data.csv"
+      ],
+      "target_layer": "bronze_layer",
+      "key_columns": [
+        "products.csv::product_id",
+        "sales_data.csv::transaction_id",
+        "sales_data.csv::product_id",
+        "sales_data.csv::store_id"
+      ],
+      "transformations": [
+        {
+          "description": "Normalize date format in sales_data.csv",
+          "columns": [
+            "transaction_date"
+          ],
+          "action": "parse_to_date",
+          "format_options": [
+            "yyyy-MM-dd",
+            "MM/dd/yyyy"
+          ]
+        },
+        {
+          "description": "Trim whitespace and standardize case for categorical columns",
+          "columns": [
+            "category",
+            "customer_segment",
+            "payment_method"
+          ],
+          "action": "trim_and_lowercase"
+        },
+        {
+          "description": "Standardize product names between products and sales tables",
+          "columns": [
+            "product_name"
+          ],
+          "action": "normalize_string",
+          "rules": [
+            {
+              "replace": "\\s+",
+              "with": " "
+            },
+            {
+              "strip_punctuation": true
+            }
+          ],
+          "target_tables": [
+            "products.csv",
+            "sales_data.csv"
+          ]
+        },
+        {
+          "description": "Add derived column 'unit_price' to sales_data if missing by joining with products",
+          "columns": [
+            "unit_price"
+          ],
+          "action": "join_lookup",
+          "lookup_table": "products.csv",
+          "lookup_key": "product_id",
+          "lookup_value": "standard_price"
+        },
+        {
+          "description": "Calculate total_amount if inconsistent or missing",
+          "columns": [
+            "total_amount"
+          ],
+          "action": "calculate",
+          "formula": "quantity * unit_price"
+        }
+      ],
+      "data_quality_checks": [
+        {
+          "name": "Non-empty primary keys",
+          "columns": [
+            "product_id",
+            "transaction_id"
+          ],
+          "check_type": "not_null"
+        },
+        {
+          "name": "Unique product_id in products",
+          "columns": [
+            "product_id"
+          ],
+          "check_type": "unique"
+        },
+        {
+          "name": "Unique transaction_id in sales_data",
+          "columns": [
+            "transaction_id"
+          ],
+          "check_type": "unique"
+        },
+        {
+          "name": "Foreign key integrity: product_id exists in products",
+          "columns": [
+            "product_id"
+          ],
+          "check_type": "foreign_key",
+          "reference_table": "products.csv",
+          "reference_column": "product_id"
+        },
+        {
+          "name": "Date format consistency",
+          "columns": [
+            "transaction_date"
+          ],
+          "check_type": "regex",
+          "pattern": "^(\\d{4}-\\d{2}-\\d{2}|\\d{2}/\\d{2}/\\d{4})$"
+        },
+        {
+          "name": "Positive numeric values",
+          "columns": [
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ],
+          "check_type": "range",
+          "min_value": 0
+        },
+        {
+          "name": "Total amount matches quantity * unit_price",
+          "columns": [
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ],
+          "check_type": "calculation",
+          "formula": "quantity * unit_price == total_amount",
+          "tolerance": 0.01
+        }
+      ]
+    },
+    "mapping": [
+      {
+        "source": "raw_csv",
+        "target": "bronze_parquet",
+        "operation": "ingest",
+        "transformations": [
+          {
+            "description": "Normalize date format in sales_data.csv",
+            "columns": [
+              "transaction_date"
+            ],
+            "action": "parse_to_date",
+            "format_options": [
+              "yyyy-MM-dd",
+              "MM/dd/yyyy"
+            ]
+          },
+          {
+            "description": "Trim whitespace and standardize case for categorical columns",
+            "columns": [
+              "category",
+              "customer_segment",
+              "payment_method"
+            ],
+            "action": "trim_and_lowercase"
+          },
+          {
+            "description": "Standardize product names between products and sales tables",
+            "columns": [
+              "product_name"
+            ],
+            "action": "normalize_string",
+            "rules": [
+              {
+                "replace": "\\s+",
+                "with": " "
+              },
+              {
+                "strip_punctuation": true
+              }
+            ],
+            "target_tables": [
+              "products.csv",
+              "sales_data.csv"
+            ]
+          },
+          {
+            "description": "Add derived column 'unit_price' to sales_data if missing by joining with products",
+            "columns": [
+              "unit_price"
+            ],
+            "action": "join_lookup",
+            "lookup_table": "products.csv",
+            "lookup_key": "product_id",
+            "lookup_value": "standard_price"
+          },
+          {
+            "description": "Calculate total_amount if inconsistent or missing",
+            "columns": [
+              "total_amount"
+            ],
+            "action": "calculate",
+            "formula": "quantity * unit_price"
+          }
+        ],
+        "quality_checks": [
+          {
+            "name": "Non-empty primary keys",
+            "columns": [
+              "product_id",
+              "transaction_id"
+            ],
+            "check_type": "not_null"
+          },
+          {
+            "name": "Unique product_id in products",
+            "columns": [
+              "product_id"
+            ],
+            "check_type": "unique"
+          },
+          {
+            "name": "Unique transaction_id in sales_data",
+            "columns": [
+              "transaction_id"
+            ],
+            "check_type": "unique"
+          },
+          {
+            "name": "Foreign key integrity: product_id exists in products",
+            "columns": [
+              "product_id"
+            ],
+            "check_type": "foreign_key",
+            "reference_table": "products.csv",
+            "reference_column": "product_id"
+          },
+          {
+            "name": "Date format consistency",
+            "columns": [
+              "transaction_date"
+            ],
+            "check_type": "regex",
+            "pattern": "^(\\d{4}-\\d{2}-\\d{2}|\\d{2}/\\d{2}/\\d{4})$"
+          },
+          {
+            "name": "Positive numeric values",
+            "columns": [
+              "quantity",
+              "unit_price",
+              "total_amount"
+            ],
+            "check_type": "range",
+            "min_value": 0
+          },
+          {
+            "name": "Total amount matches quantity * unit_price",
+            "columns": [
+              "quantity",
+              "unit_price",
+              "total_amount"
+            ],
+            "check_type": "calculation",
+            "formula": "quantity * unit_price == total_amount",
+            "tolerance": 0.01
+          }
+        ]
+      }
+    ]
+  }
+}

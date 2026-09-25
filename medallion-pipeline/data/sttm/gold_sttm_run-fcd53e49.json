@@ -1,0 +1,168 @@
+{
+  "phase": "gold",
+  "description": "LLM-guided business KPI aggregation and dimensional modeling",
+  "business_intent": "what is the product highest sales\n",
+  "source_to_target": {
+    "source_files": [
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\products_silver.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\sales_data_silver.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\stores_silver.parquet"
+    ],
+    "source_layer": "silver_layer",
+    "target_layer": "gold_layer",
+    "llm_analysis": {
+      "kpi_metrics": [
+        "total_revenue_by_product",
+        "total_quantity_sold_by_product",
+        "average_unit_price_by_product",
+        "revenue_share_of_top_product"
+      ],
+      "dimensions": [
+        "product_id",
+        "product_name",
+        "category",
+        "transaction_date",
+        "year",
+        "month"
+      ],
+      "transformations": [
+        {
+          "name": "compute_revenue",
+          "operation": "sum",
+          "source_column": "total_amount",
+          "target_column": "revenue"
+        },
+        {
+          "name": "compute_quantity",
+          "operation": "sum",
+          "source_column": "quantity",
+          "target_column": "quantity_sold"
+        },
+        {
+          "name": "compute_avg_unit_price",
+          "operation": "avg",
+          "source_column": "unit_price",
+          "target_column": "avg_unit_price"
+        },
+        {
+          "name": "extract_year_month",
+          "operation": "extract",
+          "source_column": "transaction_date",
+          "target_columns": [
+            "year",
+            "month"
+          ]
+        },
+        {
+          "name": "rank_products_by_revenue",
+          "operation": "rank",
+          "order_by": "revenue",
+          "descending": true,
+          "target_column": "revenue_rank"
+        }
+      ],
+      "data_quality_checks": [
+        {
+          "check_name": "non_negative_revenue",
+          "condition": "revenue >= 0"
+        },
+        {
+          "check_name": "non_negative_quantity",
+          "condition": "quantity_sold >= 0"
+        },
+        {
+          "check_name": "unique_product_ids",
+          "condition": "count(distinct product_id) = count(product_id)"
+        },
+        {
+          "check_name": "date_integrity",
+          "condition": "transaction_date IS NOT NULL"
+        },
+        {
+          "check_name": "top_product_exists",
+          "condition": "revenue_rank = 1"
+        }
+      ],
+      "business_context": "The primary business question asks for the product with the highest sales.  To answer this, we aggregate sales by product to compute total revenue, quantity sold, and average unit price.  The ranking transformation identifies the top\u2011selling product, and the revenue share KPI quantifies its contribution to overall sales.  These KPIs enable the business to pinpoint the most profitable product, assess its performance over time, and benchmark it against other products."
+    },
+    "mapping": [
+      {
+        "source": "silver_parquet",
+        "target": "gold_parquet",
+        "operation": "aggregate_and_model",
+        "transformations": [
+          {
+            "name": "compute_revenue",
+            "operation": "sum",
+            "source_column": "total_amount",
+            "target_column": "revenue"
+          },
+          {
+            "name": "compute_quantity",
+            "operation": "sum",
+            "source_column": "quantity",
+            "target_column": "quantity_sold"
+          },
+          {
+            "name": "compute_avg_unit_price",
+            "operation": "avg",
+            "source_column": "unit_price",
+            "target_column": "avg_unit_price"
+          },
+          {
+            "name": "extract_year_month",
+            "operation": "extract",
+            "source_column": "transaction_date",
+            "target_columns": [
+              "year",
+              "month"
+            ]
+          },
+          {
+            "name": "rank_products_by_revenue",
+            "operation": "rank",
+            "order_by": "revenue",
+            "descending": true,
+            "target_column": "revenue_rank"
+          }
+        ],
+        "kpi_targets": [
+          "total_revenue_by_product",
+          "total_quantity_sold_by_product",
+          "average_unit_price_by_product",
+          "revenue_share_of_top_product"
+        ],
+        "dimensions": [
+          "product_id",
+          "product_name",
+          "category",
+          "transaction_date",
+          "year",
+          "month"
+        ],
+        "quality_checks": [
+          {
+            "check_name": "non_negative_revenue",
+            "condition": "revenue >= 0"
+          },
+          {
+            "check_name": "non_negative_quantity",
+            "condition": "quantity_sold >= 0"
+          },
+          {
+            "check_name": "unique_product_ids",
+            "condition": "count(distinct product_id) = count(product_id)"
+          },
+          {
+            "check_name": "date_integrity",
+            "condition": "transaction_date IS NOT NULL"
+          },
+          {
+            "check_name": "top_product_exists",
+            "condition": "revenue_rank = 1"
+          }
+        ]
+      }
+    ]
+  }
+}

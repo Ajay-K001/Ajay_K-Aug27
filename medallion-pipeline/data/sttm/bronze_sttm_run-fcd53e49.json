@@ -1,0 +1,174 @@
+{
+  "phase": "bronze",
+  "description": "Raw data ingestion with LLM schema inference and validation",
+  "source_to_target": {
+    "source_files": [
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\products.csv",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\sales_data.csv",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\landing\\stores.csv"
+    ],
+    "target_layer": "bronze_layer",
+    "llm_schema_analysis": {
+      "source_tables": [
+        "products.csv",
+        "sales_data.csv"
+      ],
+      "target_layer": "bronze_layer",
+      "key_columns": [
+        "products.csv::product_id",
+        "sales_data.csv::transaction_id",
+        "sales_data.csv::product_id",
+        "sales_data.csv::store_id"
+      ],
+      "transformations": [
+        {
+          "description": "Standardize date format for transaction_date",
+          "rule": "Parse any recognized date format (YYYY-MM-DD, MM/DD/YYYY, etc.) and store as ISO 8601 string."
+        },
+        {
+          "description": "Trim and lowercase category values",
+          "rule": "Apply strip() and lower() to all category fields."
+        },
+        {
+          "description": "Normalize product names",
+          "rule": "Remove leading/trailing whitespace and collapse multiple spaces."
+        },
+        {
+          "description": "Ensure numeric columns are positive where applicable",
+          "rule": "Validate quantity > 0, unit_price >= 0, total_amount >= 0."
+        },
+        {
+          "description": "Create surrogate key for products",
+          "rule": "Generate a UUID for each distinct product_id if not already unique."
+        },
+        {
+          "description": "Derive revenue metrics",
+          "rule": "Add columns: revenue = unit_price * quantity, margin = total_amount - standard_price * quantity."
+        },
+        {
+          "description": "Detect duplicate transactions",
+          "rule": "Flag rows with duplicate transaction_id within the same file."
+        }
+      ],
+      "data_quality_checks": [
+        {
+          "check": "Non\u2011null primary key",
+          "columns": [
+            "product_id",
+            "transaction_id"
+          ],
+          "action": "Fail ingestion if null"
+        },
+        {
+          "check": "Unique product_id per product record",
+          "action": "Fail if duplicates in products.csv"
+        },
+        {
+          "check": "Date format consistency",
+          "action": "Fail if transaction_date cannot be parsed"
+        },
+        {
+          "check": "Positive numeric values",
+          "columns": [
+            "quantity",
+            "unit_price",
+            "total_amount"
+          ],
+          "action": "Flag negative values for review"
+        },
+        {
+          "check": "Reference integrity",
+          "description": "Ensure every product_id in sales_data.csv exists in products.csv",
+          "action": "Flag orphan sales records"
+        },
+        {
+          "check": "Monetary consistency",
+          "description": "total_amount \u2248 unit_price * quantity (within tolerance 0.01)",
+          "action": "Flag mismatches"
+        },
+        {
+          "check": "Store_id format",
+          "action": "Reject if store_id does not match pattern S\\d{2}"
+        }
+      ]
+    },
+    "mapping": [
+      {
+        "source": "raw_csv",
+        "target": "bronze_parquet",
+        "operation": "ingest",
+        "transformations": [
+          {
+            "description": "Standardize date format for transaction_date",
+            "rule": "Parse any recognized date format (YYYY-MM-DD, MM/DD/YYYY, etc.) and store as ISO 8601 string."
+          },
+          {
+            "description": "Trim and lowercase category values",
+            "rule": "Apply strip() and lower() to all category fields."
+          },
+          {
+            "description": "Normalize product names",
+            "rule": "Remove leading/trailing whitespace and collapse multiple spaces."
+          },
+          {
+            "description": "Ensure numeric columns are positive where applicable",
+            "rule": "Validate quantity > 0, unit_price >= 0, total_amount >= 0."
+          },
+          {
+            "description": "Create surrogate key for products",
+            "rule": "Generate a UUID for each distinct product_id if not already unique."
+          },
+          {
+            "description": "Derive revenue metrics",
+            "rule": "Add columns: revenue = unit_price * quantity, margin = total_amount - standard_price * quantity."
+          },
+          {
+            "description": "Detect duplicate transactions",
+            "rule": "Flag rows with duplicate transaction_id within the same file."
+          }
+        ],
+        "quality_checks": [
+          {
+            "check": "Non\u2011null primary key",
+            "columns": [
+              "product_id",
+              "transaction_id"
+            ],
+            "action": "Fail ingestion if null"
+          },
+          {
+            "check": "Unique product_id per product record",
+            "action": "Fail if duplicates in products.csv"
+          },
+          {
+            "check": "Date format consistency",
+            "action": "Fail if transaction_date cannot be parsed"
+          },
+          {
+            "check": "Positive numeric values",
+            "columns": [
+              "quantity",
+              "unit_price",
+              "total_amount"
+            ],
+            "action": "Flag negative values for review"
+          },
+          {
+            "check": "Reference integrity",
+            "description": "Ensure every product_id in sales_data.csv exists in products.csv",
+            "action": "Flag orphan sales records"
+          },
+          {
+            "check": "Monetary consistency",
+            "description": "total_amount \u2248 unit_price * quantity (within tolerance 0.01)",
+            "action": "Flag mismatches"
+          },
+          {
+            "check": "Store_id format",
+            "action": "Reject if store_id does not match pattern S\\d{2}"
+          }
+        ]
+      }
+    ]
+  }
+}

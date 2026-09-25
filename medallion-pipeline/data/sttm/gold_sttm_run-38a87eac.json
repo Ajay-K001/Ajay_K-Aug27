@@ -1,0 +1,42 @@
+{
+  "phase": "gold",
+  "description": "LLM-guided business KPI aggregation and dimensional modeling",
+  "business_intent": "What is the yearly sales per product and location?",
+  "source_to_target": {
+    "source_files": [
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\products_silver.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\sales_data_silver.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\stores_silver.parquet"
+    ],
+    "source_layer": "silver_layer",
+    "target_layer": "gold_layer",
+    "llm_analysis": {},
+    "mapping": [
+      {
+        "source": "silver_parquet",
+        "target": "gold_parquet",
+        "operation": "aggregate_and_model",
+        "transformations": [
+          "identify_dimensions",
+          "compute_revenue_kpis",
+          "calculate_time_based_aggregations",
+          "rank_top_products",
+          "compute_regional_performance"
+        ],
+        "kpi_targets": [
+          "revenue_by_product",
+          "revenue_by_location",
+          "revenue_by_period",
+          "top_products",
+          "regional_performance"
+        ],
+        "dimensions": [],
+        "quality_checks": [
+          "reconcile_to_source",
+          "validate_aggregations",
+          "business_rule_validation"
+        ]
+      }
+    ]
+  }
+}

@@ -118,7 +118,7 @@ with st.sidebar:
 
                 st.info("Reporter running...")
                 report = create_report_insight(
-                    gold_outputs[0] if gold_outputs else PROJECT_ROOT / "data" / "gold_layer",
+                    gold_outputs if gold_outputs else [str(PROJECT_ROOT / "data" / "gold_layer")],
                     report_path=PROJECT_ROOT / "reports",
                     business_question=business_question,
                     source_files=file_paths,

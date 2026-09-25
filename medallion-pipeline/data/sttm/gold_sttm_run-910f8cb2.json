@@ -1,0 +1,170 @@
+{
+  "phase": "gold",
+  "description": "LLM-guided business KPI aggregation and dimensional modeling",
+  "business_intent": "What is the yearly sales per product and location?",
+  "source_to_target": {
+    "source_files": [
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\products_silver.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\sales_data_silver.parquet",
+      "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\silver_layer\\stores_silver.parquet"
+    ],
+    "source_layer": "silver_layer",
+    "target_layer": "gold_layer",
+    "llm_analysis": {
+      "kpi_metrics": [
+        "revenue_by_product",
+        "revenue_by_location",
+        "quantity_sold_by_product",
+        "quantity_sold_by_location",
+        "average_unit_price_by_product",
+        "average_unit_price_by_location",
+        "yearly_revenue_per_product_location"
+      ],
+      "dimensions": [
+        "product_id",
+        "product_name",
+        "category",
+        "store_id",
+        "store_name",
+        "region",
+        "city",
+        "state",
+        "year"
+      ],
+      "transformations": [
+        {
+          "operation": "sum",
+          "field": "total_amount",
+          "alias": "revenue"
+        },
+        {
+          "operation": "sum",
+          "field": "quantity",
+          "alias": "total_quantity"
+        },
+        {
+          "operation": "avg",
+          "field": "unit_price",
+          "alias": "avg_unit_price"
+        },
+        {
+          "operation": "extract_year",
+          "field": "transaction_date",
+          "alias": "year"
+        }
+      ],
+      "data_quality_checks": [
+        {
+          "check": "non_negative",
+          "field": "revenue",
+          "description": "Revenue must be >= 0"
+        },
+        {
+          "check": "non_negative",
+          "field": "total_quantity",
+          "description": "Quantity sold must be >= 0"
+        },
+        {
+          "check": "not_null",
+          "field": "product_id",
+          "description": "Product ID cannot be null"
+        },
+        {
+          "check": "not_null",
+          "field": "store_id",
+          "description": "Store ID cannot be null"
+        },
+        {
+          "check": "unique_grouping",
+          "dimensions": [
+            "product_id",
+            "store_id",
+            "year"
+          ],
+          "description": "Each product-location-year combination should appear only once in the aggregation"
+        }
+      ],
+      "business_context": "The business question asks for yearly sales per product and location. The KPIs above compute revenue, quantity, and average unit price grouped by product and store (location) for each calendar year. The dimensions include all product and store attributes to support drill\u2011down and reporting. The transformations derive the needed aggregates from the silver tables, and the data quality checks ensure that the aggregated figures are logically consistent before being consumed by downstream analytics or dashboards."
+    },
+    "mapping": [
+      {
+        "source": "silver_parquet",
+        "target": "gold_parquet",
+        "operation": "aggregate_and_model",
+        "transformations": [
+          {
+            "operation": "sum",
+            "field": "total_amount",
+            "alias": "revenue"
+          },
+          {
+            "operation": "sum",
+            "field": "quantity",
+            "alias": "total_quantity"
+          },
+          {
+            "operation": "avg",
+            "field": "unit_price",
+            "alias": "avg_unit_price"
+          },
+          {
+            "operation": "extract_year",
+            "field": "transaction_date",
+            "alias": "year"
+          }
+        ],
+        "kpi_targets": [
+          "revenue_by_product",
+          "revenue_by_location",
+          "quantity_sold_by_product",
+          "quantity_sold_by_location",
+          "average_unit_price_by_product",
+          "average_unit_price_by_location",
+          "yearly_revenue_per_product_location"
+        ],
+        "dimensions": [
+          "product_id",
+          "product_name",
+          "category",
+          "store_id",
+          "store_name",
+          "region",
+          "city",
+          "state",
+          "year"
+        ],
+        "quality_checks": [
+          {
+            "check": "non_negative",
+            "field": "revenue",
+            "description": "Revenue must be >= 0"
+          },
+          {
+            "check": "non_negative",
+            "field": "total_quantity",
+            "description": "Quantity sold must be >= 0"
+          },
+          {
+            "check": "not_null",
+            "field": "product_id",
+            "description": "Product ID cannot be null"
+          },
+          {
+            "check": "not_null",
+            "field": "store_id",
+            "description": "Store ID cannot be null"
+          },
+          {
+            "check": "unique_grouping",
+            "dimensions": [
+              "product_id",
+              "store_id",
+              "year"
+            ],
+            "description": "Each product-location-year combination should appear only once in the aggregation"
+          }
+        ]
+      }
+    ]
+  }
+}

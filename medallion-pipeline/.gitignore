@@ -17,7 +17,7 @@ env/
 
 # Generated data files
 # Keep data/landing/ tracked for sample input data.
-data/**/*.parquet
+# Keep bronze/silver/gold/sttm/reports for pipeline evidence.
 data/**/*.csv
 !data/landing/
 !data/landing/**
@@ -31,8 +31,7 @@ data/traces/
 # Chroma database files
 .chroma/
 
-# Generated reports and audit logs
-reports/
+# Generated audit logs only
 audit_logs/
 
 # Operating system files

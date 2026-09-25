@@ -1,0 +1,754 @@
+{
+  "source": "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\gold_layer\\revenue_by_product.parquet",
+  "summary": "Gold layer analysed via DuckDB SQL. Charts generated with Plotly.",
+  "business_question": "Which product generating more revenue and location\n",
+  "insights": [
+    "Business question: Which product generating more revenue and location\n",
+    "Top product by revenue: Macbook Air M2 ($227,780.12)",
+    "Strongest location: Seattle, West ($29,745.24)"
+  ],
+  "generated_at": "2026-09-25T11:05:35.832564+00:00",
+  "analysis": {
+    "top_products_by_total_sales": [
+      {
+        "product_name": "Macbook Air M2",
+        "total_amount": 227780.12
+      },
+      {
+        "product_name": "Dell Xps 15",
+        "total_amount": 214562.89
+      },
+      {
+        "product_name": "Iphone 15 Pro",
+        "total_amount": 138838.99000000002
+      },
+      {
+        "product_name": "Ipad Pro 12.9",
+        "total_amount": 129039.13999999998
+      },
+      {
+        "product_name": "Samsung Galaxy S24 Ultra",
+        "total_amount": 114800.89
+      },
+      {
+        "product_name": "Dyson V15 Vacuum",
+        "total_amount": 98258.2
+      },
+      {
+        "product_name": "Dyson Airwrap Styler",
+        "total_amount": 92813.62999999999
+      },
+      {
+        "product_name": "Lg 27 4K Monitor",
+        "total_amount": 65883.01999999999
+      },
+      {
+        "product_name": "Robot Vacuum Irobot",
+        "total_amount": 58684.68
+      },
+      {
+        "product_name": "Kitchenaid Stand Mixer",
+        "total_amount": 57972.880000000005
+      },
+      {
+        "product_name": "Vitamix 5200 Blender",
+        "total_amount": 57716.689999999995
+      },
+      {
+        "product_name": "Bowflex Selecttech Dumbbells",
+        "total_amount": 56415.38
+      },
+      {
+        "product_name": "Garmin Forerunner 255",
+        "total_amount": 51082.350000000006
+      },
+      {
+        "product_name": "Sony Wh-1000Xm5",
+        "total_amount": 49625.66
+      },
+      {
+        "product_name": "Airpods Pro 2Nd Gen",
+        "total_amount": 42277.56
+      },
+      {
+        "product_name": "Patagonia Fleece Jacket",
+        "total_amount": 29992.559999999998
+      },
+      {
+        "product_name": "La Mer Moisturizer 1Oz",
+        "total_amount": 27680.729999999996
+      },
+      {
+        "product_name": "Trx Suspension Trainer",
+        "total_amount": 22968.010000000002
+      },
+      {
+        "product_name": "New Balance 990",
+        "total_amount": 22348.79
+      },
+      {
+        "product_name": "Nespresso Vertuo",
+        "total_amount": 22073.8
+      },
+      {
+        "product_name": "Mechanical Keyboard",
+        "total_amount": 20402.559999999998
+      },
+      {
+        "product_name": "Cuisinart Air Fryer",
+        "total_amount": 19852.480000000003
+      },
+      {
+        "product_name": "Nike Air Max 270",
+        "total_amount": 19365.91
+      },
+      {
+        "product_name": "Columbia Rain Jacket",
+        "total_amount": 18539.749999999996
+      },
+      {
+        "product_name": "Portable Ssd 1Tb",
+        "total_amount": 16676.45
+      },
+      {
+        "product_name": "Logitech Mx Master 3",
+        "total_amount": 15053.379999999997
+      },
+      {
+        "product_name": "Levis 501 Jeans",
+        "total_amount": 13506.989999999998
+      },
+      {
+        "product_name": "Instant Pot Duo 7In1",
+        "total_amount": 12986.589999999998
+      },
+      {
+        "product_name": "Webcam 4K",
+        "total_amount": 12115.369999999999
+      },
+      {
+        "product_name": "Carhartt Work Pants",
+        "total_amount": 9621.87
+      },
+      {
+        "product_name": "Camelbak Hydration Pack",
+        "total_amount": 9473.88
+      },
+      {
+        "product_name": "Peloton Yoga Mat",
+        "total_amount": 7788.249999999999
+      },
+      {
+        "product_name": "Under Armour T-Shirt",
+        "total_amount": 7699.6900000000005
+      },
+      {
+        "product_name": "Cast Iron Skillet 12In",
+        "total_amount": 7664.32
+      },
+      {
+        "product_name": "Adidas Running Shorts",
+        "total_amount": 5977.19
+      },
+      {
+        "product_name": "Champion Hoodie",
+        "total_amount": 5731.86
+      },
+      {
+        "product_name": "Tatcha Rice Wash Cleanser",
+        "total_amount": 5525.44
+      },
+      {
+        "product_name": "Staples Desk Organiser",
+        "total_amount": 5471.5599999999995
+      },
+      {
+        "product_name": "Foam Roller",
+        "total_amount": 5453.75
+      },
+      {
+        "product_name": "Electric Kettle",
+        "total_amount": 4894.229999999999
+      },
+      {
+        "product_name": "Olaplex No.3 Treatment",
+        "total_amount": 4394.58
+      },
+      {
+        "product_name": "Jump Rope Speed",
+        "total_amount": 3879.6300000000006
+      },
+      {
+        "product_name": "French Press Coffee",
+        "total_amount": 3846.56
+      },
+      {
+        "product_name": "Resistance Bands Set",
+        "total_amount": 3549.87
+      },
+      {
+        "product_name": "Hp 65Xl Ink Cartridge",
+        "total_amount": 3545.8799999999997
+      },
+      {
+        "product_name": "Cerave Moisturizing Cream",
+        "total_amount": 2747.4900000000002
+      },
+      {
+        "product_name": "Atomic Habits Book",
+        "total_amount": 2077.59
+      },
+      {
+        "product_name": "Moleskine Notebook",
+        "total_amount": 2042.6200000000003
+      },
+      {
+        "product_name": "Neutrogena Spf 50 Sunscreen",
+        "total_amount": 1877.5800000000002
+      },
+      {
+        "product_name": "Hanes Crew Socks 6Pk",
+        "total_amount": 1792.98
+      }
+    ],
+    "yearly_sales_by_location": [
+      {
+        "year": 2022,
+        "region": "West",
+        "city": "Phoenix",
+        "state": "AZ",
+        "total_amount": 26030.260000000002
+      },
+      {
+        "year": 2022,
+        "region": "South",
+        "city": "San Antonio",
+        "state": "TX",
+        "total_amount": 20441.23
+      },
+      {
+        "year": 2022,
+        "region": "Midwest",
+        "city": "Chicago",
+        "state": "IL",
+        "total_amount": 16481.76
+      },
+      {
+        "year": 2022,
+        "region": "West",
+        "city": "Denver",
+        "state": "CO",
+        "total_amount": 13167.92
+      },
+      {
+        "year": 2022,
+        "region": "Midwest",
+        "city": "St. Louis",
+        "state": "MO",
+        "total_amount": 11083.939999999999
+      },
+      {
+        "year": 2022,
+        "region": "Southeast",
+        "city": "Nashville",
+        "state": "TN",
+        "total_amount": 10762.410000000002
+      },
+      {
+        "year": 2022,
+        "region": "South",
+        "city": "Dallas",
+        "state": "TX",
+        "total_amount": 10721.429999999998
+      },
+      {
+        "year": 2022,
+        "region": "West",
+        "city": "Los Angeles",
+        "state": "CA",
+        "total_amount": 10019.64
+      },
+      {
+        "year": 2022,
+        "region": "Southeast",
+        "city": "Atlanta",
+        "state": "GA",
+        "total_amount": 9957.25
+      },
+      {
+        "year": 2022,
+        "region": "Northeast",
+        "city": "Providence",
+        "state": "RI",
+        "total_amount": 7820.35
+      },
+      {
+        "year": 2022,
+        "region": "South",
+        "city": "Houston",
+        "state": "TX",
+        "total_amount": 7168.580000000002
+      },
+      {
+        "year": 2022,
+        "region": "Southeast",
+        "city": "Miami",
+        "state": "FL",
+        "total_amount": 7082.129999999999
+      },
+      {
+        "year": 2022,
+        "region": "West",
+        "city": "San Francisco",
+        "state": "CA",
+        "total_amount": 6960.47
+      },
+      {
+        "year": 2022,
+        "region": "Southeast",
+        "city": "Charlotte",
+        "state": "NC",
+        "total_amount": 6572.7699999999995
+      },
+      {
+        "year": 2022,
+        "region": "West",
+        "city": "Seattle",
+        "state": "WA",
+        "total_amount": 6524.0599999999995
+      },
+      {
+        "year": 2022,
+        "region": "Northeast",
+        "city": "New York",
+        "state": "NY",
+        "total_amount": 5076.69
+      },
+      {
+        "year": 2022,
+        "region": "Southeast",
+        "city": "New Orleans",
+        "state": "LA",
+        "total_amount": 5025.32
+      },
+      {
+        "year": 2022,
+        "region": "Southeast",
+        "city": "Raleigh",
+        "state": "NC",
+        "total_amount": 4869.86
+      },
+      {
+        "year": 2022,
+        "region": "Northeast",
+        "city": "Boston",
+        "state": "MA",
+        "total_amount": 4852.099999999999
+      },
+      {
+        "year": 2022,
+        "region": "Midwest",
+        "city": "Detroit",
+        "state": "MI",
+        "total_amount": 4616.410000000001
+      },
+      {
+        "year": 2022,
+        "region": "Midwest",
+        "city": "Columbus",
+        "state": "OH",
+        "total_amount": 4325.990000000001
+      },
+      {
+        "year": 2022,
+        "region": "Northeast",
+        "city": "Philadelphia",
+        "state": "PA",
+        "total_amount": 4301.190000000001
+      },
+      {
+        "year": 2022,
+        "region": "Midwest",
+        "city": "Minneapolis",
+        "state": "MN",
+        "total_amount": 2438.18
+      },
+      {
+        "year": 2022,
+        "region": "South",
+        "city": "Austin",
+        "state": "TX",
+        "total_amount": 2134.2699999999995
+      },
+      {
+        "year": 2022,
+        "region": "Northeast",
+        "city": "Hartford",
+        "state": "CT",
+        "total_amount": 1999.9500000000003
+      },
+      {
+        "year": 2023,
+        "region": "West",
+        "city": "Seattle",
+        "state": "WA",
+        "total_amount": 29745.239999999998
+      },
+      {
+        "year": 2023,
+        "region": "Northeast",
+        "city": "Boston",
+        "state": "MA",
+        "total_amount": 24900.390000000003
+      },
+      {
+        "year": 2023,
+        "region": "Southeast",
+        "city": "Atlanta",
+        "state": "GA",
+        "total_amount": 21690.859999999997
+      },
+      {
+        "year": 2023,
+        "region": "South",
+        "city": "Dallas",
+        "state": "TX",
+        "total_amount": 20389.949999999997
+      },
+      {
+        "year": 2023,
+        "region": "Midwest",
+        "city": "Detroit",
+        "state": "MI",
+        "total_amount": 19915.13
+      },
+      {
+        "year": 2023,
+        "region": "West",
+        "city": "Los Angeles",
+        "state": "CA",
+        "total_amount": 18107.9
+      },
+      {
+        "year": 2023,
+        "region": "Midwest",
+        "city": "Chicago",
+        "state": "IL",
+        "total_amount": 16847.690000000002
+      },
+      {
+        "year": 2023,
+        "region": "Southeast",
+        "city": "Miami",
+        "state": "FL",
+        "total_amount": 16544.629999999997
+      },
+      {
+        "year": 2023,
+        "region": "Northeast",
+        "city": "New York",
+        "state": "NY",
+        "total_amount": 16131.22
+      },
+      {
+        "year": 2023,
+        "region": "Southeast",
+        "city": "Raleigh",
+        "state": "NC",
+        "total_amount": 14985.55
+      },
+      {
+        "year": 2023,
+        "region": "West",
+        "city": "Phoenix",
+        "state": "AZ",
+        "total_amount": 13240.650000000001
+      },
+      {
+        "year": 2023,
+        "region": "Southeast",
+        "city": "New Orleans",
+        "state": "LA",
+        "total_amount": 13065.660000000002
+      },
+      {
+        "year": 2023,
+        "region": "South",
+        "city": "Austin",
+        "state": "TX",
+        "total_amount": 11936.04
+      },
+      {
+        "year": 2023,
+        "region": "Midwest",
+        "city": "Minneapolis",
+        "state": "MN",
+        "total_amount": 10926.74
+      },
+      {
+        "year": 2023,
+        "region": "Northeast",
+        "city": "Hartford",
+        "state": "CT",
+        "total_amount": 10079.849999999999
+      },
+      {
+        "year": 2023,
+        "region": "Midwest",
+        "city": "St. Louis",
+        "state": "MO",
+        "total_amount": 7188.990000000001
+      },
+      {
+        "year": 2023,
+        "region": "West",
+        "city": "Denver",
+        "state": "CO",
+        "total_amount": 5744.99
+      },
+      {
+        "year": 2023,
+        "region": "South",
+        "city": "San Antonio",
+        "state": "TX",
+        "total_amount": 5397.23
+      },
+      {
+        "year": 2023,
+        "region": "West",
+        "city": "San Francisco",
+        "state": "CA",
+        "total_amount": 4691.16
+      },
+      {
+        "year": 2023,
+        "region": "Midwest",
+        "city": "Columbus",
+        "state": "OH",
+        "total_amount": 4319.469999999999
+      },
+      {
+        "year": 2023,
+        "region": "Northeast",
+        "city": "Philadelphia",
+        "state": "PA",
+        "total_amount": 3867.6299999999997
+      },
+      {
+        "year": 2023,
+        "region": "Southeast",
+        "city": "Charlotte",
+        "state": "NC",
+        "total_amount": 3810.9700000000003
+      },
+      {
+        "year": 2023,
+        "region": "Southeast",
+        "city": "Nashville",
+        "state": "TN",
+        "total_amount": 3407.8799999999997
+      },
+      {
+        "year": 2023,
+        "region": "Northeast",
+        "city": "Providence",
+        "state": "RI",
+        "total_amount": 2600.81
+      },
+      {
+        "year": 2023,
+        "region": "South",
+        "city": "Houston",
+        "state": "TX",
+        "total_amount": 2576.89
+      },
+      {
+        "year": 2024,
+        "region": "Midwest",
+        "city": "St. Louis",
+        "state": "MO",
+        "total_amount": 26607.54
+      },
+      {
+        "year": 2024,
+        "region": "Northeast",
+        "city": "Hartford",
+        "state": "CT",
+        "total_amount": 25346.5
+      },
+      {
+        "year": 2024,
+        "region": "South",
+        "city": "Dallas",
+        "state": "TX",
+        "total_amount": 23401.11
+      },
+      {
+        "year": 2024,
+        "region": "Midwest",
+        "city": "Columbus",
+        "state": "OH",
+        "total_amount": 22002.440000000002
+      },
+      {
+        "year": 2024,
+        "region": "West",
+        "city": "San Francisco",
+        "state": "CA",
+        "total_amount": 21737.1
+      },
+      {
+        "year": 2024,
+        "region": "Northeast",
+        "city": "Boston",
+        "state": "MA",
+        "total_amount": 21035.11
+      },
+      {
+        "year": 2024,
+        "region": "Southeast",
+        "city": "New Orleans",
+        "state": "LA",
+        "total_amount": 19778.720000000005
+      },
+      {
+        "year": 2024,
+        "region": "West",
+        "city": "Seattle",
+        "state": "WA",
+        "total_amount": 19482.91
+      },
+      {
+        "year": 2024,
+        "region": "Midwest",
+        "city": "Chicago",
+        "state": "IL",
+        "total_amount": 18500.359999999997
+      },
+      {
+        "year": 2024,
+        "region": "Southeast",
+        "city": "Miami",
+        "state": "FL",
+        "total_amount": 18094.459999999995
+      },
+      {
+        "year": 2024,
+        "region": "Southeast",
+        "city": "Nashville",
+        "state": "TN",
+        "total_amount": 17393.39
+      },
+      {
+        "year": 2024,
+        "region": "Midwest",
+        "city": "Detroit",
+        "state": "MI",
+        "total_amount": 16935.109999999997
+      },
+      {
+        "year": 2024,
+        "region": "West",
+        "city": "Denver",
+        "state": "CO",
+        "total_amount": 16584.929999999997
+      },
+      {
+        "year": 2024,
+        "region": "Northeast",
+        "city": "New York",
+        "state": "NY",
+        "total_amount": 15283.669999999998
+      },
+      {
+        "year": 2024,
+        "region": "South",
+        "city": "Houston",
+        "state": "TX",
+        "total_amount": 15022.07
+      },
+      {
+        "year": 2024,
+        "region": "Northeast",
+        "city": "Providence",
+        "state": "RI",
+        "total_amount": 13633.920000000002
+      },
+      {
+        "year": 2024,
+        "region": "Northeast",
+        "city": "Philadelphia",
+        "state": "PA",
+        "total_amount": 13387.909999999998
+      },
+      {
+        "year": 2024,
+        "region": "Southeast",
+        "city": "Charlotte",
+        "state": "NC",
+        "total_amount": 12714.96
+      },
+      {
+        "year": 2024,
+        "region": "West",
+        "city": "Los Angeles",
+        "state": "CA",
+        "total_amount": 12700.16
+      },
+      {
+        "year": 2024,
+        "region": "Southeast",
+        "city": "Atlanta",
+        "state": "GA",
+        "total_amount": 12629.459999999997
+      },
+      {
+        "year": 2024,
+        "region": "South",
+        "city": "San Antonio",
+        "state": "TX",
+        "total_amount": 12394.24
+      },
+      {
+        "year": 2024,
+        "region": "Midwest",
+        "city": "Minneapolis",
+        "state": "MN",
+        "total_amount": 9633.020000000002
+      },
+      {
+        "year": 2024,
+        "region": "West",
+        "city": "Phoenix",
+        "state": "AZ",
+        "total_amount": 8928.119999999999
+      },
+      {
+        "year": 2024,
+        "region": "South",
+        "city": "Austin",
+        "state": "TX",
+        "total_amount": 8187.139999999999
+      },
+      {
+        "year": 2024,
+        "region": "Southeast",
+        "city": "Raleigh",
+        "state": "NC",
+        "total_amount": 7507.779999999999
+      }
+    ]
+  },
+  "charts": [
+    {
+      "title": "Top 10 Products by Revenue",
+      "type": "bar",
+      "json": "{\"data\":[{\"hovertemplate\":\"Product=%{x}\\u003cbr\\u003eRevenue ($)=%{marker.color}\\u003cextra\\u003e\\u003c\\u002fextra\\u003e\",\"legendgroup\":\"\",\"marker\":{\"color\":{\"dtype\":\"f8\",\"bdata\":\"XI\\u002fC9SDOC0HsUbgeFzEKQbkeheu38gBB1qNwPfKA\\u002f0DXo3A9Dgf8QDMzMzMj\\u002ffdAR+F6FNqo9kAehetRsBXwQClcj8KVp+xAkML1KJxO7EA=\"},\"coloraxis\":\"coloraxis\",\"pattern\":{\"shape\":\"\"}},\"name\":\"\",\"orientation\":\"v\",\"showlegend\":false,\"textposition\":\"auto\",\"x\":[\"Macbook Air M2\",\"Dell Xps 15\",\"Iphone 15 Pro\",\"Ipad Pro 12.9\",\"Samsung Galaxy S24 Ultra\",\"Dyson V15 Vacuum\",\"Dyson Airwrap Styler\",\"Lg 27 4K Monitor\",\"Robot Vacuum Irobot\",\"Kitchenaid Stand Mixer\"],\"xaxis\":\"x\",\"y\":{\"dtype\":\"f8\",\"bdata\":\"XI\\u002fC9SDOC0HsUbgeFzEKQbkeheu38gBB1qNwPfKA\\u002f0DXo3A9Dgf8QDMzMzMj\\u002ffdAR+F6FNqo9kAehetRsBXwQClcj8KVp+xAkML1KJxO7EA=\"},\"yaxis\":\"y\",\"type\":\"bar\"}],\"layout\":{\"template\":{\"data\":{\"candlestick\":[{\"decreasing\":{\"line\":{\"color\":\"#000033\"}},\"increasing\":{\"line\":{\"color\":\"#000032\"}},\"type\":\"candlestick\"}],\"contourcarpet\":[{\"colorscale\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]],\"type\":\"contourcarpet\"}],\"contour\":[{\"colorscale\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]],\"type\":\"contour\"}],\"heatmap\":[{\"colorscale\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]],\"type\":\"heatmap\"}],\"histogram2d\":[{\"colorscale\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]],\"type\":\"histogram2d\"}],\"icicle\":[{\"textfont\":{\"color\":\"white\"},\"type\":\"icicle\"}],\"sankey\":[{\"textfont\":{\"color\":\"#000036\"},\"type\":\"sankey\"}],\"scatter\":[{\"marker\":{\"line\":{\"width\":0}},\"type\":\"scatter\"}],\"table\":[{\"cells\":{\"fill\":{\"color\":\"#000038\"},\"font\":{\"color\":\"#000037\"},\"line\":{\"color\":\"#000039\"}},\"header\":{\"fill\":{\"color\":\"#000040\"},\"font\":{\"color\":\"#000036\"},\"line\":{\"color\":\"#000039\"}},\"type\":\"table\"}],\"waterfall\":[{\"connector\":{\"line\":{\"color\":\"#000036\",\"width\":2}},\"decreasing\":{\"marker\":{\"color\":\"#000033\"}},\"increasing\":{\"marker\":{\"color\":\"#000032\"}},\"totals\":{\"marker\":{\"color\":\"#000034\"}},\"type\":\"waterfall\"}]},\"layout\":{\"coloraxis\":{\"colorscale\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]]},\"colorscale\":{\"diverging\":[[0.0,\"#000021\"],[0.1111111111111111,\"#000022\"],[0.2222222222222222,\"#000023\"],[0.3333333333333333,\"#000024\"],[0.4444444444444444,\"#000025\"],[0.5555555555555556,\"#000026\"],[0.6666666666666666,\"#000027\"],[0.7777777777777778,\"#000028\"],[0.8888888888888888,\"#000029\"],[1.0,\"#000030\"]],\"sequential\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]],\"sequentialminus\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]]},\"colorway\":[\"#000001\",\"#000002\",\"#000003\",\"#000004\",\"#000005\",\"#000006\",\"#000007\",\"#000008\",\"#000009\",\"#000010\"]}},\"xaxis\":{\"anchor\":\"y\",\"domain\":[0.0,1.0],\"title\":{\"text\":\"Product\"},\"tickangle\":-35},\"yaxis\":{\"anchor\":\"x\",\"domain\":[0.0,1.0],\"title\":{\"text\":\"Revenue ($)\"}},\"coloraxis\":{\"colorbar\":{\"title\":{\"text\":\"Revenue ($)\"}},\"colorscale\":[[0.0,\"rgb(209, 238, 234)\"],[0.16666666666666666,\"rgb(168, 219, 217)\"],[0.3333333333333333,\"rgb(133, 196, 201)\"],[0.5,\"rgb(104, 171, 184)\"],[0.6666666666666666,\"rgb(79, 144, 166)\"],[0.8333333333333334,\"rgb(59, 115, 143)\"],[1.0,\"rgb(42, 86, 116)\"]],\"autocolorscale\":false},\"legend\":{\"tracegroupgap\":0},\"title\":{\"text\":\"Top 10 Products by Revenue\"},\"barmode\":\"relative\",\"showlegend\":false}}"
+    },
+    {
+      "title": "Revenue by Region",
+      "type": "pie",
+      "json": "{\"data\":[{\"domain\":{\"x\":[0.0,1.0],\"y\":[0.0,1.0]},\"hovertemplate\":\"region=%{label}\\u003cbr\\u003erevenue=%{value}\\u003cextra\\u003e\\u003c\\u002fextra\\u003e\",\"labels\":[\"West\",\"Southeast\",\"Midwest\",\"Northeast\",\"South\"],\"legendgroup\":\"\",\"name\":\"\",\"showlegend\":true,\"values\":{\"dtype\":\"f8\",\"bdata\":\"SOF6FAwVCkGuR+F6MCIJQY7C9Sh2agdBIIXrUWrKBEEK16Nw0Q8BQQ==\"},\"type\":\"pie\"}],\"layout\":{\"template\":{\"data\":{\"candlestick\":[{\"decreasing\":{\"line\":{\"color\":\"#000033\"}},\"increasing\":{\"line\":{\"color\":\"#000032\"}},\"type\":\"candlestick\"}],\"contourcarpet\":[{\"colorscale\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]],\"type\":\"contourcarpet\"}],\"contour\":[{\"colorscale\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]],\"type\":\"contour\"}],\"heatmap\":[{\"colorscale\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]],\"type\":\"heatmap\"}],\"histogram2d\":[{\"colorscale\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]],\"type\":\"histogram2d\"}],\"icicle\":[{\"textfont\":{\"color\":\"white\"},\"type\":\"icicle\"}],\"sankey\":[{\"textfont\":{\"color\":\"#000036\"},\"type\":\"sankey\"}],\"scatter\":[{\"marker\":{\"line\":{\"width\":0}},\"type\":\"scatter\"}],\"table\":[{\"cells\":{\"fill\":{\"color\":\"#000038\"},\"font\":{\"color\":\"#000037\"},\"line\":{\"color\":\"#000039\"}},\"header\":{\"fill\":{\"color\":\"#000040\"},\"font\":{\"color\":\"#000036\"},\"line\":{\"color\":\"#000039\"}},\"type\":\"table\"}],\"waterfall\":[{\"connector\":{\"line\":{\"color\":\"#000036\",\"width\":2}},\"decreasing\":{\"marker\":{\"color\":\"#000033\"}},\"increasing\":{\"marker\":{\"color\":\"#000032\"}},\"totals\":{\"marker\":{\"color\":\"#000034\"}},\"type\":\"waterfall\"}]},\"layout\":{\"coloraxis\":{\"colorscale\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]]},\"colorscale\":{\"diverging\":[[0.0,\"#000021\"],[0.1111111111111111,\"#000022\"],[0.2222222222222222,\"#000023\"],[0.3333333333333333,\"#000024\"],[0.4444444444444444,\"#000025\"],[0.5555555555555556,\"#000026\"],[0.6666666666666666,\"#000027\"],[0.7777777777777778,\"#000028\"],[0.8888888888888888,\"#000029\"],[1.0,\"#000030\"]],\"sequential\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]],\"sequentialminus\":[[0.0,\"#000011\"],[0.1111111111111111,\"#000012\"],[0.2222222222222222,\"#000013\"],[0.3333333333333333,\"#000014\"],[0.4444444444444444,\"#000015\"],[0.5555555555555556,\"#000016\"],[0.6666666666666666,\"#000017\"],[0.7777777777777778,\"#000018\"],[0.8888888888888888,\"#000019\"],[1.0,\"#000020\"]]},\"colorway\":[\"#000001\",\"#000002\",\"#000003\",\"#000004\",\"#000005\",\"#000006\",\"#000007\",\"#000008\",\"#000009\",\"#000010\"]}},\"legend\":{\"tracegroupgap\":0},\"title\":{\"text\":\"Revenue by Region\"}}}"
+    }
+  ]
+}

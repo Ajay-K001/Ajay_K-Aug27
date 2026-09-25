@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -57,9 +58,9 @@ def main() -> None:
     bronze_outputs = bronze_ingest(file_paths, output_dir="data/bronze_layer")
     print(f"  ✅ Bronze outputs: {bronze_outputs}\n")
 
-    # Phase 4: Silver STTM
+    # Phase 4: Silver STTM (reads from Bronze Parquet schema)
     print("[4/8] SILVER LAYER - Generating STTM...")
-    silver_sttm = generate_silver_sttm(file_paths)
+    silver_sttm = generate_silver_sttm(bronze_outputs, args.business_intent)
     print(f"  STTM: {silver_sttm}")
     if not args.skip_approval:
         approval = input("  ➤ Approve Silver STTM? (y/n): ").strip().lower()
@@ -73,9 +74,9 @@ def main() -> None:
     silver_outputs = silver_clean(bronze_outputs, output_dir="data/silver_layer", business_intent=args.business_intent)
     print(f"  ✅ Silver outputs: {silver_outputs}\n")
 
-    # Phase 6: Gold STTM
+    # Phase 6: Gold STTM (reads from Silver Parquet schema)
     print("[6/8] GOLD LAYER - Generating STTM...")
-    gold_sttm = generate_gold_sttm(file_paths)
+    gold_sttm = generate_gold_sttm(silver_outputs, args.business_intent)
     print(f"  STTM: {gold_sttm}")
     if not args.skip_approval:
         approval = input("  ➤ Approve Gold STTM? (y/n): ").strip().lower()

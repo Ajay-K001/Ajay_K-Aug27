@@ -1,4 +1,5 @@
 import chromadb
+from chromadb.utils import embedding_functions
 
 from core.config import CHROMA_DIR
 
@@ -12,7 +13,8 @@ def get_chroma_client():
 
 def get_collection(name=_COLLECTION_NAME):
     client = get_chroma_client()
-    return client.get_or_create_collection(name=name, embedding_function=None)
+    ef = embedding_functions.DefaultEmbeddingFunction()
+    return client.get_or_create_collection(name=name, embedding_function=ef)
 
 
 def store_document(doc_id, text, metadata=None):
@@ -27,13 +29,14 @@ def store_document(doc_id, text, metadata=None):
 
 def query_memory(query_text, n_results=5):
     try:
-        results = get_collection().get(
-            limit=n_results,
+        results = get_collection().query(
+            query_texts=[query_text],
+            n_results=n_results,
             include=["documents", "metadatas"],
         )
-        ids = results.get("ids", [])
-        documents = results.get("documents", [])
-        metadatas = results.get("metadatas", [])
+        ids = results.get("ids", [[]])[0]
+        documents = results.get("documents", [[]])[0]
+        metadatas = results.get("metadatas", [[]])[0]
 
         return [
             {

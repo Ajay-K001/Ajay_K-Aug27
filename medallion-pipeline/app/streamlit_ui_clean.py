@@ -109,11 +109,11 @@ with st.sidebar:
                 st.toast("Bronze layer completed.", icon="✅")
 
                 st.info("Silver layer running...")
-                silver_outputs = silver_clean(file_paths, output_dir=PROJECT_ROOT / "data" / "silver_layer")
+                silver_outputs = silver_clean(bronze_outputs, output_dir=PROJECT_ROOT / "data" / "silver_layer", business_intent=business_question)
                 st.toast("Silver layer completed.", icon="✅")
 
                 st.info("Gold layer running...")
-                gold_outputs = gold_aggregate(file_paths, output_dir=PROJECT_ROOT / "data" / "gold_layer")
+                gold_outputs = gold_aggregate(silver_outputs, output_dir=PROJECT_ROOT / "data" / "gold_layer", business_intent=business_question)
                 st.toast("Gold layer completed.", icon="✅")
 
                 st.info("Reporter running...")

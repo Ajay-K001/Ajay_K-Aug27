@@ -372,7 +372,7 @@ def create_report_insight(
 
     # Use the question text as a user-facing question and keep it in the report payload.
     result = {
-        "source": str(gold_output_path),
+        "source": gold_paths[0] if gold_paths else "",
         "summary": "Gold layer generated successfully. Report created from uploaded product, store, and sales files.",
         "business_question": business_question or "What is the yearly and monthly profit for the latest 3 years?",
         "insights": insights,
@@ -415,7 +415,7 @@ def create_report_insight(
           <h2>Business Question</h2>
           <p>{escape(str(result['business_question']))}</p>
           <h2>Gold Source</h2>
-          <p>{escape(str(gold_output_path))}</p>
+          <p>{escape(str(gold_paths[0] if gold_paths else ""))}</p>
           <h2>Summary</h2>
           <p>{escape(result['summary'])}</p>
           <h2>Business Insights</h2>

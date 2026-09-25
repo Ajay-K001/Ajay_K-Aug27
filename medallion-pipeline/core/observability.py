@@ -3,8 +3,9 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+from core.config import BASE_DIR
 
-TRACES_DIR = Path("data/traces")
+TRACES_DIR = BASE_DIR / "data" / "traces"
 TRACES_DIR.mkdir(parents=True, exist_ok=True)
 
 

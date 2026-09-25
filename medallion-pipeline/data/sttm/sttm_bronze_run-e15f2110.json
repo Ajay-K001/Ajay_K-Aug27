@@ -1,0 +1,173 @@
+{
+  "phase": "bronze",
+  "business_intent": "Which product generating more revenue and it locations",
+  "objectives": [
+    "Load products into Bronze with unique product_id key.",
+    "Load stores into Bronze with unique store_id key.",
+    "Load sales_data into Bronze, joining on product_id and store_id for referential integrity.",
+    "Normalize transaction_date to ISO 8601 date format.",
+    "Calculate revenue per product by summing total_amount across all stores.",
+    "Aggregate revenue by store location (city, state) for location-based analysis."
+  ],
+  "rules": [
+    {
+      "source_file": "products.csv",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "products.csv",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "products.csv",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "products.csv",
+      "source_column": "standard_price",
+      "target_column": "standard_price",
+      "data_type": "float",
+      "transformation_logic": "cast_float"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "transaction_id",
+      "target_column": "transaction_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "transaction_date",
+      "target_column": "transaction_date",
+      "data_type": "string",
+      "transformation_logic": "parse to DATE using format 'YYYY-MM-DD'"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "quantity",
+      "target_column": "quantity",
+      "data_type": "integer",
+      "transformation_logic": "cast_integer"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "unit_price",
+      "target_column": "unit_price",
+      "data_type": "float",
+      "transformation_logic": "cast to DECIMAL(10,2)"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "total_amount",
+      "target_column": "total_amount",
+      "data_type": "float",
+      "transformation_logic": "validate as quantity * unit_price; if mismatch, recompute"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "customer_segment",
+      "target_column": "customer_segment",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "sales_data.csv",
+      "source_column": "payment_method",
+      "target_column": "payment_method",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "store_name",
+      "target_column": "store_name",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "region",
+      "target_column": "region",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "city",
+      "target_column": "city",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    },
+    {
+      "source_file": "stores.csv",
+      "source_column": "state",
+      "target_column": "state",
+      "data_type": "string",
+      "transformation_logic": "trim"
+    }
+  ],
+  "notes": [
+    "All source files contain no nulls, but missing values may appear after joins.",
+    "transaction_date is a string; must be parsed to date.",
+    "total_amount is already provided but should be validated against quantity * unit_price.",
+    "Store IDs in sales_data must match those in stores.csv; otherwise, records will be orphaned.",
+    "Product names and categories are repeated in sales_data; deduplicate using products table.",
+    "Unit_price may vary per transaction; consider using the transaction's unit_price for revenue calculation."
+  ],
+  "log": [
+    "[2026-09-25 11:27:12 UTC] Bronze STTM generation started",
+    "[2026-09-25 11:27:12 UTC] LLM provider: GROQ",
+    "[2026-09-25 11:27:12 UTC] Source files analysed: 3",
+    "[2026-09-25 11:27:12 UTC]   \u2022 products.csv \u2014 50 rows, 4 columns",
+    "[2026-09-25 11:27:12 UTC]   \u2022 sales_data.csv \u2014 2000 rows, 11 columns",
+    "[2026-09-25 11:27:12 UTC]   \u2022 stores.csv \u2014 25 rows, 5 columns",
+    "[2026-09-25 11:27:12 UTC] Column rules generated: 20",
+    "[2026-09-25 11:27:12 UTC] LLM objectives/notes: applied",
+    "[2026-09-25 11:27:12 UTC] Bronze STTM ready for HITL approval"
+  ]
+}

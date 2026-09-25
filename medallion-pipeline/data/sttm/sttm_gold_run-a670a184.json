@@ -1,0 +1,178 @@
+{
+  "phase": "gold",
+  "business_intent": "which product is generating more revenue and location",
+  "objectives": [
+    "Compute total revenue per product (sum of total_amount) across all stores.",
+    "Compute total revenue per store location (by city, state, region).",
+    "Determine top\u2011selling product category by revenue.",
+    "Calculate average unit price per product to identify pricing trends.",
+    "Generate a KPI table that lists revenue, quantity sold, and average unit price for each product per location.",
+    "Include a time dimension to enable year\u2011over\u2011year revenue comparisons."
+  ],
+  "rules": [
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "products_silver.parquet",
+      "source_column": "standard_price",
+      "target_column": "standard_price",
+      "data_type": "float",
+      "transformation_logic": "AVG(standard_price) AS avg_unit_price"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "transaction_id",
+      "target_column": "transaction_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "transaction_date",
+      "target_column": "transaction_date",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "product_id",
+      "target_column": "product_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "product_name",
+      "target_column": "product_name",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "category",
+      "target_column": "category",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "quantity",
+      "target_column": "quantity",
+      "data_type": "string",
+      "transformation_logic": "SUM(quantity) AS total_quantity"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "unit_price",
+      "target_column": "unit_price",
+      "data_type": "float",
+      "transformation_logic": "AVG(unit_price) AS avg_actual_price"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "total_amount",
+      "target_column": "total_amount",
+      "data_type": "float",
+      "transformation_logic": "SUM(total_amount) AS total_revenue"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "customer_segment",
+      "target_column": "customer_segment",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "sales_data_silver.parquet",
+      "source_column": "payment_method",
+      "target_column": "payment_method",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "store_id",
+      "target_column": "store_id",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "store_name",
+      "target_column": "store_name",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "region",
+      "target_column": "region",
+      "data_type": "string",
+      "transformation_logic": "GROUP_BY"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "city",
+      "target_column": "city",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    },
+    {
+      "source_file": "stores_silver.parquet",
+      "source_column": "state",
+      "target_column": "state",
+      "data_type": "string",
+      "transformation_logic": "keep"
+    }
+  ],
+  "notes": [
+    "Use dimensional joins: sales_data_silver.product_id \u2192 products_silver.product_id; sales_data_silver.store_id \u2192 stores_silver.store_id.",
+    "Revenue aggregation should be performed on the pre\u2011joined fact table to avoid double counting.",
+    "KPI columns should be stored in a narrow, read\u2011optimized table (e.g., one row per product\u2011location combo).",
+    "Leverage window functions if year\u2011over\u2011year growth metrics are required.",
+    "Store derived columns (e.g., revenue_per_unit) as calculated columns to simplify downstream analytics."
+  ],
+  "log": [
+    "[2026-09-25 11:17:45 UTC] Gold STTM generation started",
+    "[2026-09-25 11:17:45 UTC] LLM provider: GROQ",
+    "[2026-09-25 11:17:45 UTC] Silver Parquet files read: 3",
+    "[2026-09-25 11:17:45 UTC]   \u2022 products_silver.parquet \u2014 50 rows",
+    "[2026-09-25 11:17:45 UTC]     Numeric cols (to aggregate): standard_price",
+    "[2026-09-25 11:17:45 UTC]     Dimension cols (to GROUP BY): product_id, product_name, category",
+    "[2026-09-25 11:17:45 UTC]   \u2022 sales_data_silver.parquet \u2014 2000 rows",
+    "[2026-09-25 11:17:45 UTC]     Numeric cols (to aggregate): quantity, unit_price, total_amount",
+    "[2026-09-25 11:17:45 UTC]     Dimension cols (to GROUP BY): transaction_id, transaction_date, store_id, product_id, product_name, category",
+    "[2026-09-25 11:17:45 UTC]   \u2022 stores_silver.parquet \u2014 25 rows",
+    "[2026-09-25 11:17:45 UTC]     Dimension cols (to GROUP BY): store_id, store_name, region, city, state",
+    "[2026-09-25 11:17:45 UTC] KPI aggregation rules generated: 20",
+    "[2026-09-25 11:17:45 UTC] LLM Gold objectives: applied",
+    "[2026-09-25 11:17:45 UTC] Planned KPIs: revenue_by_product, revenue_by_region, revenue_by_period",
+    "[2026-09-25 11:17:45 UTC] Gold STTM ready for HITL approval"
+  ]
+}

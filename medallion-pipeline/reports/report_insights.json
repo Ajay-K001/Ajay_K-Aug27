@@ -1,13 +1,13 @@
 {
   "source": "C:\\Users\\ajak\\Project_01\\medallion-pipeline\\data\\gold_layer\\revenue_by_product.parquet",
   "summary": "Gold layer analysed via DuckDB SQL. Charts generated with Plotly.",
-  "business_question": "Which product generating more revenue and location\n",
+  "business_question": "Which product generating more revenue and it locations",
   "insights": [
-    "Business question: Which product generating more revenue and location\n",
+    "Business question: Which product generating more revenue and it locations",
     "Top product by revenue: Macbook Air M2 ($227,780.12)",
     "Strongest location: Seattle, West ($29,745.24)"
   ],
-  "generated_at": "2026-09-25T11:05:35.832564+00:00",
+  "generated_at": "2026-09-25T11:27:57.090782+00:00",
   "analysis": {
     "top_products_by_total_sales": [
       {
